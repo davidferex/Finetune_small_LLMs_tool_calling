@@ -1,0 +1,16 @@
+{
+  "name": "Bioinfo Wrangling Standard",
+  "initial_state": "FILTERING",
+  "states": {
+    "FILTERING": {
+      "prompt_class": "FilterPrompt",
+      "tools": ["FILTER"],
+      "next": "NORMALIZING"
+    },
+    "NORMALIZING": {
+      "prompt_class": "NormalizePrompt",
+      "tools": ["NORM"],
+      "next": "DONE"
+    }
+  }
+}

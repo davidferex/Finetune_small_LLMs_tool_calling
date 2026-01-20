@@ -45,6 +45,8 @@ def Filter_genes_var_threshold(v: float = 0.5):
     pipeline_state["filtered_var_threshold"] = True
     return f"Filtrado varianza aplicado. De {before} a {len(df_global)} genes."
 
+
+
 # --- HERRAMIENTAS DE NORMALIZACIÓN ---
 
 @mcp.tool(tags=["NORM"], description="Aplica normalización por cuantiles para homogeneizar distribuciones entre muestras. Recomendado para corregir variaciones técnicas.")
