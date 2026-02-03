@@ -17,15 +17,19 @@ async def main():
             await session.initialize()
             
             # Inicializar IA
-            adapter = LLMAdapter("AIzaSyBYchdpqDFhmZ1L3-fDiEWq6uV-aAmw55E") 
+            adapter = LLMAdapter("AIzaSyADRllT1cbv7H-qLsX3dtPkgsYykKY4DB4") 
             mcp_tools = await session.list_tools()
             adapter.load_tools(mcp_tools.tools)
 
             # Creamos el orquestador inyectándole la configuración
-            config = PipelineLoader.load("pipeline.json")
+            config = PipelineLoader.load("pipeline.json", "prompts")
             orchestrator = BioOrchestrator(session, adapter, config)
             
-            question = "Quiero identificar los 10 genes más informativos."
+            question = """
+            Perform a WGCNA analysis on the loaded RNA-seq dataset from patients with 
+            Alzheimer's Disease vs Healthy Controls. Identify modules associated with 
+            disease progression and find the top 5 hub genes for the most significant module.
+            """            
             await orchestrator.run(question)
 
 if __name__ == "__main__":

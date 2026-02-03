@@ -100,15 +100,19 @@ class LLMAdapter:
             tool_config=tool_config
         )
 
-        # 4. Preparar el mensaje (La nueva SDK prefiere el mensaje actual)
-        last_msg = messages[-1]["content"]
+        # 4. Convertir TODO el historial al formato de la SDK
+        # Gemini espera una lista de objetos con 'role' y 'parts'
+        history = []
+        for m in messages:
+            # La SDK usa 'user' y 'model' (assistant en otras APIs)
+            role = "user" if m["role"] == "user" else "model"
+            history.append(types.Content(role=role, parts=[types.Part(text=m["content"])]))
 
-        # 5. Llamada asíncrona usando el cliente nuevo
-        # Nota: La nueva SDK es síncrona por defecto, usamos to_thread para no bloquear
+        # 5. Llamada asíncrona usando el historial completo
         response = await asyncio.to_thread(
             lambda: self.client.models.generate_content(
                 model=self.model_name,
-                contents=last_msg,
+                contents=history, # <--- AHORA SÍ TIENE MEMORIA
                 config=config
             )
         )
