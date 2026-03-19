@@ -1,0 +1,37 @@
+{
+    "name": "WGCNA Co-expression Pipeline",
+    "initial_state": "PREPARATION",
+    "states": {
+        "PREPARATION": {
+            "prompt_class": "DataPrepPrompt",
+            "tools": ["PREP"],
+            "next": "SIMILARITY"
+        },
+        "SIMILARITY": {
+            "prompt_class": "SimilarityPrompt",
+            "tools": ["SIMIL"],
+            "next": "NETWORK"
+        },
+        "NETWORK": {
+            "prompt_class": "NetworkConstructionPrompt",
+            "tools": ["NETWORK"],
+            "next": "CLUSTERING"
+        },
+        "CLUSTERING": {
+            "prompt_class": "ModuleDetectionPrompt",
+            "tools": ["CLUSTERING"],
+            "next": "ASSOCIATION"
+        },
+        "ASSOCIATION": {
+            "prompt_class": "TraitAssociationPrompt",
+            "tools": ["ASSOCIATION"],
+            "next": "DONE"
+        },
+        "DONE": {
+            "prompt_class": "SummaryPrompt",
+            "tools": ["DONE"],
+            "next": "DONE"
+        }
+
+    }
+}

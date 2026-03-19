@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>WGCNA | Dashboard de Resultados</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body class="bg-slate-900 text-white p-8">
+    <header class="mb-10">
+        <h1 class="text-3xl font-bold text-cyan-400">🔬 Gene Co-expression Insights</h1>
+        <p class="text-slate-400">Resultados del Agente Autónomo Eowyn</p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+            <h3 class="text-sm font-semibold text-slate-400 uppercase">Genes Analizados</h3>
+            <p id="stat-genes" class="text-4xl font-mono mt-2">--</p>
+        </div>
+        <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+            <h3 class="text-sm font-semibold text-slate-400 uppercase">Módulos Detectados</h3>
+            <p id="stat-modules" class="text-4xl font-mono mt-2 text-cyan-400">--</p>
+        </div>
+        <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+            <h3 class="text-sm font-semibold text-slate-400 uppercase">Estado</h3>
+            <p id="stat-status" class="text-lg mt-2 text-green-400 italic">Esperando datos...</p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="bg-slate-800 p-6 rounded-xl h-96" id="chart-modules"></div>
+        <div class="bg-slate-800 p-6 rounded-xl overflow-y-auto h-96">
+            <h2 class="text-xl font-bold mb-4">Correlaciones Módulo-Rasgo</h2>
+            <table class="w-full text-left" id="table-results">
+                <thead>
+                    <tr class="border-b border-slate-700 text-slate-400">
+                        <th class="py-2">Módulo</th>
+                        <th class="py-2">Rasgo</th>
+                        <th class="py-2">R</th>
+                        <th class="py-2">P-Value</th>
+                    </tr>
+                </thead>
+                <tbody class="text-sm"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // Aquí iría la lógica para conectar con el WebSocket o API 
+        // y actualizar los elementos con los datos de RESULTS
+    </script>
+</body>
+</html>
