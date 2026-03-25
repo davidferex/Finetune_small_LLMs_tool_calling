@@ -22,70 +22,54 @@ async def FastPrototypePreset(
     DESCRIPTION: Optimized for speed (fewer epochs, simple models) to test pipelines quickly.
     Use this when the user needs to iterate fast or verify the workflow integrity without waiting for high-quality training.
     """
-    #config = FastPrototypePreset.copy()
-    #config["epochs"] = epochs
-    #config["batch_size"] = batch_size
-    
-    # Simulación de ejecución:
-    # gen = RealGenerator()
-    # gen.generate(n_samples=n_samples, **config)
-    
-    return f"Success: Executed FastPrototypePreset for {n_samples} samples (Epochs: {epochs}, Batch size: {batch_size})."
+    return f"Success: Executed FastPrototypePreset for {n_samples} samples."
 
 @mcp.tool()
 async def HighFidelityPreset(
     n_samples: Annotated[int, Field(description="Number of samples to generate")],
-    auto_report: Annotated[bool, Field(description="Activate report or not")]
+    auto_report: Annotated[Optional[bool], Field(default=True, description="Whether to automatically generate a validation report after generation")] = True
 ) -> str:
     """
     PRESET: HighFidelityPreset.
     DESCRIPTION: Tuned for maximum quality (CTGAN/TVAE with more training) for production data.
     Use this when the user requires high statistical accuracy and distribution matching for real-world scenarios.
     """
-    #config = HighFidelityPreset.copy()
-    #config["epochs"] = epochs
-    # config["model"] = model_type
-    
-    return f"Success: Executed HighFidelityPreset for {n_samples} samples (Epochs: {epochs}, Model type: {model_type})."
+    return f"Success: Executed HighFidelityPreset for {n_samples} samples (auto_report={auto_report})."
 
 
 
 @mcp.tool()
 async def ImbalancedGeneratorPreset(
-    n_samples: Annotated[int, Field(description="Total number of samples to generate after rebalancing")],
-    target_column: Annotated[str, Field(description="The skewed column name to rebalance")],
-    imbalance_ratio: Annotated[float, Field(description="Imbalance ratio for the minority class.")]
+    n_samples: Annotated[int, Field(description="Number of samples to generate")],
+    target_col: Annotated[str, Field(description="Name of the target column to apply the imbalanced distribution to")],
+    imbalance_ratio: Annotated[Optional[float], Field(default=0.1, description="Ratio of the minority class (e.g. 0.1 means 10% minority, 90% majority)")] = 0.1
 ) -> str:
     """
     PRESET: ImbalancePreset.
     DESCRIPTION: Configured to handle and rebalance highly skewed datasets.
     Use this when the user mentions imbalanced classes, rare events, or the need to fix skewed data distributions.
     """
-    # config = ImbalancePreset.copy()
-    
-    return f"Success: Executed ImbalancePreset targeting '{target_column}' with ratio {minority_class_ratio} (n_samples: {n_samples})."
+    return f"Success: Executed ImbalancePreset targeting '{target_col}' with ratio {imbalance_ratio} (n_samples: {n_samples})."
 
 @mcp.tool()
 async def TimeSeriesPreset(
-    n_samples: Annotated[int, Field(description="Number of sequences to generate")],
-    sequence_key: Annotated[str, Field(description="Sequence key")],
-    target_column: Annotated[str, Field(description="Target column of the series")],
-    method: Annotated[str, Field(description="Method to use")]
+    n_samples: Annotated[int, Field(description="Number of samples to generate")],
+    sequence_key: Annotated[str, Field(description="Column used to group rows into individual sequences")],
+    time_key: Annotated[Optional[str], Field(default=None, description="Name of the column containing the timestamp or date")] = None,
+    method: Annotated[Optional[Literal["timegan", "timevae", "fflows"]], Field(default="fflows", description="Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series")] = "fflows"
 ) -> str:
     """
     PRESET: TimeSeriesPreset.
     DESCRIPTION: Setup for sequential data generation.
     Use this when the user describes temporal data, longitudinal studies, or patient monitoring over time.
     """
-    # config = TimeSeriesPreset.copy()
-    
-    return f"Success: Executed TimeSeriesPreset. Sequences: {n_samples}, Length: {sequence_length}, Noise_std: {noise_std}."
+    return f"Success: Executed TimeSeriesPreset. n_samples={n_samples}, sequence_key={sequence_key}, time_key={time_key}, method={method}."
 
 
 @mcp.tool()
 async def BalancedDataGeneratorPreset(
-    n_samples: Annotated[int, Field(description="Number of synthetic samples to generate in order to balance the dataset")],
-    target_col: Annotated[str, Field(description="Name of the target column that needs to be balanced")]
+    n_samples: Annotated[int, Field(description="Number of samples to generate")],
+    target_col: Annotated[str, Field(description="Name of the target column whose class distribution will be balanced")]
 ) -> str:
     """
     PRESET: BalancedDataGeneratorPreset.
@@ -98,10 +82,6 @@ async def BalancedDataGeneratorPreset(
     - oversampling minority class
     - equalizing class distribution
     """
-
-    # Aquí iría tu lógica real con SMOTE/ADASYN
-    # Ejemplo conceptual:
-    # balanced_df = apply_smote(original_df, target_col, n_samples)
 
     return (
         f"Success: Executed BalancedDataGeneratorPreset. "
