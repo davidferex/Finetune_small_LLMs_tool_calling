@@ -1,0 +1,2943 @@
+[
+    {
+        "user_query": "I need to generate a small dataset quickly, can I get 50 samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to generate a dataset quickly, can I get some samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a diverse set of data for testing purposes, could you provide me with around 200 varied examples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a diverse set of data for testing purposes, could you provide me with some varied examples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can I get a small but diverse dataset of about 150 samples for integration testing?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a small but diverse dataset for integration testing?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a compact yet varied dataset to speed up my testing process. Can you generate around 80 data points that capture a good range of scenarios?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a compact yet varied dataset to speed up my testing process. Can you generate some data points that capture a good range of scenarios?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a sizable but not overwhelming amount of diverse data for some exploratory testing, can I get about 250 samples to help me cover a broad spectrum of cases?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need some diverse data for exploratory testing to cover a broad spectrum of cases, can I get a few samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a smaller set of around 50 varied data points for me to quickly test and validate my pipeline?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a smaller set of data points for me to quickly test and validate my pipeline?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a diverse dataset with a moderate number of samples, can I get about 200 varied data points to help with my integration testing?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a diverse dataset to help with my integration testing, can I get some varied data points?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate around 150 unique data points for me? I'm looking to test some integrations and need a variety of samples to ensure everything works smoothly.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate some unique data points for me? I'm looking to test some integrations and need a variety of samples to ensure everything works smoothly.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to create a small dataset with about 80 examples, can you help me generate that?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to create a dataset, can you help me generate it?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you provide a moderately sized dataset for rapid prototyping purposes, something around 250 samples to ensure diversity and speed up my integration testing?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you provide a dataset for rapid prototyping purposes, something to ensure diversity and speed up my integration testing?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a small but diverse dataset to test my application quickly, can I get around 50 data points that are optimized for rapid generation?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a small but diverse dataset to test my application quickly, can I get some data points that are optimized for rapid generation?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a sizable yet varied set of data for me, something like 200 samples, so I can thoroughly test and prototype without waiting too long?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate some data for me, so I can thoroughly test and prototype without waiting too long?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to quickly generate a large number of diverse data points, around 150 should do the trick, so I can move forward with testing and development without any delays.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to quickly generate a large number of diverse data points, so I can move forward with testing and development without any delays.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you provide a smaller set of roughly 80 varied data samples for rapid testing purposes?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you provide a smaller set of varied data samples for rapid testing purposes?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a moderately sized dataset with around 250 examples for some quick experimentation, can I get that?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a dataset for some quick experimentation, can I get that?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you provide a smaller set of data, roughly 50 samples, to help me test and validate my prototype quickly?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you provide a smaller set of data to help me test and validate my prototype quickly?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a larger dataset to thoroughly test my application, can I get around 100 diverse samples to ensure it's working as expected?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a larger dataset to thoroughly test my application, can I get some diverse samples to ensure it's working as expected?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To effectively integrate this into our testing pipeline, we require a substantial number of varied data points. Could you provide us with approximately 200 distinct samples to guarantee comprehensive coverage and reliability in our prototyping phase?",
+        "complete": 1
+    },
+    {
+        "user_query": "To effectively integrate this into our testing pipeline, we require some varied data points. Could you provide us with several samples to guarantee comprehensive coverage and reliability in our prototyping phase?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "For rapid prototyping and integration testing, I need a diverse dataset to ensure my pipeline is thoroughly tested. Can I get around 500 unique data samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "For rapid prototyping and integration testing, I need a diverse dataset to ensure my pipeline is thoroughly tested. Can I get some unique data samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to quickly generate a large and varied dataset for my CI/CD pipeline, can you provide me with about 1000 diverse data points?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to quickly generate a large and varied dataset for my CI/CD pipeline, can you provide me with some diverse data points?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a small yet diverse set of data for some quick prototyping, around 50 samples should do the trick",
+        "complete": 1
+    },
+    {
+        "user_query": "I need some data for quick prototyping, a small set should do",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a collection of about 200 distinct data points to help me test and prototype my project quickly?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate some distinct data points to help me test and prototype my project quickly?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a diverse set of around 150 data samples that can be generated quickly, perfect for testing and prototyping purposes.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a diverse set of data samples that can be generated quickly, perfect for testing and prototyping purposes.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a small dataset with about 80 examples for me? I need something fast and varied to help with some integration tests.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset for me? I need something fast and varied to help with some integration tests.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a diverse dataset to use in my CI/CD pipeline, can you create one with around 250 samples that's optimized for speed?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a diverse dataset to use in my CI/CD pipeline, can you create one with some samples that's optimized for speed?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a small, varied dataset of about 50 entries for some rapid testing?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset for some rapid testing?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a diverse dataset for integration testing, can I get around 200 samples with varying characteristics to ensure my pipeline is robust?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a diverse dataset for integration testing, can I get some samples with varying characteristics to ensure my pipeline is robust?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a large number of varied data points quickly, could you produce about 150 distinct examples for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a large number of varied data points quickly, could you produce several distinct examples for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you give me around 80 different samples to work with, something that will allow me to test various scenarios without having to wait too long?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you give me some samples to work with, something that will allow me to test various scenarios without having to wait too long?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a fairly large but not enormous dataset, something like 250 examples or so, to ensure I've got enough variety for thorough testing without overloading my system.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a fairly large but not enormous dataset to ensure I've got enough variety for thorough testing without overloading my system.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a moderate-sized dataset of around 50 samples to give me a good mix of data for testing purposes?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset of some samples to give me a good mix of data for testing purposes?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a diverse dataset for some rapid prototyping, can I get about 200 samples to ensure a good range of data for my tests?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a diverse dataset for some rapid prototyping, can I get some samples to ensure a good range of data for my tests?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a small but varied dataset for integration testing, can you generate around 10 samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a small but varied dataset for integration testing, can you generate some samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a diverse dataset for some rapid prototyping, could you provide me with approximately 500 samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a diverse dataset for some rapid prototyping, could you provide me with some samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate around 1000 varied data points for my integration testing?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate some varied data points for my integration testing?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to do some rapid prototyping and I want to make sure my system is robust, can you create a small batch of about 50 diverse data samples for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to do some rapid prototyping and I want to make sure my system is robust, can you create a few diverse data samples for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a larger dataset for integration testing, can you generate around 200 varied data points to help ensure my system's reliability and performance?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a larger dataset for integration testing, can you generate some varied data points to help ensure my system's reliability and performance?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you provide a sizable batch of diverse data, roughly 150 samples, to help me thoroughly test my application's functionality in a rapid development environment?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you provide a sizable batch of diverse data to help me thoroughly test my application's functionality in a rapid development environment?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a smaller yet varied dataset to quickly validate my app's performance, around 80 samples should do the trick",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a smaller yet varied dataset to quickly validate my app's performance, I need some samples",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a compact but diverse dataset with approximately 250 samples for rapid integration testing and prototyping?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a compact but diverse dataset for rapid integration testing and prototyping?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to quickly test my model, can I get around 50 varied data points to work with?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to quickly test my model, can I get some varied data points to work with?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a large set of diverse data for integration testing, can I get about 200 samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a large set of diverse data for integration testing, can I get some samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a sizable dataset with varied examples for some rapid prototyping. Can you provide around 150 different samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a sizable dataset with varied examples for some rapid prototyping. Can you provide several different samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "For integration testing, I want to generate a moderately sized dataset with about 80 unique and diverse samples to ensure good coverage.",
+        "complete": 1
+    },
+    {
+        "user_query": "For integration testing, I want to generate a moderately sized dataset with some unique and diverse samples to ensure good coverage.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a sizable dataset for some rapid prototyping, can you generate around 300 diverse samples to help me get started quickly?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a sizable dataset for some rapid prototyping, can you generate several diverse samples to help me get started quickly?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a smaller but varied dataset for integration testing, can I get about 50 unique data points?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a smaller but varied dataset for integration testing, can I get some unique data points?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a larger set of around 200 diverse samples to help with our rapid prototyping process?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate some diverse samples to help with our rapid prototyping process?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a sizable collection of varied data points, roughly 150 or so, to facilitate our integration testing and ensure a robust CI/CD pipeline, can you provide that?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a collection of varied data points to facilitate our integration testing and ensure a robust CI/CD pipeline, can you provide that?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate around 80 diverse data samples for me? I need them quickly for some integration tests and want to make sure my CI/CD pipeline is thoroughly tested with a variety of inputs.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate some diverse data samples for me? I need them quickly for some integration tests and want to make sure my CI/CD pipeline is thoroughly tested with a variety of inputs.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a large dataset for testing purposes, can you generate 250 diverse samples for me? I need them to be varied and representative of different scenarios so I can ensure my system is robust and works well under various conditions.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a large dataset for testing purposes, can you generate some diverse samples for me? I need them to be varied and representative of different scenarios so I can ensure my system is robust and works well under various conditions.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate 500 high-quality synthetic data samples using the preset optimized for maximum data quality and fidelity, without automatically generating a report.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate some high-quality synthetic data samples using the preset optimized for maximum data quality and fidelity, without automatically generating a report.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you produce around 200 synthetic data points that are highly diverse and of excellent quality, with the CTGAN model running for an extensive number of epochs and using an optimized batch size to ensure fidelity, also making sure to validate adversarially and provide a report automatically?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you produce some synthetic data points that are highly diverse and of excellent quality, with the model running for an extensive number of epochs and using an optimized batch size to ensure fidelity, also making sure to validate?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for top-notch synthetic data that's incredibly diverse. Can you generate around 800 samples using the CTGAN model with a high epoch count and an optimized batch size to prioritize quality over speed? Also, make sure to include adversarial validation but don't provide an automatic report this time.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for top-notch synthetic data that's incredibly diverse. Can you generate some samples using the CTGAN model with a high epoch count and an optimized batch size to prioritize quality over speed? Also, make sure to include validation but don't provide it this time.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need highly realistic synthetic data with a lot of variation. Can you create approximately 300 samples using the CTGAN model, focusing on achieving the best possible quality even if it takes a bit longer? Also, ensure that adversarial validation is included and provide an automatic report for the results.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need highly realistic synthetic data with a lot of variation. Can you create some samples using a certain model, focusing on achieving the best possible quality even if it takes a bit longer? Also, ensure that a specific validation method is included and provide an auto_report for the results.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for top-notch synthetic data with a high degree of diversity. Can you generate around 1000 samples using the CTGAN model with a strong emphasis on quality, even if it means a longer processing time? Please make sure to include adversarial validation in the process, but this time I don't need an automatic report.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for top-notch synthetic data with a high degree of diversity. Can you generate some samples using the CTGAN model with a strong emphasis on quality, even if it means a longer processing time? Please make sure to include adversarial validation in the process, but this time I don't need an automatic report.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a diverse and high-quality synthetic dataset. Can you produce approximately 50 samples using the CTGAN model with optimized settings for maximum fidelity, incorporating adversarial validation to ensure the best possible results?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a diverse and high-quality synthetic dataset. Can you produce some samples using the CTGAN model with optimized settings for maximum fidelity, incorporating validation to ensure the best possible results?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a large, diverse dataset that prioritizes quality and accuracy. Can you create around 200 synthetic samples using the CTGAN model with optimized settings for high fidelity and adversarial validation?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a large, diverse dataset that prioritizes quality and accuracy. Can you create some synthetic samples using the CTGAN model with optimized settings for high fidelity and validation?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to produce a substantial amount of high-quality data, focusing on diversity and precision. Could you generate approximately 150 synthetic samples, utilizing the default reporting settings and prioritizing quality over speed with the CTGAN model?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to produce some high-quality data, focusing on diversity and precision. Could you generate several synthetic samples, utilizing the default settings and prioritizing quality over speed with a certain model?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a preset that emphasizes maximum data quality and fidelity, using CTGAN with a high number of epochs and an optimized batch size. I want to prioritize quality over speed and ensure adversarial validation is in place. Can you generate around 80 synthetic samples with this setup, focusing on achieving the best possible diversity in the output?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a preset that emphasizes maximum data quality and fidelity, using CTGAN with a high number of epochs and an optimized batch size. I want to prioritize quality over speed and ensure validation is in place. Can you generate some synthetic samples with this setup, focusing on achieving the best possible diversity in the output?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a high-fidelity dataset with top-notch quality, so I'm looking for a preset that uses CTGAN with a large number of epochs and an optimized batch size to prioritize quality over speed. It's also crucial that adversarial validation is enforced to guarantee the best results. With this setup, can you produce approximately 300 synthetic samples that maximize diversity?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a high-fidelity dataset with top-notch quality, so I'm looking for a preset that uses a certain generator with a large number of epochs and an optimized batch size to prioritize quality over speed. It's also crucial that validation is enforced to guarantee the best results. With this setup, can you produce some synthetic samples that maximize diversity?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can I get a dataset with around 50 synthetic samples, using the high-quality preset that utilizes CTGAN with an optimized batch size and a large number of epochs? It's essential to prioritize data quality over generation speed and enforce adversarial validation to ensure top-notch results.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a dataset with some synthetic samples, using a preset that utilizes a certain generator with an optimized batch size and a large number of epochs? It's essential to prioritize data quality over generation speed and enforce validation to ensure top-notch results, and can I also get an auto_report?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to generate a dataset with 200 synthetic samples using the high-quality preset that utilizes CTGAN, prioritizing data quality and fidelity, and enforcing adversarial validation for optimal results. For the auto report feature, I'm okay with the default setting.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to generate a dataset with some synthetic samples using a certain preset that utilizes a specific method, prioritizing data quality and fidelity, and enforcing validation for optimal results. For the report feature, I'm okay with the default setting.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a diverse dataset of 150 synthetic samples using the high-quality preset that leverages CTGAN's capabilities to ensure maximum data fidelity and quality, while also enforcing adversarial validation for the best possible outcomes?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a diverse dataset using the high-quality preset that leverages CTGAN's capabilities to ensure maximum data fidelity and quality, while also enforcing validation for the best possible outcomes?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a high-fidelity dataset with 300 synthetic samples, prioritizing diversity and quality over generation speed. Can you create this using the CTGAN-based preset that optimizes for maximum data quality, includes adversarial validation, and has been fine-tuned for the best results?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a high-fidelity dataset with some synthetic samples, prioritizing diversity and quality over generation speed. Can you create this using a preset that optimizes for maximum data quality and has been fine-tuned for the best results?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a diverse dataset with 400 synthetic samples, prioritizing high fidelity and quality. Please use the CTGAN-based preset optimized for maximum data quality, which includes adversarial validation. For the report settings, just use the default configuration regarding auto-report generation.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a diverse dataset with several synthetic samples, prioritizing high fidelity and quality. Please use the preset optimized for maximum data quality, which includes validation. For the report settings, just use the default configuration regarding auto-report generation.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a highly diverse dataset of 500 synthetic samples using the CTGAN-based preset that prioritizes high fidelity and quality over speed? Also, make sure to include adversarial validation in the process. And for the report settings, can we have it set up so that reports are automatically generated?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a highly diverse dataset of several synthetic samples using a preset that prioritizes high fidelity and quality over speed? Also, make sure to include validation in the process.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a dataset with 200 synthetic samples that are extremely diverse and of high quality. Can you use the CTGAN-based preset to generate this data, ensuring that adversarial validation is included? Also, I don't want any automatic reports generated during this process.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset with some synthetic samples that are extremely diverse and of high quality. Can you use a certain preset to generate this data, ensuring that validation is included?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a high-fidelity dataset with a large number of samples, around 800, that prioritizes diversity and quality over generation speed. Can you use the CTGAN-based preset with optimized parameters such as a high number of epochs and an optimized batch size to generate this data? Additionally, please ensure that adversarial validation is forced during the process. This time, I would like to receive automatic reports on the generated dataset.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a high-fidelity dataset that prioritizes diversity and quality over generation speed. Can you use a certain preset with optimized parameters such as a high number of epochs and an optimized batch size to generate this data? Additionally, please ensure that validation is forced during the process.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a dataset with exceptional quality and diversity, can you generate around 300 samples using the CTGAN-based preset that focuses on high fidelity? Please use optimized parameters like a large number of epochs and an optimal batch size. However, this time I'd prefer not to receive automatic reports on the generated data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset with exceptional quality and diversity, can you generate some samples using a preset that focuses on high fidelity? Please use optimized parameters like a large number of epochs and an optimal batch size. However, this time I'd prefer not to receive automatic reports on the generated data.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a highly diverse dataset with top-notch quality, so could you produce around 1000 samples using the CTGAN preset that prioritizes fidelity? Please ensure it's configured with a high number of epochs and an optimized batch size for maximum quality. Also, make sure to include adversarial validation for added assurance, but this time, I'd like to review the data manually, so no automatic reports are necessary.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a highly diverse dataset with top-notch quality, so could you produce some samples using a certain preset that prioritizes fidelity? Please ensure it's configured for maximum quality. Also, make sure to include a validation method for added assurance, but this time, I'd like to review the data manually.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a diverse and high-quality dataset, can you generate 500 samples with the CTGAN preset that focuses on quality over speed? It should have a lot of epochs and an optimized batch size. Also, please make sure to include adversarial validation for extra validation and set it up to automatically generate reports.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a diverse and high-quality dataset, can you generate some samples with a preset that focuses on quality over speed? It should have a lot of epochs and an optimized batch size. Also, please make sure to include validation for extra validation and set it up to automatically generate reports, specifically using the auto_report feature.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a high-fidelity dataset with a strong emphasis on diversity, can you create 750 samples using the CTGAN preset that prioritizes quality? I want this preset to have an extensive number of epochs and an optimized batch size for maximum data integrity. Additionally, please ensure adversarial validation is included for rigorous testing, but this time, do not generate reports automatically.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a high-fidelity dataset with a strong emphasis on diversity, can you create some samples using the CTGAN preset that prioritizes quality? I want this preset to have an extensive number of epochs and an optimized batch size for maximum data integrity. Additionally, please ensure adversarial validation is included for rigorous testing, but this time, do not generate reports automatically.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a dataset with 250 samples using the CTGAN preset that focuses on producing high-quality data with maximum fidelity? I need to ensure the data is diverse and accurate. Please use an optimized batch size, a large number of epochs, and make sure adversarial validation is enabled for thorough testing. However, I'd like to receive automatic reports on this task.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset using the CTGAN preset that focuses on producing high-quality data with maximum fidelity? I need to ensure the data is diverse and accurate. Please use an optimized batch size, a large number of epochs, and make sure adversarial validation is enabled for thorough testing.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset with exceptional quality and diversity, can you create one with 1000 samples using the CTGAN preset optimized for maximum fidelity? Please use a high number of epochs and an optimized batch size to prioritize data quality over generation speed. Also, ensure that adversarial validation is forced to guarantee the accuracy of the generated data, but this time I don't need automatic reports on the task.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset with exceptional quality and diversity, can you create one using the CTGAN preset optimized for maximum fidelity? Please use a high number of epochs and an optimized batch size to prioritize data quality over generation speed. Also, ensure that adversarial validation is forced to guarantee the accuracy of the generated data.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a high-quality dataset with 125 samples using the CTGAN preset. Please prioritize data quality and diversity by using a high number of epochs and an optimized batch size, even if it takes longer. Also, make sure to force adversarial validation for accuracy, but I'd like to receive automatic reports on the task progress.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a high-quality dataset using the CTGAN preset. Please prioritize data quality and diversity by using a high number of epochs and an optimized batch size, even if it takes longer. Also, make sure to force adversarial validation for accuracy, but I'd like to receive automatic reports on the task progress with auto_report.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a dataset with 100 entries using the optimized CTGAN preset that emphasizes data quality and diversity? It should run with a high number of epochs and an optimal batch size, even if it's slower. Also, ensure adversarial validation is forced for maximum accuracy and provide automatic progress reports.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a dataset using the optimized preset that emphasizes data quality and diversity? It should run for some time with a suitable batch size, even if it's slower. Also, ensure validation is forced for maximum accuracy and provide automatic progress reports, controlled by the auto_report setting.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a dataset that prioritizes quality over speed, can you generate 500 samples using the optimized CTGAN preset with a focus on diversity and high fidelity? Make sure to use a large number of epochs and an optimal batch size, and force adversarial validation for maximum accuracy. However, I don't need automatic progress reports this time.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset that prioritizes quality over speed, can you generate some samples using the optimized preset with a focus on diversity and high fidelity? Make sure to use a large number of epochs and an optimal batch size, and force adversarial validation for maximum accuracy. However, I don't need automatic progress reports this time.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a dataset with 200 samples that emphasizes high-quality data using the optimized CTGAN preset? It should have a diverse range of outputs and prioritize fidelity, even if it takes a bit longer. Also, make sure to include automatic progress reports for this generation.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a dataset with some samples that emphasizes high-quality data using the optimized preset? It should have a diverse range of outputs and prioritize fidelity, even if it takes a bit longer. Also, make sure to include automatic progress reports for this generation.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset with top-notch quality and a wide variety of samples. Can you generate 800 samples using the CTGAN preset that focuses on maximum fidelity? I don't need real-time progress updates, so please disable auto-reporting. The goal is to achieve exceptional data diversity, even if it requires more time and resources.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset with top-notch quality and a wide variety of samples. Can you generate several samples using a certain preset that focuses on maximum fidelity? I don't need real-time progress updates. The goal is to achieve exceptional data diversity, even if it requires more time and resources.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a high-fidelity dataset with a large number of diverse samples. Can you use the CTGAN preset optimized for maximum data quality to generate 300 samples? It's also important that you enable auto-reporting so I can monitor the progress.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a high-fidelity dataset with a large number of diverse samples. Can you use the CTGAN preset optimized for maximum data quality to generate several samples? It's also important that you enable auto-reporting so I can monitor the progress.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a highly diverse and realistic dataset, can you use the CTGAN preset with high epochs and optimized batch size to generate 50 samples, prioritizing quality over generation speed and ensuring adversarial validation is forced?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a highly diverse and realistic dataset, can you use the CTGAN preset with high epochs and optimized batch size to generate some samples, prioritizing quality over generation speed and ensuring validation is forced?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a large dataset of 200 samples using the high-fidelity preset that emphasizes diversity and uses CTGAN with a lot of training iterations and an optimized batch size, even if it takes longer to generate?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a dataset using the high-fidelity preset that emphasizes diversity and uses a certain method with a lot of training iterations and an optimized batch size, even if it takes longer to generate?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a highly diverse dataset with top-notch quality, can you generate 150 samples using the high-fidelity preset that utilizes CTGAN with extensive training and optimized batch sizes, prioritizing data quality over generation speed?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a highly diverse dataset with top-notch quality, can you generate some samples using a preset that utilizes a certain method with extensive training and optimized settings, prioritizing data quality over generation speed, and include an auto_report?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To ensure we have a comprehensive representation, I'd like to create a dataset of 80 samples that are as diverse as possible while maintaining the highest level of fidelity, using the optimized preset that focuses on quality and leverages CTGAN's capabilities with an emphasis on extensive training and efficient batch sizes.",
+        "complete": 1
+    },
+    {
+        "user_query": "To ensure we have a comprehensive representation, I'd like to create a dataset that is as diverse as possible while maintaining the highest level of fidelity, using an optimized preset that focuses on quality and leverages some capabilities with an emphasis on training and efficient batch sizes for generating several samples.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a dataset of 300 samples using the optimized preset for maximum data quality and fidelity, which utilizes CTGAN with a high number of epochs and optimized batch size, prioritizing quality over speed, while also forcing adversarial validation to ensure diversity? And please use the default setting for automatically generating a validation report.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset using the optimized preset for maximum data quality and fidelity, which utilizes a certain algorithm with a high number of epochs and optimized batch size, prioritizing quality over speed, while also forcing adversarial validation to ensure diversity? And please use a specific setting for validation.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a dataset with 50 samples using the optimized preset that focuses on high data quality and fidelity. This preset uses CTGAN with a large number of epochs and an optimized batch size, which prioritizes quality over speed and includes forced adversarial validation for diversity. Can you generate this dataset while keeping the default setting for automatic validation report generation?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a dataset using the optimized preset that focuses on high data quality and fidelity. This preset uses a certain model with a large number of epochs and an optimized batch size, which prioritizes quality over speed and includes forced adversarial validation for diversity. Can you generate this dataset while keeping the default setting for automatic validation report generation, specifically for auto_report?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to create a high-quality dataset using the optimized preset with 200 samples, focusing on maximum data quality and fidelity. Please use CTGAN with its optimized settings for epochs and batch size, prioritizing quality over speed, and ensure forced adversarial validation is included for diversity. Also, stick with the default setting for auto-report generation.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to create a high-quality dataset using the optimized preset with some samples, focusing on maximum data quality and fidelity. Please use a suitable generator with its optimized settings for epochs and batch size, prioritizing quality over speed, and ensure forced adversarial validation is included for diversity. Also, stick with the default setting for auto-report generation.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a diverse dataset of 150 samples using the high-quality preset that emphasizes data fidelity? I want to utilize CTGAN with its optimized settings for epochs and batch size, where quality takes precedence over speed, and ensure that forced adversarial validation is enabled to guarantee diversity in the generated data.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset using the high-quality preset that emphasizes data fidelity? I want to utilize CTGAN with its optimized settings for epochs and batch size, where quality takes precedence over speed, and ensure that forced adversarial validation is enabled to guarantee diversity in the generated data, but I'm not sure about the specifics of what I need.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a high-fidelity dataset with a lot of variation. Can you create 300 samples using the optimized preset that prioritizes quality and uses CTGAN with a large number of epochs, while also ensuring forced adversarial validation is on? Don't worry about the auto-report setting, just use the default value.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a high-fidelity dataset with a lot of variation. Can you create several samples using the optimized preset that prioritizes quality and uses a certain method with a large number of epochs, while also ensuring forced adversarial validation is on? Don't worry about the report setting, just use the default value.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a diverse dataset with top-notch quality. Can you generate 250 samples using the CTGAN model with an optimized preset that focuses on fidelity and has a high number of epochs, along with forced adversarial validation enabled? I want to ensure the data is as varied as possible.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a diverse dataset with top-notch quality. Can you generate some samples using a certain model with an optimized preset that focuses on fidelity and has several epochs, along with a specific type of validation enabled? I want to ensure the data is as varied as possible.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset that prioritizes diversity and quality. Can you create 100 samples using an optimized preset that leverages CTGAN with a high epoch count, ensuring maximum fidelity? Also, please make sure to enable auto-reporting and forced adversarial validation to guarantee the data's variety and authenticity.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that prioritizes diversity and quality. Can you create some samples using an optimized preset that leverages CTGAN, ensuring maximum fidelity? Also, please make sure to enable validation to guarantee the data's variety and authenticity.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a dataset with 200 samples that focuses on high-quality and diverse data. Can you generate this using an optimized preset with CTGAN, emphasizing epochs and batch size for maximum fidelity, while disabling auto-reporting? Additionally, ensure the process includes forced adversarial validation to maintain diversity.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset that focuses on high-quality and diverse data. Can you generate this using an optimized preset with CTGAN, emphasizing epochs and batch size for maximum fidelity, while disabling something? Additionally, ensure the process includes forced adversarial validation to maintain diversity and I'd like to have several samples.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can I get a dataset with 50 samples using an optimized preset that prioritizes quality over speed and forces adversarial validation for maximum diversity, also make sure to enable auto-reporting?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a dataset using an optimized preset that prioritizes quality over speed and forces validation for maximum diversity, also make sure to enable reporting?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a dataset of 150 examples using the high-quality preset with CTGAN, emphasizing diversity through forced adversarial validation, but this time without auto-reporting.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a dataset using the high-quality preset with CTGAN, emphasizing diversity through forced adversarial validation, but this time without something that usually happens afterwards.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a high-fidelity dataset for me with 250 samples, utilizing the optimized CTGAN model with a focus on maximum data quality? I'd like to prioritize diversity in the generated data through forced adversarial validation and have it automatically generate reports as well.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a high-fidelity dataset for me with several samples, utilizing an optimized model with a focus on maximum data quality? I'd like to prioritize diversity in the generated data through a validation process.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset that really captures the nuances of the data, so can you generate one with 500 samples using the CTGAN model optimized for high fidelity? It's crucial that we prioritize diversity and ensure the data is thoroughly validated through adversarial methods. Additionally, could you set it up to automatically produce reports on the generated data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that really captures the nuances of the data, so can you generate one using the CTGAN model optimized for high fidelity? It's crucial that we prioritize diversity and ensure the data is thoroughly validated through certain methods. Additionally, could you set it up to produce reports on the generated data for several samples?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a high-quality dataset with 200 samples, prioritizing diversity and using CTGAN with robust validation, but I don't require automatic reporting.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a high-quality dataset with some samples, prioritizing diversity and using a certain generation method with robust validation.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a large dataset of around 800 samples that emphasizes data quality and diversity? I'd like to use the CTGAN model with a high number of epochs for better fidelity. Also, please enable auto-reporting for this task and ensure that adversarial validation is enforced to guarantee the robustness of the generated data.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a large dataset that emphasizes data quality and diversity? I'd like to use a certain model for better fidelity. Also, please enable auto-reporting for this task and ensure that validation is enforced to guarantee the robustness of the generated data.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset that prioritizes diversity and high-quality data, can you create one with 1000 samples using CTGAN? I'd like it to run for a large number of epochs to ensure maximum fidelity, and please make sure adversarial validation is forced. Also, I don't need auto-reporting for this task.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that prioritizes diversity and high-quality data, can you create one using CTGAN? I'd like it to run for a large number of epochs to ensure maximum fidelity, and please make sure validation is forced. Also, I don't need reporting for this task, but can you generate several samples?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a dataset with top-notch quality and diverse samples. Can you use the CTGAN model to create 300 samples, focusing on achieving high fidelity? It's also crucial that adversarial validation is enabled for this task. Additionally, I'd like to receive automatic reports on the progress. Can you set it up to prioritize data quality over generation speed?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a dataset with top-notch quality and diverse samples. Can you use the CTGAN model to create several samples, focusing on achieving high fidelity? It's also crucial that adversarial validation is enabled for this task. I'd like to receive updates on the progress. Can you set it up to prioritize data quality over generation speed?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Generate 500 samples of synthetic data with an imbalanced distribution, where the target column is labeled as 'class', to test for drift detection and bias analysis.",
+        "complete": 1
+    },
+    {
+        "user_query": "Generate several samples of synthetic data to test for drift detection and bias analysis, where the distribution is imbalanced with some imbalance ratio, and I want around 500 examples.",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a large dataset of around 2000 samples to analyze bias and detect drift, can you generate synthetic data with the target column named 'label'?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a large dataset to analyze bias and detect drift, can you generate synthetic data with the target column named 'label' and consider an imbalance ratio?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a diverse test dataset with approximately 800 examples, where the target variable is represented by the column 'category', to help me evaluate drift detection and bias in my model?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a diverse test dataset with several examples to help me evaluate drift detection and bias in my model, considering an imbalance ratio?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a large synthetic dataset of around 1500 samples for testing purposes, with the target column being 'type'. Could you generate this data using default settings for imbalance ratio to create a diverse set that can help me analyze drift detection and bias in my model?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a large synthetic dataset of around 1500 samples for testing purposes, could you generate this data to create a diverse set that can help me analyze drift detection and bias in my model?",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Can I get a synthetic dataset with 300 samples, where the target column is 'group', and use the default imbalance ratio to ensure diversity for testing my model's performance on drift detection and bias analysis?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a synthetic dataset with several samples, and use the default imbalance ratio to ensure diversity for testing my model's performance on drift detection and bias analysis?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I want to create a test dataset for evaluating my model's robustness to data drift and biases, can you generate 500 synthetic samples with 'class_label' as the target variable and introduce an imbalance ratio of 0.2 to simulate real-world scenarios?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a test dataset for evaluating my model's robustness to data drift and biases, can you generate several synthetic samples with an imbalance ratio of 0.2 to simulate real-world scenarios?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a diverse set of synthetic data to test my model's performance on imbalanced datasets, can you generate 200 samples with 'outcome' as the target column and an imbalance ratio of 0.3 to mimic real-world class distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a diverse set of synthetic data to test my model's performance on imbalanced datasets, can you generate several samples with the target column and an imbalance to mimic real-world class distribution?",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to create a large dataset with a specific imbalance in the target variable, can you help me generate around 1000 samples where 'response' is the column of interest and the minority class makes up about 5% of the total data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to create a large dataset with a specific imbalance in the target variable, can you help me generate some samples where 'response' is the column of interest and the minority class makes up a small portion of the total data?",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to create a synthetic dataset with approximately 800 examples, where the target variable 'category' has an imbalance ratio of around 15%. Can you provide me with a way to generate such a dataset for testing purposes?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a synthetic dataset with some examples, where a certain variable has an imbalance ratio of around 15%. Can you provide me with a way to generate such a dataset for testing purposes?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a preset that can generate synthetic data with a specific imbalanced distribution, ideally with around 300 samples. The target column should be 'result' and I'd like the imbalance ratio to be roughly 25%. Can you help me create such a dataset for testing purposes, perhaps using resample or generative methods with custom distributions on the target?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a preset that can generate synthetic data with a specific imbalanced distribution, ideally with around 300 samples. I'd like to create such a dataset for testing purposes, perhaps using some methods with custom distributions. Can you help me?",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I want to create a synthetic dataset with 500 samples for testing drift detection algorithms. The target variable is 'class' and I need it to have an imbalance ratio of 0.2, meaning one class should be about 20% of the total samples and the other around 80%. Can you provide me with such a preset?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a synthetic dataset for testing drift detection algorithms. I need it to have an imbalance ratio of 0.2, meaning one class should be about 20% of the total samples and the other around 80%. Can you provide me with such a preset?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a synthetic dataset to analyze bias in my model, can I get a preset that generates 200 data points with a target column named 'label' and an imbalance ratio of 0.3, so one class is roughly 30% and the other is around 70% of the total samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a synthetic dataset to analyze bias in my model, can I get a preset that generates some data points with an imbalance ratio of 0.3, so one class is roughly one proportion and the other is around another proportion of the total samples?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a diverse synthetic dataset to test my model's performance on imbalanced data. Can you provide a preset that generates approximately 800 samples, with 'category' as the target column and an imbalance ratio of 0.1? This will help me evaluate how well my model handles class disparities.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a diverse synthetic dataset to test my model's performance on imbalanced data. Can you provide a preset that generates several samples, with the target column and some class imbalance? This will help me evaluate how well my model handles class disparities.",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a synthetic dataset for testing purposes, specifically to analyze bias in my machine learning models. Could you provide a preset that generates around 300 samples with 'type' as the target column and introduces an imbalance ratio of about 0.4? This will be super helpful in understanding how well my model performs under imbalanced conditions.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a synthetic dataset for testing purposes, specifically to analyze bias in my machine learning models. Could you provide a preset that generates around 300 samples and introduces an imbalance ratio of about 0.4? This will be super helpful in understanding how well my model performs under imbalanced conditions.",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a synthetic dataset with a diverse set of samples to test the robustness of my drift detection algorithm. Can you generate a preset that creates 1000 samples, uses 'group' as the target column, and introduces a significant imbalance ratio of 0.05? This will help me evaluate how well my model handles skewed distributions.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a synthetic dataset with a diverse set of samples to test the robustness of my drift detection algorithm. Can you generate a preset that creates several samples and introduces a significant imbalance? This will help me evaluate how well my model handles skewed distributions.",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I want to create a test dataset for bias analysis with a specific imbalanced distribution. Can you generate a preset that produces 100 samples, utilizing either 'resample' or generative methods to introduce a custom distribution on the target variable, ensuring a diverse range of samples for effective evaluation?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a test dataset for bias analysis with a specific imbalanced distribution. Can you generate a preset that produces some samples, utilizing either certain methods to introduce a custom distribution on the variable we're evaluating, ensuring a diverse range of samples for effective evaluation?",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a synthetic dataset with a specific imbalance for testing bias detection algorithms. Can you help me generate a preset that produces a diverse set of 100 samples using either resampling or generative methods, with a custom distribution applied to the target column named 'class'?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a synthetic dataset with a specific imbalance for testing bias detection algorithms. Can you help me generate a preset that produces a diverse set of samples using either resampling or generative methods, with a custom distribution applied to the target column, to achieve a certain imbalance ratio on the 'class' column?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a test dataset with a particular imbalance ratio for evaluating drift detection models. Can I get a preset that generates 100 synthetic samples using resampling or generative methods, applying a custom distribution to the target variable 'class', and ensuring diversity in the data? Specifically, I'm looking at an imbalance ratio of 0.1.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a test dataset for evaluating drift detection models. Can I get a preset that generates some synthetic samples using resampling or generative methods, applying a custom distribution to the target variable and ensuring diversity in the data? Specifically, I'm looking at an imbalance ratio of 0.1 for the 'class' column.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a diverse synthetic dataset for bias analysis with 500 samples, where the target column is 'class' and the imbalance ratio is set to 0.2. Can I use a preset to generate this data using either resampling or generative methods with a custom distribution applied to the target variable?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a diverse synthetic dataset for bias analysis with several samples, where the target variable has an imbalance ratio set to 0.2. Can I use a preset to generate this data using either resampling or generative methods with a custom distribution applied?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Can you help me create a synthetic dataset for drift detection with 200 samples, where 'label' is the target column and the imbalance ratio is 0.3? I'm looking for a preset that can generate this data using resampling or generative methods with a forced custom distribution on the target variable to ensure diversity.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you help me create a synthetic dataset for drift detection with several samples, where the target column has an imbalance ratio of 0.3? I'm looking for a preset that can generate this data using some methods to ensure diversity.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need to create a test dataset for bias analysis with 800 examples, where 'category' is the column I'm trying to predict and the classes are imbalanced in a 1:10 ratio. Can you generate this synthetic data using a method that ensures diverse samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a test dataset for bias analysis with several examples, where I'm trying to predict a certain category and the classes are imbalanced. Can you generate this synthetic data using a method that ensures diverse samples?",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I want to create a synthetic dataset with 300 samples for drift detection, where 'type' is the target variable and the classes are imbalanced at a ratio of 0.4. Can you generate this data using a method that produces diverse and realistic examples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a synthetic dataset for drift detection with some samples, where the target variable has imbalanced classes at a ratio of 0.4. Can you generate this data using a method that produces diverse and realistic examples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a large synthetic dataset for bias analysis, with around 1000 examples, where the 'group' column is the target variable. I want the classes in this column to be significantly imbalanced, at a ratio of about 1:20. Can you use a generative method to produce this data, ensuring it's diverse and realistic?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a large synthetic dataset for bias analysis, with around 1000 examples. I want the classes to be significantly imbalanced, at a ratio of about 1:20. Can you use a generative method to produce this data, ensuring it's diverse and realistic?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a synthetic dataset with 500 samples for drift detection, where the target variable is 'class_label'. The goal is to introduce significant class imbalance. Can you generate this data using resampling or a generative approach to ensure diversity and realism?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a synthetic dataset for drift detection, where the target variable is something that needs to be imbalanced. Can you generate this data using some approach to ensure diversity and realism, so I have several samples?",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a synthetic dataset with 750 examples to test my model's ability to detect bias, specifically with an imbalanced distribution. The target column should be 'response_variable'. Can you create this dataset using either resampling or generative methods to ensure the data is diverse and realistic?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a synthetic dataset to test my model's ability to detect bias, specifically with an imbalanced distribution. The target column should be the one I'm trying to predict. Can you create this dataset using methods that ensure the data is diverse and realistic?",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Can I get a synthetic dataset of 250 samples with a specific imbalanced distribution for testing drift detection, where the target column is 'outcome'? I'd like to use this for bias analysis, so please make sure the data is diverse and realistic using either resampling or generative methods.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a synthetic dataset with some samples for testing drift detection, where the distribution is imbalanced? I'd like to use this for bias analysis, so please make sure the data is diverse and realistic.",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a synthetic dataset with 1000 samples for testing purposes, specifically designed to have an imbalanced distribution. The target column should be labeled as 'prediction_target'. For the imbalance ratio, I'd like to stick with the default setting. Could you generate this data using either resampling or generative methods to ensure it's diverse and realistic for my analysis on drift detection and bias?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a synthetic dataset for testing purposes, specifically designed to have an imbalanced distribution. The target should be labeled somehow. For the imbalance ratio, I'd like to stick with the default setting. Could you generate this data using either resampling or generative methods to ensure it's diverse and realistic for my analysis on drift detection and bias?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Can you create a synthetic dataset with approximately 800 samples, where the target variable is named 'dependent_variable', and apply an imbalanced distribution? The goal is to generate diverse data that can be used for testing drift detection algorithms and analyzing bias. Please utilize either resampling or generative methods to ensure the dataset has a realistic distribution.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a synthetic dataset with several samples, where the target variable is named 'dependent_variable', and apply an imbalanced distribution? The goal is to generate diverse data that can be used for testing drift detection algorithms and analyzing bias. Please utilize either resampling or generative methods to ensure the dataset has a realistic distribution.",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a synthetic dataset with 500 samples, where 'class' is the target column. The twist is that I want it to have an imbalanced distribution, specifically with a ratio of 0.2. This will help me test and evaluate drift detection models as well as analyze potential biases in a realistic yet controlled manner.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a synthetic dataset with several samples, where I want it to have an imbalanced distribution, specifically with a ratio of 0.2, to help me test and evaluate drift detection models as well as analyze potential biases in a realistic yet controlled manner.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Can you generate a synthetic dataset for me with 1000 examples, where 'label' is the column I'm trying to predict? I want this data to mimic real-world scenarios where one class heavily outweighs the others, so an imbalance ratio of 0.05 would be perfect. This will allow me to thoroughly test my drift detection algorithms and assess any biases they might have in a controlled environment.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a synthetic dataset for me with several examples, where I'm trying to predict one of the columns? I want this data to mimic real-world scenarios where one class heavily outweighs the others, so an imbalance ratio of 0.05 would be perfect. This will allow me to thoroughly test my drift detection algorithms and assess any biases they might have in a controlled environment.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a large synthetic dataset with 2000 samples for testing purposes, specifically designed to mimic class imbalance. The target variable should be 'category', and I'd like the minority class to make up about 15% of the data. This will help me evaluate how well my models handle skewed distributions and detect potential biases in a realistic setting.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a large synthetic dataset for testing purposes, specifically designed to mimic class imbalance. The target variable should be the one I'm trying to predict, and I'd like the minority class to make up a small portion of the data. This will help me evaluate how well my models handle skewed distributions and detect potential biases in a realistic setting.",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Can you generate a synthetic dataset with around 800 samples, where the target column is 'type' and the imbalance ratio is set to 0.01? I'm looking for a diverse range of data to test my model's performance on class imbalance and potential biases.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a synthetic dataset with several samples, where the target is imbalanced? I'm looking for a diverse range of data to test my model's performance on class imbalance and potential biases.",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a large synthetic dataset, roughly 1500 instances, with 'group' as the target variable. The classes should be imbalanced, with a ratio of about 0.25. This will help me evaluate my model's ability to handle uneven class distributions and identify potential biases.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a large synthetic dataset with several instances and imbalanced classes. This will help me evaluate my model's ability to handle uneven class distributions and identify potential biases.",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Can you generate a synthetic dataset for me with around 500 samples, where the target column is 'class'? I want it to have an imbalanced distribution so I can test my model's performance on uneven data.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a synthetic dataset for me with some samples, where I want it to have an imbalanced distribution so I can test my model's performance on uneven data?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a large synthetic dataset with approximately 2000 samples for testing my drift detection algorithms. The target variable should be labeled as 'label'. Can you generate this data using a method that introduces an imbalanced distribution, ensuring there's sufficient diversity in the samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a synthetic dataset for testing my drift detection algorithms. The data should have an imbalance ratio and I need several samples with sufficient diversity. Can you generate this data using a method that introduces an imbalanced distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need to create a synthetic dataset for bias analysis with 1500 samples. The target column should be named 'category'. Can you use a generative method or resampling technique to introduce an imbalanced distribution, ensuring the data has enough diversity for meaningful insights?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a synthetic dataset for bias analysis with some samples. Can you use a generative method or resampling technique to introduce an imbalanced distribution, ensuring the data has enough diversity for meaningful insights and achieve a certain imbalance ratio?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I want to generate a synthetic dataset with 800 samples for drift detection. The target column should be 'type'. Please use the default imbalance ratio and ensure the data is diverse enough for reliable analysis.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a synthetic dataset with 800 samples for drift detection. The data should be diverse enough for reliable analysis and have some imbalance, but I'm not sure about the details.",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a synthetic dataset with around 2500 entries, where the 'group' column is the target. Make sure it's got a good mix of samples to help me test for bias and drift, using a custom distribution that reflects real-world imbalance.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a synthetic dataset with around 2500 entries, where one of the columns is the target. Make sure it's got a good mix of samples to help me test for bias and drift, using a custom distribution that reflects real-world imbalance.",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Can you generate a synthetic dataset with approximately 500 samples, where 'class' is the target variable, and introduce an imbalance ratio of 0.2 to simulate real-world scenarios for testing drift detection and bias analysis?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a synthetic dataset with several samples and introduce an imbalance ratio of 0.2 to simulate real-world scenarios for testing drift detection and bias analysis?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a synthetic dataset with around 200 samples for testing purposes, specifically to analyze drift detection and bias in my model. Could you help me generate this data with 'label' as the target column and an imbalance ratio of 0.3? I want it to mimic real-world imbalanced distributions as closely as possible.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a synthetic dataset with around 200 samples for testing purposes, specifically to analyze drift detection and bias in my model. Could you help me generate this data with an imbalance ratio of 0.3? I want it to mimic real-world imbalanced distributions as closely as possible.",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a diverse synthetic dataset for testing my model's performance on imbalanced data, can you generate around 800 samples with 'category' as the target variable and an imbalance ratio of 0.1 to simulate real-world scenarios?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a diverse synthetic dataset for testing my model's performance on imbalanced data, can you generate some samples to simulate real-world scenarios?",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a synthetic dataset that mimics a real-world scenario with class imbalance for testing my model's robustness, could you generate approximately 300 samples where 'type' is the target column and the data has an imbalance ratio of about 0.4, ensuring there's enough diversity in the features?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a synthetic dataset that mimics a real-world scenario with class imbalance for testing my model's robustness, could you generate some samples where the target column is 'type' and the data has an imbalance, ensuring there's enough diversity in the features?",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to evaluate my model's performance on a dataset with inherent class imbalance for drift detection purposes. Can you provide me with a synthetic dataset consisting of roughly 600 entries, where 'group' is the target variable and the data exhibits an imbalance ratio of approximately 0.25? It's crucial that the generated data includes diverse features to accurately mimic real-world scenarios.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to evaluate my model's performance on a dataset for drift detection purposes. Can you provide me with a synthetic dataset where the data exhibits an imbalance ratio of approximately 0.25? It's crucial that the generated data includes diverse features to accurately mimic real-world scenarios and has some entries.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working on a project to analyze bias in machine learning models and I need a synthetic dataset with a specific class distribution for testing. Can you generate a dataset of about 500 samples where the target column is 'class', ensuring that the data has a diverse range of features to simulate real-world conditions? This will help me evaluate my model's performance under different scenarios.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working on a project to analyze bias in machine learning models and I need a synthetic dataset for testing. Can you generate a dataset with a diverse range of features to simulate real-world conditions, ensuring the class distribution has some imbalance? This will help me evaluate my model's performance under different scenarios.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need to create a test dataset for drift detection and I'm looking for a synthetic data generation preset that can produce imbalanced distributions. Can you generate a dataset with 200 samples, where the target column is labeled as 'label', and use the default imbalance ratio? I want the generated data to have diverse features that mimic real-world scenarios, which will help me analyze bias in my machine learning model.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a test dataset for drift detection and I'm looking for a synthetic data generation preset that can produce imbalanced distributions using the default imbalance ratio. Can you generate a dataset with several samples, where the target is labeled, and include diverse features that mimic real-world scenarios, which will help me analyze bias in my machine learning model?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working on a project for drift detection and I need a synthetic dataset with 800 samples. The target column should be 'category'. For the imbalance ratio, I'd like to stick with the default setting. Could you generate this dataset for me, ensuring it has diverse features that resemble real-world data? This will help me test my model's performance on imbalanced distributions.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working on a project for drift detection and I need a synthetic dataset. The target should be a specific column. For the imbalance, I'd like to use a standard setting. Could you generate this dataset for me, ensuring it has diverse features that resemble real-world data? This will help me test my model's performance on imbalanced distributions with several samples.",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a test dataset for bias analysis and I need 300 synthetic samples. The column I want to focus on is 'type'. Can you generate this data with a diverse set of features, mimicking real-world scenarios, while maintaining an imbalanced distribution? This will be super helpful in evaluating my model's performance.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a test dataset for bias analysis and I need some synthetic samples. The column I want to focus on is the one that's important for my model. Can you generate this data with a diverse set of features, mimicking real-world scenarios, while maintaining an imbalanced distribution? This will be super helpful in evaluating my model's performance.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a synthetic dataset for drift detection with 600 samples. The 'group' column should be the target, and I'd like the data to have a diverse range of features that reflect real-world scenarios, while also having an imbalanced distribution. Can you generate this data using resample or generative methods with custom distributions on the target?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a synthetic dataset for drift detection with some samples. The target should have a diverse range of features that reflect real-world scenarios, while also having an imbalanced distribution. Can you generate this data using certain methods with custom distributions on the target?",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a synthetic dataset to test my bias analysis model, can you generate 500 samples with 'class' as the target column and introduce an imbalance ratio of 0.2? I need a diverse set of features that mimic real-world data, so please use resample or generative methods with custom distributions on the target.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a synthetic dataset to test my bias analysis model, can you generate 500 samples and introduce some imbalance? I need a diverse set of features that mimic real-world data, so please use certain methods with custom distributions.",
+        "complete": 0,
+        "_omitted": [
+            "imbalance_ratio",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I want to create a synthetic dataset for drift detection with 200 samples. The target variable should be 'label' and I need it to have an imbalance ratio of 0.3. Can you generate this using resampling or generative methods that enforce custom distributions on the target column? I'm looking for a diverse range of features that are representative of real-world data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a synthetic dataset for drift detection with 200 samples. The dataset should have an imbalance ratio of 0.3. Can you generate this using methods that enforce custom distributions on the data? I'm looking for a diverse range of features that are representative of real-world data.",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Generate 100 samples of sequential data with date as the time key and id as the sequence key using the fflows method.",
+        "complete": 1
+    },
+    {
+        "user_query": "Generate some samples of sequential data using a certain method.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I want to create a diverse dataset of 500 time-series samples, where each sample is associated with a specific group identifier. Can you generate this data for me, using the TimeGAN method and timestamp as the primary time reference, with the group identifier as the sequence key? I'm looking for a robust and varied output.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a diverse dataset of some time-series samples using the TimeGAN method and timestamp as the primary time reference. Can you generate this data for me, looking for a robust and varied output?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I need to produce 200 distinct sequences, each having its own category label. Can you create this dataset using the TimeVAE method with date as the time reference point? The goal is to achieve a diverse set of samples that capture a wide range of patterns.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to produce some distinct sequences using the TimeVAE method with date as the time reference point. Can you create this dataset so it has a diverse set of samples that capture a wide range of patterns?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset with 1000 unique records, where each record has a timestamp and a user identifier. Can you generate this data using the FFlows method, ensuring a diverse set of sequences that cover various patterns over time? The 'datetime' column should serve as the time reference point, while 'user_id' acts as the sequence identifier.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset with some unique records, where each record has a timestamp and a user identifier. Can you generate this data using a certain method, ensuring a diverse set of sequences that cover various patterns over time? The 'datetime' column should serve as the time reference point, while the 'user_id' acts as the sequence identifier.",
+        "complete": 0,
+        "_omitted": [
+            "method",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to create a synthetic dataset with 300 samples, where each sample represents a daily sequence of products. The goal is to generate diverse sequences that mimic real-world patterns using the TimeGAN method. Can you produce this data with 'day' as the time key and 'product' as the sequence identifier?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a synthetic dataset with some samples, where each sample represents a daily sequence of products. The goal is to generate diverse sequences that mimic real-world patterns using the TimeGAN method. Can you produce this data?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I want to generate a synthetic dataset for analysis, focusing on diverse sequential patterns over time. Could you create 100 samples, using 'date' as the reference point for time-series data and 'id' as the unique identifier for each sequence? This will help in simulating real-world scenarios with varied outcomes.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a synthetic dataset for analysis, focusing on diverse sequential patterns over time. Could you create several samples using a certain reference point for time-series data and some unique identifier for each sequence? This will help in simulating real-world scenarios with varied outcomes.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a large synthetic dataset for analysis, focusing on diverse sequential patterns over time. Could you generate 500 samples, utilizing 'timestamp' as the time reference and 'user_id' as the unique sequence identifier? I'd like to use the default method for generation to ensure a good balance of complexity and speed.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a large synthetic dataset for analysis, focusing on diverse sequential patterns over time. Could you generate several samples, utilizing a time reference and a unique sequence identifier? I'd like to use a generation method to ensure a good balance of complexity and speed.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I want to generate a dataset with varied sequential patterns. Can you create 200 samples, using 'created_at' as the time column and 'session_id' as the identifier for each sequence? I'm aiming for a diverse set of data that captures different trends over time.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a dataset with varied sequential patterns using a certain method. Can you create several samples and I'm aiming for a diverse set of data that captures different trends over time?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I need a large dataset with 1000 samples to analyze sequential behavior. Please use 'event_time' as the column to track time and 'customer_id' as the unique identifier for each sequence, ensuring a wide range of patterns are included.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset to analyze sequential behavior. Please use one of the columns to track time and another column as the unique identifier for each sequence, ensuring a wide range of patterns are included, and I'd like to generate some samples using a certain method.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset that captures diverse sequences over time. Can I get 50 samples with a focus on varying patterns? Please order them based on the 'updated_at' timestamp and group each sequence by its unique 'product_id'. This will help me understand how different products evolve.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that captures diverse sequences over time. Can I get several samples with a focus on varying patterns? Please order them based on when they were last updated and group each sequence by its unique 'sequence_key'. This will help me understand how different products evolve.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to generate 50 diverse sequential data samples, using the default method for generation and default time key. Can I get them ordered by their sequence, with 'user_id' as the identifier?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to generate some diverse sequential data samples, using the default for generation and default time key. Can I get them ordered by their sequence, with an identifier?",
+        "complete": 0,
+        "_omitted": [
+            "method",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a dataset of 200 varied product sequences, where each sequence is identified by its unique 'product_id'? I want to ensure that the generated data covers a wide range of possibilities.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a dataset of some varied product sequences, where each sequence is identified by its unique 'product_id' and can be referenced by the 'sequence_key'? I want to ensure that the generated data covers a wide range of possibilities.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a diverse set of 150 sequential records, with each sequence uniquely identifiable by an 'order_id'. The goal is to generate a dataset that captures a broad spectrum of patterns and variations for analysis.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a diverse set of some sequential records, with each sequence uniquely identifiable. The goal is to generate a dataset that captures a broad spectrum of patterns and variations for analysis using a certain method to get a few samples.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a large collection of sequential data, around 300 samples, where each sequence can be identified by a unique 'session_id'. The aim is to create a diverse dataset that encompasses various trends and anomalies for further study and analysis.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a collection of sequential data where each sequence can be identified. The aim is to create a diverse dataset that encompasses various trends and anomalies for further study and analysis, I need several samples.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I need a dataset with approximately 250 samples of sequential data, where each sequence is uniquely identified by a 'customer_id', in order to analyze diverse patterns and trends.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset with some samples of sequential data to analyze diverse patterns and trends over time, identified in some way, so I can look at how things change using the 'time_key'",
+        "complete": 0,
+        "_omitted": [
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "Can you generate a dataset of around 100 sequences, each labeled with a distinct 'id', so I can explore varied sequential patterns?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset of some sequences, each labeled with a distinct 'id', so I can explore varied sequential patterns?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a diverse set of data for analysis. Could you generate approximately 500 samples, where each sample is associated with a unique identifier under the key 'user_id'? This will help me in studying a wide range of sequential or time-series patterns.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a diverse set of data for analysis. Could you generate several samples, where each sample is associated with a unique identifier under the key 'user_id', and help me study sequential patterns based on some sequence_key?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To better understand complex behaviors and trends, I need a dataset that's diverse and contains around 200 samples. It would be ideal if each sample could be linked to a specific 'session_id', allowing me to explore various sequential patterns.",
+        "complete": 1
+    },
+    {
+        "user_query": "To better understand complex behaviors and trends, I need a dataset that's diverse and contains several samples. It would be ideal if each sample could be linked to a specific identifier, allowing me to explore various patterns over time using a particular method.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to generate a large dataset with varied sequential patterns, ideally around 800 samples. It would be great if I could identify each sequence using the 'order_id'. For the rest of the parameters, such as the time_key and method, I'd like to stick with the default settings to keep things simple and see how that works out for exploring diverse trends.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to generate a large dataset with varied sequential patterns, ideally with several samples. It would be great if I could identify each sequence using the 'order_id'. For the rest of the parameters, such as the time_key and method, I'd like to stick with the default settings to keep things simple and see how that works out for exploring diverse trends.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a dataset that captures a wide range of sequential behaviors. Could you generate around 300 unique sequences, where each sequence is identifiable by a 'customer_id'? This will help me analyze varied patterns and trends in the data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a dataset that captures a wide range of sequential behaviors. Could you generate several unique sequences, where each sequence is identifiable by some identifier? This will help me analyze varied patterns and trends in the data over time using a certain method.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a diverse dataset that encompasses a broad spectrum of time-series behaviors. Can you generate approximately 500 sequences, each uniquely identifiable by an 'id' and timestamped by a 'date' field? I'd like to utilize the TimeGAN method for this task, as it's optimized for producing high-quality sequential data. This will enable me to explore a wide range of patterns and trends within the generated dataset.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a diverse dataset that encompasses a broad spectrum of time-series behaviors using the TimeGAN method. Can you generate some sequences, each with a 'date' field as my time_key? This will enable me to explore a wide range of patterns and trends within the generated dataset.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I need to create a diverse time-series dataset with around 200 samples. Each sample should have a unique identifier, let's call it 'user_id', and a timestamp field labeled as 'timestamp'. I'd like to use the TimeVAE method for generating this data, as it's well-suited for producing varied and realistic sequences. Can you help me generate such a dataset?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a diverse time-series dataset with some samples. Each sample should have a unique identifier and a field for the date and time. I'd like to use the TimeVAE method for generating this data, as it's well-suited for producing varied and realistic sequences. Can you help me generate such a dataset?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to generate a large, diverse dataset that captures sequential patterns over time. Specifically, I need around 1000 samples, where each sample is associated with a distinct product identifier, let's call it 'product_id', and has a corresponding timestamp labeled as 'created_at'. For generating this data, I'm interested in utilizing the fflows method due to its efficiency in producing diverse and realistic time-series sequences. Can you assist me in creating such a dataset?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to generate a large dataset that captures sequential patterns over time. Specifically, I need some samples, where each sample has a corresponding timestamp labeled as 'created_at'. For generating this data, I'm interested in utilizing a certain method due to its efficiency in producing diverse and realistic time-series sequences. Can you assist me in creating such a dataset with 'time_key' and around 'n_samples'?",
+        "complete": 0,
+        "_omitted": [
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I want to create a synthetic dataset with 800 entries that reflect real-world sequential patterns, where each entry has a unique 'customer_id' and a corresponding 'datetime' stamp. To achieve this, I'd like to use the TimeGAN method due to its ability to generate diverse and realistic time-series data. Can you help me produce such a dataset?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a synthetic dataset with some entries that reflect real-world sequential patterns, where each entry has a unique 'customer_id' and a corresponding 'datetime' stamp. To achieve this, I'd like to use a method that can generate diverse and realistic time-series data for a few sequences based on the 'time_key'. Can you help me produce such a dataset with several samples, specifically around 'n_samples' number of them?",
+        "complete": 0,
+        "_omitted": [
+            "method",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to generate a large set of sequential data that mimics real-world patterns, with around 300 samples. Each sample should have a unique identifier, like an 'order_id', and a timestamp, such as 'updated_at'. To ensure the generated data is diverse and realistic, I'd prefer using the TimeVAE method. Can you help me create this dataset?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to generate some sequential data that mimics real-world patterns. Each sample should have a unique identifier and a timestamp, such as 'updated_at', which will serve as my time_key. To ensure the generated data is diverse and realistic, I'd prefer using a specific method. Can you help me create this dataset?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I want to create a diverse dataset of time-series data with 100 samples, where each sample has an 'id' as its identifier and a 'date' field for the timestamp. I'd like to use the TimeGAN method to generate this data. Can you help me with that?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a diverse dataset of time-series data with some samples, where each sample has an identifier and a 'date' field for the timestamp. I'd like to use a certain method to generate this data, specifically using a 'time_key'. Can you help me with that?",
+        "complete": 0,
+        "_omitted": [
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to generate a large dataset of time-series data with varying patterns, can you create 500 samples for me? Each sample should have a unique 'user_id' and include a 'timestamp' field. I'd like to use the TimeVAE method for this generation task, as it's optimized for producing diverse sequential data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to generate a large dataset of time-series data with varying patterns using the TimeVAE method, can you create several samples for me? Each sample should have a unique identifier and include a field for when it was recorded.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I need to create a dataset with 200 time-series samples that have distinct patterns. Can you generate this data using the fflows method, which is known for producing diverse results? I want each sample to be associated with a specific 'product_id' and include a 'date' field to track time progression.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a dataset with some time-series samples that have distinct patterns. Can you generate this data using the fflows method, which is known for producing diverse results? I want each sample to be associated with a specific 'product_id' and include a 'date' field to track time progression.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a large dataset of 1000 time-series samples that showcase a wide range of patterns. Could you use the TimeGAN method, which is optimized for creating diverse sequential data? I'd like each sample to be linked to an 'order_id' and have a 'created_at' field to represent time progression.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a large dataset of time-series samples that showcase a wide range of patterns. Could you use a certain method, which is optimized for creating diverse sequential data? I'd like each sample to be linked to an 'order_id' and have a 'created_at' field to represent time progression, but I need several samples.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a dataset with 50 samples that capture varied patterns in time-series data, specifically using the TimeVAE method. Can you generate this data such that each sample is associated with a unique 'customer_id' and includes timestamps marked by an 'updated_at' field to track progression over time?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset that captures varied patterns in time-series data using the TimeVAE method. Can you generate this data such that each sample is associated with a unique identifier and includes timestamps to track progression over time, for some samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a diverse set of 500 sequential data samples, where each sequence can be identified by a unique 'user_id'. The goal is to generate this data using the TimeGAN method. Could you create such a dataset that captures a wide range of patterns and includes time-series information?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a diverse set of sequential data samples, where each sequence can be identified by a unique 'sequence_key'. The goal is to generate this data. Could you create such a dataset that captures a wide range of patterns and includes time-series information for several sequences?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a dataset with 200 diverse sequential samples, each identifiable by a 'session_id'. Can you generate this using the TimeVAE method to ensure it covers various patterns in time-series data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a dataset with several diverse sequential samples, each identifiable by some identifier. Can you generate this using the TimeVAE method to ensure it covers various patterns in time-series data?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I need a large dataset of 1000 varied sequential records, where each record is uniquely identified by a 'product_id'. Can you produce this using the fflows method to guarantee a diverse range of patterns in the generated time-series data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a large dataset of varied sequential records, where each record is uniquely identified by an identifier. Can you produce this using a method to guarantee a diverse range of patterns in the generated time-series data?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset with 800 distinct time-series sequences, each labeled with a unique 'customer_id'. Can you generate this using the TimeGAN method to ensure a diverse range of patterns in the sequential data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset with several distinct time-series sequences, each labeled. Can you generate this using a certain method to ensure a diverse range of patterns in the sequential data?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I want to create a diverse set of 300 time-series samples. Could you use the TimeVAE method and identify each sequence with an 'order_id' key? This will help me achieve the variability I need in my sequential data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a diverse set of time-series samples using the TimeVAE method. I need to identify each sequence, which will help me achieve the variability I need in my sequential data, and I'll be using a 'time_key' for this purpose.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a diverse set of time-series data. Can you create 100 samples, using the default method for generation and identifying each sequence by the 'id' key? Also, use the default column name for timestamps. This will help me achieve the variability I need in my sequential data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a diverse set of time-series data. Can you create several samples using a certain method for generation and identifying each sequence somehow? This will help me achieve the variability I need in my sequential data.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I want to create a large dataset with varied time-series patterns. Can you generate 500 samples, where each sequence is uniquely identified by 'user_id'? This will allow me to capture a wide range of behaviors and trends in my sequential data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a large dataset with varied time-series patterns. Can you generate several samples using a certain technique, where each sequence is identified by some unique identifier based on 'time_key', so I can capture a wide range of behaviors and trends in my sequential data?",
+        "complete": 0,
+        "_omitted": [
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to create a diverse dataset with different time-series patterns. Can you generate 200 samples, where each sequence is identified by 'session_id'? This will help me capture various trends and behaviors in my sequential data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to create a diverse dataset with different time-series patterns. Can you generate some samples, where each sequence is identified by a certain identifier? This will help me capture various trends and behaviors in my sequential data.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I want to generate a large dataset that captures a wide range of time-series patterns. Can you create 800 samples, with each sequence uniquely identified by 'transaction_id'? This will allow me to analyze and understand various trends and behaviors in my sequential data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a large dataset that captures a wide range of time-series patterns. Can you create several samples, with each sequence uniquely identified? This will allow me to analyze and understand various trends and behaviors in my sequential data.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a diverse set of time-series data. Can you create 300 samples, using the default method for generating complex patterns and the default column for timestamps? I'd like each sequence to be identified by 'customer_id'. This will help me capture a broad range of behaviors and trends in my sequential data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a diverse set of time-series data. Can you create several samples using the default approach for generating complex patterns? I'd like each sequence to be identified in some way, which will help me capture a broad range of behaviors and trends in my sequential data.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I need to generate a large dataset with varied time-series patterns. Please create 500 samples using the TimeGAN method, with 'date' as the time key and 'id' as the sequence identifier. This will allow me to effectively model and analyze diverse sequential behaviors.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to generate a large dataset with varied time-series patterns. Please create several samples using a certain method, with one column as the time key and another column as the sequence identifier. This will allow me to effectively model and analyze diverse sequential behaviors.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to create a diverse set of time-series data for analysis. Could you generate 200 samples using the TimeVAE method, where 'timestamp' is used as the time key and 'group_id' serves as the sequence identifier? This will help me better understand various patterns in sequential data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to create a diverse set of time-series data for analysis. Could you generate several samples using a certain method, where the sequence identifier is 'group_id'? This will help me better understand various patterns in sequential data.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a large dataset of 1000 samples that captures a wide range of sequential patterns. Can you use the fflows method to generate this data, with 'datetime' as the time key and 'sequence_id' as the identifier for each sequence? This will allow me to analyze diverse scenarios in my time-series analysis.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a dataset that captures a wide range of sequential patterns using the fflows method. Can you generate this data, with 'datetime' as the time key? This will allow me to analyze diverse scenarios in my time-series analysis.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a substantial dataset of around 800 samples, focusing on capturing diverse patterns over time. Could you utilize the TimeGAN method for this purpose? Specifically, I need 'day' as the key for time and 'category' as the identifier for each sequence, allowing me to explore various trends and behaviors in my analysis.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a substantial dataset of around 800 samples, focusing on capturing diverse patterns over time. Could you utilize a suitable method for this purpose? Specifically, I need a way to identify the timing and a key for each sequence, allowing me to explore various trends and behaviors in my analysis.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I want to create a large dataset with 300 samples using the TimeVAE method. Can you make sure that the time is represented by 'hour' and each sequence is identified by its 'type'? I'm aiming for a diverse range of patterns in my generated data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a dataset using the TimeVAE method. Can you make sure that each sequence is identified by its 'type'? I'm aiming for a diverse range of patterns in my generated data, but I need it to be pretty large.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to generate a substantial dataset with 500 samples, where each sample represents a unique sequence. To ensure the sequences are properly ordered, I'd like to use 'date' as the time key and 'id' as the identifier for each sequence. For generating this data, could you utilize the TimeGAN method? The goal is to have a diverse set of patterns in the generated dataset.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to generate a substantial dataset with several samples, where each sample represents a unique sequence. To ensure the sequences are properly ordered, I'd like to use a specific key as the time identifier and another column as the identifier for each sequence. For generating this data, could you utilize a certain method? The goal is to have a diverse set of patterns in the generated dataset.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a large and varied dataset of sequential data with 2000 samples. Each sample should be distinct and part of a larger sequence, which can be identified by 'user_id'. To maintain the order within these sequences, I want to use 'timestamp' as my time reference point. For generating this diverse dataset, could you apply the TimeVAE method?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a dataset of sequential data with several samples. Each sample should be distinct and part of a larger sequence. To maintain the order within these sequences, I want to use 'timestamp' as my time reference point. For generating this diverse dataset, could you apply a certain method?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I need a dataset with 1000 examples of sequential data where each example is unique and has a clear order based on 'date'. The sequences should be differentiated by 'product_id'. For creating this diverse set, can the method used be fflows? This will help in capturing the variability and trends across different products over time.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset with some examples of sequential data where each example is unique and has a clear order based on 'date'. The sequences should be differentiated by some column. For creating this diverse set, can the method used be something like fflows? This will help in capturing the variability and trends across different products over time.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a large dataset of sequential data with 800 samples, where each sequence is identified by 'customer_id' and ordered by 'created_at' timestamp. The goal is to create a diverse set that captures the variability and trends across different customer behaviors over time. Can we utilize the TimeGAN method to achieve this?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a large dataset of sequential data with several samples, where each sequence is identified by a certain id and ordered by a timestamp. The goal is to create a diverse set that captures the variability and trends across different customer behaviors over time. Can we utilize a particular method to achieve this?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I need a dataset with 1500 samples of sequential data, where each sequence is marked by 'order_id' and ordered chronologically by 'updated_at'. The aim is to produce a diverse collection that reflects the complexity and patterns across various sequences over time. Can we leverage the TimeVAE method to generate such a dataset?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset with some samples of sequential data, where each sequence is marked by a certain identifier and ordered chronologically by the 'updated_at' time_key. The aim is to produce a diverse collection that reflects the complexity and patterns across various sequences over time using a specific method to generate such a dataset, which involves utilizing the concept of 'order_id' as the sequence_key.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to balance my dataset, which has 500 samples, and the column I'm interested in is called 'class_label'. Can you use SMOTE or ADASYN to oversample the minority classes so that I end up with a balanced distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to balance my dataset and I'm interested in a specific column. Can you use SMOTE or ADASYN to oversample the minority classes so that I end up with a balanced distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I have an imbalanced dataset and I'd like to create a preset that can balance it out. The dataset should have around 2000 samples after balancing, and the column of interest is 'category'. Can you design a preset that uses either SMOTE or ADASYN to oversample the minority classes, ensuring a diverse and balanced distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I have an imbalanced dataset and I'd like to create a preset that can balance it out. The dataset should have around 2000 samples after balancing. Can you design a preset that uses either SMOTE or ADASYN to oversample the minority classes, ensuring a diverse and balanced distribution?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to balance it using a technique like SMOTE or ADASYN. My goal is to have around 1500 samples in the resulting dataset, and my target variable is 'target_variable'. Can you help me create a preset that oversamples the minority classes to achieve a balanced distribution with diversity?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to balance it using a technique like SMOTE or ADASYN. My goal is to have several samples in the resulting dataset, and my target variable is 'target_variable'. Can you help me create a preset that oversamples the minority classes to achieve a balanced distribution with diversity?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to balance out my dataset, which is currently skewed. I'm aiming for approximately 800 samples and my key outcome is measured by 'response'. Can you assist me in creating a preset that uses SMOTE or ADASYN to oversample the minority classes, ensuring a diverse and balanced distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to balance out my dataset, which is currently skewed. I'm aiming for a certain number of samples and my key outcome is measured by a specific variable. Can you assist me in creating a preset that uses some oversampling techniques to achieve a diverse and balanced distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a preset that can balance it out using either SMOTE or ADASYN to oversample the minority classes. My goal is to have around 3000 samples in total, with 'outcome' being the column that determines the class distribution. Can you help me design this preset to achieve a diverse and balanced dataset?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a preset that can balance it out using either SMOTE or ADASYN to oversample the minority classes. My goal is to have some samples in total, with the 'outcome' column being the one that determines the class distribution. Can you help me design this preset to achieve a diverse and balanced dataset?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a preset to balance my imbalanced dataset by oversampling minority classes using SMOTE or ADASYN, aiming for around 500 samples with 'class' as the target column to ensure diversity in my data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a preset to balance my imbalanced dataset by oversampling minority classes using some methods, aiming for several samples to ensure diversity in my data.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Can you generate a balanced dataset of 2000 samples, where the 'label' column is the target, by applying SMOTE or ADASYN oversampling technique to guarantee a diverse representation of all classes?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a balanced dataset of 2000 samples by applying some oversampling technique to guarantee a diverse representation of all classes?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I need to create a more representative sample. Can you help me generate 1000 samples where the 'category' column is the target, using either SMOTE or ADASYN to ensure that all classes are well-represented and diverse?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I need to create a more representative sample. Can you help me generate some samples where the target is balanced, using either SMOTE or ADASYN to ensure that all classes are well-represented and diverse, I want around 1000 of them",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I want to create a balanced dataset with 800 samples, targeting the 'type' column. Can you use SMOTE or ADASYN to oversample the minority classes and ensure diversity in the resulting data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a balanced dataset with several samples, targeting a specific column. Can you use some oversampling methods to increase the diversity in the resulting data?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a balanced dataset of 1500 examples where the 'group' column is the target, using either SMOTE or ADASYN to achieve class balance while ensuring diversity.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a balanced dataset of 1500 examples using either SMOTE or ADASYN to achieve class balance while ensuring diversity.",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Can you generate a diverse and balanced dataset with 500 samples, where the target variable is 'class', by applying either SMOTE or ADASYN to ensure equal representation of all classes?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a diverse and balanced dataset with several samples, where the target variable is balanced, by applying either SMOTE or ADASYN to ensure equal representation of all classes?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset that's well-balanced and diverse. Could you create one with around 2000 samples, where 'label' is the target column? Use either SMOTE or ADASYN to make sure all classes are represented equally.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that's well-balanced and diverse. Could you create one with several samples, where the target column is the key to focus on? Use either a method to oversample or something similar to make sure all classes are represented equally.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a balanced dataset for my project. Can you generate one with approximately 1500 samples, focusing on the 'category' column as the target? It's crucial that the dataset is diverse and representative of all classes, so please use SMOTE or ADASYN to ensure each class has an equal presence.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a balanced dataset for my project. Can you generate one with several samples, focusing on a specific column as the target? It's crucial that the dataset is diverse and representative of all classes, so please use a suitable method to ensure each class has an equal presence.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working on a project where I need a diverse dataset with around 800 samples. The goal is to have a balanced distribution across different classes in the 'type' column. Could you generate such a dataset using SMOTE or ADASYN to oversample the minority classes and ensure all classes are equally represented?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working on a project where I need a diverse dataset. The goal is to have a balanced distribution across different classes. Could you generate such a dataset using some method to oversample the minority classes and ensure all classes are equally represented?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a diverse dataset with approximately 3000 samples, where the 'group' column is balanced across different categories. Can you create this dataset by applying SMOTE or ADASYN to oversample the minority classes and ensure an equal representation of all groups?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a diverse dataset where the classes are balanced across different categories. Can you create this dataset by applying some oversampling method to ensure an equal representation of all groups?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a balanced dataset with around 500 examples, where the 'class_label' column has an equal distribution. Can you use SMOTE or ADASYN to oversample the minority classes and create this diverse dataset for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a balanced dataset where the target column has an equal distribution. Can you use some oversampling method to create this diverse dataset for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm working with a really imbalanced dataset and I want to create a more diverse subset of it, can you generate around 2000 samples where the 'response_variable' column is balanced using either SMOTE or ADASYN to oversample the minority classes?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with a really imbalanced dataset and I want to create a more diverse subset of it, can you generate several samples where the target column is balanced using either SMOTE or ADASYN to oversample the minority classes?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to balance out my dataset, which is heavily skewed. Can I get a subset with about 800 samples where the 'outcome' column has an even distribution? Maybe use SMOTE or ADASYN to oversample the minority classes and increase diversity?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to balance out my dataset, which is heavily skewed. Can I get a subset with about 800 samples where the distribution is even? Maybe use some method to oversample the minority classes and increase diversity?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working with a highly imbalanced dataset and I want to create a more diverse subset. Can you help me generate a balanced set of around 1500 samples, where the 'dependent_variable' column has an equal distribution? Maybe apply SMOTE or ADASYN to oversample the minority classes and get a better representation?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with a highly imbalanced dataset and I want to create a more diverse subset. Can you help me generate a balanced set of several samples, where one of the columns has an equal distribution? Maybe apply some oversampling technique to get a better representation?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need to create a more diverse subset from my imbalanced dataset. Can you generate around 300 samples with a balanced distribution for the 'prediction_target' column, using SMOTE or ADASYN to oversample minority classes and achieve a more representative set?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a more diverse subset from my imbalanced dataset. Can you generate some samples with a balanced distribution, using a method to oversample minority classes and achieve a more representative set?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a subset that's more diverse. Can you help me generate about 500 samples where the 'class_label' column has a balanced distribution? I'd like to use either SMOTE or ADASYN to oversample the minority classes, so my new subset is more representative of the overall population.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a subset that's more diverse. Can you help me generate a few samples where the 'class_label' column has a balanced distribution? I'd like to use either SMOTE or ADASYN to oversample the minority classes, so my new subset is more representative of the overall population.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a balanced dataset with 2000 samples where the 'response_variable' column is evenly distributed. Can you use SMOTE or ADASYN to create this subset and ensure it's diverse and representative?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a balanced dataset with 2000 samples where one of the columns is evenly distributed. Can you use some method to create this subset and ensure it's diverse and representative?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I need to create a more representative subset with 1500 samples, where the 'outcome' column is balanced. Can you apply SMOTE or ADASYN to oversample the minority classes and ensure the resulting dataset is diverse and evenly distributed?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I need to create a more representative subset where some of the classes are balanced. Can you apply a method to oversample the minority classes and ensure the resulting dataset is diverse and evenly distributed?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm dealing with a class imbalance issue in my dataset and I want to generate a balanced subset of 800 samples, focusing on the 'dependent_variable' column. Can you use SMOTE or ADASYN oversampling technique to create a diverse and balanced distribution, ensuring that the minority classes are well-represented?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm dealing with a class imbalance issue in my dataset and I want to generate a balanced subset of some samples, focusing on one of the columns. Can you use an oversampling technique to create a diverse and balanced distribution, ensuring that the minority classes are well-represented and I end up with around n_samples?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need to balance out my dataset, which is heavily skewed towards one class. Can you help me generate a subset of 3000 samples where the 'prediction_target' column is balanced using either SMOTE or ADASYN oversampling technique? The goal is to create a diverse set that accurately represents all classes, especially the minority ones.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to balance out my dataset, which is heavily skewed towards one class. Can you help me generate a subset where the class distribution is balanced using either SMOTE or ADASYN oversampling technique? The goal is to create a diverse set that accurately represents all classes, especially the minority ones, with some samples.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to ensure that my subset of 500 samples is representative of all classes. Can you help me create a balanced subset where the 'class_label' column has an equal distribution of samples across all classes using SMOTE or ADASYN oversampling, so I can get a diverse range of examples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to ensure that my subset is representative of all classes. Can you help me create a balanced subset where the 'class_label' column has an equal distribution of samples across all classes using some oversampling method, so I can get a diverse range of examples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to generate a large and diverse dataset for training purposes. Can you create a balanced dataset with 2000 samples, where the 'target_variable' column has an equal distribution across all classes? Please use SMOTE or ADASYN oversampling techniques to ensure minority classes are well-represented.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to generate a large and diverse dataset for training purposes. Can you create a balanced dataset with several samples, where the class distribution is equal across all classes? Please use some oversampling techniques to ensure minority classes are well-represented.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset that's diverse and representative, with a focus on balancing out the classes. Can you generate 1000 samples where the 'response' column is evenly distributed? I'd like to use SMOTE or ADASYN oversampling to make sure all classes have an equal say in the data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that's diverse and representative, with a focus on balancing out the classes. Can you generate some samples where a certain column is evenly distributed? I'd like to use a technique to make sure all classes have an equal say in the data.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I want to create a balanced dataset with 800 samples, where the 'outcome' column is the target variable. Can you use SMOTE or ADASYN oversampling to ensure that all classes have an equal representation in the data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a balanced dataset where the target variable is balanced. Can you use some oversampling technique to ensure that all classes have an equal representation in the data?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a diverse and balanced dataset with 1500 samples, where 'category' is the target column. Can you apply SMOTE or ADASYN oversampling technique to ensure all classes are equally represented?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a diverse and balanced dataset with 1500 samples. Can you apply some oversampling technique to ensure all classes are equally represented?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working on a project that requires a balanced dataset with 500 samples. The goal is to have an equal distribution of classes, so I'd like to use SMOTE or ADASYN oversampling to achieve this balance. Specifically, the column 'class_label' should be the target for balancing. Can you generate such a dataset for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working on a project that requires a balanced dataset. The goal is to have an equal distribution of classes, so I'd like to use some oversampling technique to achieve this balance. Can you generate such a dataset for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a balanced dataset with 200 samples where the 'category' column is evenly distributed across all classes using SMOTE or ADASYN oversampling, can you create this for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a balanced dataset where the distribution is even across all classes using some oversampling method, can you create this for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a new one that's more diverse. Can you generate a preset with 800 samples, where the 'label' column is balanced across all classes using either SMOTE or ADASYN oversampling? This would really help me achieve a more representative distribution.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a new one that's more diverse. Can you generate a preset with several samples, where the column I'm interested in is balanced across all classes using either a suitable oversampling method? This would really help me achieve a more representative distribution.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to balance out my dataset, which is heavily skewed towards one class. Can you create a preset that generates 1000 samples with a balanced distribution across all classes in the 'classification' column? I'd like to use either SMOTE or ADASYN oversampling to achieve this diversity.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to balance out my dataset, which is heavily skewed towards one class. Can you create a preset that generates several samples with a balanced distribution across all classes? I'd like to use either SMOTE or ADASYN oversampling to achieve this diversity.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a preset that can generate a more diverse set of data. Can you help me design a preset that produces 300 samples, with the goal of balancing out the classes in my 'output' column? I'd like to use either SMOTE or ADASYN oversampling techniques to achieve this balance.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a preset that can generate a more diverse set of data. Can you help me design a preset that produces several samples, with the goal of balancing out the classes? I'd like to use either SMOTE or ADASYN oversampling techniques to achieve this balance.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a balanced dataset for my project. Currently, my data is skewed and I want to create a preset that generates more samples to even out the class distribution. Specifically, I'm looking to produce 500 new samples with 'class_label' as the target column. Can you recommend a preset that utilizes SMOTE or ADASYN oversampling techniques to achieve this balance and introduce more diversity into my dataset?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a balanced dataset for my project. Currently, my data is skewed and I want to create a preset that generates more samples to even out the class distribution. Specifically, I'm looking to produce several new samples. Can you recommend a preset that utilizes certain oversampling techniques to achieve this balance and introduce more diversity into my dataset?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working on a project where my dataset is heavily imbalanced, and I need to create a more diverse set of data. Can you help me design a preset that uses either SMOTE or ADASYN to oversample the minority classes? Specifically, I'd like to generate 2000 new samples with 'response_variable' as the target column, in order to achieve a balanced class distribution.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working on a project where my dataset is heavily imbalanced, and I need to create a more diverse set of data. Can you help me design a preset that uses either SMOTE or ADASYN to oversample the minority classes? Specifically, I'd like to generate some new samples in order to achieve a balanced class distribution, with around n_samples = 2000.",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm dealing with an imbalanced dataset and want to create a more diverse set of data. Can you help me design a preset that uses SMOTE or ADASYN to balance my classes? I'd like the target column to be 'outcome' and generate 800 new samples.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm dealing with an imbalanced dataset and want to create a more diverse set of data. Can you help me design a preset that uses SMOTE or ADASYN to balance my classes? I'd like to generate several new samples, around 800.",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need to create a balanced dataset from an imbalanced one, focusing on the 'category' column. Can you provide a preset that uses either SMOTE or ADASYN to oversample minority classes and generate 1200 new samples, ensuring a more diverse distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a balanced dataset from an imbalanced one, focusing on a specific column. Can you provide a preset that uses either SMOTE or ADASYN to oversample minority classes and generate some new samples, ensuring a more diverse distribution?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I want to create a balanced dataset with approximately 3500 samples, where the 'prediction_target' column is the target variable. Can you provide a preset that utilizes either SMOTE or ADASYN to oversample the minority classes and ensure a more diverse distribution of data points?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a balanced dataset with some samples, where a certain column is the target variable. Can you provide a preset that utilizes either SMOTE or ADASYN to oversample the minority classes and ensure a more diverse distribution of data points?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to balance out my dataset, which currently has a disproportionate number of samples in one class. I'd like to generate around 100 new samples using either SMOTE or ADASYN to oversample the minority classes and create a more diverse set of data points. The column I'm trying to balance is 'class_label'. Can you provide a preset that achieves this?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to balance out my dataset, which currently has a disproportionate number of samples in one class. I'd like to generate some new samples using either SMOTE or ADASYN to oversample the minority classes and create a more diverse set of data points. Can you provide a preset that achieves this and generates around 100 new samples?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I want to create a balanced dataset by oversampling the minority classes using SMOTE or ADASYN, with around 500 new samples generated. The target column for balancing is 'category'. How can I achieve a more diverse distribution of data points?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a balanced dataset by oversampling the minority classes using SMOTE or ADASYN, with several new samples generated. How can I achieve a more diverse distribution of data points?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a balanced one using SMOTE or ADASYN oversampling technique. Can you generate around 2000 new samples, focusing on the 'outcome' column as the target for balancing, to achieve a more diverse distribution of data points?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a balanced one using SMOTE or ADASYN oversampling technique. Can you generate some new samples, focusing on a specific column as the target for balancing, to achieve a more diverse distribution of data points?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a dataset with better class balance, can you use SMOTE or ADASYN to generate approximately 1000 new samples that focus on rebalancing the 'response_variable' column, aiming for diverse representation across all classes?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset with better class balance, can you use SMOTE or ADASYN to generate some new samples that focus on rebalancing the classes, aiming for diverse representation across all of them?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to balance out my dataset, which is currently skewed. Could you help me generate around 2500 new samples using either SMOTE or ADASYN to oversample the minority classes in the 'dependent_variable' column? The goal is to achieve a more diverse and balanced distribution across all classes.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to balance out my dataset, which is currently skewed. Could you help me generate some new samples using either SMOTE or ADASYN to oversample the minority classes? The goal is to achieve a more diverse and balanced distribution across all classes.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need to create a more diverse dataset by oversampling the minority classes. Can you generate 500 new samples for me, using either SMOTE or ADASYN, with 'class_label' as the target column to achieve a balanced distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a more diverse dataset by oversampling the minority classes. Can you generate 500 new samples for me, using either SMOTE or ADASYN, to achieve a balanced distribution?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a more representative sample. Can you help me generate 2000 new samples using either SMOTE or ADASYN to oversample the minority classes, with 'response_variable' as the target column, so I can achieve a balanced distribution and increase diversity in my data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a more representative sample. Can you help me generate some new samples using either SMOTE or ADASYN to oversample the minority classes, with 'response_variable' as the target column, so I can achieve a balanced distribution and increase diversity in my data?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to balance out my dataset, which is currently skewed. Could you create a preset that generates 800 new samples using SMOTE or ADASYN oversampling technique, targeting the 'outcome' column? This will help me get a more diverse and representative sample for analysis.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to balance out my dataset, which is currently skewed. Could you create a preset that generates several new samples using some oversampling technique? This will help me get a more diverse and representative sample for analysis.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a preset that will balance it out. Can you help me generate a configuration that uses SMOTE or ADASYN oversampling to create 1500 new samples, focusing on the 'dependent_var' column? This should give me a more diverse set of data for my analysis.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a preset that will balance it out. Can you help me generate a configuration that uses SMOTE or ADASYN oversampling to create several new samples, focusing on the column that needs balancing? This should give me a more diverse set of data for my analysis.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need to balance out my imbalanced dataset for better analysis. Can I get a preset that creates 300 new samples, focusing on the 'classification_target' column and using SMOTE or ADASYN oversampling to ensure diversity?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to balance out my imbalanced dataset for better analysis. Can I get a preset that creates several new samples, focusing on the 'classification_target' column and using some oversampling method to ensure diversity?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    }
+]
