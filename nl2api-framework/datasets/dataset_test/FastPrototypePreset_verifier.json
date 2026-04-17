@@ -1,0 +1,482 @@
+[
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Generate 50 sample data points for my prototype\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 50}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Generate some sample data points for my prototype\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking to create a diverse dataset for integration testing, can you generate 200 unique samples for me?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking to create a diverse dataset for integration testing, can you generate some unique samples for me?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need a sizable yet manageable dataset for some exploratory testing, could I get around 150 varied examples?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 150}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need a sizable yet manageable dataset for some exploratory testing, could I get some varied examples?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Can you generate a smaller batch of data, say around 80 samples, to help me quickly test and validate my prototype without overwhelming it?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 80}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Can you generate a smaller batch of data to help me quickly test and validate my prototype without overwhelming it?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking to do some rapid prototyping and I want to make sure my system can handle a decent amount of diverse data. Can you give me around 250 samples to work with, so I can test its performance without waiting too long for the results?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 250}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking to do some rapid prototyping and I want to make sure my system can handle a decent amount of diverse data. Can you give me some samples to work with, so I can test its performance without waiting too long for the results?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm working on a project that requires quick testing and I want to ensure my system is robust. Can you generate a small dataset of around 50 samples with varied characteristics, so I can integrate it into my CI/CD pipeline for rapid evaluation?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 50}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm working on a project that requires quick testing and I want to ensure my system is robust. Can you generate a small dataset with varied characteristics, so I can integrate it into my CI/CD pipeline for rapid evaluation?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need a diverse set of data for integration testing, can you produce approximately 200 unique samples to help me ensure the reliability and efficiency of my system in various scenarios?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need a diverse set of data for integration testing, can you produce some unique samples to help me ensure the reliability and efficiency of my system in various scenarios?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Can I get about 10 varied examples to cover different cases for quick testing?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 10}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Can I get some varied examples to cover different cases for quick testing?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a large set of diverse data points to thoroughly test my system, can you generate around 500 unique samples for me?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a large set of diverse data points to thoroughly test my system, can you generate several unique samples for me?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Can you produce a substantial dataset with around 1000 varied examples to help me ensure my application is robust and functions as expected across different scenarios?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1000}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Can you produce a substantial dataset with several varied examples to help me ensure my application is robust and functions as expected across different scenarios?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to generate a small but diverse set of data for some quick testing, can I get about 50 samples?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 50}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to generate a small but diverse set of data for some quick testing, can I get some samples?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking to create a robust test suite, can you provide around 200 varied data points for me to work with?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking to create a robust test suite, can you provide some varied data points for me to work with?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to generate a small but diverse set of sample data, can I get about 10 different examples?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 10}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to generate a small but diverse set of sample data, can I get a few different examples?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a substantial amount of varied sample data to work with, around 150 unique examples would be perfect for my testing purposes.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 150}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for some varied sample data to work with, it would be great for my testing purposes.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to generate a large dataset for testing, can I get about 300 diverse samples to ensure my application works smoothly under various conditions?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to generate a large dataset for testing, can I get several diverse samples to ensure my application works smoothly under various conditions?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking to quickly test my app's performance with a variety of inputs, can you provide around 50 distinct data points for me?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 50}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking to quickly test my app's performance with a variety of inputs, can you provide some distinct data points for me?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to prototype a project that requires a broad range of sample data. Can I get about 100 diverse examples to work with?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 100}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to prototype a project that requires a broad range of sample data. Can I get some diverse examples to work with?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking to generate a large dataset for integration testing, can you provide around 200 varied samples to help me cover all my bases?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking to generate a large dataset for integration testing, can you provide some varied samples to help me cover all my bases?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to create a diverse set of data for quick prototyping, can I get about 500 unique samples?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to create a diverse set of data for quick prototyping, can I get some unique samples?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking to generate a large number of varied data points for integration testing, can you provide around 1000 distinct examples?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1000}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nFastPrototypePreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking to generate a large number of varied data points for integration testing, can you provide several distinct examples?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    }
+]

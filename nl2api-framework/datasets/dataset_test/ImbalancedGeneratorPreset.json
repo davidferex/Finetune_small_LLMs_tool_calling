@@ -1,0 +1,172 @@
+[
+    {
+        "user_query": "Generate a dataset with 500 samples, where the target column is 'class_label', and use the default imbalance ratio.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 500,
+            "target_col": "class_label"
+        }
+    },
+    {
+        "user_query": "Create a diverse test dataset for drift detection with 800 samples and 'response_variable' as the target column, using the standard imbalance ratio.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 800,
+            "target_col": "response_variable"
+        }
+    },
+    {
+        "user_query": "Can I get a dataset with around 300 entries that has an imbalanced distribution, specifically designed for testing purposes like detecting data drift or analyzing bias? The outcome should be the key variable to focus on.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 300,
+            "target_col": "outcome"
+        }
+    },
+    {
+        "user_query": "I'm looking for a large dataset of about 1200 samples with a specific imbalance in the target variable, 'dependent_variable', that I can use to test my models' ability to detect drift or identify bias. Can you generate this for me?",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 1200,
+            "target_col": "dependent_variable"
+        }
+    },
+    {
+        "user_query": "I need a dataset of 200 samples where the target column is 'result' and has a specific imbalanced distribution, can you create one for testing purposes like drift detection or analyzing biases?",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 200,
+            "target_col": "result"
+        }
+    },
+    {
+        "user_query": "Can you generate a diverse set of data with 100 entries, where the 'class' column is the target and has an imbalance ratio of 0.2? This will help me test for bias and detect distribution shifts in my model.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 100,
+            "target_col": "class",
+            "imbalance_ratio": 0.2
+        }
+    },
+    {
+        "user_query": "I'm looking to create a dataset that's diverse and has a specific imbalance in its target variable, which is 'label'. Could you generate around 500 samples with an imbalance ratio of 0.3? This will be super helpful for testing my model's ability to detect drift and analyze bias.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 500,
+            "target_col": "label",
+            "imbalance_ratio": 0.3
+        }
+    },
+    {
+        "user_query": "I want to create a test dataset with a particular imbalance in the target variable 'category' to evaluate my model's performance on detecting drift and bias. Can you generate a dataset of around 200 samples, where the minority class makes up about 10% of the total data?",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 200,
+            "target_col": "category",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "I'm looking for a way to generate a diverse test dataset with approximately 800 samples, where the target variable 'type' has an imbalance ratio of around 0.4, which means about 40% of the data belongs to one class and the rest to another, to assess how well my model handles imbalanced distributions and detects bias.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 800,
+            "target_col": "type",
+            "imbalance_ratio": 0.4
+        }
+    },
+    {
+        "user_query": "Can you help me create a dataset with 300 samples where the 'group' column is the target variable and has an imbalance ratio of 0.5, meaning the classes are roughly evenly split, to evaluate my model's performance on handling balanced versus imbalanced data distributions for drift detection and bias analysis?",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 300,
+            "target_col": "group",
+            "imbalance_ratio": 0.5
+        }
+    },
+    {
+        "user_query": "I'm looking to generate a test dataset with a specific imbalance ratio for evaluating drift detection and bias analysis. Could you help me create a dataset of 500 samples, where the target variable is 'class' and the imbalance ratio is set to 0.2? This would allow me to assess my model's performance under different data distribution scenarios.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 500,
+            "target_col": "class",
+            "imbalance_ratio": 0.2
+        }
+    },
+    {
+        "user_query": "I want to create a dataset with 750 examples that has an imbalanced distribution, specifically with the target column being 'label' and an imbalance ratio of 0.3, to test my model's ability to detect drift and analyze bias in various scenarios.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 750,
+            "target_col": "label",
+            "imbalance_ratio": 0.3
+        }
+    },
+    {
+        "user_query": "Can you generate a dataset of 1000 samples with a class imbalance, where the target variable 'category' has an imbalance ratio of 0.1, so I can evaluate my model's performance on diverse and unevenly distributed data for drift detection and bias analysis?",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "target_col": "category",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "I'm looking to create a test dataset with 800 samples that has a specific imbalance in the 'type' column, where one class is 25% of the others. Can you generate such a dataset for me, so I can assess my model's ability to handle diverse and imbalanced data distributions, especially for drift detection and bias analysis purposes?",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 800,
+            "target_col": "type",
+            "imbalance_ratio": 0.25
+        }
+    },
+    {
+        "user_query": "I want to create a synthetic dataset with 1200 instances that has an imbalance ratio of 0.15 in the 'group' column, can you help me generate such data? I need this for evaluating my model's performance on diverse and unevenly distributed data, particularly for detecting drift and analyzing bias.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 1200,
+            "target_col": "group",
+            "imbalance_ratio": 0.15
+        }
+    },
+    {
+        "user_query": "Can you generate a dataset of 500 samples with the 'class_label' column as the target variable, where the distribution is intentionally imbalanced to simulate real-world scenarios? I'm looking to create a diverse test set for evaluating drift detection and bias analysis capabilities.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 500,
+            "target_col": "class_label"
+        }
+    },
+    {
+        "user_query": "I want to create a dataset with 200 samples and 'category' as the target column, using default imbalance ratio for diversity in testing drift detection and bias analysis",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 200,
+            "target_col": "category"
+        }
+    },
+    {
+        "user_query": "Can you generate a test dataset with 800 examples, where 'target_variable' is the outcome we're trying to predict, using your preset distribution for creating imbalanced data? This will help me evaluate how well my model handles diverse scenarios and detects drift or bias.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 800,
+            "target_col": "target_variable"
+        }
+    },
+    {
+        "user_query": "I'm looking to create a dataset with 300 samples to test my model's performance on imbalanced data. Can you generate this dataset with 'response' as the target column, ensuring a diverse distribution that will help me analyze bias and detect drift?",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 300,
+            "target_col": "response"
+        }
+    },
+    {
+        "user_query": "I want to create a large test dataset of 1000 samples for evaluating my model's performance on imbalanced data. Please generate this dataset with 'outcome' as the target column, and use the default imbalance ratio to ensure a diverse distribution that will help me analyze bias and detect drift.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "target_col": "outcome"
+        }
+    }
+]

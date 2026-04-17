@@ -1,0 +1,482 @@
+[
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to create a balanced dataset with 500 samples, where the class label is the target column, by using SMOTE or ADASYN to oversample the minority classes.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'target_col': 'class_label'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to create a balanced dataset by using SMOTE or ADASYN to oversample the minority classes.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Can you help me generate a diverse and balanced dataset of around 2000 examples, focusing on 'response_variable' as the key outcome, and using either SMOTE or ADASYN to ensure that all classes are adequately represented?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 2000, 'target_col': 'response_variable'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Can you help me generate a diverse and balanced dataset of several examples, focusing on the main outcome as the key variable, and using a method to ensure that all classes are adequately represented?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to create a balanced dataset with about 1500 samples where the target column is 'outcome', can you help me achieve this by applying SMOTE or ADASYN to oversample the minority classes and ensure diversity?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1500, 'target_col': 'outcome'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to create a balanced dataset with about 1500 samples, can you help me achieve this by applying some oversampling techniques to ensure diversity?\"\n\nTOOL CALL PARAMETERS (JSON):\n['n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm working with an imbalanced dataset and I need to create a more diverse subset. Could you generate approximately 800 samples, using either SMOTE or ADASYN to balance out the minority classes, where 'category' is my target column?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'target_col': 'category'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm working with an imbalanced dataset and I need to create a more diverse subset. Could you generate several samples, using either SMOTE or ADASYN to balance out the minority classes, where my target column is the one I want to focus on?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to create a balanced dataset with around 3000 samples, can you help me generate it by oversampling the minority classes using SMOTE or ADASYN, and make sure 'dependent_variable' is the target column for this balancing task?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 3000, 'target_col': 'dependent_variable'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to create a balanced dataset with some samples, can you help me generate it by oversampling the minority classes using certain methods, and make sure the target column is balanced for this task?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm working with an imbalanced dataset and I need to balance it out. Can you generate a new dataset of around 500 samples where the minority classes are oversampled using either SMOTE or ADASYN, and make sure that 'class_label' is used as the target column for this balancing task?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'target_col': 'class_label'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm working with an imbalanced dataset and I need to balance it out. Can you generate a new dataset of around 500 samples where the minority classes are oversampled using either SMOTE or ADASYN, and make sure that the class distribution is balanced?\"\n\nTOOL CALL PARAMETERS (JSON):\n['n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm dealing with a severely imbalanced dataset and I need to create a more balanced version of it. Can you help me generate a new dataset with approximately 2000 samples, where the minority classes are oversampled using SMOTE or ADASYN to achieve a balanced distribution? Specifically, I want 'response_variable' to be the target column for this balancing task, ensuring that we have a diverse representation across all classes.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 2000, 'target_col': 'response_variable'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm dealing with a severely imbalanced dataset and I need to create a more balanced version of it. Can you help me generate a new dataset with several samples, where the minority classes are oversampled using some method to achieve a balanced distribution? Specifically, I want a certain column to be the target for this balancing task, ensuring that we have a diverse representation across all classes.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm working on a project where my dataset is heavily skewed towards one class. To improve model performance, I need a balanced dataset with around 800 samples. Can you create this for me by using either SMOTE or ADASYN to oversample the minority classes? The column 'outcome' should be used as the target for balancing, ensuring we get a diverse set of data across all classes.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'target_col': 'outcome'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm working on a project where my dataset is heavily skewed towards one class. To improve model performance, I need a balanced dataset with around 800 samples. Can you create this for me by using either SMOTE or ADASYN to oversample the minority classes, so we get a diverse set of data across all classes?\"\n\nTOOL CALL PARAMETERS (JSON):\n['n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need a dataset with 300 samples where the 'category' column is balanced using SMOTE or ADASYN to ensure diversity across all classes.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'target_col': 'category'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need a dataset where the column for classification is balanced using a certain technique to ensure diversity across all classes.\"\n\nTOOL CALL PARAMETERS (JSON):\n['target_col']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Can you generate a dataset of 1500 instances, ensuring that the 'target_class' column has an equal distribution of samples across all categories by applying either SMOTE or ADASYN oversampling technique to guarantee diversity?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1500, 'target_col': 'target_class'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Can you generate a dataset of several instances, ensuring that a certain column has an equal distribution of samples across all categories by applying some oversampling technique to guarantee diversity?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to create a balanced dataset with 500 samples, where the 'class_label' column is evenly distributed. Can you use SMOTE or ADASYN to oversample the minority classes and ensure diversity in my dataset?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'target_col': 'class_label'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to create a balanced dataset where the class distribution is even. Can you use some oversampling technique to ensure diversity in my dataset?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm working with an imbalanced dataset and I want to create a balanced version of it with 750 samples, where the 'category' column has an even distribution. Can you use SMOTE or ADASYN to oversample the minority classes and ensure that my resulting dataset is diverse and representative?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 750, 'target_col': 'category'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm working with an imbalanced dataset and I want to create a balanced version of it with several samples, where one of the columns has an even distribution. Can you use some oversampling method to balance the minority classes and ensure that my resulting dataset is diverse and representative?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need a balanced dataset with 200 samples, where the 'type' column is evenly distributed. Can you apply SMOTE or ADASYN to oversample the minority classes and create a diverse dataset that represents all types equally?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'target_col': 'type'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need a balanced dataset where the column that determines the class is evenly distributed. Can you apply a technique to oversample the minority classes and create a diverse dataset that represents all types equally, using some samples?\"\n\nTOOL CALL PARAMETERS (JSON):\n['target_col']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to generate a balanced dataset with 1000 samples, ensuring the 'label' column has an equal distribution of all categories. Can you apply SMOTE or ADASYN to oversample the minority classes and create a diverse dataset that represents all labels equally?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1000, 'target_col': 'label'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to generate a balanced dataset with 1000 samples, ensuring one of the columns has an equal distribution of all categories. Can you apply some method to oversample the minority classes and create a diverse dataset that represents all labels equally?\"\n\nTOOL CALL PARAMETERS (JSON):\n['n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need to balance out my dataset, which is currently skewed. Could you help me generate around 300 samples where the 'group' column is evenly distributed across all categories? Using SMOTE or ADASYN for oversampling would be great to ensure diversity and representation of minority classes.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'target_col': 'group'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need to balance out my dataset, which is currently skewed. Could you help me generate some samples where the distribution is even across all categories? Using a method for oversampling would be great to ensure diversity and representation of minority classes.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm working with a dataset that's heavily imbalanced, and I want to create a more representative sample. Can you help me generate about 500 new samples where the 'class_label' column is balanced across all categories? I'd like to use either SMOTE or ADASYN to ensure the minority classes are well-represented and we have a diverse dataset.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'target_col': 'class_label'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm working with a dataset that's heavily imbalanced, and I want to create a more representative sample. Can you help me generate some new samples where the 'class_label' column is balanced across all categories? I'd like to use either SMOTE or ADASYN to ensure the minority classes are well-represented and we have a diverse dataset.\"\n\nTOOL CALL PARAMETERS (JSON):\n['target_col']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need to balance out my dataset, which currently has a significant imbalance. Could you create a preset that generates around 200 new samples, focusing on balancing the 'response_variable' column? It would be great if this could utilize either SMOTE or ADASYN to ensure we get a diverse and representative sample by oversampling the minority classes.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'target_col': 'response_variable'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need to balance out my dataset, which currently has a significant imbalance. Could you create a preset that generates some new samples, focusing on balancing one of the columns? It would be great if this could utilize either SMOTE or ADASYN to ensure we get a diverse and representative sample by oversampling the minority classes.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm working with an imbalanced dataset and I need a preset that can create around 800 new samples to balance it out, focusing on the 'outcome' column. It's essential to use either SMOTE or ADASYN for oversampling minority classes to ensure diversity in the resulting dataset.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'target_col': 'outcome'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm working with an imbalanced dataset and I need a preset that can create some new samples to balance it out, focusing on a specific column. It's essential to use either SMOTE or ADASYN for oversampling minority classes to ensure diversity in the resulting dataset.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need a balanced dataset with about 300 samples, where the 'category' column is the target. The original dataset is imbalanced and I want to use either SMOTE or ADASYN to create a diverse set of new samples that oversample the minority classes.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'target_col': 'category'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need a balanced dataset with about 300 samples, where I want to use either SMOTE or ADASYN to create a diverse set of new samples that oversample the minority classes.\"\n\nTOOL CALL PARAMETERS (JSON):\n['n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm working with an imbalanced dataset and I need to generate a balanced one. Can you help me create a preset that uses either SMOTE or ADASYN to oversample the minority classes, resulting in around 600 samples? The column I'm interested in balancing is called 'dependent_variable'. This will ensure my dataset has the diversity it needs for further analysis.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 600, 'target_col': 'dependent_variable'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nBalancedDataGeneratorPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column whose class distribution will be balanced'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm working with an imbalanced dataset and I need to generate a balanced one. Can you help me create a preset that uses either SMOTE or ADASYN to oversample the minority classes, resulting in around 600 samples? This will ensure my dataset has the diversity it needs for further analysis.\"\n\nTOOL CALL PARAMETERS (JSON):\n['n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"target_col\"]}"
+            }
+        ]
+    }
+]
