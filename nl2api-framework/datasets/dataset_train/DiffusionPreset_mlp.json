@@ -1,0 +1,552 @@
+[
+    {
+        "user_query": "Can you generate 50 synthetic data samples using the Tabular Denoising Diffusion Probabilistic Model?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate some synthetic data samples using the Tabular Denoising Diffusion Probabilistic Model?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a large dataset with varied examples, can I produce around 200 synthetic samples using the TabDDPM model for better diversity?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a large dataset with varied examples, can I produce some synthetic samples using the TabDDPM model for better diversity?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a smaller set of data for testing purposes, can I use the TabDDPM model to create about 10 synthetic samples that capture a good range of variability?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a smaller set of data for testing purposes, can I use the TabDDPM model to create some synthetic samples that capture a good range of variability?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to leverage the strengths of diffusion models in capturing complex distributions and generate a larger dataset for analysis. Can I utilize the TabDDPM model to produce around 500 synthetic samples, ensuring a diverse representation of the data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to leverage the strengths of diffusion models in capturing complex distributions and generate a larger dataset for analysis. Can I utilize the TabDDPM model to produce some synthetic samples, ensuring a diverse representation of the data?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a more extensive and varied dataset using TabDDPM for my analysis. Could you help me generate approximately 150 synthetic samples that effectively capture the complexity and diversity of the underlying distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a more extensive and varied dataset using TabDDPM for my analysis. Could you help me generate some synthetic samples that effectively capture the complexity and diversity of the underlying distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to synthesize a diverse set of data points using TabDDPM, could you produce around 50 new samples that reflect the intricacies of the original data distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to synthesize a diverse set of data points using TabDDPM, could you produce some new samples that reflect the intricacies of the original data distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a larger set of synthetic data points, say around 100, to ensure we capture the full range of variability and nuances present in our original dataset using TabDDPM?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a larger set of synthetic data points to ensure we capture the full range of variability and nuances present in our original dataset using TabDDPM?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To effectively utilize the capabilities of Tabular Denoising Diffusion Probabilistic Models for generating synthetic data that mirrors the complexity and diversity of our real dataset, I would like to produce a substantial number of samples. Could you generate approximately 200 synthetic data points using this method?",
+        "complete": 1
+    },
+    {
+        "user_query": "To effectively utilize the capabilities of Tabular Denoising Diffusion Probabilistic Models for generating synthetic data that mirrors the complexity and diversity of our real dataset, I would like to produce a substantial number of samples. Could you generate some synthetic data points using this method?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To capture the full range of variability in our dataset, can we use TabDDPM to synthesize around 500 new data points that reflect the diversity and complexity of the real data?",
+        "complete": 1
+    },
+    {
+        "user_query": "To capture the full range of variability in our dataset, can we use TabDDPM to synthesize some new data points that reflect the diversity and complexity of the real data?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a large set of synthetic data using TabDDPM, can I get about 1000 samples that accurately represent the diverse patterns in my dataset?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a large set of synthetic data using TabDDPM, can I get some samples that accurately represent the diverse patterns in my dataset?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you help me create a smaller batch of synthetic data with around 50 samples using TabDDPM? I'm looking for a more focused representation of the diversity within my dataset.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you help me create a smaller batch of synthetic data using TabDDPM? I'm looking for a more focused representation of the diversity within my dataset.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to generate a larger set of synthetic data, can you help me produce around 200 samples with TabDDPM to capture the full range of diversity in my dataset?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to generate a larger set of synthetic data, can you help me produce some samples to capture the full range of diversity in my dataset?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a more diverse set of synthesized data using TabDDPM. Could you generate around 15 samples to ensure we're capturing all aspects of our complex distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a more diverse set of synthesized data using TabDDPM. Could you generate several samples to ensure we're capturing all aspects of our complex distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To effectively model our intricate data distribution with TabDDPM, can we produce a substantial number of samples - specifically, around 300 - to guarantee that we capture its full diversity and complexity?",
+        "complete": 1
+    },
+    {
+        "user_query": "To effectively model our intricate data distribution with TabDDPM, can we produce some samples to guarantee that we capture its full diversity and complexity?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a large set of synthetic data using TabDDPM to ensure I capture all aspects of my data's distribution. Can I get around 75 samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a large set of synthetic data using TabDDPM to ensure I capture all aspects of my data's distribution. Can I get several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a moderate-sized dataset, could you synthesize about 50 data points using the Tabular Denoising Diffusion Probabilistic Model to ensure a good representation of the underlying distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a moderate-sized dataset, could you synthesize some data points using a certain model to ensure a good representation of the underlying distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a larger dataset with around 200 samples using the TabDDPM, I want to capture the full range of possibilities in the data distribution and have enough diversity for further analysis.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a larger dataset using the TabDDPM, I want to capture the full range of possibilities in the data distribution and have enough diversity for further analysis.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to create a smaller test set with just 10 samples using the TabDDPM model, can you generate this limited dataset for me to explore the initial diversity of the synthesized data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to create a smaller test set using the TabDDPM model, can you generate a limited dataset for me to explore the initial diversity of the synthesized data?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a larger dataset using the TabDDPM model to really tap into its ability to capture complex multi-modal distributions. Can you create a set of 150 samples for me, so I can get a better sense of the diversity and variability it's capable of producing?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a larger dataset using the TabDDPM model to really tap into its ability to capture complex multi-modal distributions. Can you create some samples for me, so I can get a better sense of the diversity and variability it's capable of producing?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to leverage the strengths of TabDDPM in capturing intricate multi-modal distributions. Could you synthesize a dataset consisting of 300 samples? This would allow me to fully appreciate the model's capacity for generating diverse and varied data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to leverage the strengths of TabDDPM in capturing intricate multi-modal distributions. Could you synthesize a dataset consisting of several samples? This would allow me to fully appreciate the model's capacity for generating diverse and varied data.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm interested in exploring the capabilities of TabDDPM for generating diverse datasets. Can you produce a small dataset with 50 samples that showcases its ability to capture complex, multi-modal distributions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm interested in exploring the capabilities of TabDDPM for generating diverse datasets. Can you produce a small dataset that showcases its ability to capture complex, multi-modal distributions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to leverage TabDDPM's strength in capturing intricate, multi-modal distributions for my project. Could you generate a larger set of data, consisting of 200 samples, to demonstrate its capacity for producing diverse and realistic synthetic datasets?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to leverage TabDDPM's strength in capturing intricate, multi-modal distributions for my project. Could you generate a larger set of data to demonstrate its capacity for producing diverse and realistic synthetic datasets?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can I get a smaller batch of synthetic data using TabDDPM, just 10 samples this time, to see how well it can capture the diversity of the underlying distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a smaller batch of synthetic data using TabDDPM to see how well it can capture the diversity of the underlying distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to generate a larger dataset with TabDDPM, could I get 500 synthetic samples to better understand the complexity and diversity of the data distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to generate a larger dataset with TabDDPM, could I get some synthetic samples to better understand the complexity and diversity of the data distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To capture the full range of variability in our data, can we produce 150 synthetic samples using TabDDPM?",
+        "complete": 1
+    },
+    {
+        "user_query": "To capture the full range of variability in our data, can we produce some synthetic samples using a certain method?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to generate a smaller batch of synthetic data, around 50 samples, to see how well the TabDDPM model captures the diversity and complexity of our dataset.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to generate a smaller batch of synthetic data to see how well the TabDDPM model captures the diversity and complexity of our dataset.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you synthesize a larger batch of data using the TabDDPM model, aiming for around 200 samples this time, to really showcase its ability to capture the full range of variability in our dataset?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you synthesize a larger batch of data using the model, aiming for several samples this time, to really showcase its ability to capture the full range of variability in our dataset?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to generate a smaller set of synthetic data using the TabDDPM model, can you produce about 10 samples for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to generate a smaller set of synthetic data using the TabDDPM model, can you produce some samples for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you use the TabDDPM model to create a larger and more diverse dataset for me, aiming for around 500 samples to capture the complexity of the distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you use the TabDDPM model to create a larger and more diverse dataset for me, aiming to capture the complexity of the distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to generate a set of data using the TabDDPM model that is quite varied. Could I get about 75 new samples from it?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to generate some data using the TabDDPM model that is quite varied. Could I get a few new samples from it?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you produce around 50 distinct synthetic data points using the TabDDPM model, emphasizing diversity in the output to capture a wide range of possibilities?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you produce some synthetic data points using the TabDDPM model, emphasizing diversity in the output to capture a wide range of possibilities?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to generate a dataset with approximately 200 samples using the Tabular Denoising Diffusion Probabilistic Model, prioritizing diversity to effectively represent the underlying distribution.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to generate a dataset using the Tabular Denoising Diffusion Probabilistic Model, prioritizing diversity to effectively represent the underlying distribution.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you use the TabDDPM model to synthesize a small batch of data, around 10 samples, focusing on capturing the diversity and complexity of the underlying distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you use the TabDDPM model to synthesize a small batch of data, focusing on capturing the diversity and complexity of the underlying distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to generate a larger dataset using the TabDDPM model, aiming for around 500 samples this time. The goal is to ensure that the synthesized data fully represents the intricate multi-modal nature of the original distribution, so it's crucial that we prioritize capturing its diversity and complexity.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to generate a larger dataset using the TabDDPM model, aiming for some more samples this time. The goal is to ensure that the synthesized data fully represents the intricate multi-modal nature of the original distribution, so it's crucial that we prioritize capturing its diversity and complexity.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you synthesize a dataset with 150 samples using TabDDPM to capture a wide range of diverse data points?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you synthesize a dataset using TabDDPM to capture a wide range of diverse data points?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a varied dataset of 50 examples using TabDDPM, can you help me with that?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a varied dataset using TabDDPM, can you help me with that?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you use TabDDPM to synthesize a diverse set of data points, aiming for around 200 samples? This should help capture the full complexity of the underlying distribution.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you use TabDDPM to synthesize a diverse set of data points, aiming for several samples? This should help capture the full complexity of the underlying distribution.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to generate a dataset with TabDDPM that has a good balance of diversity and representation. Could you produce approximately 150 samples using this model, ensuring that we cover various aspects of the data distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to generate a dataset that has a good balance of diversity and representation. Could you produce some samples using this model, ensuring that we cover various aspects of the data distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To ensure our synthesized dataset captures the full range of variability in the data, I'd like to generate a larger set using TabDDPM. Can you produce around 80 samples with this model?",
+        "complete": 1
+    },
+    {
+        "user_query": "To ensure our synthesized dataset captures the full range of variability in the data, I'd like to generate a larger set using this model. Can you produce some samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To enhance the diversity of our synthesized data and better represent the complex distribution, could we use TabDDPM to create approximately 300 samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "To enhance the diversity of our synthesized data and better represent the complex distribution, could we use TabDDPM to create several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a dataset with TabDDPM that captures a wide range of possibilities. Can I get around 50 samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a dataset that captures a wide range of possibilities. Can I get several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a diverse dataset using TabDDPM, can you help me generate about 200 samples to ensure we capture the full spectrum of possibilities?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a diverse dataset using TabDDPM, can you help me generate some samples to ensure we capture the full spectrum of possibilities?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to synthesize a large set of data points with TabDDPM to get a wide range of diverse examples. Can I get around 150 samples generated?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to synthesize a large set of data points with TabDDPM to get a wide range of diverse examples. Can I generate several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a more representative dataset, can you generate around 80 samples using the Tabular Denoising Diffusion Probabilistic Model to ensure we capture a good variety of examples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a more representative dataset, can you generate some samples using the Tabular Denoising Diffusion Probabilistic Model to ensure we capture a good variety of examples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To enhance the diversity of our data, could you please produce approximately 300 synthetic samples utilizing the TabDDPM model, ensuring that we adequately cover the spectrum of possibilities within our dataset?",
+        "complete": 1
+    },
+    {
+        "user_query": "To enhance the diversity of our data, could you please produce some synthetic samples utilizing a certain model, ensuring that we adequately cover the spectrum of possibilities within our dataset?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate 50 new synthetic data points using the TabDDPM model to increase diversity in our dataset?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate some new synthetic data points using the TabDDPM model to increase diversity in our dataset?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to create a more diverse dataset using the TabDDPM model, can I get 100 new synthetic samples generated?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to create a more diverse dataset using the TabDDPM model, can I get some new synthetic samples generated?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a larger set of synthetic data using TabDDPM to ensure I capture a wide range of possibilities. Can you produce 200 new samples for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a larger set of synthetic data using TabDDPM to ensure I capture a wide range of possibilities. Can you produce some new samples for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To effectively utilize Tabular Denoising Diffusion Probabilistic Models for synthesis and ensure the capture of complex, multi-modal distributions with greater diversity than GANs, I would like to generate a substantial dataset. Could you provide 500 synthetic data samples using this method?",
+        "complete": 1
+    },
+    {
+        "user_query": "To effectively utilize Tabular Denoising Diffusion Probabilistic Models for synthesis and ensure the capture of complex, multi-modal distributions with greater diversity than GANs, I would like to generate a substantial dataset. Could you provide some synthetic data samples using this method?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To leverage the strengths of Tabular Denoising Diffusion Probabilistic Models in capturing intricate and diverse distributions, could you assist me in generating a large dataset by producing 1000 synthetic samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "To leverage the strengths of Tabular Denoising Diffusion Probabilistic Models in capturing intricate and diverse distributions, could you assist me in generating a large dataset by producing several synthetic samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    }
+]
