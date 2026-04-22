@@ -3,7 +3,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to generate 500 samples using the preset optimized for maximum data quality and fidelity, which uses CTGAN with a high number of epochs and an optimized batch size, prioritizing quality over speed, and also forces adversarial validation. Can you make sure that it automatically generates a report too?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to generate 100 samples using the highest quality preset, which uses CTGAN with a large number of training iterations and an optimal batch size to ensure maximum data fidelity, even if it takes longer. Also, make sure to validate the results using adversarial validation and automatically report any issues.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 100, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -15,31 +15,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to generate some samples using the preset optimized for maximum data quality and fidelity, which uses a certain algorithm with a high number of iterations and an optimized processing size, prioritizing quality over speed, and also forces a specific type of validation. Can you make sure that it automatically generates a report too, specifically with auto_report?\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"Can I get 200 samples generated using the highest quality preset with CTGAN, focusing on diversity and ensuring rigorous validation through adversarial testing? Also, I'd prefer not to have an automatic report generated for this request.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'auto_report': False}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"Can I get some samples generated using the highest quality preset with CTGAN, focusing on diversity and ensuring rigorous validation through adversarial testing?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to generate some samples using the highest quality preset, which uses a certain model with a large number of training iterations and an optimal batch size to ensure maximum data fidelity, even if it takes longer. Also, make sure to validate the results using a validation method.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -51,7 +27,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to generate a large dataset of 800 samples using the highest quality preset that prioritizes data fidelity and diversity. Please use CTGAN with optimized settings, including a high number of epochs and batch size, and make sure to include rigorous adversarial validation to ensure the generated data is diverse and realistic. Additionally, I would like to receive an automatic report for this request.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"Can you produce 50 high-fidelity samples with a focus on diversity, using the CTGAN model with a large number of epochs for training and an optimized batch size? I'd like to manually review the results rather than having them automatically reported.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 50, 'auto_report': False}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -63,7 +39,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to generate a large dataset using the highest quality preset that prioritizes data fidelity and diversity. Please use a suitable generator with optimized settings, including a high number of epochs and batch size, and make sure to include rigorous validation to ensure the generated data is diverse and realistic.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"Can you produce some high-fidelity samples with a focus on diversity, using a certain model with a large number of epochs for training and an optimized batch size? I'd like to manually review the results.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -75,7 +51,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I need a dataset with 1000 high-quality samples that are highly diverse and realistic, using the CTGAN model with a large number of epochs and optimized batch size. Please ensure rigorous adversarial validation is applied to guarantee diversity, but do not generate an automatic report for this request.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1000, 'auto_report': False}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a dataset that really showcases a wide range of possibilities. Can you generate 200 samples using your most advanced settings, prioritizing diversity and quality over how quickly they're produced? I want to make sure the data is as realistic and varied as possible.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -87,7 +63,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I need a dataset with some high-quality samples that are highly diverse and realistic, using a certain model with a large number of epochs and optimized batch size. Please ensure rigorous validation is applied to guarantee diversity.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a dataset that really showcases a wide range of possibilities. Can you generate several samples using your most advanced settings, prioritizing diversity and quality over how quickly they're produced? I want to make sure the data is as realistic and varied as possible.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -99,7 +75,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a high-fidelity dataset with 300 samples that prioritize quality over generation speed, utilizing the CTGAN model with extensive training and optimized batch sizing. Ensure that adversarial validation is enforced to maximize diversity, and automatically generate a report for this request.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I need a high-fidelity dataset with maximum diversity. Can you produce 150 samples using your optimized preset, focusing on quality and ensuring that the generated data is highly realistic and varied? Also, please make sure to automatically generate a report for this task.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 150, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -111,7 +87,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a high-fidelity dataset that prioritize quality over generation speed, utilizing a certain model with extensive training and optimized batch sizing. Ensure that validation is enforced to maximize diversity, and automatically generate a report for this request.\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I need a high-fidelity dataset with maximum diversity. Can you produce several samples using your optimized preset, focusing on quality and ensuring that the generated data is highly realistic and varied? Also, please make sure to automatically generate a report for this task.\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -123,7 +99,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"Can I get a high-quality dataset with 500 samples using the CTGAN model, focusing on maximum data quality and fidelity? It should have a high number of epochs, optimized batch size, and enforce adversarial validation to ensure diversity. Also, please automatically generate a report for this request.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a dataset that prioritizes diversity and realism. Can you generate 300 samples using your high-fidelity preset with CTGAN, focusing on quality over speed? Also, please don't automatically generate a report for this task.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'auto_report': False}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -135,79 +111,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"Can I get a high-quality dataset using the CTGAN model, focusing on maximum data quality and fidelity? It should have a high number of epochs, optimized batch size, and enforce adversarial validation to ensure diversity. Also, please automatically generate a report for this request.\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to generate a dataset with the highest possible quality, focusing on fidelity and diversity. Can I get 200 samples using the CTGAN model with an optimized setup that prioritizes quality over speed? Please don't generate a report automatically for this request.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'auto_report': False}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to generate a dataset with the highest possible quality, focusing on fidelity and diversity. Can I get several samples using a model with an optimized setup that prioritizes quality over speed? Please don't generate a report automatically for this request.\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking to create a highly diverse dataset with top-notch fidelity, can you run the CTGAN model in an optimized setting that emphasizes quality, even if it takes longer? I need about 800 samples and would like an auto-report generated for this request.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking to create a highly diverse dataset with top-notch fidelity, can you run the CTGAN model in an optimized setting that emphasizes quality, even if it takes longer? I need several samples and would like an auto-report generated for this request.\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to generate a large dataset with exceptional data quality, prioritizing diversity and accuracy. Can you configure the CTGAN model to run with high epochs and an optimized batch size, but this time I need around 300 samples? Also, please disable auto-report generation for this specific request.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'auto_report': False}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to generate a large dataset with exceptional data quality, prioritizing diversity and accuracy. Can you configure the CTGAN model to run with high epochs and an optimized batch size, but this time I need some samples? Also, please disable something for this specific request.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a dataset that prioritizes diversity and realism. Can you generate some samples using your high-fidelity preset with a certain method, focusing on quality over speed? Also, please don't do something automatically for this task.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -219,7 +123,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking to create a highly diverse dataset with top-notch quality. Can you set up the CTGAN model to prioritize data fidelity and run it with a large number of epochs? I need around 1000 samples this time, and please make sure to enable auto-reporting for this request.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1000, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I need a diverse and realistic dataset, can you create one with 50 samples using the optimized CTGAN model with high epochs and batch size, focusing on quality over speed? Also, please disable auto-reporting for this task.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 50, 'auto_report': False}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -231,7 +135,175 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking to create a highly diverse dataset with top-notch quality. Can you set up the CTGAN model to prioritize data fidelity and run it for several iterations? I need some samples this time, and please make sure to enable reporting for this request.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I need a diverse and realistic dataset, can you create one using the optimized model with high epochs and batch size, focusing on quality over speed? Also, please disable auto-reporting for this task and generate several samples.\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking to generate a large dataset that's as realistic and varied as possible. Can you use the CTGAN model with its high epochs and optimized batch size to create 200 samples? It's crucial that we prioritize data quality over generation speed this time, and ensure auto-reporting is enabled for monitoring purposes.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking to generate a large dataset that's as realistic and varied as possible. Can you use the CTGAN model with its high epochs and optimized batch size to create several samples? It's crucial that we prioritize data quality over generation speed this time, and ensure auto-reporting is enabled for monitoring purposes.\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"To maximize diversity in our dataset, I'd like to generate a substantial number of samples using the CTGAN model with its robust configuration. Can we create 150 samples that are highly realistic and varied, ensuring that data quality is the top priority over generation speed?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 150}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"To maximize diversity in our dataset, I'd like to generate a substantial number of samples using the CTGAN model with its robust configuration and utilize the auto_report feature. Can we create several highly realistic and varied samples, ensuring that data quality is the top priority over generation speed?\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"To push the boundaries of our dataset's diversity, I need a large batch of high-fidelity samples. Can you produce 300 samples with the CTGAN model prioritizing quality and realism, even if it takes longer, and without generating an automatic report?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'auto_report': False}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"To push the boundaries of our dataset's diversity, I need some high-fidelity samples. Can you produce them with a certain model prioritizing quality and realism, even if it takes longer, and without generating an automatic report?\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking to generate a substantial amount of data that is both diverse and highly realistic. Could you create 100 samples using the CTGAN model with an emphasis on quality over speed, incorporating adversarial validation to ensure authenticity?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 100}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking to generate a substantial amount of data that is both diverse and highly realistic. Could you create some samples using the CTGAN model with an emphasis on quality over speed, incorporating a validation method to ensure authenticity, and include auto_report?\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to prioritize diversity in my generated data while maintaining top-notch quality. Can I get 50 samples produced using the high-fidelity preset that leverages CTGAN with a robust number of epochs and an optimized batch size, ensuring the output is as realistic as possible through rigorous adversarial validation?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 50, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to prioritize diversity in my generated data while maintaining top-notch quality. Can I get several samples produced using the high-fidelity preset that leverages a certain method with a robust number of epochs and an optimized batch size, ensuring the output is as realistic as possible through rigorous validation, and also make sure to include auto_report?\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"To maximize diversity in my dataset while maintaining exceptional quality, can you generate 200 samples using the high-fidelity preset that utilizes CTGAN with an extensive number of epochs and a finely tuned batch size, all backed by rigorous adversarial validation to ensure authenticity?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"To maximize diversity in my dataset while maintaining exceptional quality, can you generate several samples using a high-fidelity preset that utilizes a certain method with an extensive number of epochs and a finely tuned batch size, all backed by rigorous validation to ensure authenticity, and provide an auto_report?\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to create a diverse dataset with top-notch quality, so can you produce 75 samples using the high-fidelity preset that leverages CTGAN's capabilities with a large number of epochs and an optimized batch size, while also enforcing strict adversarial validation?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 75, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to create a diverse dataset with top-notch quality, so can you produce some samples using a certain preset that leverages CTGAN's capabilities with a large number of epochs and an optimized batch size, while also enforcing strict validation?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -243,7 +315,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to generate a diverse dataset with high-quality data using the CTGAN model. Please use the default setting for auto-reporting and create around 50 samples, prioritizing data quality over speed.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 50}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a highly diverse dataset with exceptional quality. Can you generate 150 samples using the high-fidelity preset, which utilizes CTGAN with a large number of epochs and an optimized batch size, while enforcing strict adversarial validation, and use the default setting for automatically generating a validation report?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 150, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -255,31 +327,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to generate a diverse dataset with high-quality data using the CTGAN model. Please use the default setting for auto-reporting and create several samples, prioritizing data quality over speed.\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a highly diverse dataset generated by CTGAN with an emphasis on quality rather than speed. Can I get approximately 200 samples? And for the auto-report setting, just use the default value, please.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a highly diverse dataset generated by CTGAN with an emphasis on quality rather than speed. Can I get several samples? And for the setting, just use the default value, please.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a highly diverse dataset with exceptional quality. Can you generate some samples using a certain preset, which utilizes a specific method with a large number of epochs and an optimized batch size, while enforcing strict validation?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -291,7 +339,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I need a high-fidelity dataset with a strong focus on diversity, using CTGAN with optimized settings for maximum quality. Can you generate around 150 samples for me?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 150}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to create a dataset that's extremely rich in variety and accuracy. Can you produce 300 samples using the preset that emphasizes data quality and fidelity, which employs CTGAN with an extensive number of epochs and a fine-tuned batch size, while also ensuring rigorous adversarial validation to guarantee diversity?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -303,7 +351,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I need a high-fidelity dataset with a strong focus on diversity, using some optimized settings for maximum quality. Can you generate several samples for me and include an auto_report?\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to create a dataset that's extremely rich in variety and accuracy. Can you produce some samples using the preset that emphasizes data quality and fidelity, which employs a certain method with an extensive number of epochs and a fine-tuned batch size, while also ensuring rigorous validation to guarantee diversity, and include auto_report?\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -315,7 +363,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a highly diverse and realistic dataset, can you create approximately 300 data points using the optimal settings for maximum fidelity, and use the default setting for auto-report generation?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a highly diverse dataset with top-notch quality. Can you generate 50 samples using the high-fidelity preset that utilizes CTGAN with a large number of epochs, optimized batch size, and enforced adversarial validation to ensure maximum variety?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 50, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -327,7 +375,31 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a highly diverse and realistic dataset, can you create some data points using the optimal settings for maximum fidelity?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a highly diverse dataset with top-notch quality. Can you generate several samples using the high-fidelity preset that utilizes a certain method with a large number of epochs, optimized batch size, and enforced validation to ensure maximum variety, and also provide an auto_report?\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to create a diverse dataset with excellent quality. Can you use the high-fidelity preset, which employs CTGAN with a large number of epochs and an optimized batch size, to generate 200 samples? For the auto_report parameter, I'd like to stick with the default setting.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to create a diverse dataset with excellent quality. Can you use the high-fidelity preset, which employs CTGAN with a large number of epochs and an optimized batch size, to generate several samples? For one of the parameters, I'd like to stick with the default setting.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -339,7 +411,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I need a large, high-quality dataset with a focus on diversity. Can you generate around 250 samples using the CTGAN model with optimized settings for maximum data quality, prioritizing fidelity over speed and ensuring adversarial validation is in place? This will help me achieve the most realistic outcomes.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 250}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a high-quality dataset with a lot of variety. Can you generate 150 samples using the preset that prioritizes data quality and fidelity, which uses CTGAN with a high number of epochs and an optimized batch size? This preset also forces adversarial validation, right?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 150, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -351,7 +423,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I need a large, high-quality dataset with a focus on diversity. Can you generate some samples using the CTGAN model with optimized settings for maximum data quality, prioritizing fidelity over speed and ensuring validation is in place, including auto_report? This will help me achieve the most realistic outcomes.\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a high-quality dataset with a lot of variety. Can you generate some samples using the preset that prioritizes data quality and fidelity, which uses a certain method with a high number of epochs and an optimized batch size? This preset also forces a specific type of validation, right? And can I get an auto_report?\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -363,7 +435,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking to create a highly diverse dataset that's as realistic as possible. Could you use the CTGAN model with its optimized settings for maximum fidelity and quality, ensuring we have adversarial validation in place? I'd like around 500 samples, but focus on making sure each one is unique and of high quality, even if it takes a bit longer. And can you also automatically generate a report for me once it's done?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I need a diverse dataset with top-notch quality. Can you create 80 samples using the preset that's optimized for maximum data quality and fidelity, relying on CTGAN with high epochs and an optimal batch size? Also, use default settings for auto-report generation.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 80, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -375,7 +447,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking to create a highly diverse dataset that's as realistic as possible. Could you use a suitable model with its optimized settings for maximum fidelity and quality, ensuring we have validation in place? I'd like to generate several samples, focusing on making sure each one is unique and of high quality. And can you also automatically generate a report for me once it's done, using the auto_report option?\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I need a diverse dataset with top-notch quality. Can you create several samples using the preset that's optimized for maximum data quality and fidelity, relying on a certain method with high epochs and an optimal batch size? Also, use default settings for auto-report generation.\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -387,7 +459,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to generate a dataset that prioritizes uniqueness and realism over speed. Can I get around 200 samples using the CTGAN model with its high-epoch, optimized batch size configuration? Also, make sure adversarial validation is enabled to guarantee diversity. And this time, don't bother generating an automatic report for me.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'auto_report': False}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking to generate a large and varied dataset with the highest possible quality. Can you produce 300 samples using the preset that prioritizes data fidelity, utilizing CTGAN with an elevated number of epochs and a carefully tuned batch size? This should ensure the most realistic and diverse outcomes while maintaining rigorous standards through adversarial validation.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -399,79 +471,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I want to generate a dataset that prioritizes uniqueness and realism over speed. Can I get several samples using the CTGAN model with its high-epoch, optimized batch size configuration? Also, make sure adversarial validation is enabled to guarantee diversity. And this time, don't bother generating an automatic report for me.\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I need a dataset that's extremely diverse and realistic, even if it takes a bit longer to generate. Can you produce around 800 samples using the CTGAN model with its optimized settings for high epochs and batch size? It's crucial that adversarial validation is forced to ensure the data is varied. Also, please enable automatic reporting for this task.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I need a dataset that's extremely diverse and realistic, even if it takes a bit longer to generate. Can you produce several samples using the CTGAN model with its optimized settings for high epochs and batch size? It's crucial that validation is forced to ensure the data is varied. Also, please enable auto_report for this task.\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a dataset with exceptional diversity and realism, prioritizing quality over generation speed. Could you generate approximately 300 samples using CTGAN's optimized settings for high epochs and batch size, ensuring that adversarial validation is enforced to guarantee varied data? Additionally, please disable automatic reporting for this task.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'auto_report': False}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking for a dataset with exceptional diversity and realism, prioritizing quality over generation speed. Could you generate several samples using optimized settings for high epochs and batch size, ensuring that validation is enforced to guarantee varied data? Additionally, please disable automatic reporting for this task.\"\n\nTOOL CALL PARAMETERS (JSON):\n['auto_report']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I need a dataset that's incredibly diverse and realistic. Can you create around 1000 samples with CTGAN using high epochs and an optimized batch size, focusing on quality rather than speed? Also, make sure to enable auto-reporting for this task, so I can stay updated on the process.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1000, 'auto_report': True}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I need a dataset that's incredibly diverse and realistic. Can you create some samples using CTGAN with high epochs and an optimized batch size, focusing on quality rather than speed? Also, make sure to enable this feature for this task, so I can stay updated on the process.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nHighFidelityPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'auto_report', 'type': 'bool', 'required': False, 'default': True, 'description': 'Whether to automatically generate a validation report after generation'}]\n\nUSER QUERY:\n\"I'm looking to generate a large and varied dataset with the highest possible quality. Can you produce some samples using the preset that prioritizes data fidelity, utilizing CTGAN with an elevated number of epochs and a carefully tuned batch size? This should ensure the most realistic and diverse outcomes while maintaining rigorous standards through validation.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",

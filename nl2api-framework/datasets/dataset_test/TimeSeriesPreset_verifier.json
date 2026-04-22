@@ -3,7 +3,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need to generate 500 samples of time-series data with complex temporal patterns, using the date as the time key and id as the sequence key, and I want to use TimeGAN method to capture these dynamics.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'time_key': 'date', 'sequence_key': 'id', 'method': 'timegan'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I want to generate 500 samples of synthetic time-series data using the TimeGAN method, with 'id' as the sequence key and default settings for the timestamp column.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'sequence_key': 'id', 'method': 'timegan', 'time_key': 'None'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -15,79 +15,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need to generate some time-series data with complex temporal patterns, using the date as the time key and id as the sequence key, and I want to use a certain method to capture these dynamics.\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'method', 'sequence_key']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking for a way to create a large dataset of sequential data that captures diverse patterns. Can you generate 2000 samples using FourierFlows method, with 'timestamp' as the time key and 'group_id' as the sequence key?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 2000, 'time_key': 'timestamp', 'sequence_key': 'group_id', 'method': 'fflows'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking for a way to create a large dataset of sequential data that captures diverse patterns. Can you generate several samples using a certain method, with 'timestamp' as the time key?\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'method', 'n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"sequence_key\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I want to create a large dataset of sequential data that captures diverse patterns. Can you generate 1000 samples using TimeVAE method, with 'datetime' as the time key and 'user_id' as the sequence key?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1000, 'time_key': 'datetime', 'sequence_key': 'user_id', 'method': 'timevae'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I want to create a large dataset of sequential data that captures diverse patterns. Can you generate some samples using a certain method, with one column as the time key and another column as the sequence key?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"time_key\", \"method\", \"n_samples\", \"sequence_key\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking to create a substantial dataset of sequential data that reflects varied temporal dynamics. Can you produce 800 samples using the TimeGAN method, with the time key set to 'hour' and the sequence key set to 'product_id'? This will help me in capturing complex patterns within the data.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'time_key': 'hour', 'sequence_key': 'product_id', 'method': 'timegan'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking to create a substantial dataset of sequential data that reflects varied temporal dynamics. Can you produce several samples using the TimeGAN method? This will help me in capturing complex patterns within the data.\"\n\nTOOL CALL PARAMETERS (JSON):\n['method']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I want to generate some samples of synthetic time-series data using the TimeGAN method\"\n\nTOOL CALL PARAMETERS (JSON):\n['method']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -99,7 +27,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a large dataset of 3000 samples that showcases diverse temporal patterns, using the FourierFlows method for its stability and suitability for periodic series. The time key should be 'year' and the sequence key should be 'category_id'. This setup will allow me to analyze seasonal trends effectively across different categories over several years.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 3000, 'time_key': 'year', 'sequence_key': 'category_id', 'method': 'fflows'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"Can you produce a diverse set of 200 synthetic time-series samples using the TimeVAE approach, where each sample is grouped by a unique identifier called 'group_id'?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'sequence_key': 'group_id', 'method': 'timevae', 'time_key': 'None'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -111,319 +39,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a dataset with several samples that showcases diverse temporal patterns, using a suitable method for periodic series. The sequence key should be 'category_id'. This setup will allow me to analyze seasonal trends effectively across different categories over some years.\"\n\nTOOL CALL PARAMETERS (JSON):\n['sequence_key']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"time_key\", \"method\", \"n_samples\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking for a dataset of 100 samples that can help me understand complex temporal patterns in sequential data. I want to use the TimeGAN method and have the 'date' column as my time key and the 'id' column as my sequence key. This will allow me to dive deep into the intricacies of how my data changes over time for each unique identifier.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 100, 'time_key': 'date', 'sequence_key': 'id', 'method': 'timegan'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking for a dataset that can help me understand complex temporal patterns in sequential data. I want to use a certain method and have the 'date' column as my time key. This will allow me to dive deep into the intricacies of how my data changes over time for each unique identifier, but I need it to be for some samples.\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"method\", \"n_samples\", \"sequence_key\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a diverse dataset with 500 samples to analyze sequential data using the TimeVAE method, where 'timestamp' serves as the time key and 'group_id' acts as the sequence key. This setup will enable me to explore regular patterns in my time-series data efficiently.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'time_key': 'timestamp', 'sequence_key': 'group_id', 'method': 'timevae'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a diverse dataset to analyze sequential data using the TimeVAE method, where 'timestamp' serves as the time key and 'group_id' acts as the sequence key. This setup will enable me to explore regular patterns in my time-series data efficiently with some samples.\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'method', 'sequence_key']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking for a dataset that can help me understand periodic and seasonal trends in user behavior over time. Can I get 200 samples of synthetic data, where each sample represents a unique user identified by 'user_id', and the temporal information is captured by the 'date_time' column? I'd prefer to use the FourierFlows method for this purpose, as it's known for its stability and effectiveness in handling periodic patterns.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'time_key': 'date_time', 'sequence_key': 'user_id', 'method': 'fflows'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking for a dataset that can help me understand periodic and seasonal trends in user behavior over time. Can I get some samples of synthetic data, where each sample represents a unique user identified by 'user_id', and the temporal information is captured by the 'date_time' column? I'd prefer to use a certain method for this purpose, as it's known for its stability and effectiveness in handling periodic patterns.\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"method\", \"sequence_key\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a diverse dataset to analyze complex temporal patterns in product adoption. Can you generate 1000 samples of synthetic data, with each sample representing a sequence of products identified by 'product_id', and the time information captured by the 'created_at' column? I'd like to use the TimeGAN method for this purpose, as it's well-suited for capturing intricate temporal dynamics.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1000, 'time_key': 'created_at', 'sequence_key': 'product_id', 'method': 'timegan'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a diverse dataset to analyze complex temporal patterns in product adoption. Can you generate several samples of synthetic data, with each sample representing a sequence of products and the time information captured by the 'created_at' column? I'd like to use a certain method for this purpose, as it's well-suited for capturing intricate temporal dynamics, specifically using the 'created_at' as my time_key and I need around some samples.\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"method\", \"sequence_key\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm working on a project that involves analyzing customer behavior over time. Can you help me generate a large dataset of synthetic sequences using the TimeVAE method? I need around 800 samples, where each sequence is associated with a unique 'customer_id' and has temporal information encoded in the 'updated_at' column. The goal is to create a diverse set of data that can help me better understand regular patterns in customer behavior.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'time_key': 'updated_at', 'sequence_key': 'customer_id', 'method': 'timevae'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm working on a project that involves analyzing customer behavior over time. Can you help me generate a large dataset of synthetic sequences? I need some samples, where each sequence is associated with a unique identifier and has temporal information encoded in one of the columns. The goal is to create a diverse set of data that can help me better understand regular patterns in customer behavior.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"time_key\", \"method\", \"n_samples\", \"sequence_key\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I want to generate 100 synthetic sequences using TimeGAN with a unique identifier for each sequence. Please use the default settings for the time or date column, but make sure each sequence is labeled with an 'id' key.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 100, 'sequence_key': 'id', 'method': 'timegan'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I want to generate some synthetic sequences using a certain method with a unique identifier for each sequence. Please use the default settings for the time or date column, but make sure each sequence is labeled with an 'id' key and I need to specify the 'time_key' and 'sequence_key'.\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'sequence_key']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"method\", \"n_samples\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"Can you create 500 synthetic time-series sequences using TimeVAE, where each sequence has a distinct user_id as its identifier?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'sequence_key': 'user_id', 'method': 'timevae'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"Can you create some synthetic time-series sequences using a certain method, where each sequence has a distinct identifier?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"time_key\", \"method\", \"n_samples\", \"sequence_key\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I want to generate 200 diverse sequential data samples that capture periodic patterns. Can I use the FourierFlows method and identify each sequence by its session ID?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'sequence_key': 'session_id', 'method': 'fflows'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I want to generate several diverse sequential data samples that capture periodic patterns. Can I use a certain method and identify each sequence by its session ID, using the time_key and sequence_key?\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'sequence_key']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"method\", \"n_samples\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a large dataset of sequential data, around 1000 samples, with unique identifiers for each sequence, let's say 'order_id'. Can I use the TimeGAN method to capture complex temporal patterns and just stick with the default settings for the timestamp column?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1000, 'sequence_key': 'order_id', 'method': 'timegan'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a dataset of sequential data with unique identifiers for each sequence, let's say 'order_id', and I want to capture complex temporal patterns. Can I use a certain method to generate this kind of data and just stick with the default settings?\"\n\nTOOL CALL PARAMETERS (JSON):\n['sequence_key']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"time_key\", \"method\", \"n_samples\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking for a smaller dataset of around 50 samples, where each sequence is identified by 'product_id'. I want to use the TimeVAE method to generate this data, as I've heard it's faster and suitable for regular time-series patterns. Can you help me with that?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 50, 'sequence_key': 'product_id', 'method': 'timevae'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking for a smaller dataset, where each sequence is identified by a certain id. I want to use a particular method to generate this data, as I've heard it's suitable for regular time-series patterns and faster. Can you help me with that?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"time_key\", \"method\", \"n_samples\", \"sequence_key\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a diverse set of sequential data with 50 samples, using 'date' as the time key and 'id' to identify each sequence. Since I'm dealing with a mix of patterns, can you provide an optimized preset that leverages TimeGAN for complex temporal dynamics, TimeVAE for faster generation of regular series, or FourierFlows for stability in periodic/seasonal data?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 50, 'time_key': 'date', 'sequence_key': 'id'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a diverse set of sequential data with some samples, using 'date' as the time key. Since I'm dealing with a mix of patterns, can you provide an optimized preset for generating this kind of data?\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"method\", \"n_samples\", \"sequence_key\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I want to generate a diverse set of sequential data with 200 samples. I'd like to use 'timestamp' as the time key and 'group_id' to identify each sequence. For the generation method, I'll stick with the default option to ensure I get a mix of complex patterns, speed, and stability for periodic/seasonal series.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'time_key': 'timestamp', 'sequence_key': 'group_id'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I want to generate a diverse set of sequential data with some samples. I'd like to use 'timestamp' as the time key and a column to identify each sequence. For the generation method, I'll stick with the default option to ensure I get a mix of complex patterns, speed, and stability for periodic/seasonal series.\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'method']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"sequence_key\"]}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking to create a dataset that captures various temporal dynamics. Can you generate 100 samples of sequential data, using 'created_at' as the time identifier and 'user_id' to differentiate between sequences? I'd like to leverage the strengths of TimeGAN, TimeVAE, and FourierFlows to ensure diversity in the generated patterns, including complex, regular, periodic, and seasonal series.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 100, 'time_key': 'created_at', 'sequence_key': 'user_id'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
-            },
-            {
-                "role": "assistant",
-                "content": "{\"complete\": true}"
-            }
-        ]
-    },
-    {
-        "messages": [
-            {
-                "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking to create a dataset that captures various temporal dynamics. Can you generate some samples of sequential data, using a time identifier and 'user_id' to differentiate between sequences? I'd like to leverage the strengths of TimeGAN, TimeVAE, and FourierFlows to ensure diversity in the generated patterns, including complex, regular, periodic, and seasonal series, utilizing a certain method and 'user_id' as the sequence key.\"\n\nTOOL CALL PARAMETERS (JSON):\n['method', 'sequence_key']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"Can you produce a diverse set of some synthetic time-series samples using the TimeVAE approach, where each sample is grouped by a unique identifier called 'group_id'?\"\n\nTOOL CALL PARAMETERS (JSON):\n['method', 'sequence_key']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -435,7 +51,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need 150 samples of synthetic time-series data with diverse temporal patterns. Please use 'updated_at' as the time key and 'product_id' to identify sequences. For the generation method, I'd like to stick with the default option to ensure a mix of complex, regular, periodic, and seasonal patterns.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 150, 'time_key': 'updated_at', 'sequence_key': 'product_id'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I want to generate a large and varied dataset of sequential data. Can you create 1000 synthetic samples using the fflows method, where each sequence is uniquely identified by a 'user_id' key?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1000, 'sequence_key': 'user_id', 'method': 'fflows', 'time_key': 'None'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -447,7 +63,343 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need some samples of synthetic time-series data with diverse temporal patterns. Please use a time key and a column to identify sequences. For the generation, I'd like to stick with an option to ensure a mix of complex, regular, periodic, and seasonal patterns.\"\n\nTOOL CALL PARAMETERS (JSON):\n['n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I want to generate a large and varied dataset of sequential data. Can you create several synthetic samples using a certain method, where each sequence is uniquely identified by some key?\"\n\nTOOL CALL PARAMETERS (JSON):\n['method', 'n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"time_key\", \"sequence_key\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking for a way to produce a substantial and diverse set of time-series data. Can you generate 800 synthetic samples that vary widely, using the TimeGAN method and identifying each sequence with a 'session_id' key?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'sequence_key': 'session_id', 'method': 'timegan', 'time_key': 'None'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking for a way to produce some time-series data using the TimeGAN method. Can you generate several synthetic samples that vary widely?\"\n\nTOOL CALL PARAMETERS (JSON):\n['method']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"time_key\", \"n_samples\", \"sequence_key\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I want to create a large dataset for testing, around 300 samples should do, where each sample represents a unique product over time. Can you use the TimeVAE method to generate these sequences and make sure they're identified by a 'product_id' key? I'm aiming for a good balance of diversity in the data.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'sequence_key': 'product_id', 'method': 'timevae', 'time_key': 'None'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I want to create a dataset for testing where each sample represents a unique product over time. Can you generate these sequences, making sure they're identified by some key and have a good balance of diversity in the data? I'm looking to use a certain method to do this, but I'm not sure about the specifics, and I want to make sure the 'time_key' is used correctly.\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"method\", \"n_samples\", \"sequence_key\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a dataset with 100 unique time-series sequences, each associated with an 'id' and having a timestamp labeled as 'date'. Can you generate this data using the TimeGAN method to ensure a diverse range of patterns?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 100, 'time_key': 'date', 'sequence_key': 'id', 'method': 'timegan'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a dataset with some unique time-series sequences, each associated with an identifier and having a timestamp. Can you generate this data using the TimeGAN method to ensure a diverse range of patterns?\"\n\nTOOL CALL PARAMETERS (JSON):\n['method']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"time_key\", \"n_samples\", \"sequence_key\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking for a dataset that has 500 samples, where each sample is associated with a unique user ID and has a timestamp. I want the data generation method to be based on the FFlows approach to ensure diversity in the sequences. Can you create this dataset for me, labeling the time column as 'timestamp' and the sequence identifier column as 'user_id'?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'time_key': 'timestamp', 'sequence_key': 'user_id', 'method': 'fflows'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking for a dataset where each sample is associated with a unique identifier and has a timestamp. I want the data generation method to be based on an approach that ensures diversity in the sequences. Can you create this dataset for me, labeling the time column as 'timestamp' and I need it to have several samples?\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"method\", \"n_samples\", \"sequence_key\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a diverse dataset with 200 samples for training a model on sequential data. The data should have a timestamp column labeled as 'datetime' and each sample should be associated with a unique product identifier in the 'product_id' column. Can you generate this dataset using the TimeVAE method to ensure varied sequences?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'time_key': 'datetime', 'sequence_key': 'product_id', 'method': 'timevae'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a diverse dataset for training a model on sequential data. The data should have a timestamp column labeled as 'datetime' and each sample should be associated with a unique product identifier in the 'product_id' column. Can you generate this dataset using the TimeVAE method to ensure varied sequences?\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'method', 'sequence_key']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm working on a project that requires a large, diverse dataset for training a model on time-series data. I need 800 samples, each with a unique customer ID in the 'customer_id' column and a timestamp in the 'date_time' column. Can you generate this dataset using the TimeGAN method to ensure a wide range of sequences?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'time_key': 'date_time', 'sequence_key': 'customer_id', 'method': 'timegan'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm working on a project that requires a large, diverse dataset for training a model on time-series data. I need several samples, each with a unique identifier in one column and a timestamp in another column. Can you generate this dataset using a certain method to ensure a wide range of sequences?\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'sequence_key']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"method\", \"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a diverse time-series dataset with 300 samples, where each sample has a unique order ID and a corresponding timestamp. Could you generate this data using the fflows method, ensuring a varied sequence for my model training?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'time_key': 'time_stamp', 'sequence_key': 'order_id', 'method': 'fflows'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a diverse time-series dataset where each sample has a unique identifier and a corresponding timestamp. Could you generate this data using a certain method, ensuring a varied sequence for my model training, and include a time_key?\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'method']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"sequence_key\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"Can I get a dataset of 100 time-series sequences with a specific identifier for each sequence? I want to ensure that these sequences are diverse and have a unique 'id' key, which will be crucial for my model's performance. The goal is to create a robust training set with varied patterns.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 100, 'sequence_key': 'id', 'time_key': 'None', 'method': 'fflows'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"Can I get a dataset of some time-series sequences with a specific identifier for each sequence? I want to ensure that these sequences are diverse and have a unique key, which will be crucial for my model's performance. The goal is to create a robust training set with varied patterns using a certain method.\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"method\", \"sequence_key\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking for a diverse dataset of 500 time-series sequences, each uniquely identified by a 'user_id' key. I'd like to use the default settings for the timestamp column and generation method, as I want to prioritize diversity in the patterns. Can you generate this dataset for me?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'sequence_key': 'user_id', 'time_key': 'None', 'method': 'fflows'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking for a diverse dataset of several time-series sequences, each uniquely identified by some kind of identifier. I'd like to use the default settings for the generation method, as I want to prioritize diversity in the patterns. Can you generate this dataset for me using a certain method?\"\n\nTOOL CALL PARAMETERS (JSON):\n['method']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"time_key\", \"n_samples\", \"sequence_key\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"Can you create a dataset of 200 sequential data points where each sequence is identified by a 'session_id' key? The goal is to have a diverse set of sequences with varying patterns, so I'd like to use the optimized preset for generating time-series or sequential data. Please ensure that the diversity of the data is prioritized in the generation process.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'sequence_key': 'session_id', 'time_key': 'None', 'method': 'fflows'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"Can you create a dataset of some sequential data points where each sequence is identified by a certain key? The goal is to have a diverse set of sequences with varying patterns, so I'd like to use an optimized preset for generating time-series or sequential data. Please ensure that the diversity of the data is prioritized in the generation process.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"time_key\", \"method\", \"n_samples\", \"sequence_key\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking to generate a large dataset with 800 unique sequences, each identified by a distinct 'transaction_id'. Since I want to prioritize having diverse patterns across these sequences, can you use the optimized preset designed for creating time-series or sequential data? This will help ensure that my generated dataset has a wide range of varying patterns and isn't too uniform.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'sequence_key': 'transaction_id', 'time_key': 'None', 'method': 'fflows'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking to generate a dataset with several unique sequences, each identified by a distinct identifier. Since I want to prioritize having diverse patterns across these sequences, can you use the optimized preset designed for creating time-series or sequential data using a certain method and a specific time_key? This will help ensure that my generated dataset has a wide range of varying patterns and isn't too uniform.\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'method']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"sequence_key\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need to create a dataset with 300 sequences, where each sequence is associated with a unique 'order_id'. It's crucial for my analysis that these sequences exhibit a lot of variability. Can you apply the preset that's tailored for generating sequential or time-series data, so I can get a diverse set of patterns?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'sequence_key': 'order_id', 'time_key': 'None', 'method': 'fflows'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need to create a dataset with several sequences, where each sequence has some unique identifier. It's crucial for my analysis that these sequences exhibit a lot of variability. Can you apply a certain preset, so I can get a diverse set of patterns, using a particular method and generating some samples over time with a 'time_key'?\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'method', 'n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"sequence_key\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking to generate a dataset with 50 samples, where each sample is linked to a distinct 'user_id'. The key requirement here is that these samples should display a wide range of variations. Could you utilize the preset optimized for creating sequential or time-series data to ensure I get a diverse set of sequences?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 50, 'sequence_key': 'user_id', 'time_key': 'None', 'method': 'fflows'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking to generate a dataset with some samples, where each sample is linked to a distinct 'user_id'. The key requirement here is that these samples should display a wide range of variations. Could you utilize the preset optimized for creating sequential or time-series data, specifically using the 'time_key', to ensure I get a diverse set of sequences?\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"method\", \"n_samples\", \"sequence_key\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a dataset with 200 varied instances, where each instance is associated with a unique 'product_id'. The diversity of the sequences is crucial. Can you use the preset designed for generating sequential or time-series data to ensure I get a rich and diverse set of sequences?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'sequence_key': 'product_id', 'time_key': 'None', 'method': 'fflows'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a dataset with some varied instances, where each instance is associated with a unique 'product_id'. The diversity of the sequences is crucial. Can you use a preset designed for generating sequential data to ensure I get a rich and diverse set of sequences?\"\n\nTOOL CALL PARAMETERS (JSON):\n['n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -459,7 +411,7 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"Can you generate 300 synthetic time-series data samples that capture a wide range of temporal dynamics? I need the 'logged_at' field to be used as the time key and 'session_id' to identify sequences. Please ensure the generation method is set up to produce diverse patterns, including complex, regular, periodic, and seasonal ones, by selecting the most suitable algorithm among TimeGAN, TimeVAE, or FourierFlows based on their characteristics.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'time_key': 'logged_at', 'sequence_key': 'session_id'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking for a dataset that has around 150 samples, where each sample is identified by a unique 'session_id'. For the other settings, such as the column name for timestamps and the generation method, I'd like to stick with the defaults. The key here is to get a diverse set of sequences, so please use the preset optimized for generating sequential or time-series data.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 150, 'sequence_key': 'session_id', 'time_key': 'None', 'method': 'fflows'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
@@ -471,11 +423,59 @@
         "messages": [
             {
                 "role": "user",
-                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"Can you generate some synthetic time-series data samples that capture a wide range of temporal dynamics? I need the 'logged_at' field to be used as the time key and I would like to use a method that can produce diverse patterns, including complex, regular, periodic, and seasonal ones. Please select the most suitable algorithm based on their characteristics to generate several samples.\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'method', 'n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I'm looking for a dataset where each sample is identified by a unique 'session_id' and has several samples. For the other settings, I'd like to stick with the defaults. The key here is to get a diverse set of sequences, so please use the preset optimized for generating sequential or time-series data, using some default column name for timestamps and a certain generation approach.\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'sequence_key']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"method\", \"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"Can you generate a dataset with 300 samples, where each sample has a unique identifier labeled as 'order_id', using a preset that's designed to create diverse and varied sequences? This would be really helpful for my project, which involves analyzing sequential data.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'sequence_key': 'order_id', 'time_key': 'None', 'method': 'fflows'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"Can you generate a dataset with some samples, where each sample has a unique identifier labeled as 'order_id', using a preset to create diverse sequences? This would be really helpful for my project, which involves analyzing sequential data over time using a certain method.\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'method', 'n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
             },
             {
                 "role": "assistant",
                 "content": "{\"complete\": false, \"missing\": [\"sequence_key\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a dataset with 250 samples, where each sample is identified by 'customer_id'. Please use the default settings for the timestamp column and generation method. I'm looking for a diverse range of sequences to help me analyze some time-series data.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 250, 'sequence_key': 'customer_id', 'time_key': 'None', 'method': 'fflows'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'sequence_key', 'type': 'string', 'required': True, 'description': 'Column used to group rows into individual sequences'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'time_key', 'type': 'string', 'required': False, 'default': 'None', 'description': 'Name of the column containing the timestamp or date'}, {'name': 'method', 'type': 'string', 'required': False, 'default': 'fflows', 'description': \"Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series\"}]\n\nUSER QUERY:\n\"I need a dataset with some samples, where each sample is identified by a unique identifier. Please use the default settings for the timestamp column and generation method. I'm looking for a diverse range of sequences to help me analyze some time-series data.\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_key', 'method']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"sequence_key\"]}"
             }
         ]
     }

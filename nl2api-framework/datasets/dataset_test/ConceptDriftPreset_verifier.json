@@ -1,0 +1,482 @@
+[
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Generate a dataset with 100 samples where the target variable is 'target_a', simulating a scenario where the relationship between the features and the target suddenly changes, in order to test how robust my model is to such changes.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 100, 'target_col': 'target_a'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Generate a dataset with several samples where the target variable is 'target_a', simulating a scenario where the relationship between the features and the target suddenly changes, in order to test how robust my model is to such changes.\"\n\nTOOL CALL PARAMETERS (JSON):\n['target_col']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Can you create a dataset of 200 samples with the target column being 'target_b', where the connection between the features and the target variable suddenly shifts, allowing me to assess my model's ability to adapt to changing conditions?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'target_col': 'target_b'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Can you create a dataset of several samples where the connection between the features and the target variable suddenly shifts, allowing me to assess my model's ability to adapt to changing conditions?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to generate a dataset that can help me evaluate how well my model handles sudden changes in the relationship between features and the target variable. Can you create a dataset with 50 samples, where 'target_c' is the target column, and introduce an abrupt concept drift so I can test my model's robustness?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 50, 'target_col': 'target_c'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to generate a dataset that can help me evaluate how well my model handles sudden changes in the relationship between features and the target variable. Can you create a dataset with several samples, where the target column is affected, and introduce an abrupt concept drift so I can test my model's robustness?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need to assess my model's ability to adapt to unexpected shifts in the underlying data distribution. Could you generate a dataset with 150 instances, using 'target_d' as the target variable, and simulate a sudden concept drift to test its capacity to handle changes in the probability distribution P(y|x)? This will help me evaluate its robustness in real-world scenarios where relationships between features and targets can change abruptly.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 150, 'target_col': 'target_d'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need to assess my model's ability to adapt to unexpected shifts in the underlying data distribution. Could you generate a dataset with several instances and simulate a sudden concept drift to test its capacity to handle changes in the probability distribution? This will help me evaluate its robustness in real-world scenarios where relationships between features and targets can change abruptly.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Can you create a dataset for me with 250 samples, where 'target_e' is the target column? I want to introduce a sudden concept drift that alters how the features relate to the target, so I can see how well my model handles changes in the conditional probability P(y|x). This will help me understand its limitations and ability to generalize when faced with diverse data distributions.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 250, 'target_col': 'target_e'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"Can you create a dataset for me with some samples, where I want to introduce a sudden concept drift that alters how the features relate to the target, so I can see how well my model handles changes in the conditional probability P(y|x). This will help me understand its limitations and ability to generalize when faced with diverse data distributions.\"\n\nTOOL CALL PARAMETERS (JSON):\n['n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a dataset that can test my model's robustness to sudden changes in the underlying relationship between features and target. Can I get a simulation with 500 samples, where 'feature1' is the target column? The goal is to introduce a concept drift that alters the probability distribution P(y|x), allowing me to evaluate how well my model adapts to diverse data scenarios.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'target_col': 'feature1'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a dataset that can test my model's robustness to sudden changes in the underlying relationship between features and target. Can I get a simulation with some samples, where one of the columns is used as the target? The goal is to introduce a concept drift that alters the probability distribution, allowing me to evaluate how well my model adapts to diverse data scenarios.\"\n\nTOOL CALL PARAMETERS (JSON):\n['n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to simulate a scenario where the relationship between features and target changes abruptly, affecting the probability distribution P(y|x). Can you generate a dataset with 800 samples for this purpose, using 'feature2' as the target column? This will help me assess my model's ability to handle diverse data and adapt to sudden concept drifts.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'target_col': 'feature2'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to simulate a scenario where the relationship between features and target changes abruptly, affecting the probability distribution. Can you generate a dataset with several samples for this purpose, using 'feature2' as the target column? This will help me assess my model's ability to handle diverse data and adapt to sudden concept drifts.\"\n\nTOOL CALL PARAMETERS (JSON):\n['target_col']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a way to test my model's robustness to changes in the underlying data distribution. Can you create a dataset with 300 samples where 'feature3' is the target variable, and introduce sudden concept drift by altering the relationship between features and target? This will help me evaluate my model's performance under diverse conditions.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'target_col': 'feature3'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a way to test my model's robustness to changes in the underlying data distribution. Can you create a dataset where one of the features is the target variable, and introduce sudden concept drift by altering the relationship between features and target? This will help me evaluate my model's performance under diverse conditions with several samples.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to assess how well my machine learning model adapts to unexpected shifts in data patterns. Can you generate a dataset of 1000 examples, where 'feature4' is the target column, and simulate a sudden change in how the features relate to the target? This will allow me to test its robustness under varying circumstances.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1000, 'target_col': 'feature4'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to assess how well my machine learning model adapts to unexpected shifts in data patterns. Can you generate a dataset of several examples and simulate a sudden change in how the features relate to the target, so I can test its robustness under varying circumstances?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"To evaluate my model's ability to handle unexpected changes in data distribution, I need a dataset with 600 samples where 'feature5' is the target variable. The twist is that I want the relationship between the features and the target to shift abruptly, simulating real-world concept drift. This will help me understand how robust my model is when faced with sudden alterations in the underlying patterns of the data.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 600, 'target_col': 'feature5'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"To evaluate my model's ability to handle unexpected changes in data distribution, I need a dataset where one of the features is the target variable. The twist is that I want the relationship between the features and the target to shift abruptly, simulating real-world concept drift, with several samples. This will help me understand how robust my model is when faced with sudden alterations in the underlying patterns of the data.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a dataset that can put my model through its paces, specifically testing its resilience to concept drift. Can I get 500 examples where 'class' is the target column? The key here is to introduce an abrupt change in how the features relate to the target, mimicking real-world scenarios where data distributions shift unexpectedly.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'target_col': 'class'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a dataset to test my model's resilience to concept drift. Can I get several examples where the target column is what I'm trying to predict? The key here is to introduce an abrupt change in how the features relate to it, mimicking real-world scenarios where data distributions shift unexpectedly.\"\n\nTOOL CALL PARAMETERS (JSON):\n['target_col']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to evaluate my model's ability to adapt to sudden changes in data patterns. Can you generate a dataset with 800 samples, using 'label' as the target variable, that simulates an abrupt concept drift? This will help me assess its robustness to unexpected shifts in the relationship between features and target.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'target_col': 'label'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to evaluate my model's ability to adapt to sudden changes in data patterns. Can you generate a dataset with several samples, using the target variable, that simulates an abrupt concept drift? This will help me assess its robustness to unexpected shifts in the relationship between features and target.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a dataset that can test my model's limits when it comes to handling sudden changes in data distributions. Can you create a synthetic dataset with 1000 examples, where 'category' is the column I'm trying to predict? The goal is to see how well my model can cope with an abrupt shift in the underlying relationship between features and target variable.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1000, 'target_col': 'category'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a dataset that can test my model's limits when it comes to handling sudden changes in data distributions. Can you create a synthetic dataset with several examples, where I'm trying to predict a certain column? The goal is to see how well my model can cope with an abrupt shift in the underlying relationship between features and target variable.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to evaluate my model's ability to adapt to unexpected changes in data patterns. Can you generate a synthetic dataset of 1200 samples, where the 'type' column is the target variable? The goal is to assess its robustness when the relationship between features and target suddenly shifts.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1200, 'target_col': 'type'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to evaluate my model's ability to adapt to unexpected changes in data patterns. Can you generate a synthetic dataset of several samples, where the target variable is the column I'm interested in? The goal is to assess its robustness when the relationship between features and target suddenly shifts.\"\n\nTOOL CALL PARAMETERS (JSON):\n['target_col']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a way to stress-test my model's performance under sudden changes in data distribution. Can you create a dataset with 1500 samples, using 'result' as the target column, that simulates an abrupt shift in the relationship between features and target? I want to ensure my model can handle diverse scenarios.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1500, 'target_col': 'result'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a way to stress-test my model's performance under sudden changes in data distribution. Can you create a dataset with several samples, using the target column, that simulates an abrupt shift in the relationship between features and target? I want to ensure my model can handle diverse scenarios.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need to evaluate how well my machine learning algorithm adapts to unexpected shifts in data patterns. Can you generate a dataset of 500 examples where the 'class' column is the target variable, and the relationship between the features and this target changes abruptly? This will help me assess its ability to handle diverse and dynamic conditions.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'target_col': 'class'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need to evaluate how well my machine learning algorithm adapts to unexpected shifts in data patterns. Can you generate a dataset of some examples where the relationship between the features and this target changes abruptly? This will help me assess its ability to handle diverse and dynamic conditions.\"\n\nTOOL CALL PARAMETERS (JSON):\n['n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a dataset that can test my model's robustness to sudden changes in the underlying data distribution. Can you create a simulation with 2000 samples, where the 'label' column is the target variable, and the relationship between features and this label shifts abruptly? This will allow me to evaluate its performance under diverse and changing conditions.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 2000, 'target_col': 'label'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a dataset that can test my model's robustness to sudden changes in the underlying data distribution. Can you create a simulation with some samples, where the relationship between features and this label shifts abruptly? This will allow me to evaluate its performance under diverse and changing conditions.\"\n\nTOOL CALL PARAMETERS (JSON):\n['n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to assess how well my model handles unexpected changes in data patterns. Can you generate a dataset of 800 samples, with 'target' as the column I'm trying to predict, that simulates a sudden shift in how the features relate to this target? This will help me understand its ability to adapt to diverse scenarios.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'target_col': 'target'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I want to assess how well my model handles unexpected changes in data patterns. Can you generate a dataset with 'target' as the column I'm trying to predict, that simulates a sudden shift in how the features relate to this target, so I have several samples to test its ability to adapt to diverse scenarios?\"\n\nTOOL CALL PARAMETERS (JSON):\n['target_col']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a dataset to test my model's robustness against abrupt changes in the underlying relationship between variables. Can I get 1500 samples with 'outcome' as the target variable, where the data simulates a sudden concept drift? This will help me evaluate its performance under diverse conditions and ensure it can handle unexpected shifts in the data distribution.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1500, 'target_col': 'outcome'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I'm looking for a dataset to test my model's robustness against abrupt changes in the underlying relationship between variables. Can I get some samples where the data simulates a sudden concept drift? This will help me evaluate its performance under diverse conditions and ensure it can handle unexpected shifts in the data distribution.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"target_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need a dataset that can simulate a sudden change in the relationship between features and target variable, to test my model's ability to adapt. Can you generate 3000 samples with 'result' as the target column? I'm aiming to assess its robustness under diverse conditions.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 3000, 'target_col': 'result'}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nConceptDriftPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'target_col', 'type': 'string', 'required': True, 'description': 'Name of the target column where the drift is applied'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[]\n\nUSER QUERY:\n\"I need a dataset that can simulate a sudden change in the relationship between features and target variable, to test my model's ability to adapt. Can you generate several samples? I'm aiming to assess its robustness under diverse conditions.\"\n\nTOOL CALL PARAMETERS (JSON):\n['n_samples']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"target_col\"]}"
+            }
+        ]
+    }
+]

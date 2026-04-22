@@ -1,192 +1,202 @@
 [
     {
-        "user_query": "I need to generate 500 samples of time-series data with complex temporal patterns, using the date as the time key and id as the sequence key, and I want to use TimeGAN method to capture these dynamics.",
+        "user_query": "I want to generate 500 samples of synthetic time-series data using the TimeGAN method, with 'id' as the sequence key and default settings for the timestamp column.",
         "tool_call": "TimeSeriesPreset",
         "arguments": {
             "n_samples": 500,
-            "time_key": "date",
             "sequence_key": "id",
-            "method": "timegan"
+            "method": "timegan",
+            "time_key": "None"
         }
     },
     {
-        "user_query": "I'm looking for a way to create a large dataset of sequential data that captures diverse patterns. Can you generate 2000 samples using FourierFlows method, with 'timestamp' as the time key and 'group_id' as the sequence key?",
-        "tool_call": "TimeSeriesPreset",
-        "arguments": {
-            "n_samples": 2000,
-            "time_key": "timestamp",
-            "sequence_key": "group_id",
-            "method": "fflows"
-        }
-    },
-    {
-        "user_query": "I want to create a large dataset of sequential data that captures diverse patterns. Can you generate 1000 samples using TimeVAE method, with 'datetime' as the time key and 'user_id' as the sequence key?",
-        "tool_call": "TimeSeriesPreset",
-        "arguments": {
-            "n_samples": 1000,
-            "time_key": "datetime",
-            "sequence_key": "user_id",
-            "method": "timevae"
-        }
-    },
-    {
-        "user_query": "I'm looking to create a substantial dataset of sequential data that reflects varied temporal dynamics. Can you produce 800 samples using the TimeGAN method, with the time key set to 'hour' and the sequence key set to 'product_id'? This will help me in capturing complex patterns within the data.",
-        "tool_call": "TimeSeriesPreset",
-        "arguments": {
-            "n_samples": 800,
-            "time_key": "hour",
-            "sequence_key": "product_id",
-            "method": "timegan"
-        }
-    },
-    {
-        "user_query": "I need a large dataset of 3000 samples that showcases diverse temporal patterns, using the FourierFlows method for its stability and suitability for periodic series. The time key should be 'year' and the sequence key should be 'category_id'. This setup will allow me to analyze seasonal trends effectively across different categories over several years.",
-        "tool_call": "TimeSeriesPreset",
-        "arguments": {
-            "n_samples": 3000,
-            "time_key": "year",
-            "sequence_key": "category_id",
-            "method": "fflows"
-        }
-    },
-    {
-        "user_query": "I'm looking for a dataset of 100 samples that can help me understand complex temporal patterns in sequential data. I want to use the TimeGAN method and have the 'date' column as my time key and the 'id' column as my sequence key. This will allow me to dive deep into the intricacies of how my data changes over time for each unique identifier.",
-        "tool_call": "TimeSeriesPreset",
-        "arguments": {
-            "n_samples": 100,
-            "time_key": "date",
-            "sequence_key": "id",
-            "method": "timegan"
-        }
-    },
-    {
-        "user_query": "I need a diverse dataset with 500 samples to analyze sequential data using the TimeVAE method, where 'timestamp' serves as the time key and 'group_id' acts as the sequence key. This setup will enable me to explore regular patterns in my time-series data efficiently.",
-        "tool_call": "TimeSeriesPreset",
-        "arguments": {
-            "n_samples": 500,
-            "time_key": "timestamp",
-            "sequence_key": "group_id",
-            "method": "timevae"
-        }
-    },
-    {
-        "user_query": "I'm looking for a dataset that can help me understand periodic and seasonal trends in user behavior over time. Can I get 200 samples of synthetic data, where each sample represents a unique user identified by 'user_id', and the temporal information is captured by the 'date_time' column? I'd prefer to use the FourierFlows method for this purpose, as it's known for its stability and effectiveness in handling periodic patterns.",
+        "user_query": "Can you produce a diverse set of 200 synthetic time-series samples using the TimeVAE approach, where each sample is grouped by a unique identifier called 'group_id'?",
         "tool_call": "TimeSeriesPreset",
         "arguments": {
             "n_samples": 200,
-            "time_key": "date_time",
-            "sequence_key": "user_id",
-            "method": "fflows"
+            "sequence_key": "group_id",
+            "method": "timevae",
+            "time_key": "None"
         }
     },
     {
-        "user_query": "I need a diverse dataset to analyze complex temporal patterns in product adoption. Can you generate 1000 samples of synthetic data, with each sample representing a sequence of products identified by 'product_id', and the time information captured by the 'created_at' column? I'd like to use the TimeGAN method for this purpose, as it's well-suited for capturing intricate temporal dynamics.",
+        "user_query": "I want to generate a large and varied dataset of sequential data. Can you create 1000 synthetic samples using the fflows method, where each sequence is uniquely identified by a 'user_id' key?",
         "tool_call": "TimeSeriesPreset",
         "arguments": {
             "n_samples": 1000,
-            "time_key": "created_at",
-            "sequence_key": "product_id",
-            "method": "timegan"
+            "sequence_key": "user_id",
+            "method": "fflows",
+            "time_key": "None"
         }
     },
     {
-        "user_query": "I'm working on a project that involves analyzing customer behavior over time. Can you help me generate a large dataset of synthetic sequences using the TimeVAE method? I need around 800 samples, where each sequence is associated with a unique 'customer_id' and has temporal information encoded in the 'updated_at' column. The goal is to create a diverse set of data that can help me better understand regular patterns in customer behavior.",
+        "user_query": "I'm looking for a way to produce a substantial and diverse set of time-series data. Can you generate 800 synthetic samples that vary widely, using the TimeGAN method and identifying each sequence with a 'session_id' key?",
         "tool_call": "TimeSeriesPreset",
         "arguments": {
             "n_samples": 800,
-            "time_key": "updated_at",
-            "sequence_key": "customer_id",
-            "method": "timevae"
+            "sequence_key": "session_id",
+            "method": "timegan",
+            "time_key": "None"
         }
     },
     {
-        "user_query": "I want to generate 100 synthetic sequences using TimeGAN with a unique identifier for each sequence. Please use the default settings for the time or date column, but make sure each sequence is labeled with an 'id' key.",
+        "user_query": "I want to create a large dataset for testing, around 300 samples should do, where each sample represents a unique product over time. Can you use the TimeVAE method to generate these sequences and make sure they're identified by a 'product_id' key? I'm aiming for a good balance of diversity in the data.",
+        "tool_call": "TimeSeriesPreset",
+        "arguments": {
+            "n_samples": 300,
+            "sequence_key": "product_id",
+            "method": "timevae",
+            "time_key": "None"
+        }
+    },
+    {
+        "user_query": "I need a dataset with 100 unique time-series sequences, each associated with an 'id' and having a timestamp labeled as 'date'. Can you generate this data using the TimeGAN method to ensure a diverse range of patterns?",
         "tool_call": "TimeSeriesPreset",
         "arguments": {
             "n_samples": 100,
+            "time_key": "date",
             "sequence_key": "id",
             "method": "timegan"
         }
     },
     {
-        "user_query": "Can you create 500 synthetic time-series sequences using TimeVAE, where each sequence has a distinct user_id as its identifier?",
+        "user_query": "I'm looking for a dataset that has 500 samples, where each sample is associated with a unique user ID and has a timestamp. I want the data generation method to be based on the FFlows approach to ensure diversity in the sequences. Can you create this dataset for me, labeling the time column as 'timestamp' and the sequence identifier column as 'user_id'?",
         "tool_call": "TimeSeriesPreset",
         "arguments": {
             "n_samples": 500,
+            "time_key": "timestamp",
             "sequence_key": "user_id",
+            "method": "fflows"
+        }
+    },
+    {
+        "user_query": "I need a diverse dataset with 200 samples for training a model on sequential data. The data should have a timestamp column labeled as 'datetime' and each sample should be associated with a unique product identifier in the 'product_id' column. Can you generate this dataset using the TimeVAE method to ensure varied sequences?",
+        "tool_call": "TimeSeriesPreset",
+        "arguments": {
+            "n_samples": 200,
+            "time_key": "datetime",
+            "sequence_key": "product_id",
             "method": "timevae"
         }
     },
     {
-        "user_query": "I want to generate 200 diverse sequential data samples that capture periodic patterns. Can I use the FourierFlows method and identify each sequence by its session ID?",
+        "user_query": "I'm working on a project that requires a large, diverse dataset for training a model on time-series data. I need 800 samples, each with a unique customer ID in the 'customer_id' column and a timestamp in the 'date_time' column. Can you generate this dataset using the TimeGAN method to ensure a wide range of sequences?",
+        "tool_call": "TimeSeriesPreset",
+        "arguments": {
+            "n_samples": 800,
+            "time_key": "date_time",
+            "sequence_key": "customer_id",
+            "method": "timegan"
+        }
+    },
+    {
+        "user_query": "I need a diverse time-series dataset with 300 samples, where each sample has a unique order ID and a corresponding timestamp. Could you generate this data using the fflows method, ensuring a varied sequence for my model training?",
+        "tool_call": "TimeSeriesPreset",
+        "arguments": {
+            "n_samples": 300,
+            "time_key": "time_stamp",
+            "sequence_key": "order_id",
+            "method": "fflows"
+        }
+    },
+    {
+        "user_query": "Can I get a dataset of 100 time-series sequences with a specific identifier for each sequence? I want to ensure that these sequences are diverse and have a unique 'id' key, which will be crucial for my model's performance. The goal is to create a robust training set with varied patterns.",
+        "tool_call": "TimeSeriesPreset",
+        "arguments": {
+            "n_samples": 100,
+            "sequence_key": "id",
+            "time_key": "None",
+            "method": "fflows"
+        }
+    },
+    {
+        "user_query": "I'm looking for a diverse dataset of 500 time-series sequences, each uniquely identified by a 'user_id' key. I'd like to use the default settings for the timestamp column and generation method, as I want to prioritize diversity in the patterns. Can you generate this dataset for me?",
+        "tool_call": "TimeSeriesPreset",
+        "arguments": {
+            "n_samples": 500,
+            "sequence_key": "user_id",
+            "time_key": "None",
+            "method": "fflows"
+        }
+    },
+    {
+        "user_query": "Can you create a dataset of 200 sequential data points where each sequence is identified by a 'session_id' key? The goal is to have a diverse set of sequences with varying patterns, so I'd like to use the optimized preset for generating time-series or sequential data. Please ensure that the diversity of the data is prioritized in the generation process.",
         "tool_call": "TimeSeriesPreset",
         "arguments": {
             "n_samples": 200,
             "sequence_key": "session_id",
+            "time_key": "None",
             "method": "fflows"
         }
     },
     {
-        "user_query": "I need a large dataset of sequential data, around 1000 samples, with unique identifiers for each sequence, let's say 'order_id'. Can I use the TimeGAN method to capture complex temporal patterns and just stick with the default settings for the timestamp column?",
+        "user_query": "I'm looking to generate a large dataset with 800 unique sequences, each identified by a distinct 'transaction_id'. Since I want to prioritize having diverse patterns across these sequences, can you use the optimized preset designed for creating time-series or sequential data? This will help ensure that my generated dataset has a wide range of varying patterns and isn't too uniform.",
         "tool_call": "TimeSeriesPreset",
         "arguments": {
-            "n_samples": 1000,
-            "sequence_key": "order_id",
-            "method": "timegan"
+            "n_samples": 800,
+            "sequence_key": "transaction_id",
+            "time_key": "None",
+            "method": "fflows"
         }
     },
     {
-        "user_query": "I'm looking for a smaller dataset of around 50 samples, where each sequence is identified by 'product_id'. I want to use the TimeVAE method to generate this data, as I've heard it's faster and suitable for regular time-series patterns. Can you help me with that?",
-        "tool_call": "TimeSeriesPreset",
-        "arguments": {
-            "n_samples": 50,
-            "sequence_key": "product_id",
-            "method": "timevae"
-        }
-    },
-    {
-        "user_query": "I need a diverse set of sequential data with 50 samples, using 'date' as the time key and 'id' to identify each sequence. Since I'm dealing with a mix of patterns, can you provide an optimized preset that leverages TimeGAN for complex temporal dynamics, TimeVAE for faster generation of regular series, or FourierFlows for stability in periodic/seasonal data?",
-        "tool_call": "TimeSeriesPreset",
-        "arguments": {
-            "n_samples": 50,
-            "time_key": "date",
-            "sequence_key": "id"
-        }
-    },
-    {
-        "user_query": "I want to generate a diverse set of sequential data with 200 samples. I'd like to use 'timestamp' as the time key and 'group_id' to identify each sequence. For the generation method, I'll stick with the default option to ensure I get a mix of complex patterns, speed, and stability for periodic/seasonal series.",
-        "tool_call": "TimeSeriesPreset",
-        "arguments": {
-            "n_samples": 200,
-            "time_key": "timestamp",
-            "sequence_key": "group_id"
-        }
-    },
-    {
-        "user_query": "I'm looking to create a dataset that captures various temporal dynamics. Can you generate 100 samples of sequential data, using 'created_at' as the time identifier and 'user_id' to differentiate between sequences? I'd like to leverage the strengths of TimeGAN, TimeVAE, and FourierFlows to ensure diversity in the generated patterns, including complex, regular, periodic, and seasonal series.",
-        "tool_call": "TimeSeriesPreset",
-        "arguments": {
-            "n_samples": 100,
-            "time_key": "created_at",
-            "sequence_key": "user_id"
-        }
-    },
-    {
-        "user_query": "I need 150 samples of synthetic time-series data with diverse temporal patterns. Please use 'updated_at' as the time key and 'product_id' to identify sequences. For the generation method, I'd like to stick with the default option to ensure a mix of complex, regular, periodic, and seasonal patterns.",
-        "tool_call": "TimeSeriesPreset",
-        "arguments": {
-            "n_samples": 150,
-            "time_key": "updated_at",
-            "sequence_key": "product_id"
-        }
-    },
-    {
-        "user_query": "Can you generate 300 synthetic time-series data samples that capture a wide range of temporal dynamics? I need the 'logged_at' field to be used as the time key and 'session_id' to identify sequences. Please ensure the generation method is set up to produce diverse patterns, including complex, regular, periodic, and seasonal ones, by selecting the most suitable algorithm among TimeGAN, TimeVAE, or FourierFlows based on their characteristics.",
+        "user_query": "I need to create a dataset with 300 sequences, where each sequence is associated with a unique 'order_id'. It's crucial for my analysis that these sequences exhibit a lot of variability. Can you apply the preset that's tailored for generating sequential or time-series data, so I can get a diverse set of patterns?",
         "tool_call": "TimeSeriesPreset",
         "arguments": {
             "n_samples": 300,
-            "time_key": "logged_at",
-            "sequence_key": "session_id"
+            "sequence_key": "order_id",
+            "time_key": "None",
+            "method": "fflows"
+        }
+    },
+    {
+        "user_query": "I'm looking to generate a dataset with 50 samples, where each sample is linked to a distinct 'user_id'. The key requirement here is that these samples should display a wide range of variations. Could you utilize the preset optimized for creating sequential or time-series data to ensure I get a diverse set of sequences?",
+        "tool_call": "TimeSeriesPreset",
+        "arguments": {
+            "n_samples": 50,
+            "sequence_key": "user_id",
+            "time_key": "None",
+            "method": "fflows"
+        }
+    },
+    {
+        "user_query": "I need a dataset with 200 varied instances, where each instance is associated with a unique 'product_id'. The diversity of the sequences is crucial. Can you use the preset designed for generating sequential or time-series data to ensure I get a rich and diverse set of sequences?",
+        "tool_call": "TimeSeriesPreset",
+        "arguments": {
+            "n_samples": 200,
+            "sequence_key": "product_id",
+            "time_key": "None",
+            "method": "fflows"
+        }
+    },
+    {
+        "user_query": "I'm looking for a dataset that has around 150 samples, where each sample is identified by a unique 'session_id'. For the other settings, such as the column name for timestamps and the generation method, I'd like to stick with the defaults. The key here is to get a diverse set of sequences, so please use the preset optimized for generating sequential or time-series data.",
+        "tool_call": "TimeSeriesPreset",
+        "arguments": {
+            "n_samples": 150,
+            "sequence_key": "session_id",
+            "time_key": "None",
+            "method": "fflows"
+        }
+    },
+    {
+        "user_query": "Can you generate a dataset with 300 samples, where each sample has a unique identifier labeled as 'order_id', using a preset that's designed to create diverse and varied sequences? This would be really helpful for my project, which involves analyzing sequential data.",
+        "tool_call": "TimeSeriesPreset",
+        "arguments": {
+            "n_samples": 300,
+            "sequence_key": "order_id",
+            "time_key": "None",
+            "method": "fflows"
+        }
+    },
+    {
+        "user_query": "I need a dataset with 250 samples, where each sample is identified by 'customer_id'. Please use the default settings for the timestamp column and generation method. I'm looking for a diverse range of sequences to help me analyze some time-series data.",
+        "tool_call": "TimeSeriesPreset",
+        "arguments": {
+            "n_samples": 250,
+            "sequence_key": "customer_id",
+            "time_key": "None",
+            "method": "fflows"
         }
     }
 ]

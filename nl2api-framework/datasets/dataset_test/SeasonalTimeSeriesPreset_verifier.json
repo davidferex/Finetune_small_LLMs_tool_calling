@@ -1,0 +1,482 @@
+[
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Generate time-series data with 100 samples, using the 'date' column as the time reference, and inject a seasonal pattern into the 'sales' column. The seasonality should have a period of 12 time units and an amplitude of 1.0.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 100, 'time_col': 'date', 'seasonal_cols': ['sales'], 'period': 12, 'amplitude': 1.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Generate time-series data with some samples, using a column as the time reference, and inject a seasonal pattern into a column. The seasonality should have a period of 12 time units and an amplitude of 1.0.\"\n\nTOOL CALL PARAMETERS (JSON):\n['period', 'amplitude']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"time_col\", \"seasonal_cols\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Create a diverse set of time-series data with 500 samples, where 'timestamp' is the time column, and inject strong seasonal patterns into both 'revenue' and 'profit' columns. The seasonality should have a period of 6 time units and an amplitude of 2.5.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'time_col': 'timestamp', 'seasonal_cols': ['revenue', 'profit'], 'period': 6, 'amplitude': 2.5}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Create a diverse set of time-series data with several samples, where 'timestamp' is the time column, and inject strong seasonal patterns. The seasonality should have a period of 6 time units and an amplitude of 2.5.\"\n\nTOOL CALL PARAMETERS (JSON):\n['period', 'amplitude', 'n_samples', 'time_col']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"seasonal_cols\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"I want to generate a collection of 200 time-series data points that capture daily patterns, using the 'datetime' column as the reference for time. The 'temperature' column should exhibit strong seasonal fluctuations with a repeating pattern every 24 hours and an amplitude of 0.8, simulating real-world temperature variations over time.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'time_col': 'datetime', 'seasonal_cols': ['temperature'], 'period': 24, 'amplitude': 0.8}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"I want to generate a collection of several time-series data points that capture daily patterns. The data should exhibit strong seasonal fluctuations with a repeating pattern every 24 hours and an amplitude of 0.8, simulating real-world variations over time, focusing on the 'temperature' column as one of the seasonal columns.\"\n\nTOOL CALL PARAMETERS (JSON):\n['period', 'amplitude', 'n_samples', 'seasonal_cols']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"time_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Can you create 1000 synthetic time-series samples that mimic energy usage trends over time? I'd like the data to be based on a daily timeline, with the 'day' column serving as the temporal reference. Specifically, I want the 'energy_consumption' column to display pronounced seasonal variations, repeating every 12 time periods and with an amplitude of 1.2, to reflect realistic fluctuations in energy consumption.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1000, 'time_col': 'day', 'seasonal_cols': ['energy_consumption'], 'period': 12, 'amplitude': 1.2}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Can you create 1000 synthetic time-series samples that mimic energy usage trends over time? I'd like the data to be based on a daily timeline, with the 'day' column serving as the temporal reference. Specifically, I want some seasonal variations to reflect realistic fluctuations in energy consumption.\"\n\nTOOL CALL PARAMETERS (JSON):\n['n_samples', 'time_col']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"period\", \"amplitude\", \"seasonal_cols\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"I'm looking for a dataset that captures the intricacies of environmental patterns over an extended period. Could you generate around 800 synthetic time-series samples? The data should be structured on a monthly timeline, using 'month' as the reference point for temporal dynamics. Furthermore, I'd like to see pronounced seasonal effects in the 'rainfall' and 'wind_speed' columns, with these patterns repeating every 4 months and having an amplitude of 3.0. This will help in simulating realistic environmental conditions.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'time_col': 'month', 'seasonal_cols': ['rainfall', 'wind_speed'], 'period': 4, 'amplitude': 3.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"I'm looking for a dataset that captures environmental patterns over time. Could you generate some synthetic time-series samples? The data should be structured on a timeline, and I'd like to see pronounced seasonal effects in certain columns, with these patterns repeating at regular intervals and having an amplitude of 3.0.\"\n\nTOOL CALL PARAMETERS (JSON):\n['amplitude']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"period\", \"n_samples\", \"time_col\", \"seasonal_cols\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Can you create a synthetic dataset that mimics real-world time-series data? I need about 500 samples, with the time column labeled as 'date'. The data should reflect seasonal patterns, particularly in the 'sales' and 'revenue' columns. I'd like these seasonal fluctuations to recur every 12 periods, giving me a diverse range of scenarios to analyze.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'time_col': 'date', 'seasonal_cols': ['sales', 'revenue'], 'period': 12, 'amplitude': 1.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Can you create a synthetic dataset that mimics real-world time-series data? I need some samples, with the time column labeled. The data should reflect seasonal patterns, particularly in a couple of columns. I'd like these seasonal fluctuations to recur regularly, giving me a diverse range of scenarios to analyze.\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"period\", \"amplitude\", \"n_samples\", \"time_col\", \"seasonal_cols\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"I'm looking for a synthetic time-series dataset that has around 200 data points, with the timestamp column named 'timestamp'. I want to introduce seasonal patterns, specifically sinusoidal trends, into the 'temperature' and 'humidity' columns. These patterns should repeat every 24 hours, allowing me to explore various what-if scenarios.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'time_col': 'timestamp', 'seasonal_cols': ['temperature', 'humidity'], 'period': 24, 'amplitude': 1.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"I'm looking for a synthetic time-series dataset with some data points, and I want to introduce seasonal patterns, specifically sinusoidal trends, into a few columns. These patterns should repeat every 24 hours, allowing me to explore various what-if scenarios with a certain period and amplitude.\"\n\nTOOL CALL PARAMETERS (JSON):\n['period', 'amplitude']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"time_col\", \"seasonal_cols\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Can you generate a large synthetic time-series dataset with around 1000 samples? I'd like the timestamp column to be labeled as 'datetime'. Additionally, I want to introduce strong seasonal patterns, specifically sinusoidal trends, into the 'energy_consumption' column. These patterns should repeat every 52 periods, allowing me to analyze and visualize various seasonal trends and what-if scenarios.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1000, 'time_col': 'datetime', 'seasonal_cols': ['energy_consumption'], 'period': 52, 'amplitude': 1.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Can you generate a large synthetic time-series dataset with some samples? I'd like the timestamp column to be labeled as 'datetime'. Additionally, I want to introduce strong seasonal patterns into one of the columns. These patterns should repeat every a few periods, allowing me to analyze and visualize various seasonal trends and what-if scenarios.\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_col']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"period\", \"amplitude\", \"n_samples\", \"seasonal_cols\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Create a synthetic time-series dataset with 800 samples, using 'time' as the timestamp column. Introduce strong seasonal patterns into the 'website_traffic' and 'ad_clicks' columns, with a periodicity of 7. Use default values for other parameters like amplitude.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'time_col': 'time', 'seasonal_cols': ['website_traffic', 'ad_clicks'], 'period': 7, 'amplitude': 1.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Create a synthetic time-series dataset with several samples, using 'time' as the timestamp column. Introduce strong seasonal patterns into a few columns, with a period of 7. Use default values for other parameters like amplitude.\"\n\nTOOL CALL PARAMETERS (JSON):\n['period', 'amplitude', 'n_samples', 'time_col']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"seasonal_cols\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Generate a time-series dataset with 300 data points, where the hour of the day is used as the time column. Introduce strong daily seasonal patterns into the call volume data, with the pattern repeating every 24 hours.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'time_col': 'hour', 'seasonal_cols': ['call_volume'], 'period': 24, 'amplitude': 1.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Generate a time-series dataset with several hundred data points, where the hour of the day is used as the time column. Introduce strong daily seasonal patterns into the call volume data, with the pattern repeating every period.\"\n\nTOOL CALL PARAMETERS (JSON):\n['period', 'n_samples', 'seasonal_cols']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"amplitude\", \"time_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Create a time-series dataset with 500 samples, using 'date' as the time column and injecting strong seasonal sinusoidal patterns into both 'sales' and 'revenue' columns, with a periodicity of 12 time units.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'time_col': 'date', 'seasonal_cols': ['sales', 'revenue'], 'period': 12, 'amplitude': 1.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Create a time-series dataset with several samples, using 'date' as the time column and injecting strong seasonal sinusoidal patterns into both 'sales' and 'revenue' columns\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_col', 'seasonal_cols']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"period\", \"amplitude\", \"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Can you generate a time-series dataset that has around 200 data points, where the timestamp column represents time, and the temperature and humidity columns have strong seasonal patterns similar to what we see in real-world weather data, repeating every 24 hours?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 200, 'time_col': 'timestamp', 'seasonal_cols': ['temperature', 'humidity'], 'period': 24, 'amplitude': 1.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Can you generate a time-series dataset where the timestamp column represents time, and some columns have strong seasonal patterns similar to what we see in real-world weather data, repeating every so often?\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_col']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"period\", \"amplitude\", \"n_samples\", \"seasonal_cols\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"I need a large dataset of 1000 samples for analyzing periodic trends. The data should be timestamped by day and exhibit pronounced seasonal fluctuations in traffic and engagement metrics, with a recurring pattern every 7 days.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1000, 'time_col': 'day', 'seasonal_cols': ['traffic', 'engagement'], 'period': 7, 'amplitude': 1.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"I need a dataset for analyzing periodic trends. The data should exhibit pronounced seasonal fluctuations in traffic and engagement metrics, with a recurring pattern every 7 days and some amplitude.\"\n\nTOOL CALL PARAMETERS (JSON):\n['period', 'amplitude']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"n_samples\", \"time_col\", \"seasonal_cols\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Create a time-series dataset with 800 samples that captures hourly patterns, focusing on views and clicks as the key performance indicators. Introduce a repeating seasonal trend every 4 hours to simulate real-world fluctuations.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'time_col': 'hour', 'seasonal_cols': ['views', 'clicks'], 'period': 4, 'amplitude': 1.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Create a time-series dataset that captures hourly patterns, focusing on views and clicks as the key performance indicators, with some samples, introducing a repeating seasonal trend every few hours to simulate real-world fluctuations with varying amplitude.\"\n\nTOOL CALL PARAMETERS (JSON):\n['amplitude']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"period\", \"n_samples\", \"time_col\", \"seasonal_cols\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"I want to generate a time-series dataset that reflects quarterly patterns, with around 300 data points. The data should have a strong seasonal component in the 'orders' and 'customers' columns, repeating every 12 months. Can you create this for me?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 300, 'time_col': 'month', 'seasonal_cols': ['orders', 'customers'], 'period': 12, 'amplitude': 1.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"I want to generate a time-series dataset that reflects quarterly patterns, with several data points. The data should have a strong seasonal component in the 'orders' and 'customers' columns, repeating over some time. Can you create this for me?\"\n\nTOOL CALL PARAMETERS (JSON):\n['time_col', 'seasonal_cols']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"period\", \"amplitude\", \"n_samples\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Create a time-series dataset with 500 samples, using 'date' as the time column, and inject seasonal patterns into the 'sales' and 'revenue' columns. I want the pattern to repeat every 4 periods. Can you generate this data for me?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 500, 'time_col': 'date', 'seasonal_cols': ['sales', 'revenue'], 'period': 4, 'amplitude': 1.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Create a time-series dataset with some samples, using a column as the time column, and inject seasonal patterns into a couple of columns. I want the pattern to repeat every 4 periods. Can you generate this data for me?\"\n\nTOOL CALL PARAMETERS (JSON):\n['period']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"amplitude\", \"n_samples\", \"time_col\", \"seasonal_cols\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"I need a diverse time-series dataset with 2000 samples, where the timestamp column represents time. Please inject strong seasonal patterns into the temperature and humidity columns, with the pattern repeating every 12 periods. Can you generate this data for me using a combination of RealGenerator and ScenarioInjector to create realistic temporal dynamics with superimposed sinusoidal drift?\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 2000, 'time_col': 'timestamp', 'seasonal_cols': ['temperature', 'humidity'], 'period': 12, 'amplitude': 1.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"I need a diverse time-series dataset with some samples, where a certain column represents time. Please inject strong seasonal patterns into a couple of columns, with the pattern repeating every few periods. Can you generate this data for me using a combination of some methods to create realistic temporal dynamics with superimposed drift?\"\n\nTOOL CALL PARAMETERS (JSON):\n[]\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"period\", \"amplitude\", \"n_samples\", \"time_col\", \"seasonal_cols\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Can I get a time-series dataset with 1000 samples, where the 'datetime' column represents time? Please inject seasonal patterns into the 'orders' and 'traffic' columns, with the pattern repeating every 6 periods. Use the default amplitude for the seasonal effect. I'd like to use a combination of RealGenerator and ScenarioInjector to create realistic temporal dynamics with superimposed sinusoidal drift.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1000, 'time_col': 'datetime', 'seasonal_cols': ['orders', 'traffic'], 'period': 6, 'amplitude': 1.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Can I get a time-series dataset with some samples, where the 'datetime' column represents time? Please inject seasonal patterns into a few columns, with the pattern repeating every 6 periods. Use the default effect. I'd like to use a combination of RealGenerator and ScenarioInjector to create realistic temporal dynamics with superimposed drift.\"\n\nTOOL CALL PARAMETERS (JSON):\n['period', 'time_col']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"amplitude\", \"n_samples\", \"seasonal_cols\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Generate a time-series dataset of 800 samples where 'time' is the column representing time, and inject seasonal patterns into 'price' and 'volume'. The pattern should repeat every 3 periods. Please use default settings for the amplitude of the seasonal effect. I want to leverage both RealGenerator for learning base temporal dynamics and ScenarioInjector for adding a strong sinusoidal drift to create diverse data.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 800, 'time_col': 'time', 'seasonal_cols': ['price', 'volume'], 'period': 3, 'amplitude': 1.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Generate a time-series dataset of several hundred samples where the time column represents time, and inject seasonal patterns into 'price' and 'volume'. The pattern should repeat every a few periods. Please use default settings for the effect. I want to leverage both RealGenerator for learning base temporal dynamics and ScenarioInjector for adding a strong drift to create diverse data.\"\n\nTOOL CALL PARAMETERS (JSON):\n['period', 'n_samples', 'seasonal_cols']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"amplitude\", \"time_col\"]}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Create a time-series dataset with 1500 samples, using 'hour' as the time column. Inject seasonal patterns into 'speed' and 'direction' columns with a period of 24 hours, utilizing both RealGenerator for base temporal dynamics and ScenarioInjector for adding strong sinusoidal drifts to ensure diversity in the generated data.\"\n\nTOOL CALL PARAMETERS (JSON):\n{'n_samples': 1500, 'time_col': 'hour', 'seasonal_cols': ['speed', 'direction'], 'period': 24, 'amplitude': 1.0}\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": true}"
+            }
+        ]
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": "You are a strict validator of tool calls.\n\nTOOL NAME:\nSeasonalTimeSeriesPreset\n\nREQUIRED PARAMETERS (must appear or be clearly inferable from the query):\n[{'name': 'n_samples', 'type': 'int', 'required': True, 'description': 'Number of samples to generate'}, {'name': 'time_col', 'type': 'string', 'required': True, 'description': 'Column with the timestamp'}, {'name': 'seasonal_cols', 'type': 'List[string]', 'required': True, 'description': 'List of columns to inject seasonality into'}]\n\nOPTIONAL PARAMETERS (may be omitted, have defaults):\n[{'name': 'period', 'type': 'int', 'required': False, 'default': 12, 'description': 'The period of the seasonality (e.g., 12 for monthly)'}, {'name': 'amplitude', 'type': 'float', 'required': False, 'default': 1.0, 'description': 'The strength of the seasonal effect'}]\n\nUSER QUERY:\n\"Create a time-series dataset with 1500 samples, using a time column. Inject seasonal patterns into 'speed' and 'direction' columns with some period, utilizing both a generator for base temporal dynamics and an injector for adding drifts to ensure diversity in the generated data.\"\n\nTOOL CALL PARAMETERS (JSON):\n['n_samples', 'seasonal_cols']\n\nYour task is to verify whether the tool call is CORRECT and COMPLETE.\n\nFor each parameter from the tool call, you must check if it is clearly mentioned and inferable from the query\nOutput format (STRICT JSON ONLY, no text):\nIf everything is correct:\n{\"valid\": true}\n\nIf there are problems:\n{\n  \"valid\": false,\n  \"incorrect\": [\"param1\", ...]\n}\n\nReturn ONLY JSON."
+            },
+            {
+                "role": "assistant",
+                "content": "{\"complete\": false, \"missing\": [\"period\", \"amplitude\", \"time_col\"]}"
+            }
+        ]
+    }
+]

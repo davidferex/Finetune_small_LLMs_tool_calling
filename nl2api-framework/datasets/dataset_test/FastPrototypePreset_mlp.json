@@ -1,219 +1,219 @@
 [
     {
-        "user_query": "Generate 50 sample data points for my prototype",
+        "user_query": "Generate 50 sample data points for my application, I need them quickly for integration testing purposes.",
         "complete": 1
     },
     {
-        "user_query": "Generate some sample data points for my prototype",
+        "user_query": "Generate some sample data points for my application, I need them quickly for integration testing purposes.",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "I'm looking to create a diverse dataset for integration testing, can you generate 200 unique samples for me?",
+        "user_query": "Can you produce a large batch of 200 diverse data samples to help me with rapid prototyping?",
         "complete": 1
     },
     {
-        "user_query": "I'm looking to create a diverse dataset for integration testing, can you generate some unique samples for me?",
+        "user_query": "Can you produce a large batch of data samples to help me with rapid prototyping?",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "I need a sizable yet manageable dataset for some exploratory testing, could I get around 150 varied examples?",
+        "user_query": "I'm looking for a substantial number of varied data points, around 150 should do, to efficiently test and refine my project in a CI/CD environment.",
         "complete": 1
     },
     {
-        "user_query": "I need a sizable yet manageable dataset for some exploratory testing, could I get some varied examples?",
+        "user_query": "I'm looking for some varied data points to efficiently test and refine my project in a CI/CD environment.",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "Can you generate a smaller batch of data, say around 80 samples, to help me quickly test and validate my prototype without overwhelming it?",
+        "user_query": "Can you generate about 80 diverse samples to help me quickly test and validate my application's performance in a rapid development setting?",
         "complete": 1
     },
     {
-        "user_query": "Can you generate a smaller batch of data to help me quickly test and validate my prototype without overwhelming it?",
+        "user_query": "Can you generate some diverse samples to help me quickly test and validate my application's performance in a rapid development setting?",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "I'm looking to do some rapid prototyping and I want to make sure my system can handle a decent amount of diverse data. Can you give me around 250 samples to work with, so I can test its performance without waiting too long for the results?",
+        "user_query": "I'm looking for a large set of varied data, around 300 examples, to thoroughly test my app's functionality and performance in a fast-paced development environment.",
         "complete": 1
     },
     {
-        "user_query": "I'm looking to do some rapid prototyping and I want to make sure my system can handle a decent amount of diverse data. Can you give me some samples to work with, so I can test its performance without waiting too long for the results?",
+        "user_query": "I'm looking for some varied data to thoroughly test my app's functionality and performance in a fast-paced development environment.",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "I'm working on a project that requires quick testing and I want to ensure my system is robust. Can you generate a small dataset of around 50 samples with varied characteristics, so I can integrate it into my CI/CD pipeline for rapid evaluation?",
+        "user_query": "Can you generate a small batch of 50 diverse samples for me? I need it to be quick and varied for some integration testing.",
         "complete": 1
     },
     {
-        "user_query": "I'm working on a project that requires quick testing and I want to ensure my system is robust. Can you generate a small dataset with varied characteristics, so I can integrate it into my CI/CD pipeline for rapid evaluation?",
+        "user_query": "Can you generate some diverse samples for me? I need it to be quick and varied for some integration testing.",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "I need a diverse set of data for integration testing, can you produce approximately 200 unique samples to help me ensure the reliability and efficiency of my system in various scenarios?",
+        "user_query": "I'm looking for a sizable set of diverse data, around 200 examples, to help with my prototyping - can you generate that quickly?",
         "complete": 1
     },
     {
-        "user_query": "I need a diverse set of data for integration testing, can you produce some unique samples to help me ensure the reliability and efficiency of my system in various scenarios?",
+        "user_query": "I'm looking for a sizable set of diverse data to help with my prototyping - can you generate that quickly?",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "Can I get about 10 varied examples to cover different cases for quick testing?",
+        "user_query": "Can you provide a fairly large dataset, roughly 150 items, with good variety for some rapid testing and development? I'm trying to get something up and running quickly.",
         "complete": 1
     },
     {
-        "user_query": "Can I get some varied examples to cover different cases for quick testing?",
+        "user_query": "Can you provide a dataset with some variety for some rapid testing and development? I'm trying to get something up and running quickly.",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "I'm looking for a large set of diverse data points to thoroughly test my system, can you generate around 500 unique samples for me?",
+        "user_query": "I want to generate a substantial amount of data, around 80 samples, that's quite diverse for my integration testing. Can you help me with that?",
         "complete": 1
     },
     {
-        "user_query": "I'm looking for a large set of diverse data points to thoroughly test my system, can you generate several unique samples for me?",
+        "user_query": "I want to generate some data that's quite diverse for my integration testing. Can you help me with that?",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "Can you produce a substantial dataset with around 1000 varied examples to help me ensure my application is robust and functions as expected across different scenarios?",
+        "user_query": "I'm looking for a large dataset, roughly 300 entries, with a good mix of varied examples to thoroughly test my system. Can I get something like that?",
         "complete": 1
     },
     {
-        "user_query": "Can you produce a substantial dataset with several varied examples to help me ensure my application is robust and functions as expected across different scenarios?",
+        "user_query": "I'm looking for a dataset with a good mix of varied examples to thoroughly test my system. Can I get something like that?",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "I want to generate a small but diverse set of data for some quick testing, can I get about 50 samples?",
+        "user_query": "I want to generate a small batch of data for some quick testing, can you give me around 50 samples with a diverse range of values?",
         "complete": 1
     },
     {
-        "user_query": "I want to generate a small but diverse set of data for some quick testing, can I get some samples?",
+        "user_query": "I want to generate some data for quick testing, can you give me a few samples with a diverse range of values?",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "I'm looking to create a robust test suite, can you provide around 200 varied data points for me to work with?",
+        "user_query": "I'm looking to create a dataset for integration testing and I need a decent amount of varied data, can you generate 100 samples for me?",
         "complete": 1
     },
     {
-        "user_query": "I'm looking to create a robust test suite, can you provide some varied data points for me to work with?",
+        "user_query": "I'm looking to create a dataset for integration testing and I need a decent amount of varied data, can you generate some samples for me?",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "I want to generate a small but diverse set of sample data, can I get about 10 different examples?",
+        "user_query": "I want to test my application with a sizable batch of diverse data. Can you provide me with around 200 varied samples?",
         "complete": 1
     },
     {
-        "user_query": "I want to generate a small but diverse set of sample data, can I get a few different examples?",
+        "user_query": "I want to test my application with some diverse data. Can you provide me with a few samples?",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "I'm looking for a substantial amount of varied sample data to work with, around 150 unique examples would be perfect for my testing purposes.",
+        "user_query": "I'm looking for a large dataset to stress test my app, can I get about 500 unique and varied samples to ensure it's working correctly?",
         "complete": 1
     },
     {
-        "user_query": "I'm looking for some varied sample data to work with, it would be great for my testing purposes.",
+        "user_query": "I'm looking for a dataset to stress test my app, can I get some unique and varied samples to ensure it's working correctly?",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "I want to generate a large dataset for testing, can I get about 300 diverse samples to ensure my application works smoothly under various conditions?",
+        "user_query": "I want to generate a substantial amount of data quickly for testing purposes. Can you provide around 1000 diverse samples?",
         "complete": 1
     },
     {
-        "user_query": "I want to generate a large dataset for testing, can I get several diverse samples to ensure my application works smoothly under various conditions?",
+        "user_query": "I want to generate some data quickly for testing purposes. Can you provide several samples?",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "I'm looking to quickly test my app's performance with a variety of inputs, can you provide around 50 distinct data points for me?",
+        "user_query": "I'm looking to create a test dataset with a moderate number of examples, something that can give me a good feel for how my system behaves without overwhelming it. Could I get about 50 varied instances?",
         "complete": 1
     },
     {
-        "user_query": "I'm looking to quickly test my app's performance with a variety of inputs, can you provide some distinct data points for me?",
+        "user_query": "I'm looking to create a test dataset with some examples, something that can give me a good feel for how my system behaves without overwhelming it. Could I get a few instances?",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "I want to prototype a project that requires a broad range of sample data. Can I get about 100 diverse examples to work with?",
+        "user_query": "I need a substantial but not excessive amount of data for testing purposes, aiming for around 200 diverse samples to ensure comprehensive coverage without overloading the system.",
         "complete": 1
     },
     {
-        "user_query": "I want to prototype a project that requires a broad range of sample data. Can I get some diverse examples to work with?",
+        "user_query": "I need some data for testing purposes to ensure comprehensive coverage without overloading the system.",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "I'm looking to generate a large dataset for integration testing, can you provide around 200 varied samples to help me cover all my bases?",
+        "user_query": "I'm looking for a moderate-sized dataset, something that can provide a good representation of various scenarios without being too large. Around 150 samples should do the trick, giving me enough diversity to test thoroughly without overwhelming my system.",
         "complete": 1
     },
     {
-        "user_query": "I'm looking to generate a large dataset for integration testing, can you provide some varied samples to help me cover all my bases?",
+        "user_query": "I'm looking for a moderate-sized dataset, something that can provide a good representation of various scenarios without being too large. I need some samples to test thoroughly without overwhelming my system.",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "I want to create a diverse set of data for quick prototyping, can I get about 500 unique samples?",
+        "user_query": "Can I get a relatively small but diverse dataset for some quick testing? Maybe around 80 samples or so?",
         "complete": 1
     },
     {
-        "user_query": "I want to create a diverse set of data for quick prototyping, can I get some unique samples?",
+        "user_query": "Can I get a relatively small but diverse dataset for some quick testing? Maybe around some samples?",
         "complete": 0,
         "_omitted": [
             "n_samples"
         ]
     },
     {
-        "user_query": "I'm looking to generate a large number of varied data points for integration testing, can you provide around 1000 distinct examples?",
+        "user_query": "I'm looking to generate a moderately sized dataset with a good amount of variety, something that would be suitable for integration testing or rapid prototyping - could I get about 250 samples?",
         "complete": 1
     },
     {
-        "user_query": "I'm looking to generate a large number of varied data points for integration testing, can you provide several distinct examples?",
+        "user_query": "I'm looking to generate a moderately sized dataset with a good amount of variety, something that would be suitable for integration testing or rapid prototyping - could I get some samples?",
         "complete": 0,
         "_omitted": [
             "n_samples"

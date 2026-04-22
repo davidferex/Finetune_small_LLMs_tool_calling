@@ -1,0 +1,230 @@
+[
+    {
+        "user_query": "Create a simulated clinical cohort of 50 patients where the rare disease is present in only 2% of the population.",
+        "complete": 1
+    },
+    {
+        "user_query": "Create a simulated clinical cohort where the rare disease is present in only 2% of the population.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to simulate a clinical study with a relatively small group of participants, around 75 individuals. The condition I'm interested in is extremely rare, affecting less than 1% of the population. Can you generate a cohort that reflects this very low disease prevalence of approximately 0.5%, ensuring a diverse range of patient profiles?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to simulate a clinical study with a relatively small group of participants. The condition I'm interested in is extremely rare, affecting less than 1% of the population. Can you generate a cohort that reflects this very low disease prevalence of approximately 0.5%, ensuring a diverse range of patient profiles?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to create a mock clinical trial with about 150 patients, where a specific rare disease affects only a tiny fraction of them - roughly 1%. Can you help me generate this kind of dataset, making sure it's diverse and representative?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a mock clinical trial with some patients, where a specific rare disease affects a few of them. Can you help me generate this kind of dataset, making sure it's diverse and representative?",
+        "complete": 0,
+        "_omitted": [
+            "disease_ratio",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm working on a project that involves simulating a clinical cohort with a rare disease condition. I need to create a dataset of around 200 patients, but the twist is that this disease is extremely rare, affecting only about 1.5% of the population. Can you help me generate a diverse and representative dataset that captures this low disease prevalence ratio?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working on a project that involves simulating a clinical cohort with a rare disease condition. I need to create a dataset of some patients, but the twist is that this disease is extremely rare, affecting only about 1.5% of the population. Can you help me generate a diverse and representative dataset that captures this low disease prevalence ratio?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm trying to model a clinical study with a very rare condition, can you simulate a cohort of around 250 participants where only about 0.8% have the disease, so I can get a realistic dataset with this specific low prevalence rate?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm trying to model a clinical study with a very rare condition, can you simulate a cohort of some participants where a few have the disease, so I can get a realistic dataset with this specific low prevalence rate?",
+        "complete": 0,
+        "_omitted": [
+            "disease_ratio",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to generate a synthetic dataset for a clinical trial with a rare disease condition, aiming for a cohort size of approximately 100 patients and a disease ratio of around 1%, can you help me create this?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to generate a synthetic dataset for a clinical trial with a rare disease condition, aiming for a disease ratio of around 1%, can you help me create this for some patients?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm working on a project that requires simulating a diverse clinical cohort with a very low prevalence of a specific disease. Can you generate a dataset for me with about 200 samples, where only around 0.5% of the patients have this rare condition?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working on a project that requires simulating a diverse clinical cohort with a very low prevalence of a specific disease. Can you generate a dataset for me with some samples, where only a few patients have this rare condition?",
+        "complete": 0,
+        "_omitted": [
+            "disease_ratio",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to create a synthetic clinical cohort that reflects real-world diversity, but with an extremely low incidence of a particular disease - think less than 1 in 50 people are affected. Can you help me generate a dataset of around 500 patient samples where this rare condition is present in roughly 2% of the population?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a synthetic clinical cohort that reflects real-world diversity, but with an extremely low incidence of a particular disease. Can you help me generate a dataset where this rare condition is present in some patients?",
+        "complete": 0,
+        "_omitted": [
+            "disease_ratio",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm working on a project to simulate a clinical cohort with a very rare disease, and I need a large dataset to train my model. Can you generate a synthetic dataset of around 1000 patient samples where the disease is present in only about 1.5% of the population? This will help me better understand how to identify and treat this condition in real-world patients.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working on a project to simulate a clinical cohort with a very rare disease, and I need a large dataset to train my model. Can you generate a synthetic dataset of some patient samples where the disease is present in a small portion of the population? This will help me better understand how to identify and treat this condition in real-world patients.",
+        "complete": 0,
+        "_omitted": [
+            "disease_ratio",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a large and diverse dataset for a clinical study on a rare disease, can you create a simulated cohort with 1500 patient samples where the disease affects only about 1% of the population?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset for a clinical study on a rare disease, can you create a simulated cohort where the disease affects only about 1% of the population?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm working on a project to better understand a rare condition and I need a dataset that reflects its low prevalence in the general population. Could you generate a simulated clinical cohort of around 500 samples, with approximately 5% of them having the disease? This will help me model the diversity and complexity of real-world scenarios more accurately.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working on a project to better understand a rare condition and I need a dataset that reflects its low prevalence in the general population. Could you generate a simulated clinical cohort with approximately 5% of them having the disease? This will help me model the diversity and complexity of real-world scenarios more accurately.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a synthetic dataset for a rare disease study. Can you provide me with around 200 patient records, where only about 2% of them have the condition? This will allow me to test my model's performance in a more realistic setting with low disease prevalence.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a synthetic dataset for a rare disease study. Can you provide me with some patient records, where only a small percentage of them have the condition? This will allow me to test my model's performance in a more realistic setting with low disease prevalence.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm working on a project that involves analyzing a rare medical condition. To make my simulations more accurate, I need a dataset of around 800 patient records where the disease is present in approximately 1% of the cases. Can you help me generate such a dataset to ensure my model can handle low prevalence rates effectively?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working on a project that involves analyzing a rare medical condition. To make my simulations more accurate, I need a dataset where the disease is present in approximately 1% of the cases. Can you help me generate such a dataset to ensure my model can handle low prevalence rates effectively?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm trying to simulate a clinical cohort for a rare disease study, and I need a large and diverse dataset. Could you generate around 1000 patient records with a very low disease prevalence of about 3%? This would help me test my model's performance in detecting this rare condition.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm trying to simulate a clinical cohort for a rare disease study, and I need a large and diverse dataset. Could you generate some patient records with a low disease prevalence? This would help me test my model's performance in detecting this rare condition.",
+        "complete": 0,
+        "_omitted": [
+            "disease_ratio",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm working on a project to identify patients with a rare disease and I need a dataset that mimics real-world conditions. Can you create a cohort of 300 patients where only about 0.5% have the disease? This will help me evaluate my model's ability to detect this condition accurately.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working on a project to identify patients with a rare disease and I need a dataset that mimics real-world conditions. Can you create a cohort of some patients where a few have the disease? This will help me evaluate my model's ability to detect this condition accurately.",
+        "complete": 0,
+        "_omitted": [
+            "disease_ratio",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a diverse dataset to train my rare disease detection model, can you generate a clinical cohort with 50 samples and use the default disease ratio?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a diverse dataset to train my rare disease detection model, can you generate a clinical cohort with several samples and use the default disease ratio?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to simulate a large and varied patient population for training purposes. Can you create a clinical cohort of 200 individuals with a rare disease condition, while maintaining a very low disease prevalence rate?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to simulate a patient population for training purposes. Can you create a clinical cohort of some individuals with a rare disease condition, while maintaining a low disease prevalence?",
+        "complete": 0,
+        "_omitted": [
+            "disease_ratio",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to generate a diverse dataset for research. Can I get a simulated clinical cohort of 150 patients with a rare disease condition, using the default disease ratio?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to generate a diverse dataset for research. Can I get a simulated clinical cohort of several patients with a rare disease condition, using the default disease ratio?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a varied group of patients to study. Can you create a simulation of 80 clinical cases where the disease is rare, and use the standard settings for the disease ratio?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a varied group of patients to study. Can you create a simulation of several clinical cases where the disease is rare, and use the standard settings for the disease ratio?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to simulate a clinical cohort with a lot of diversity, can you generate a dataset of 250 patients with a rare disease condition, using a very low disease prevalence ratio?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to simulate a clinical cohort with a lot of diversity, can you generate a dataset of several patients with a rare disease condition, using a very low disease prevalence ratio?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    }
+]

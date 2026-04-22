@@ -1,145 +1,37 @@
 [
     {
-        "user_query": "I want to generate 500 samples using the preset optimized for maximum data quality and fidelity, which uses CTGAN with a high number of epochs and an optimized batch size, prioritizing quality over speed, and also forces adversarial validation. Can you make sure that it automatically generates a report too?",
+        "user_query": "I want to generate 100 samples using the highest quality preset, which uses CTGAN with a large number of training iterations and an optimal batch size to ensure maximum data fidelity, even if it takes longer. Also, make sure to validate the results using adversarial validation and automatically report any issues.",
         "tool_call": "HighFidelityPreset",
         "arguments": {
-            "n_samples": 500,
+            "n_samples": 100,
             "auto_report": true
         }
     },
     {
-        "user_query": "Can I get 200 samples generated using the highest quality preset with CTGAN, focusing on diversity and ensuring rigorous validation through adversarial testing? Also, I'd prefer not to have an automatic report generated for this request.",
+        "user_query": "Can you produce 50 high-fidelity samples with a focus on diversity, using the CTGAN model with a large number of epochs for training and an optimized batch size? I'd like to manually review the results rather than having them automatically reported.",
         "tool_call": "HighFidelityPreset",
         "arguments": {
-            "n_samples": 200,
+            "n_samples": 50,
             "auto_report": false
         }
     },
     {
-        "user_query": "I want to generate a large dataset of 800 samples using the highest quality preset that prioritizes data fidelity and diversity. Please use CTGAN with optimized settings, including a high number of epochs and batch size, and make sure to include rigorous adversarial validation to ensure the generated data is diverse and realistic. Additionally, I would like to receive an automatic report for this request.",
-        "tool_call": "HighFidelityPreset",
-        "arguments": {
-            "n_samples": 800,
-            "auto_report": true
-        }
-    },
-    {
-        "user_query": "I need a dataset with 1000 high-quality samples that are highly diverse and realistic, using the CTGAN model with a large number of epochs and optimized batch size. Please ensure rigorous adversarial validation is applied to guarantee diversity, but do not generate an automatic report for this request.",
-        "tool_call": "HighFidelityPreset",
-        "arguments": {
-            "n_samples": 1000,
-            "auto_report": false
-        }
-    },
-    {
-        "user_query": "I'm looking for a high-fidelity dataset with 300 samples that prioritize quality over generation speed, utilizing the CTGAN model with extensive training and optimized batch sizing. Ensure that adversarial validation is enforced to maximize diversity, and automatically generate a report for this request.",
-        "tool_call": "HighFidelityPreset",
-        "arguments": {
-            "n_samples": 300,
-            "auto_report": true
-        }
-    },
-    {
-        "user_query": "Can I get a high-quality dataset with 500 samples using the CTGAN model, focusing on maximum data quality and fidelity? It should have a high number of epochs, optimized batch size, and enforce adversarial validation to ensure diversity. Also, please automatically generate a report for this request.",
-        "tool_call": "HighFidelityPreset",
-        "arguments": {
-            "n_samples": 500,
-            "auto_report": true
-        }
-    },
-    {
-        "user_query": "I want to generate a dataset with the highest possible quality, focusing on fidelity and diversity. Can I get 200 samples using the CTGAN model with an optimized setup that prioritizes quality over speed? Please don't generate a report automatically for this request.",
-        "tool_call": "HighFidelityPreset",
-        "arguments": {
-            "n_samples": 200,
-            "auto_report": false
-        }
-    },
-    {
-        "user_query": "I'm looking to create a highly diverse dataset with top-notch fidelity, can you run the CTGAN model in an optimized setting that emphasizes quality, even if it takes longer? I need about 800 samples and would like an auto-report generated for this request.",
-        "tool_call": "HighFidelityPreset",
-        "arguments": {
-            "n_samples": 800,
-            "auto_report": true
-        }
-    },
-    {
-        "user_query": "I want to generate a large dataset with exceptional data quality, prioritizing diversity and accuracy. Can you configure the CTGAN model to run with high epochs and an optimized batch size, but this time I need around 300 samples? Also, please disable auto-report generation for this specific request.",
-        "tool_call": "HighFidelityPreset",
-        "arguments": {
-            "n_samples": 300,
-            "auto_report": false
-        }
-    },
-    {
-        "user_query": "I'm looking to create a highly diverse dataset with top-notch quality. Can you set up the CTGAN model to prioritize data fidelity and run it with a large number of epochs? I need around 1000 samples this time, and please make sure to enable auto-reporting for this request.",
-        "tool_call": "HighFidelityPreset",
-        "arguments": {
-            "n_samples": 1000,
-            "auto_report": true
-        }
-    },
-    {
-        "user_query": "I want to generate a diverse dataset with high-quality data using the CTGAN model. Please use the default setting for auto-reporting and create around 50 samples, prioritizing data quality over speed.",
-        "tool_call": "HighFidelityPreset",
-        "arguments": {
-            "n_samples": 50
-        }
-    },
-    {
-        "user_query": "I'm looking for a highly diverse dataset generated by CTGAN with an emphasis on quality rather than speed. Can I get approximately 200 samples? And for the auto-report setting, just use the default value, please.",
+        "user_query": "I'm looking for a dataset that really showcases a wide range of possibilities. Can you generate 200 samples using your most advanced settings, prioritizing diversity and quality over how quickly they're produced? I want to make sure the data is as realistic and varied as possible.",
         "tool_call": "HighFidelityPreset",
         "arguments": {
             "n_samples": 200
         }
     },
     {
-        "user_query": "I need a high-fidelity dataset with a strong focus on diversity, using CTGAN with optimized settings for maximum quality. Can you generate around 150 samples for me?",
+        "user_query": "I need a high-fidelity dataset with maximum diversity. Can you produce 150 samples using your optimized preset, focusing on quality and ensuring that the generated data is highly realistic and varied? Also, please make sure to automatically generate a report for this task.",
         "tool_call": "HighFidelityPreset",
         "arguments": {
-            "n_samples": 150
-        }
-    },
-    {
-        "user_query": "I'm looking for a highly diverse and realistic dataset, can you create approximately 300 data points using the optimal settings for maximum fidelity, and use the default setting for auto-report generation?",
-        "tool_call": "HighFidelityPreset",
-        "arguments": {
-            "n_samples": 300
-        }
-    },
-    {
-        "user_query": "I need a large, high-quality dataset with a focus on diversity. Can you generate around 250 samples using the CTGAN model with optimized settings for maximum data quality, prioritizing fidelity over speed and ensuring adversarial validation is in place? This will help me achieve the most realistic outcomes.",
-        "tool_call": "HighFidelityPreset",
-        "arguments": {
-            "n_samples": 250
-        }
-    },
-    {
-        "user_query": "I'm looking to create a highly diverse dataset that's as realistic as possible. Could you use the CTGAN model with its optimized settings for maximum fidelity and quality, ensuring we have adversarial validation in place? I'd like around 500 samples, but focus on making sure each one is unique and of high quality, even if it takes a bit longer. And can you also automatically generate a report for me once it's done?",
-        "tool_call": "HighFidelityPreset",
-        "arguments": {
-            "n_samples": 500,
+            "n_samples": 150,
             "auto_report": true
         }
     },
     {
-        "user_query": "I want to generate a dataset that prioritizes uniqueness and realism over speed. Can I get around 200 samples using the CTGAN model with its high-epoch, optimized batch size configuration? Also, make sure adversarial validation is enabled to guarantee diversity. And this time, don't bother generating an automatic report for me.",
-        "tool_call": "HighFidelityPreset",
-        "arguments": {
-            "n_samples": 200,
-            "auto_report": false
-        }
-    },
-    {
-        "user_query": "I need a dataset that's extremely diverse and realistic, even if it takes a bit longer to generate. Can you produce around 800 samples using the CTGAN model with its optimized settings for high epochs and batch size? It's crucial that adversarial validation is forced to ensure the data is varied. Also, please enable automatic reporting for this task.",
-        "tool_call": "HighFidelityPreset",
-        "arguments": {
-            "n_samples": 800,
-            "auto_report": true
-        }
-    },
-    {
-        "user_query": "I'm looking for a dataset with exceptional diversity and realism, prioritizing quality over generation speed. Could you generate approximately 300 samples using CTGAN's optimized settings for high epochs and batch size, ensuring that adversarial validation is enforced to guarantee varied data? Additionally, please disable automatic reporting for this task.",
+        "user_query": "I'm looking for a dataset that prioritizes diversity and realism. Can you generate 300 samples using your high-fidelity preset with CTGAN, focusing on quality over speed? Also, please don't automatically generate a report for this task.",
         "tool_call": "HighFidelityPreset",
         "arguments": {
             "n_samples": 300,
@@ -147,10 +39,120 @@
         }
     },
     {
-        "user_query": "I need a dataset that's incredibly diverse and realistic. Can you create around 1000 samples with CTGAN using high epochs and an optimized batch size, focusing on quality rather than speed? Also, make sure to enable auto-reporting for this task, so I can stay updated on the process.",
+        "user_query": "I need a diverse and realistic dataset, can you create one with 50 samples using the optimized CTGAN model with high epochs and batch size, focusing on quality over speed? Also, please disable auto-reporting for this task.",
         "tool_call": "HighFidelityPreset",
         "arguments": {
-            "n_samples": 1000,
+            "n_samples": 50,
+            "auto_report": false
+        }
+    },
+    {
+        "user_query": "I'm looking to generate a large dataset that's as realistic and varied as possible. Can you use the CTGAN model with its high epochs and optimized batch size to create 200 samples? It's crucial that we prioritize data quality over generation speed this time, and ensure auto-reporting is enabled for monitoring purposes.",
+        "tool_call": "HighFidelityPreset",
+        "arguments": {
+            "n_samples": 200,
+            "auto_report": true
+        }
+    },
+    {
+        "user_query": "To maximize diversity in our dataset, I'd like to generate a substantial number of samples using the CTGAN model with its robust configuration. Can we create 150 samples that are highly realistic and varied, ensuring that data quality is the top priority over generation speed?",
+        "tool_call": "HighFidelityPreset",
+        "arguments": {
+            "n_samples": 150
+        }
+    },
+    {
+        "user_query": "To push the boundaries of our dataset's diversity, I need a large batch of high-fidelity samples. Can you produce 300 samples with the CTGAN model prioritizing quality and realism, even if it takes longer, and without generating an automatic report?",
+        "tool_call": "HighFidelityPreset",
+        "arguments": {
+            "n_samples": 300,
+            "auto_report": false
+        }
+    },
+    {
+        "user_query": "I'm looking to generate a substantial amount of data that is both diverse and highly realistic. Could you create 100 samples using the CTGAN model with an emphasis on quality over speed, incorporating adversarial validation to ensure authenticity?",
+        "tool_call": "HighFidelityPreset",
+        "arguments": {
+            "n_samples": 100
+        }
+    },
+    {
+        "user_query": "I want to prioritize diversity in my generated data while maintaining top-notch quality. Can I get 50 samples produced using the high-fidelity preset that leverages CTGAN with a robust number of epochs and an optimized batch size, ensuring the output is as realistic as possible through rigorous adversarial validation?",
+        "tool_call": "HighFidelityPreset",
+        "arguments": {
+            "n_samples": 50,
+            "auto_report": true
+        }
+    },
+    {
+        "user_query": "To maximize diversity in my dataset while maintaining exceptional quality, can you generate 200 samples using the high-fidelity preset that utilizes CTGAN with an extensive number of epochs and a finely tuned batch size, all backed by rigorous adversarial validation to ensure authenticity?",
+        "tool_call": "HighFidelityPreset",
+        "arguments": {
+            "n_samples": 200,
+            "auto_report": true
+        }
+    },
+    {
+        "user_query": "I want to create a diverse dataset with top-notch quality, so can you produce 75 samples using the high-fidelity preset that leverages CTGAN's capabilities with a large number of epochs and an optimized batch size, while also enforcing strict adversarial validation?",
+        "tool_call": "HighFidelityPreset",
+        "arguments": {
+            "n_samples": 75,
+            "auto_report": true
+        }
+    },
+    {
+        "user_query": "I'm looking for a highly diverse dataset with exceptional quality. Can you generate 150 samples using the high-fidelity preset, which utilizes CTGAN with a large number of epochs and an optimized batch size, while enforcing strict adversarial validation, and use the default setting for automatically generating a validation report?",
+        "tool_call": "HighFidelityPreset",
+        "arguments": {
+            "n_samples": 150,
+            "auto_report": true
+        }
+    },
+    {
+        "user_query": "I want to create a dataset that's extremely rich in variety and accuracy. Can you produce 300 samples using the preset that emphasizes data quality and fidelity, which employs CTGAN with an extensive number of epochs and a fine-tuned batch size, while also ensuring rigorous adversarial validation to guarantee diversity?",
+        "tool_call": "HighFidelityPreset",
+        "arguments": {
+            "n_samples": 300,
+            "auto_report": true
+        }
+    },
+    {
+        "user_query": "I'm looking for a highly diverse dataset with top-notch quality. Can you generate 50 samples using the high-fidelity preset that utilizes CTGAN with a large number of epochs, optimized batch size, and enforced adversarial validation to ensure maximum variety?",
+        "tool_call": "HighFidelityPreset",
+        "arguments": {
+            "n_samples": 50,
+            "auto_report": true
+        }
+    },
+    {
+        "user_query": "I want to create a diverse dataset with excellent quality. Can you use the high-fidelity preset, which employs CTGAN with a large number of epochs and an optimized batch size, to generate 200 samples? For the auto_report parameter, I'd like to stick with the default setting.",
+        "tool_call": "HighFidelityPreset",
+        "arguments": {
+            "n_samples": 200,
+            "auto_report": true
+        }
+    },
+    {
+        "user_query": "I'm looking for a high-quality dataset with a lot of variety. Can you generate 150 samples using the preset that prioritizes data quality and fidelity, which uses CTGAN with a high number of epochs and an optimized batch size? This preset also forces adversarial validation, right?",
+        "tool_call": "HighFidelityPreset",
+        "arguments": {
+            "n_samples": 150,
+            "auto_report": true
+        }
+    },
+    {
+        "user_query": "I need a diverse dataset with top-notch quality. Can you create 80 samples using the preset that's optimized for maximum data quality and fidelity, relying on CTGAN with high epochs and an optimal batch size? Also, use default settings for auto-report generation.",
+        "tool_call": "HighFidelityPreset",
+        "arguments": {
+            "n_samples": 80,
+            "auto_report": true
+        }
+    },
+    {
+        "user_query": "I'm looking to generate a large and varied dataset with the highest possible quality. Can you produce 300 samples using the preset that prioritizes data fidelity, utilizing CTGAN with an elevated number of epochs and a carefully tuned batch size? This should ensure the most realistic and diverse outcomes while maintaining rigorous standards through adversarial validation.",
+        "tool_call": "HighFidelityPreset",
+        "arguments": {
+            "n_samples": 300,
             "auto_report": true
         }
     }
