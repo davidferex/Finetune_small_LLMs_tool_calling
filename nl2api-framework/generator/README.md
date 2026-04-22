@@ -2,6 +2,8 @@
 
 This folder contains the full data generation pipeline used in the project for training Gemma 2 in tool calling tasks. The process is divided into two main stages: generating raw queries and transforming them into the final training format.
 
+All this is for both training and testing datasets.
+
 All the dataset files created for the project are already available in the datasets directory.
 
 ---
@@ -66,7 +68,7 @@ Transforms the raw dataset into a format suitable for LoRA fine-tuning.
 
 ### Output:
 
-`train_lora.json`
+Adecuate training or testing dataset file for LoRA fine tuning for tool calling.
 
 ---
 
@@ -78,7 +80,7 @@ Generates a dataset tailored for training a classifier (MLP head).
 
 ### Output:
 
-`train_mlp.json`
+Adecuate training or testing dataset file for MLP classifier.
 
 ---
 
@@ -132,8 +134,8 @@ The generated dataset depends heavily on the tool specification used.
 ## Summary
 
 * `dataset_preset_generator.py` → Generates raw queries
-* `dataset_full_generator.py` → Builds LoRA training dataset
-* `dataset_full_generator_mlp.py` → Builds MLP training dataset
+* `dataset_full_generator.py` → Builds LoRA training/testing dataset
+* `dataset_full_generator_mlp.py` → Builds MLP training/testing dataset
 
 Each step is modular, but requires careful alignment in terms of file paths, tool specifications, and expected formats.
 
