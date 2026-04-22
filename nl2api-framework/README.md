@@ -1,19 +1,28 @@
 # NL2API Framework 🚀
-Un framework para generar interfaces de lenguaje natural para cualquier API mediante fine tuning de modelos locales eficientes (Gemma 2).
 
-## 💡 Concepto
-Este framework permite que cualquier desarrollador pase de una definición de API estática en formato JSON a una interfaz conversacional capaz de:
-1. **Mapear intención a código:** Traducir lenguaje natural a llamadas JSON.
-2. **Gestionar ambigüedad:** Detectar parámetros faltantes de forma automática.
-3. **Ejecutar en local:** Optimizado para correr en Gemma 2 2B.
+A framework for generating natural language interfaces for any API through fine-tuning efficient local models (Gemma 2).
 
-## 🛠️ Cómo funciona
-1. **Define tu API:** Crea un `tools_spec.json` con tus funciones y parámetros.
-2. **Genera el Dataset:** El `DatasetGenerator` usa un modelo maestro (Llama 3.3) para crear miles de interacciones variadas.
-3. **Fine-tune:** Entrena un modelo pequeño para que aprenda *tu* API específica.
-4. **Despliega:** Usa el `InferenceBridge` para recibir texto y ejecutar funciones reales.
+## 💡 Concept
 
-## 🧪 Caso de Uso: Simulador de Datos Sintéticos
-Hemos validado el framework creando una interfaz para una API de generación de datos: **[CalmDataGenerator](https://github.com/AlejandroBeldaFernandez/Calm-Data_Generator)**
-- **Input:** "Necesito 100 filas de una serie temporal rápido."
-- **Output:** `TimeSeriesPreset(n_samples=100, ...)`
+This framework enables any developer to move from a static JSON API definition to a conversational interface capable of:
+
+1. **Intent-to-code mapping:** Translating natural language into JSON API calls.
+2. **Ambiguity handling:** Automatically detecting missing parameters.
+3. **Local execution:** Optimized to run on Gemma 2 2B.
+
+## 🛠️ How it works
+
+1. **Define your API:** Create a `tools_spec.json` file with your functions and parameters.
+2. **Generate the Dataset:** The `DatasetGenerator` uses a teacher model (LLaMA 3.3) to create thousands of diverse interactions.
+3. **Fine-tune:** Train a smaller model so it learns *your* specific API.
+4. **Ready to use:** The trained model should perform strongly at tool calling for your specific API.
+
+## 🧪 Use Case: Synthetic Data Generator
+
+We validated the framework by building an interface for a data generation API: **[CalmDataGenerator](https://github.com/AlejandroBeldaFernandez/Calm-Data_Generator)**
+
+* **Input:** "I need 100 rows of a time series quickly."
+* **Output:** `TimeSeriesPreset(n_samples=100, ...)`
+
+Results show that the fine-tuned model can outperform larger non-fine-tuned models on the specific task of tool calling for the target API. In this case, it was compared against LLaMA 3.3 70B.
+
