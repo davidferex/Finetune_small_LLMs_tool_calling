@@ -2,6 +2,8 @@
 
 This folder contains the full data generation pipeline used in the project for training Gemma 2 in tool calling tasks. The process is divided into two main stages: generating raw queries and transforming them into the final training format.
 
+All the dataset files created for the project are already available in the datasets directory.
+
 ---
 
 ## Overview
