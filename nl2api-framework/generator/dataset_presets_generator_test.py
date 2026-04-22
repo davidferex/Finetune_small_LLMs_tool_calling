@@ -159,7 +159,7 @@ def call_ollama(prompt: str) -> dict | None:
 # ── Pipeline principal ─────────────────────────────────────────────────────────
 
 def run_dataset_generation(n_samples_completas: int = 50):
-    os.makedirs("dataset_test2", exist_ok=True)
+    os.makedirs("dataset_test", exist_ok=True)
 
     final_dataset          = []  # tool calling
     final_dataset_mlp      = []  # MLP (binario)
@@ -283,13 +283,13 @@ def run_dataset_generation(n_samples_completas: int = 50):
                 print(f"[{tool['name']}] incompleto generado (omitido: {omit})")
 
         # Guardar por tool
-        with open(f"dataset_test2/{tool['name']}.json", "w", encoding="utf-8") as f:
+        with open(f"dataset_test/{tool['name']}.json", "w", encoding="utf-8") as f:
             json.dump(tool_results, f, indent=4, ensure_ascii=False)
 
-        with open(f"dataset_test2/{tool['name']}_mlp.json", "w", encoding="utf-8") as f:
+        with open(f"dataset_test/{tool['name']}_mlp.json", "w", encoding="utf-8") as f:
             json.dump(tool_results_mlp, f, indent=4, ensure_ascii=False)
 
-        with open(f"dataset_test2/{tool['name']}_verifier.json", "w", encoding="utf-8") as f:
+        with open(f"dataset_test/{tool['name']}_verifier.json", "w", encoding="utf-8") as f:
             json.dump(tool_results_verifier, f, indent=4, ensure_ascii=False)
 
         final_dataset.extend(tool_results)
@@ -297,14 +297,14 @@ def run_dataset_generation(n_samples_completas: int = 50):
         final_dataset_verifier.extend(tool_results_verifier)
 
     # Guardar datasets globales
-    with open("dataset_test2/full_training_dataset.json", "w", encoding="utf-8") as f:
+    with open("dataset_test/full_testing_dataset.json", "w", encoding="utf-8") as f:
         json.dump(final_dataset, f, indent=4, ensure_ascii=False)
 
-    with open("dataset_test2/full_training_dataset_mlp.json", "w", encoding="utf-8") as f:
+    with open("dataset_test/full_testing_dataset_mlp.json", "w", encoding="utf-8") as f:
         json.dump(final_dataset_mlp, f, indent=4, ensure_ascii=False)
 
     # Verifier en JSONL para SFTTrainer
-    with open("dataset_test2/full_training_dataset_verifier.jsonl", "w", encoding="utf-8") as f:
+    with open("dataset_test/full_testing_dataset_verifier.jsonl", "w", encoding="utf-8") as f:
         for example in final_dataset_verifier:
             f.write(json.dumps(example, ensure_ascii=False) + "\n")
 
