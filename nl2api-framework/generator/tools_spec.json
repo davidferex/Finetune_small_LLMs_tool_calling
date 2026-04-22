@@ -1,0 +1,21 @@
+[
+    {
+        "name": "HighFidelityPreset",
+        "description": "Preset optimized for maximum data quality and fidelity. Uses CTGAN with a high number of epochs and optimized batch size, prioritizing quality over speed. Forces adversarial validation.",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
+            },
+            {
+                "name": "auto_report",
+                "type": "bool",
+                "required": false,
+                "default": true,
+                "description": "Whether to automatically generate a validation report after generation"
+            }
+        ]
+    }
+]

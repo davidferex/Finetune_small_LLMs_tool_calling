@@ -2,55 +2,52 @@ import json
 import os
 import random
 
-# Tu fuente de verdad (reutilizada)
-TOOLS_SPEC = [
-    {"name": "FastPrototypePreset", "description": "Preset optimized for rapid data generation. Ideal for integration testing, CI/CD pipelines, or quick prototyping.", "parameters": ["n_samples (int)"]},
-    {"name": "HighFidelityPreset", "description": "Preset optimized for maximum data quality and fidelity. Uses CTGAN with a high number of epochs and optimized batch size, prioritizing quality over speed. Forces adversarial validation.", "parameters": ["n_samples (int)", "auto_report (bool)"]},
-    {"name": "ImbalancedGeneratorPreset", "description": "Preset designed to generate synthetic data with a specific imbalanced distribution. Useful for creating test datasets for drift detection or bias analysis. Uses 'resample' or generative methods with forced custom distributions on the target.", "parameters": ["n_samples (int)", "target_col (string)", "imbalance_ratio (float)"]},
-    {"name": "TimeSeriesPreset", "description": "Preset optimized for generating sequential or time-series data. Uses TimeGAN, TimeVAE, or FourierFlows (fflows) to capture temporal dynamics. TimeGAN: best for complex temporal patterns. TimeVAE: faster, good for regular series. fflows: most stable, best for periodic/seasonal series", "parameters": ["n_samples (int)", "sequence_key (string)", "time_col (string)", "method (string)"]},
-    {"name": "BalancedDataGeneratorPreset", "description": "Preset designed to balance an originally imbalanced dataset. Uses SMOTE (or ADASYN) to oversample minority classes to achieve a balanced distribution.", "parameters": ["n_samples (int)", "target_col (string)"]}
-]
+with open("tools_spec.json", "r") as f:
+    TOOLS_SPEC = json.load(f)
 
-def tools_to_json_schema(specs):
-    """Convierte tu TOOLS_SPEC al formato JSON Schema que pide el prompt"""
+# Mapeo de tipos del spec al formato JSON Schema del prompt
+TYPE_MAP = {
+    "int":    "integer",
+    "float":  "number",
+    "bool":   "boolean",
+    "string": "string",
+}
+
+def tools_to_json_schema(specs: list[dict]) -> list[dict]:
+    """Convierte tools_spec.json al formato JSON Schema que pide el prompt."""
     schema_tools = []
     for tool in specs:
-        properties = {}
-        for param in tool["parameters"]:
-            # Mapeo básico de tipos para el esquema
-            p_type = "integer" if "n_samples" in param else "string"
-            if "ratio" in param: p_type = "float"
-            if "auto_report" in param: p_type = "boolean"
-            
-            properties[param] = {"type": p_type}
-            
+        properties = {
+            p["name"]: {"type": TYPE_MAP.get(p["type"], "string")}
+            for p in tool["parameters"]
+        }
+        required = [p["name"] for p in tool["parameters"] if p["required"]]
+
         schema_tools.append({
             "type": "function",
             "function": {
-                "name": tool["name"],
+                "name":        tool["name"],
                 "description": tool["description"],
                 "parameters": {
-                    "type": "object",
+                    "type":       "object",
                     "properties": properties,
-                    "required": tool["parameters"]
+                    "required":   required
                 }
             }
         })
     return schema_tools
 
-def build_lora_dataset(input_folder="dataset_raw2", output_file="train_mlp.jsonl"):
+def build_lora_dataset(input_folder, output_file="train_mlp.jsonl"):
     tools_list = tools_to_json_schema(TOOLS_SPEC)
     
     # Template exacto que pediste
     system_prompt = (
-        f"You are a function calling AI model. You are provided with function signatures within <tools></tools> XML tags."
-        f"You may call one or more functions to assist with the user query. Don't make assumptions about what values to plug into functions."
-        f"Here are the available tools:<tools> {json.dumps(tools_list)} </tools>"
-        f"Use the following pydantic model json schema for each tool call you will make: "
-        f"{{'title': 'FunctionCall', 'type': 'object', 'properties': {{'arguments': {{'title': 'Arguments', 'type': 'object'}}, 'name': {{'title': 'Name', 'type': 'string'}}}}, 'required': ['arguments', 'name']}} "
-        f"For each function call return a json object with function name and arguments within <tool_call></tool_call> XML tags as follows:\n"
-        f"<tool_call>\n{{tool_call}}\n</tool_call>"
-    )
+            f"You are a function calling AI model. You are provided with function signatures within <tools></tools> XML tags."
+            f"You have to call one function to assist with the user query. Don't make assumptions about what values to plug into functions"
+            f"Here are the available tools:<tools> {json.dumps(tools_list)} </tools>"
+            f"For each function call return a json object with function name and arguments within <tool_call></tool_call> XML tags as follows:\n"
+            f"<tool_call>\n{{tool_call}}\n</tool_call>"
+        )
 
     final_data = []
 
@@ -99,4 +96,4 @@ def build_lora_dataset(input_folder="dataset_raw2", output_file="train_mlp.jsonl
     print(f"✅ Transformación completada: {len(final_data)} ejemplos listos.")
 
 if __name__ == "__main__":
-    build_lora_dataset()
+    build_lora_dataset(input_folder="dataset_test2", output_file="test_mlp.jsonl")
