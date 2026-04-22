@@ -2,7 +2,7 @@ import json
 import os
 import random
 
-with open("tools_spec.json", "r") as f:
+with open("tools_spec_full.json", "r") as f:
     TOOLS_SPEC = json.load(f)
 
 # Mapeo de tipos del spec al formato JSON Schema del prompt
@@ -96,4 +96,4 @@ def build_lora_dataset(input_folder, output_file="train_mlp.jsonl"):
     print(f"✅ Transformación completada: {len(final_data)} ejemplos listos.")
 
 if __name__ == "__main__":
-    build_lora_dataset(input_folder="dataset_test2", output_file="test_mlp.jsonl")
+    build_lora_dataset(input_folder="dataset_raw5", output_file="train_mlp2.jsonl")
