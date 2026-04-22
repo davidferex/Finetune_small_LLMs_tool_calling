@@ -73,6 +73,10 @@ Includes all evaluation and benchmarking scripts.
 
 This directory allows direct comparison between fine-tuned small models and large baseline models.
 
+### IMPORTANT
+
+Note that HuggingFace and Weights&Biases were used during the experiments, so these scripts use their libraries. For the correct execution of everything, an environment file with you HF and W&B tokens is needed.
+
 ---
 
 ## 🧪 Use Case: Synthetic Data Generator
