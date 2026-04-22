@@ -1,5 +1,6 @@
 import torch
 import json
+from enum import Enum
 import torch.nn as nn
 import os
 from torch.utils.data import DataLoader
@@ -8,15 +9,15 @@ from datasets import load_dataset
 from peft import PeftModel
 from sklearn.metrics import accuracy_score, f1_score, classification_report, confusion_matrix
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 # ===============================
 # Configuración
 # ===============================
 MODEL_BASE_ID     = "google/gemma-2-2b-it"
-ADAPTER_ID        = "davidferex/TFM_prueba5"
+ADAPTER_ID        = "davidferex/TFM_prueba7"
 MLP_PATH          = "mlp_guardian.pt"
-TEST_DATASET_PATH = "test_mlp_v2.jsonl"
+TEST_DATASET_PATH = "test_mlp.jsonl"
 BATCH_SIZE        = 64     # ahora cabe con queries cortas
 MAX_LENGTH        = 128
 OUTPUT_ERROR_FILE = "errores_validacion.json"
@@ -26,8 +27,23 @@ device = "cuda" if torch.cuda.is_available() else "cpu"
 # ===============================
 # 1. Cargar Tokenizador y Modelo
 # ===============================
-print("⏳ Cargando Tokenizador...")
-tokenizer = AutoTokenizer.from_pretrained(ADAPTER_ID)
+class ChatmlSpecialTokens(str, Enum):
+    tools = "<tools>"
+    eotools = "</tools>"
+    tool_call="<tool_call>"
+    eotool_call="</tool_call>"
+    pad_token = "<pad>"
+    eos_token = "<eos>"
+    @classmethod
+    def list(cls):
+        return [c.value for c in cls]
+
+tokenizer = AutoTokenizer.from_pretrained(
+        MODEL_BASE_ID,
+        pad_token=ChatmlSpecialTokens.pad_token.value,
+        additional_special_tokens=ChatmlSpecialTokens.list()
+    )
+
 
 print("⏳ Cargando Modelo Base + LoRA...")
 base_model = AutoModelForCausalLM.from_pretrained(
