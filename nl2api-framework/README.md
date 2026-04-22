@@ -10,12 +10,70 @@ This framework enables any developer to move from a static JSON API definition t
 2. **Ambiguity handling:** Automatically detecting missing parameters.
 3. **Local execution:** Optimized to run on Gemma 2 2B.
 
+---
+
 ## 🛠️ How it works
 
 1. **Define your API:** Create a `tools_spec.json` file with your functions and parameters.
 2. **Generate the Dataset:** The `DatasetGenerator` uses a teacher model (LLaMA 3.3) to create thousands of diverse interactions.
 3. **Fine-tune:** Train a smaller model so it learns *your* specific API.
 4. **Ready to use:** The trained model should perform strongly at tool calling for your specific API.
+
+---
+
+## 📁 Project Structure
+
+The repository is organized into several key directories, each corresponding to a stage of the pipeline:
+
+### `datasets/`
+
+Contains the generated datasets used for training and evaluation.
+
+* Includes both intermediate and final datasets (e.g., raw queries, `train_lora.json`, `train_mlp.json`, etc.).
+* These datasets are produced by the generation pipeline and later consumed during fine-tuning and testing.
+
+---
+
+### `generator/`
+
+Implements the full data generation pipeline.
+
+* `dataset_preset_generator.py` → Generates raw queries using predefined presets.
+* `dataset_full_generator.py` → Converts raw data into LoRA training format.
+* `dataset_full_generator_mlp.py` → Converts raw data into MLP training format.
+
+This stage bridges the gap between a tool specification and a usable training dataset.
+
+---
+
+### `finetuning/`
+
+Contains the training scripts for adapting models to the target API.
+
+* LoRA fine-tuning scripts for Gemma 2 (tool calling task)
+* MLP training scripts (classifier head for tool prediction)
+
+These scripts take the datasets from `datasets/` and produce trained models ready for inference.
+
+---
+
+### `testing/`
+
+Includes all evaluation and benchmarking scripts.
+
+* `test_tool_caller.py` → Evaluates the LoRA fine-tuned model
+* `test_mlp.py` → Evaluates the MLP classifier
+* LLaMA evaluation pipeline:
+
+  * `main_client_presets.py`
+  * `main_server_presets.py`
+  * `llm_adapter.py`
+  * `tools_spec.json`
+* `evaluate_llama.py` → Processes outputs and computes final numerical metrics
+
+This directory allows direct comparison between fine-tuned small models and large baseline models.
+
+---
 
 ## 🧪 Use Case: Synthetic Data Generator
 
@@ -25,4 +83,19 @@ We validated the framework by building an interface for a data generation API: *
 * **Output:** `TimeSeriesPreset(n_samples=100, ...)`
 
 Results show that the fine-tuned model can outperform larger non-fine-tuned models on the specific task of tool calling for the target API. In this case, it was compared against LLaMA 3.3 70B.
+
+---
+
+## 🧾 Summary
+
+The full pipeline looks like this:
+
+1. **Define tools** → `tools_spec.json`
+2. **Generate data** → `generator/`
+3. **Store datasets** → `datasets/`
+4. **Train models** → `finetuning/`
+5. **Evaluate & compare** → `testing/`
+
+This modular structure allows you to easily adapt the framework to new APIs, datasets, and evaluation setups while keeping each stage cleanly separated.
+
 
