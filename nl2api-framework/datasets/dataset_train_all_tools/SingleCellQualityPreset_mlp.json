@@ -1,0 +1,552 @@
+[
+    {
+        "user_query": "I want to generate a dataset with 50 samples of high-quality single-cell RNA-seq data, can you create that for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a dataset with some samples of high-quality single-cell RNA-seq data, can you create that for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a diverse dataset of high-quality single-cell RNA-seq data with around 200 samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a diverse dataset of high-quality single-cell RNA-seq data with several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a small but varied set of single-cell RNA-seq data, could you generate about 10 different samples for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a small but varied set of single-cell RNA-seq data, could you generate some samples for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To get a good representation of the cellular heterogeneity, I'd like to create a larger dataset. Can you produce around 500 distinct single-cell RNA-seq profiles?",
+        "complete": 1
+    },
+    {
+        "user_query": "To get a good representation of the cellular heterogeneity, I'd like to create a larger dataset. Can you produce several distinct single-cell RNA-seq profiles?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To capture a broad range of cell types and states, I want to generate a sizable dataset with varied characteristics. Could you produce approximately 150 unique single-cell RNA-seq data points for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "To capture a broad range of cell types and states, I want to generate a sizable dataset with varied characteristics. Could you produce some unique single-cell RNA-seq data points for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a diverse set of single-cell RNA-seq data. Can you help me generate around 50 high-quality samples that showcase a wide range of cellular characteristics?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a diverse set of single-cell RNA-seq data. Can you help me generate some high-quality samples that showcase a wide range of cellular characteristics?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to produce a large and varied dataset for my research, could you generate 200 unique single-cell RNA-seq data points that capture the complexity and diversity of cellular expression?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to produce a large and varied dataset for my research, could you generate some unique single-cell RNA-seq data points that capture the complexity and diversity of cellular expression?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a diverse set of 150 single-cell RNA-seq data points to help me get a comprehensive view of gene expression in different cells?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a diverse set of single-cell RNA-seq data points to help me get a comprehensive view of gene expression in different cells?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to generate a small but varied dataset for my single-cell RNA-seq analysis. Can I get about 80 samples that capture a wide range of cell types and gene expressions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to generate a small but varied dataset for my single-cell RNA-seq analysis. Can I get some samples that capture a wide range of cell types and gene expressions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To ensure a comprehensive understanding, I need a moderately sized dataset with ample diversity. Could you provide around 250 high-quality single-cell RNA-seq data points that cover a broad spectrum of cellular characteristics?",
+        "complete": 1
+    },
+    {
+        "user_query": "To ensure a comprehensive understanding, I need a dataset with ample diversity. Could you provide some high-quality single-cell RNA-seq data points that cover a broad spectrum of cellular characteristics?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a small but diverse set of about 50 single-cell RNA-seq data points for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a small but diverse set of single-cell RNA-seq data points for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a robust dataset, could you produce around 200 unique single-cell RNA-seq samples to ensure a wide range of cellular profiles are represented?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a robust dataset, could you produce some unique single-cell RNA-seq samples to ensure a wide range of cellular profiles are represented?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To guarantee a diverse set of cellular expressions, can we generate roughly 150 distinct single-cell RNA-seq data points?",
+        "complete": 1
+    },
+    {
+        "user_query": "To guarantee a diverse set of cellular expressions, can we generate some distinct single-cell RNA-seq data points?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To ensure a wide range of cellular responses, I'd like to produce around 80 unique single-cell RNA-seq profiles for analysis.",
+        "complete": 1
+    },
+    {
+        "user_query": "To ensure a wide range of cellular responses, I'd like to produce some unique single-cell RNA-seq profiles for analysis.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To guarantee a comprehensive understanding of the cellular landscape, could we generate a substantial number of samples, approximately 300, to capture the broad spectrum of gene expression patterns in our single-cell RNA-seq data?",
+        "complete": 1
+    },
+    {
+        "user_query": "To guarantee a comprehensive understanding of the cellular landscape, could we generate some samples to capture the broad spectrum of gene expression patterns in our single-cell RNA-seq data?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can I get a dataset with around 100 samples to ensure a good mix of cell types and gene expressions in my single-cell RNA-seq data?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a dataset to ensure a good mix of cell types and gene expressions in my single-cell RNA-seq data?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a diverse set of single-cell RNA-seq data, can you generate a preset with around 200 samples to capture a wide range of cell types and gene expressions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a diverse set of single-cell RNA-seq data, can you generate a preset to capture a wide range of cell types and gene expressions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a high-diversity single-cell RNA-seq dataset for me with approximately 50 samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a high-diversity single-cell RNA-seq dataset for me with several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a diverse set of single-cell RNA-seq data. Could you create a preset with around 150 samples to ensure I get a good range of cellular variation?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a diverse set of single-cell RNA-seq data. Could you create a preset with some samples to ensure I get a good range of cellular variation?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a comprehensive dataset for my research, could you help me design a preset that generates around 250 high-quality single-cell RNA-seq data points to capture a broad spectrum of cell types and conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a comprehensive dataset for my research, could you help me design a preset that generates some high-quality single-cell RNA-seq data points to capture a broad spectrum of cell types and conditions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a diverse set of 50 single-cell RNA-seq data points for me, ensuring a wide range of cell types and experimental conditions are represented?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate some single-cell RNA-seq data points for me, ensuring a wide range of cell types and experimental conditions are represented?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a robust dataset with a variety of single-cell RNA-seq profiles. Can you produce 200 unique samples that capture a broad spectrum of cellular characteristics and conditions, ensuring the dataset is rich in diversity?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a robust dataset with a variety of single-cell RNA-seq profiles. Can you produce several unique samples that capture a broad spectrum of cellular characteristics and conditions, ensuring the dataset is rich in diversity?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to generate a small batch of high-quality single-cell RNA-seq data for initial testing purposes. Can you create 10 diverse samples that showcase different cell types and conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to generate some high-quality single-cell RNA-seq data for initial testing purposes. Can you create several diverse samples that showcase different cell types and conditions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To ensure robustness in my analysis, I need a larger set of high-quality single-cell RNA-seq data that captures a wide range of cellular variations. Could you generate 500 diverse samples for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "To ensure robustness in my analysis, I need some high-quality single-cell RNA-seq data that captures a wide range of cellular variations. Could you generate some diverse samples for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a comprehensive dataset for my research on single-cell RNA sequencing, and I want to make sure it's representative of the vast diversity found in cell populations. Can you provide me with 1000 unique samples that reflect the complexity of cellular expression?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a comprehensive dataset for my research on single-cell RNA sequencing, and I want to make sure it's representative of the vast diversity found in cell populations. Can you provide me with some unique samples that reflect the complexity of cellular expression?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a small but diverse dataset for exploratory analysis, can I get around 50 single-cell RNA-seq samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a small but diverse dataset for exploratory analysis, can I get some single-cell RNA-seq samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a sizable dataset for in-depth analysis, could you provide a preset with around 200 high-quality single-cell RNA-seq samples to ensure we have a good representation of various cell types?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a sizable dataset for in-depth analysis, could you provide a preset with some high-quality single-cell RNA-seq samples to ensure we have a good representation of various cell types?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can I get a diverse set of high-quality single-cell RNA-seq data? I'd like to generate around 150 samples to capture a broad range of cellular characteristics.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a diverse set of high-quality single-cell RNA-seq data? I'd like to generate some samples to capture a broad range of cellular characteristics.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To ensure a comprehensive analysis, I need a substantial number of samples. Could you provide me with about 80 high-quality single-cell RNA-seq data points that reflect a wide variety of cell types and conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "To ensure a comprehensive analysis, I need some high-quality data points that reflect a wide variety of cell types and conditions. Could you provide me with those?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a robust dataset for my research, could I get around 300 diverse single-cell RNA-seq samples to ensure my analysis captures the full range of cellular behaviors and responses?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a robust dataset for my research, could I get some diverse single-cell RNA-seq samples to ensure my analysis captures the full range of cellular behaviors and responses?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you provide a smaller but still varied set of single-cell RNA-seq data, about 50 samples should do, to help me test my pipeline's performance across different cell types?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you provide a smaller but still varied set of single-cell RNA-seq data to help me test my pipeline's performance across different cell types?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a larger and more diverse dataset to train my model on. Can I get a preset with around 200 single-cell RNA-seq samples to ensure I capture a wide range of cell types and expressions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a larger and more diverse dataset to train my model on. Can I get a preset with some single-cell RNA-seq samples to ensure I capture a wide range of cell types and expressions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To effectively train my model, I need a smaller but still diverse set of high-quality single-cell RNA-seq data. Could you generate a preset with about 10 samples to start with?",
+        "complete": 1
+    },
+    {
+        "user_query": "To effectively train my model, I need a smaller but still diverse set of high-quality single-cell RNA-seq data. Could you generate a preset with a few samples to start with?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a large and varied dataset to work with, could I get a preset that generates around 500 high-quality single-cell RNA-seq data points?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a large and varied dataset to work with, could I get a preset that generates some high-quality single-cell RNA-seq data points?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a preset that produces a moderately sized dataset of about 150 high-quality single-cell RNA-seq samples to help ensure a good balance between quality and diversity in my analysis?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a preset that produces a moderately sized dataset of some high-quality single-cell RNA-seq samples to help ensure a good balance between quality and diversity in my analysis?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a diverse set of high-quality single-cell RNA-seq data, can you generate around 50 samples for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for some high-quality single-cell RNA-seq data, can you generate a few samples for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a robust dataset with a lot of variability, so could you produce about 200 distinct examples of single-cell RNA-seq data for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a robust dataset with a lot of variability, so could you produce some distinct examples of single-cell RNA-seq data for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To ensure my analysis is comprehensive, can you generate a sizable set of single-cell RNA-seq data, approximately 150 samples, that capture a wide range of cellular conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "To ensure my analysis is comprehensive, can you generate some single-cell RNA-seq data that capture a wide range of cellular conditions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to create a diverse dataset for my research. Can you produce around 80 high-quality single-cell RNA-seq data points that reflect various cell types and conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to create a diverse dataset for my research. Can you produce some high-quality single-cell RNA-seq data points that reflect various cell types and conditions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to simulate a large and varied population of cells for my study. Could you generate approximately 300 unique single-cell RNA-seq profiles, ensuring they represent a broad range of cellular states and types? This diversity is crucial for the validity of my research findings.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to simulate a large and varied population of cells for my study. Could you generate several unique single-cell RNA-seq profiles, ensuring they represent a broad range of cellular states and types? This diversity is crucial for the validity of my research findings.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can I get a dataset with around 50 examples of single-cell RNA-seq data that captures a wide range of cell types and conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a dataset with some examples of single-cell RNA-seq data that captures a wide range of cell types and conditions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a diverse set of single-cell RNA-seq data, can you generate around 100 samples that cover various cell types and experimental conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a diverse set of single-cell RNA-seq data, can you generate some samples that cover various cell types and experimental conditions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a large and varied dataset of single-cell RNA sequencing data with approximately 200 samples, ensuring that it encompasses a broad range of biological conditions and cell types to maximize diversity?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a large and varied dataset of single-cell RNA sequencing data with several samples, ensuring that it encompasses a broad range of biological conditions and cell types to maximize diversity?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to generate a diverse set of single-cell RNA-seq data. Can you create a dataset with around 500 samples that captures a wide variety of cell types and biological states, ensuring the data is as heterogeneous as possible?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to generate a diverse set of single-cell RNA-seq data. Can you create a dataset that captures a wide variety of cell types and biological states, ensuring the data is as heterogeneous as possible?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To get a comprehensive understanding, I'd like to generate a large and diverse single-cell RNA-seq dataset. Could you create a preset that includes approximately 1000 samples, emphasizing broad coverage of different cell types, conditions, and biological processes to ensure the data is highly heterogeneous?",
+        "complete": 1
+    },
+    {
+        "user_query": "To get a comprehensive understanding, I'd like to generate a large and diverse single-cell RNA-seq dataset. Could you create a preset that includes several samples, emphasizing broad coverage of different cell types, conditions, and biological processes to ensure the data is highly heterogeneous?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can I get a small but varied single-cell RNA-seq dataset? I'm looking for something with around 50 samples to capture a good range of cell types and conditions.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a small but varied single-cell RNA-seq dataset? I'm looking for something to capture a good range of cell types and conditions.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a comprehensive dataset for my research, can you generate a diverse set of single-cell RNA-seq data with around 200 samples to ensure I have a broad representation of different cell types and states?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a comprehensive dataset for my research, can you generate a diverse set of single-cell RNA-seq data with some samples to ensure I have a broad representation of different cell types and states?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a robust dataset for my study on single-cell RNA sequencing, can you produce a large and diverse set of data with approximately 500 samples to capture the complexity and variability of cellular biology?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a robust dataset for my study on single-cell RNA sequencing, can you produce a large and diverse set of data with some samples to capture the complexity and variability of cellular biology?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To better understand the intricacies of cellular behavior, I'd like to generate a substantial dataset that encompasses a wide range of cell types and conditions. Could you create a preset for generating high-quality single-cell RNA-seq data with around 1000 samples, ensuring it's diverse enough to accurately reflect the complexity of real biological systems?",
+        "complete": 1
+    },
+    {
+        "user_query": "To better understand the intricacies of cellular behavior, I'd like to generate a substantial dataset that encompasses a wide range of cell types and conditions. Could you create a preset for generating high-quality single-cell RNA-seq data with several samples, ensuring it's diverse enough to accurately reflect the complexity of real biological systems?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to simulate a large and varied dataset for single-cell RNA sequencing. Can you set up a preset that can generate approximately 1500 high-quality samples, capturing the full spectrum of cellular diversity and complexity found in real-world biological systems?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to simulate a large and varied dataset for single-cell RNA sequencing. Can you set up a preset that can generate some high-quality samples, capturing the full spectrum of cellular diversity and complexity found in real-world biological systems?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    }
+]

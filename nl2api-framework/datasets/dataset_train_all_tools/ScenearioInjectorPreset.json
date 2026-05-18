@@ -1,0 +1,382 @@
+[
+    {
+        "user_query": "I want to apply a custom scenario configuration with config_key1 set to config_value1 and config_key2 set to config_value2 to my existing dataset.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"config_key1\": \"config_value1\", \"config_key2\": \"config_value2\"}"
+        }
+    },
+    {
+        "user_query": "I need to inject a specific scenario into my current data, where key1 equals value1 and key2 equals value2. Can you help me achieve this by applying the specified configuration directly?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"key1\": \"value1\", \"key2\": \"value2\"}"
+        }
+    },
+    {
+        "user_query": "I'm working with an existing dataset and I want to introduce some complexity to it by injecting a custom scenario. The scenario has two parameters, param1 set to val1 and param2 set to val2. Can you guide me on how to directly apply this specific configuration to my data without having to generate entirely new samples?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"param1\": \"val1\", \"param2\": \"val2\"}"
+        }
+    },
+    {
+        "user_query": "I have a dataset that I'd like to enhance with a custom scenario. The scenario involves setting the first parameter to option A and the second parameter to option B. How can I use the ScenarioInjector to directly apply these specific settings to my existing data, potentially creating new samples if needed, but primarily focusing on modifying what I already have?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"setting1\": \"option1\", \"setting2\": \"option2\"}"
+        }
+    },
+    {
+        "user_query": "I'm working with a dataset and want to introduce some variations by applying a custom scenario. The scenario requires adjusting two properties: the first one should be set to 'prop_val1' and the second to 'prop_val2'. Can you guide me on how to utilize the ScenarioInjector to apply this specific configuration directly to my existing data, with the option to generate new samples if necessary?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"property1\": \"prop_val1\", \"property2\": \"prop_val2\"}"
+        }
+    },
+    {
+        "user_query": "I need to inject a custom scenario into my dataset for 1 hour, checking every minute. How can I use the ScenarioInjector to apply this configuration and potentially create new samples?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"duration\": 3600, \"interval\": 60}"
+        }
+    },
+    {
+        "user_query": "I'm looking to introduce varied conditions into my data. Can you guide me on using the ScenarioInjector to apply a custom scenario with specific parameters, such as speed and distance, and possibly generate additional data points?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"speed\": 10, \"distance\": 1000}"
+        }
+    },
+    {
+        "user_query": "I want to simulate real-world driving scenarios by modifying my existing dataset with customized acceleration and deceleration rates. How can I utilize the ScenarioInjector tool to inject specific conditions like speeding up at a rate of 2 meters per second squared and slowing down at -3 meters per second squared, while also potentially creating new samples that reflect these varied driving behaviors?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"acceleration\": 2, \"deceleration\": -3}"
+        }
+    },
+    {
+        "user_query": "I'm looking to enhance my existing dataset with diverse vehicle scenarios. Can you guide me on how to use the ScenarioInjector tool to introduce variations such as different acceleration and deceleration rates, like 2m/s^2 for speeding up and -3m/s^2 for slowing down, into my data while allowing for the creation of new samples that capture these behaviors?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"num_entities\": 5, \"entity_type\": \"vehicle\"}"
+        }
+    },
+    {
+        "user_query": "I want to inject some real-world complexity into my dataset. Can you show me how to use the ScenarioInjector to simulate different driving conditions, such as a rainy day, and create new data points that reflect how vehicles would behave in those scenarios? Specifically, I'm interested in exploring how various weather conditions and times of day impact vehicle performance.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"weather_conditions\": \"rain\", \"time_of_day\": \"day\"}"
+        }
+    },
+    {
+        "user_query": "I need to add some realistic variations to my existing dataset. Can you guide me on utilizing the ScenarioInjector to introduce diverse driving scenarios like night driving or rush hour, and generate new data that mimics how cars would react in such situations? I'm particularly curious about understanding how different environmental factors influence vehicle behavior.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"preset1\", \"duration\": 3600}"
+        }
+    },
+    {
+        "user_query": "I have a dataset that I'd like to enhance with more realistic and varied driving scenarios. Can you walk me through the process of using the ScenarioInjector to inject complex scenarios, such as different weather conditions or road types, into my existing data? This would help me better understand how vehicles respond in diverse situations and ultimately improve the accuracy of my models.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"preset2\", \"duration\": 7200}"
+        }
+    },
+    {
+        "user_query": "I'm working with a dataset that needs more realistic driving scenarios. How can I utilize the ScenarioInjector to introduce complex and varied conditions, like different weather or road types, directly into my existing data? This would be super helpful for improving model accuracy by exposing it to diverse situations.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"preset3\", \"duration\": 10800}"
+        }
+    },
+    {
+        "user_query": "I want to enhance my current driving dataset with more realistic scenarios. Can the ScenarioInjector help me add varied conditions like rain, night driving, or highway roads directly into my existing data, without having to generate entirely new samples? This could significantly improve my model's performance by exposing it to a wide range of diverse situations.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"preset4\", \"duration\": 14400}"
+        }
+    },
+    {
+        "user_query": "I'm looking to enrich my driving dataset with more complex and realistic scenarios. Is it possible to use the ScenarioInjector to introduce various environmental conditions, such as fog, city roads, or nighttime driving, directly into my existing data without needing to create entirely new samples from scratch? This would allow me to greatly enhance my model's ability to generalize by exposing it to a broad spectrum of diverse and realistic situations.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"preset5\", \"duration\": 18000}"
+        }
+    },
+    {
+        "user_query": "I want to add more realism to my autonomous vehicle training data. Can I use the ScenarioInjector tool to simulate a wide range of scenarios, like construction zones, pedestrian traffic, or rural highways, and apply them directly to my current dataset? This would help me create a more robust model that can handle various situations without requiring a massive amount of new data generation.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"Scenario1\", \"scenario_description\": \"This is scenario 1\"}"
+        }
+    },
+    {
+        "user_query": "How can I enhance the diversity of my existing autonomous vehicle training data by incorporating complex scenarios like nighttime driving, emergency response situations, or toll roads, using the ScenarioInjector tool to augment my current dataset and improve model performance without needing to generate a large number of new samples?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"Scenario2\", \"scenario_description\": \"This is scenario 2\"}"
+        }
+    },
+    {
+        "user_query": "I want to add more variety to my autonomous vehicle training data. Can I use the ScenarioInjector to introduce complex scenarios such as nighttime driving, emergency response situations, or toll roads into my existing dataset? This would allow me to improve model performance without having to create a large number of new samples from scratch.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"Scenario3\", \"scenario_description\": \"This is scenario 3\"}"
+        }
+    },
+    {
+        "user_query": "How can I enhance the diversity of my autonomous vehicle training data by incorporating complex scenarios like construction zones, pedestrian crossings, or rush hour traffic into an existing dataset using the ScenarioInjector?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"Scenario4\", \"scenario_description\": \"This is scenario 4\"}"
+        }
+    },
+    {
+        "user_query": "I'm looking to add more realism and variety to my autonomous vehicle training data. Can you walk me through how I can utilize the ScenarioInjector tool to integrate intricate scenarios, such as nighttime driving, school zones, or inclement weather conditions, directly into my existing dataset without having to create new samples from scratch? This would help ensure that my model is better equipped to handle a wide range of real-world situations.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"Scenario5\", \"scenario_description\": \"This is scenario 5\"}"
+        }
+    },
+    {
+        "user_query": "I want to enhance the diversity of my autonomous vehicle training data by incorporating complex scenarios. Can you guide me on using the ScenarioInjector tool to inject realistic scenarios like rush hour traffic, pedestrian crossings, or foggy conditions into my existing dataset? I'd like to avoid generating new samples from scratch if possible.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"test_scenario_1\", \"duration\": 3600}"
+        }
+    },
+    {
+        "user_query": "How can I introduce varied and realistic driving scenarios into my current autonomous vehicle training data without having to create entirely new datasets, perhaps something like using the ScenarioInjector tool to simulate different conditions such as nighttime driving or construction zones?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"test_scenario_2\", \"duration\": 7200}"
+        }
+    },
+    {
+        "user_query": "I'm looking for a way to add some complexity and diversity to my existing autonomous vehicle training dataset. Is there a tool that can help me inject realistic scenarios, like rush hour traffic or pedestrian-heavy areas, into the data I already have? Maybe something that allows me to customize the duration and conditions of these simulated scenarios?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"test_scenario_3\", \"duration\": 10800}"
+        }
+    },
+    {
+        "user_query": "I want to enrich my current autonomous vehicle dataset with varied and realistic scenarios. Can you recommend a solution that enables me to simulate different environments, such as night driving or construction zones, directly into my existing data? It would be ideal if I could also specify the length of these simulations, let's say around 4 hours.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"test_scenario_4\", \"duration\": 14400}"
+        }
+    },
+    {
+        "user_query": "I'm looking to enhance my autonomous vehicle dataset with a wide range of realistic scenarios. Is there a way to inject complex situations like nighttime driving or roadwork directly into my existing data? I'd also like the flexibility to customize the duration of these simulated scenarios, potentially up to 5 hours, to ensure they're as diverse and comprehensive as possible.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"test_scenario_5\", \"duration\": 18000}"
+        }
+    },
+    {
+        "user_query": "Can you help me create a more realistic dataset for my self-driving car by adding varied scenarios like rush hour traffic or weather conditions directly into my current data? I'd also appreciate the ability to adjust the length of these simulated events, possibly extending them up to several hours, to ensure they cover a wide range of possibilities and mimic real-world driving experiences as closely as possible.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenerio_name\": \"test1\", \"scenerio_description\": \"This is test scenerio 1\"}"
+        }
+    },
+    {
+        "user_query": "I want to enhance my autonomous vehicle dataset with more complex and diverse scenarios. Can I use the ScenarioInjector tool to introduce varied conditions such as nighttime driving, construction zones, or pedestrian traffic directly into my existing data? Additionally, it would be beneficial to have control over the duration of these simulated events, allowing me to test my model's performance over extended periods, like an entire day, to better replicate real-world driving situations.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenerio_name\": \"test2\", \"scenerio_description\": \"This is test scenerio 2\"}"
+        }
+    },
+    {
+        "user_query": "How can I utilize the ScenarioInjector to create a wide range of complex driving scenarios for my autonomous vehicle dataset, including different weather conditions, road types, and unexpected events like accidents or road closures, and also have the flexibility to adjust the duration and frequency of these scenarios to thoroughly evaluate my model's performance in diverse real-world situations?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenerio_name\": \"test3\", \"scenerio_description\": \"This is test scenerio 3\"}"
+        }
+    },
+    {
+        "user_query": "I want to create a rich set of driving scenarios for testing my autonomous vehicle using the ScenarioInjector, including various environmental conditions like rain, snow, and nighttime driving, as well as different road scenarios such as highways, urban roads, and rural areas. How can I use this tool to simulate these complex scenarios, incorporate unexpected events like pedestrian crossings or vehicle breakdowns, and customize the length and occurrence of each scenario to ensure my model is robust and performs well under diverse conditions?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenerio_name\": \"test4\", \"scenerio_description\": \"This is test scenerio 4\"}"
+        }
+    },
+    {
+        "user_query": "I'm looking to leverage the ScenarioInjector for injecting complex scenarios into an existing dataset. Can you guide me on how I can create a diverse set of scenarios, such as daytime and nighttime driving in various weather conditions like fog or heavy rain, and incorporate unexpected events like cyclist appearances or construction zones? How do I customize these scenarios in terms of duration, frequency, and combination to effectively test my autonomous vehicle model?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenerio_name\": \"test5\", \"scenerio_description\": \"This is test scenerio 5\"}"
+        }
+    },
+    {
+        "user_query": "I want to create a wide range of scenarios to test my autonomous vehicle's performance. Can you show me how to use the ScenarioInjector to simulate different environments like city streets, highways, and rural roads during various times of day and weather conditions? I'd also like to include unexpected events such as pedestrians stepping into the road or vehicles cutting off my car. How can I adjust the scenario settings to control factors like scenario length, event frequency, and complexity to ensure my model is thoroughly tested?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"example1\", \"description\": \"This is an example scenario\"}"
+        }
+    },
+    {
+        "user_query": "I'm looking to assess my autonomous vehicle's capabilities in diverse environments and situations. Can you guide me on how to utilize the ScenarioInjector for creating complex scenarios that include a variety of road types, time of day, weather conditions, and unexpected events? I need to ensure my model can handle a wide range of possibilities.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"example2\", \"description\": \"Another example scenario\"}"
+        }
+    },
+    {
+        "user_query": "How do I use the ScenarioInjector to create a diverse set of scenarios for testing my autonomous vehicle's performance in different environments and situations, including varying road types, times of day, weather conditions, and unexpected events?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"example3\", \"description\": \"A third example scenario\"}"
+        }
+    },
+    {
+        "user_query": "I want to design a wide range of driving scenarios for my self-driving car using the ScenarioInjector. Can you show me how to configure it with diverse settings such as urban roads at night, highways during rush hour, rural areas in foggy conditions, and even unexpected situations like pedestrians stepping into the road or vehicles cutting off lanes? I need these varied scenarios to thoroughly test my vehicle's performance and safety features.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"example4\", \"description\": \"Yet another example scenario\"}"
+        }
+    },
+    {
+        "user_query": "I'm looking for a way to create a diverse set of driving scenarios using the ScenarioInjector, including different environments like city streets at night, busy highways during peak hours, and rural roads in low-visibility conditions. I also want to simulate unexpected events such as pedestrians suddenly stepping into the road or vehicles making sudden lane changes. Can you guide me on how to configure the ScenarioInjector to generate these varied scenarios for testing my autonomous vehicle's capabilities?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"example5\", \"description\": \"One more example scenario\"}"
+        }
+    },
+    {
+        "user_query": "How can I utilize the ScenarioInjector to create a wide range of complex driving scenarios, including various environments and unexpected events, to thoroughly test my autonomous vehicle's performance in diverse conditions?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"dataset\": \"synthetic\", \"task\": \"classification\"}"
+        }
+    },
+    {
+        "user_query": "I want to inject complex scenarios into the ImageNet dataset for object detection tasks, can I use the ScenarioInjector to create varied and realistic environments that mimic real-world situations, including different lighting conditions, weather, and unusual events?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"dataset\": \"imagenet\", \"task\": \"detection\"}"
+        }
+    },
+    {
+        "user_query": "How can I utilize the ScenarioInjector to introduce diverse and realistic scenarios into my CIFAR10 dataset for image segmentation tasks, incorporating factors such as varying backgrounds, object orientations, and illumination settings to enhance model robustness?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"dataset\": \"cifar10\", \"task\": \"segmentation\"}"
+        }
+    },
+    {
+        "user_query": "I want to inject complex scenarios into the MNIST dataset for a regression task. Can I use the ScenarioInjector to introduce variations like different font styles, sizes, and rotations to improve model performance?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"dataset\": \"mnist\", \"task\": \"regression\"}"
+        }
+    },
+    {
+        "user_query": "How can I utilize the ScenarioInjector to create diverse and realistic scenarios on top of an existing dataset, such as adding varied lighting conditions or weather effects, to enhance model robustness for a generation task?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"dataset\": \"custom\", \"task\": \"generation\"}"
+        }
+    },
+    {
+        "user_query": "I want to inject complex scenarios into my current dataset to make it more diverse. Can I use the ScenarioInjector to add different environmental factors like day and night cycles or weather conditions, and also define specific roles for entities like users and administrators? How do I configure this with a duration of 5 minutes and ensure that both user and admin roles are included in the scenario?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"default\", \"duration\": 300, \"entities\": [\"user\", \"admin\"]}"
+        }
+    },
+    {
+        "user_query": "I'm looking to enhance my dataset with more realistic scenarios. Is it possible to utilize the ScenarioInjector to introduce varied environmental conditions, such as different times of day or weather, and also specify distinct roles for entities like customers and support agents? I'd like to set this up for a 10-minute duration and ensure that both customer and support roles are incorporated into the scenario.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"advanced\", \"duration\": 600, \"entities\": [\"customer\", \"support\"]}"
+        }
+    },
+    {
+        "user_query": "I want to create a simulated environment with diverse conditions. Can I use the ScenarioInjector to generate scenarios with different environmental factors like time of day, weather, or location, while also defining specific entities such as 'tester' and 'developer'? I need this setup to last for 60 minutes and include both roles in the simulation.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"simple\", \"duration\": 60, \"entities\": [\"tester\", \"developer\"]}"
+        }
+    },
+    {
+        "user_query": "I'm looking to create a dynamic testbed with varied parameters. Can you help me utilize the ScenarioInjector to design custom scenarios that incorporate a range of elements like lighting, noise levels, or even physical barriers, while specifying key entities such as 'customer' and 'salesperson'? This simulation should run for 20 minutes and include interactions between both entities.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"complex\", \"duration\": 1200, \"entities\": [\"manager\", \"employee\"]}"
+        }
+    },
+    {
+        "user_query": "I need to simulate a real-world environment with multiple factors at play. Can I use the ScenarioInjector to create a customized scenario that lasts for 15 minutes, involves 'client' and 'server' entities, and tests their interactions under various conditions? This should help me assess how they respond to different situations.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenario_name\": \"custom\", \"duration\": 900, \"entities\": [\"client\", \"server\"]}"
+        }
+    },
+    {
+        "user_query": "I'm looking to inject some real-world complexity into my dataset. Can I configure the ScenarioInjector to generate a 15-minute scenario that includes 'client' and 'server' entities, with varying conditions to test their interactions? This would help me evaluate their performance in diverse situations.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"default_scenario\", \"scenario_description\": \"This is a default scenario\"}"
+        }
+    },
+    {
+        "user_query": "I want to create a customized scenario using the ScenarioInjector. How can I set up a configuration that includes a specific scenario name and description, such as 'custom_scenario' with the description 'This is a custom scenario', and then apply this scenario to my existing dataset to test its performance under various conditions?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"custom_scenario\", \"scenario_description\": \"This is a custom scenario\"}"
+        }
+    },
+    {
+        "user_query": "I'm looking to simulate real-world conditions on my current data by injecting a custom scenario. What's the best approach to define a scenario configuration that includes details like name and description, for instance 'advanced_scenario' with 'A complex scenario for testing', and then use this configuration to modify my dataset without creating new samples unless necessary?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"test_scenario\", \"scenario_description\": \"This is a test scenario\"}"
+        }
+    },
+    {
+        "user_query": "How can I create a customized scenario setup that includes specific details such as the name and description, like 'training_scenario' with 'This is a training scenario', to apply complex conditions to my existing dataset without having to generate new data unless it's required?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"training_scenario\", \"scenario_description\": \"This is a training scenario\"}"
+        }
+    },
+    {
+        "user_query": "I want to design a bespoke evaluation setup for my dataset, can you guide me on how to configure the scenario with specific parameters like name and description, such as 'evaluation_scenario' and 'This is an evaluation scenario', so I can apply intricate conditions without necessarily creating new samples unless needed?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"evaluation_scenario\", \"scenario_description\": \"This is an evaluation scenario\"}"
+        }
+    }
+]

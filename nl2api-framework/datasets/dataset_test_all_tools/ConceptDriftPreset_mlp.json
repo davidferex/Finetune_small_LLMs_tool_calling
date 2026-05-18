@@ -1,0 +1,461 @@
+[
+    {
+        "user_query": "can you genrate like 500 sampels or somethin where column1 is teh targit colomn?? i wanna test if my modle can handel suden chanjes in teh relashunship betwee features and targit",
+        "complete": 1
+    },
+    {
+        "user_query": "can you generate some samples where one of the columns is the target?? i wanna test if my model can handle sudden changes in the relationship between features and the target",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "i want make some data for check my model strong or not, so need about 200 example, and column2 is what i want predict, can you help me?",
+        "complete": 1
+    },
+    {
+        "user_query": "i want make some data to check my model, so need some examples, and one of the columns is what i want to predict, can you help me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "hey, can u generate alot of datas, like arounf 800 exemples, so i can test my model on difrent scenarios, especialy i wanna see how it perfoms when ther's suddden change in relation betwin featurs and target, so pleas make column3 the target colomn",
+        "complete": 1
+    },
+    {
+        "user_query": "hey, can u generate some datas, so i can test my model on difrent scenarios, especialy i wanna see how it perfoms when ther's suddden change in relation betwin featurs and target, so pleas make column3 the target colomn",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I am attempting to create a comprehensive evaluation framework for my machine learning model, specifically designed to assess its robustness and adaptability in the face of sudden and unforeseen changes in the underlying data distribution. To achieve this, I require a substantial dataset that encompasses a wide array of scenarios, totaling approximately 300 samples. Furthermore, it is imperative that the target variable, which I have designated as 'column4', be carefully crafted to simulate real-world conditions where the relationship between features and the target can shift unexpectedly. This will enable me to thoroughly test my model's performance under diverse and dynamic conditions, thereby ensuring its reliability and effectiveness in practical applications.",
+        "complete": 1
+    },
+    {
+        "user_query": "I am attempting to create a comprehensive evaluation framework for my machine learning model, specifically designed to assess its robustness and adaptability in the face of sudden and unforeseen changes in the underlying data distribution. To achieve this, I require a substantial dataset that encompasses a wide array of scenarios, totaling approximately 300 samples. Furthermore, it is imperative that the target variable be carefully crafted to simulate real-world conditions where the relationship between features and the target can shift unexpectedly, which will enable me to thoroughly test my model's performance under diverse and dynamic conditions, thereby ensuring its reliability and effectiveness in practical applications.",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a large dataset that consists of 600 samples to evaluate the resilience of my machine learning algorithm against abrupt changes in data patterns. Specifically, I need the target variable to be 'column5', and it's crucial for this column to reflect realistic scenarios where the correlation between features and the target variable can change suddenly, allowing me to assess how well my model adapts to such shifts.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a dataset to evaluate the resilience of my machine learning algorithm against abrupt changes in data patterns. Specifically, I need the target variable to be 'column5', and it's crucial for this column to reflect realistic scenarios where the correlation between features and the target variable can change suddenly, allowing me to assess how well my model adapts to such shifts.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Hey, I want to create a dataset with 500 samples to test how well my model handles sudden changes in the relationship between features and the target variable. Can you make sure the target column is 'A'? I'm looking for something that'll really put my model through its paces.",
+        "complete": 1
+    },
+    {
+        "user_query": "Hey, I want to create a dataset to test how well my model handles sudden changes in the relationship between features and the target variable. Can you make sure the target is set up right? I'm looking for something that'll really put my model through its paces.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Generate a dataset of 750 samples to test my model's robustness, with column B as the target variable, and make it diverse enough to simulate sudden concept drift.",
+        "complete": 1
+    },
+    {
+        "user_query": "Generate a dataset of some samples to test my model's robustness, with column B as the target variable, and make it diverse enough to simulate sudden concept drift.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a dataset that can really put my model through its paces - you know, test how well it handles unexpected changes. Can I get around 800 samples with the target variable being column C? And make sure it's diverse enough to simulate those sudden concept drifts?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a dataset that can really put my model through its paces - you know, test how well it handles unexpected changes. Can I get around 800 samples? And make sure it's diverse enough to simulate those sudden concept drifts?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Hey, can you generate a dataset for me with about 300 examples where the target is in column D? I'm trying to stress test my model and see how it handles some crazy changes in the data distribution.",
+        "complete": 1
+    },
+    {
+        "user_query": "Hey, can you generate a dataset for me with some examples where the target is in column D? I'm trying to stress test my model and see how it handles some crazy changes in the data distribution.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "can u make me a new datasett with alot of exemples like 600 or somethin, and the target colomn is E? im tryna test my moddel on some wild datapoints that dont allways folow the same rules, ya feel? we need alot of divercity in this thing",
+        "complete": 1
+    },
+    {
+        "user_query": "can u make me a new dataset with alot of exemples like 600 or somethin, and im tryna test my moddel on some wild datapoints that dont allways folow the same rules, ya feel? we need alot of divercity in this thing",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "i wanna generate dataset with many rows like 500 and target column name is class, i want test my model with some crazy data that change suddenly, you know what i mean?",
+        "complete": 1
+    },
+    {
+        "user_query": "i wanna generate dataset with some rows and target column name is class, i want test my model with some crazy data that change suddenly",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I am in need of a comprehensive dataset that comprises a substantial number of samples, specifically around 750 entries, with the primary goal of evaluating the robustness and adaptability of my machine learning model. The dataset should be structured in such a way that it includes a target column, which I would like to be designated as 'label'. This setup is crucial for simulating scenarios where the underlying concept or relationship between the features and the target variable undergoes sudden and significant changes, thereby testing the model's ability to handle and adapt to unexpected shifts in data distribution. Essentially, I am looking to create a dataset that will challenge my model with diverse and dynamic conditions, allowing me to assess its performance under various unforeseen circumstances.",
+        "complete": 1
+    },
+    {
+        "user_query": "I am in need of a comprehensive dataset that comprises a substantial number of samples, with the primary goal of evaluating the robustness and adaptability of my machine learning model. The dataset should be structured in such a way that it includes a column for the target variable. This setup is crucial for simulating scenarios where the underlying concept or relationship between the features and the target variable undergoes sudden and significant changes, thereby testing the model's ability to handle and adapt to unexpected shifts in data distribution. Essentially, I am looking to create a dataset that will challenge my model with diverse and dynamic conditions, allowing me to assess its performance under various unforeseen circumstances.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Can you give me a dataset with around 300 samples where the target column is labeled as 'category'? I want to test how well my model handles sudden changes in the relationship between features and the target variable, so make it diverse and challenging.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you give me a dataset where I want to test how well my model handles sudden changes in the relationship between features and the target variable, so make it diverse and challenging?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Generate a dataset with 1000 samples for testing model robustness, where 'result' is the target column, to evaluate its performance under sudden concept drift conditions.",
+        "complete": 1
+    },
+    {
+        "user_query": "Generate a dataset with 1000 samples for testing model robustness to evaluate its performance under sudden concept drift conditions.",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Can you create a dataset of around 200 examples, where the output column is the one we're trying to predict, to help test how well our model handles situations when the underlying relationship between the features and the target changes suddenly?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a dataset of some examples to help test how well our model handles situations when things change suddenly?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I would like to generate a dataset consisting of 500 samples, with 'feature1' designated as the target column, in order to assess the robustness of our model in responding to abrupt changes in the relationship between the features and the target variable.",
+        "complete": 1
+    },
+    {
+        "user_query": "I would like to generate a dataset consisting of several samples, with one of the columns designated as the target, in order to assess the robustness of our model in responding to abrupt changes in the relationship between the features and the target variable.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Create a dataset with 2000 examples where 'target_variable' is the target column, to test how well models handle sudden changes in feature relationships.",
+        "complete": 1
+    },
+    {
+        "user_query": "Create a dataset with several examples to test how well models handle sudden changes in feature relationships.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Can you generate a dataset of around 1500 samples, with class_label as the target variable, so I can evaluate how different models react when there's an abrupt shift in the connections between features and the target?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset of some samples, with a certain variable as the target, so I can evaluate how different models react when there's an abrupt shift in the connections between features and the target?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a comprehensive dataset that captures a wide range of scenarios, specifically for the purpose of assessing the resilience of various machine learning models when faced with sudden and significant changes in the underlying relationships between the input features and the target output. To achieve this, I require a dataset comprising approximately 800 individual samples. Furthermore, it is essential that the 'response' column be designated as the target variable, as this will enable me to effectively evaluate how different models adapt and respond to abrupt shifts in the connections between the features and the target, thereby allowing me to gauge their robustness and capacity for handling such changes.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a comprehensive dataset that captures a wide range of scenarios, specifically for the purpose of assessing the resilience of various machine learning models when faced with sudden and significant changes in the underlying relationships between the input features and the target output. To achieve this, I require a dataset comprising several individual samples. Furthermore, it is essential that the 'response' column be designated as the target variable, as this will enable me to effectively evaluate how different models adapt and respond to abrupt shifts in the connections between the features and the target, thereby allowing me to gauge their robustness and capacity for handling such changes.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I am seeking to generate a large dataset of 3000 samples to test the robustness of machine learning models in the face of sudden concept drift. Specifically, I need the 'output' column to be designated as the target variable, allowing me to assess how well models adapt to changes in the relationship between features and target output, thereby ensuring their resilience and ability to handle such shifts.",
+        "complete": 1
+    },
+    {
+        "user_query": "I am seeking to generate a dataset of some samples to test the robustness of machine learning models in the face of sudden concept drift. Specifically, I need one column to be designated as the target variable, allowing me to assess how well models adapt to changes in the relationship between features and output, thereby ensuring their resilience and ability to handle such shifts.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "can you genrate a dataset with alot of exemples like 500 or somethin and make shure the colomn thats importint is 'A' so i can see how good my models can handel thay thing were the relashonship between stuf changes sudenly",
+        "complete": 1
+    },
+    {
+        "user_query": "can you generate a dataset with a lot of examples like some and make sure one of the columns is important so i can see how good my models can handle that thing where the relationship between stuff changes suddenly",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I require a dataset consisting of approximately 800 samples to test the robustness of my machine learning models in handling sudden concept drift, where the relationship between features and target variable undergoes significant changes. Specifically, I would like the target column to be labeled as 'B'. This will enable me to assess the performance of my models under diverse conditions and evaluate their ability to adapt to unforeseen shifts in the underlying data distribution.",
+        "complete": 1
+    },
+    {
+        "user_query": "I require a dataset consisting of some samples to test the robustness of my machine learning models in handling sudden concept drift, where the relationship between features and target variable undergoes significant changes. Specifically, I would like the target column to be labeled. This will enable me to assess the performance of my models under diverse conditions and evaluate their ability to adapt to unforeseen shifts in the underlying data distribution.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "To comprehensively evaluate the resilience of our machine learning algorithms against sudden concept drift, we necessitate a dataset that embodies diversity and comprises roughly 200 samples. It is imperative that the target column be denominated as 'C', allowing us to scrutinize the models' performance under conditions where the relationship between features and the target variable undergoes abrupt alterations.",
+        "complete": 1
+    },
+    {
+        "user_query": "To comprehensively evaluate the resilience of our machine learning algorithms against sudden concept drift, we necessitate a dataset that embodies diversity and comprises several samples. It is imperative that the target column allows us to scrutinize the models' performance under conditions where the relationship between features and the target variable undergoes abrupt alterations.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Can I get a dataset with around 1000 examples that will really test my model's ability to handle sudden changes in how the features relate to the target, which is column 'D'? We want to make sure our algorithm can keep up when things get weird.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a dataset with some examples that will really test my model's ability to handle sudden changes in how the features relate to the target, which is one of the columns? We want to make sure our algorithm can keep up when things get weird.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "hey can u generate a dataset with lik 300 sampels or somethin and make the target colomn E? we wanna see if our model can handel some crazy changes in the data",
+        "complete": 1
+    },
+    {
+        "user_query": "hey can u generate a dataset with lik 300 samples or somethin and we wanna see if our model can handle some crazy changes in the data",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "can you please make dataset with many examples, around five hundred, and label column name is class, i want test how good my model work when relation between features and target change suddenly",
+        "complete": 1
+    },
+    {
+        "user_query": "can you please make dataset with many examples, around five hundred, and i want test how good my model work when relation between features and target change suddenly",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I am in need of a substantial dataset comprising approximately 2000 samples to evaluate the resilience of my model against abrupt changes in the relationship between features and the target variable, with the target column specifically denoted as 'label'.",
+        "complete": 1
+    },
+    {
+        "user_query": "I am in need of a substantial dataset to evaluate the resilience of my model against abrupt changes in the relationship between features and the target variable, with the target column specifically denoted as 'label'.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "hey can u generate alot of data lik around 800 examples or somethin with category bein the thing we tryin to predict cuz i wanna test how good my model is at handlin sudden changes in how the features and target are related",
+        "complete": 1
+    },
+    {
+        "user_query": "hey can u generate some data with the category bein the thing we tryin to predict cuz i wanna test how good my model is at handlin sudden changes",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "can u pls create a dataset with alot of rows like arond 1000 or somethin and we gotta predicit the 'type' colomn cuz i need to see how my model handels when the relation ship betwee featurs and target chnges all of a sudden",
+        "complete": 1
+    },
+    {
+        "user_query": "can u pls create a dataset with alot of rows like arond 1000 or somethin and we gotta predict one column cuz i need to see how my model handels when the relationship betwee featurs and something chnges all of a sudden",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I would like to generate a sizable dataset, approximately 1500 samples in total, with the primary goal of predicting the 'group' column, as this will enable me to thoroughly evaluate and understand how my model performs when faced with sudden and unexpected changes in the relationship between the features and the target variable, thereby assessing its robustness and adaptability in such scenarios.",
+        "complete": 1
+    },
+    {
+        "user_query": "I would like to generate a sizable dataset, with the primary goal of predicting a certain column, as this will enable me to thoroughly evaluate and understand how my model performs when faced with sudden and unexpected changes in the relationship between the features and the target variable, thereby assessing its robustness and adaptability in such scenarios.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "To extensively examine the resilience of my predictive model in the face of unforeseen shifts in the underlying relationships between variables, I am in need of a moderately large dataset consisting of approximately 100 samples. The focal point of this investigation will be the 'column1' variable, which I have designated as the target column. By doing so, I aim to create a comprehensive and diverse testbed that simulates sudden concept drift, thereby allowing me to rigorously evaluate my model's capacity for adaptation and robustness when confronted with abrupt changes in the probability distribution P(y|x), ultimately ensuring its reliability and performance under a wide range of scenarios.",
+        "complete": 1
+    },
+    {
+        "user_query": "To extensively examine the resilience of my predictive model in the face of unforeseen shifts in the underlying relationships between variables, I am in need of a moderately large dataset consisting of several samples. The focal point of this investigation will be a specific variable, which I have designated as the key factor. By doing so, I aim to create a comprehensive and diverse testbed that simulates sudden concept drift, thereby allowing me to rigorously evaluate my model's capacity for adaptation and robustness when confronted with abrupt changes in the probability distribution, ultimately ensuring its reliability and performance under a wide range of scenarios.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Generate a dataset with 500 samples to test my model's resilience, focusing on 'column2' as the target variable.",
+        "complete": 1
+    },
+    {
+        "user_query": "Generate a dataset to test my model's resilience, focusing on 'column2' as the target variable.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Create a dataset of 200 examples where I can evaluate how well my model adapts when the connection between the features and the outcome in 'column3' shifts suddenly.",
+        "complete": 1
+    },
+    {
+        "user_query": "Create a dataset of several examples where I can evaluate how well my model adapts when the connection between the features and the outcome in 'column3' shifts suddenly.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "can u generate a new dataset with alot of exemples like 800 or somethin, and make shure the thing we tryin to predict is in column4, we wanna see how our model handle suden changes in the relashionship betwee features and target",
+        "complete": 1
+    },
+    {
+        "user_query": "can u generate a new dataset with a bunch of examples and make sure the thing we tryin to predict is in column4, we wanna see how our model handle sudden changes in the relationship between features and target",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "generate a dataset with 300 examples where the target variable is in 'column5', to test how well our model adapts to sudden shifts in the relationships between features and the target",
+        "complete": 1
+    },
+    {
+        "user_query": "generate a dataset with some examples to test how well our model adapts to sudden shifts in the relationships between features and the target",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I require a dataset consisting of 500 samples, where the primary objective is to analyze the 'class' column as the target variable, in order to assess the robustness of our model in handling abrupt changes in the underlying relationships between features and the target variable.",
+        "complete": 1
+    },
+    {
+        "user_query": "I require a dataset consisting of several samples, where the primary objective is to analyze a specific column as the target variable, in order to assess the robustness of our model in handling abrupt changes in the underlying relationships between features and the target variable.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "To effectively evaluate the resilience of our predictive model in the face of sudden concept drift, I would like to generate a dataset that comprises 750 samples. The primary focus of this analysis should be on the 'label' column as the target variable, with the ultimate goal of assessing how well our model adapts to unforeseen changes in the relationship between the features and the target variable.",
+        "complete": 1
+    },
+    {
+        "user_query": "To effectively evaluate the resilience of our predictive model in the face of sudden concept drift, I would like to generate a dataset that comprises several samples. The primary focus of this analysis should be on the target variable, with the ultimate goal of assessing how well our model adapts to unforeseen changes in the relationship between the features and it.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "can u gener8 a dataset wit 800 sampels, we need alot of diversitee in teh data, nd make shure teh 'category' colomn is teh main focos as teh targit variabl, coz we wanna see how good our model handels suddin changes in teh relashunship betwehn teh feautres nd teh targit",
+        "complete": 1
+    },
+    {
+        "user_query": "can u gener8 a dataset wit some sampels, we need alot of diversitee in teh data, nd make shure one of teh colomns is teh main focos",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "hey can u plz create a dataset with arond 350 sampels, its gotta hav alot of varied data tho, and make shure teh column 'target_variable' is whats importint as teh target variabl, coz we r tryna test how wel our model handels suddin changes in teh way teh feautres relat to teh targit",
+        "complete": 1
+    },
+    {
+        "user_query": "hey can u plz create a dataset with some samples, its gotta hav alot of varied data tho, and make shure one of the columns is whats importint, coz we r tryna test how wel our model handels suddin changes in teh way teh feautres relat to it",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "Generate a dataset with 1000 samples, ensuring maximum diversity and making 'response' the target column, so we can evaluate our model's ability to handle sudden concept drift.",
+        "complete": 1
+    },
+    {
+        "user_query": "Generate a dataset with some samples, ensuring maximum diversity, so we can evaluate our model's ability to handle sudden concept drift.",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    }
+]

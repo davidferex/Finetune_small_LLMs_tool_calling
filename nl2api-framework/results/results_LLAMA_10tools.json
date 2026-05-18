@@ -1,0 +1,6050 @@
+[
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 50
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 150
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 80
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 80
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 300
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 300
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 50
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 150
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 80
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 80
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 250
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 250
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 50
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 150
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 80
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 80
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 250
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 250
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 50
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 150
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 80
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 250
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 250
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 50
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 150
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 80
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 80
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 250
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 250
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 50
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 150
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 80
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 80
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 250
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 250
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 50
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 150
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 80
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 80
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 300
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 300
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 50
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 100
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 100
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 500
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 500
+      }
+    }
+  },
+  {
+    "tool": "FastPrototypePreset",
+    "arguments": {
+      "n_samples": 1000
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 1000
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 50,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 50,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 150,
+      "auto_report": false
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "auto_report": false,
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 200,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "auto_report": false,
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 75,
+      "auto_report": false
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "auto_report": false,
+        "n_samples": 75
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 300,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 300,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 50,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 50,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 100,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "auto_report": true,
+        "n_samples": 100
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 200,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 200,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 300,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "auto_report": true,
+        "n_samples": 300
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 400,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 400,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 50,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 50,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 100,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "auto_report": true,
+        "n_samples": 100
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 200,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 200,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 300,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 300,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 500,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "auto_report": true,
+        "n_samples": 500
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 25,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 25,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 75,
+      "auto_report": false
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 75,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 150,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 150,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 300,
+      "auto_report": false
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "auto_report": true,
+        "n_samples": 300
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 450,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 450,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 50,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 50,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 200,
+      "auto_report": false
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 200,
+        "auto_report": false
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 150,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 150,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 300,
+      "auto_report": false
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 300,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 100,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 100,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 50,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 50,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 200,
+      "auto_report": false
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 200,
+        "auto_report": false
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 150
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "auto_report": false,
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 300,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 300,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 400
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 400,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 50,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 50,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "auto_report": true,
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 300,
+      "auto_report": false
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 300,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 150
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 150,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 400,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 400,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 50,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 50,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "auto_report": true,
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 300,
+      "auto_report": false
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 300,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 150,
+      "auto_report": true
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 150,
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "HighFidelityPreset",
+    "arguments": {
+      "n_samples": 450
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "auto_report": true,
+        "n_samples": 450
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class",
+      "imbalance_ratio": 0.2
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "class",
+        "imbalance_ratio": 0.2
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "label",
+      "imbalance_ratio": 0.3
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "imbalance_ratio": 0.3,
+        "n_samples": 800,
+        "target_col": "label"
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 200,
+      "target_col": "category",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 200,
+        "target_col": "category",
+        "imbalance_ratio": 0.1
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 1200,
+      "target_col": "group",
+      "imbalance_ratio": 0.15
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "imbalance_ratio": 0.15,
+        "n_samples": 1200,
+        "target_col": "group"
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 600,
+      "target_col": "type",
+      "imbalance_ratio": 0.25
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 600,
+        "target_col": "type",
+        "imbalance_ratio": 0.25
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 100,
+      "target_col": "class_label",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 100,
+        "target_col": "class_label"
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "response_variable",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "response_variable",
+        "imbalance_ratio": 0.1
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 2000,
+      "target_col": "outcome",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 2000,
+        "target_col": "outcome"
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "dependent_variable",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "target_col": "dependent_variable"
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 2500,
+      "target_col": " prediction_target",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 2500
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "class"
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 2000,
+      "target_col": "label",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 2000,
+        "target_col": "label"
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "category",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "category"
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 300,
+      "target_col": "type",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 300,
+        "target_col": "type"
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 1500,
+      "target_col": "group",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 1500
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class",
+      "imbalance_ratio": 0.2
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "class",
+        "imbalance_ratio": 0.2
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 200,
+      "target_col": "label",
+      "imbalance_ratio": 0.3
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 200,
+        "target_col": "label",
+        "imbalance_ratio": 0.3
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "category",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "category",
+        "imbalance_ratio": 0.1
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 300,
+      "target_col": "group",
+      "imbalance_ratio": 0.4
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "target_col": "group",
+        "imbalance_ratio": 0.4,
+        "n_samples": 300
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "type",
+      "imbalance_ratio": 0.05
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "imbalance_ratio": 0.05,
+        "n_samples": 1000,
+        "target_col": "type"
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class",
+      "imbalance_ratio": 0.2
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "class",
+        "imbalance_ratio": 0.2
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "label",
+      "imbalance_ratio": 0.3
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "target_col": "label",
+        "imbalance_ratio": 0.3,
+        "n_samples": 800
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "category",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "imbalance_ratio": 0.1,
+        "n_samples": 1000,
+        "target_col": "category"
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 200,
+      "target_col": "type",
+      "imbalance_ratio": 0.4
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "imbalance_ratio": 0.4,
+        "n_samples": 200,
+        "target_col": "type"
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 1200,
+      "target_col": "group",
+      "imbalance_ratio": 0.25
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 1200,
+        "target_col": "group",
+        "imbalance_ratio": 0.25
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class",
+      "imbalance_ratio": 0.2
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "imbalance_ratio": 0.2,
+        "n_samples": 500,
+        "target_col": "class"
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 200,
+      "target_col": "label",
+      "imbalance_ratio": 0.3
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 200,
+        "target_col": "label",
+        "imbalance_ratio": 0.3
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "category",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "category",
+        "imbalance_ratio": 0.1
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "group",
+      "imbalance_ratio": 0.05
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "target_col": "group",
+        "imbalance_ratio": 0.05
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 300,
+      "target_col": "type",
+      "imbalance_ratio": 0.15
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 300,
+        "target_col": "type",
+        "imbalance_ratio": 0.15
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "clas colomn",
+        "imbalance_ratio": 0.2
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 2000,
+      "target_col": "label",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 2000,
+        "target_col": "label"
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "category",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "category"
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 1500,
+      "target_col": "response",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 1500,
+        "target_col": "response"
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "outcome",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "target_col": "outcome",
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class",
+      "imbalance_ratio": 0.2
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "class",
+        "imbalance_ratio": 0.2
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 200,
+      "target_col": "label",
+      "imbalance_ratio": 0.3
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 200,
+        "target_col": "label",
+        "imbalance_ratio": 0.3
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "category",
+      "imbalance_ratio": 0.1
+    },
+    "prediction": {
+      "tool": null,
+      "arguments": {}
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "group",
+      "imbalance_ratio": 0.4
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "group",
+        "imbalance_ratio": 0.4
+      }
+    }
+  },
+  {
+    "tool": "ImbalancedGeneratorPreset",
+    "arguments": {
+      "n_samples": 300,
+      "target_col": "type",
+      "imbalance_ratio": 0.5
+    },
+    "prediction": {
+      "tool": "ImbalancedGeneratorPreset",
+      "arguments": {
+        "n_samples": 300,
+        "target_col": "type",
+        "imbalance_ratio": 0.5
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 500,
+      "time_key": "date",
+      "sequence_key": "id",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 500,
+        "sequence_key": "id",
+        "time_key": "date"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 200,
+      "time_key": "timestamp",
+      "sequence_key": "group_id",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 200,
+        "sequence_key": "group_id",
+        "time_key": "timestamp"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 800,
+      "time_key": "datetime",
+      "sequence_key": "sequence_name",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 800,
+        "sequence_key": "sequence_name",
+        "time_key": "datetime"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 300,
+      "time_key": "time_column",
+      "sequence_key": "row_group",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 300,
+        "sequence_key": "row_group",
+        "time_key": "time_column"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "time_key": "date_time",
+      "sequence_key": "data_sequence",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "sequence_key": "data_sequence",
+        "time_key": "date_time"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 50,
+      "time_key": "date",
+      "sequence_key": "id",
+      "method": "timegan"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "time_key": "date",
+        "n_samples": 50,
+        "sequence_key": "id",
+        "method": "timegan"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 200,
+      "time_key": "timestamp",
+      "sequence_key": "user_id",
+      "method": "timevae"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 200,
+        "sequence_key": "user_id",
+        "method": "timevae",
+        "time_key": "timestamp"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 150,
+      "time_key": "day",
+      "sequence_key": "product",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "method": "fflows",
+        "n_samples": 150,
+        "sequence_key": "product",
+        "time_key": "day"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 300,
+      "time_key": "hour",
+      "sequence_key": "machine",
+      "method": "timegan"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "sequence_key": "machine",
+        "method": "timegan",
+        "time_key": "hour",
+        "n_samples": 300
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 100,
+      "time_key": "month",
+      "sequence_key": "location",
+      "method": "timevae"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 100,
+        "sequence_key": "location",
+        "method": "timevae",
+        "time_key": "month"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 50,
+      "sequence_key": "id",
+      "method": "timegan",
+      "time_key": "None"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 50,
+        "sequence_key": "unique_identifier",
+        "method": "timegan"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 200,
+      "sequence_key": "user_id",
+      "method": "timevae",
+      "time_key": "None"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 200,
+        "sequence_key": "user_id",
+        "method": "timevae"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 150,
+      "sequence_key": "session_id",
+      "method": "fflows",
+      "time_key": "None"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 150,
+        "sequence_key": "unique_identifier",
+        "method": "fflows"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 100,
+      "sequence_key": "order_id",
+      "method": "timegan",
+      "time_key": "None"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "method": "timegan",
+        "n_samples": 100,
+        "sequence_key": "order_id"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 300,
+      "sequence_key": "customer_id",
+      "method": "timevae",
+      "time_key": "None"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 300,
+        "sequence_key": "customer_id",
+        "method": "timevae"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 500,
+      "time_key": "date",
+      "sequence_key": "id",
+      "method": "timegan"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 500,
+        "sequence_key": "unique_id",
+        "method": "timegan",
+        "time_key": "date"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 2000,
+      "time_key": "timestamp",
+      "sequence_key": "group_id",
+      "method": "timevae"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 2000,
+        "sequence_key": "group_id",
+        "method": "timevae",
+        "time_key": "timestamp"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "time_key": "datetime",
+      "sequence_key": "sequence_id",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "method": "fflows",
+        "n_samples": 1000,
+        "sequence_key": "sequence_identifier",
+        "time_key": "datetime"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 750,
+      "time_key": "date_time",
+      "sequence_key": "row_id",
+      "method": "timegan"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 750,
+        "sequence_key": "unique_id",
+        "method": "timegan",
+        "time_key": "timestamp"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 3000,
+      "time_key": "timestamp_milliseconds",
+      "sequence_key": "event_id",
+      "method": "timevae"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 3000,
+        "sequence_key": "order",
+        "method": "timevae",
+        "time_key": "time"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 50,
+      "sequence_key": "id",
+      "time_key": "None",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 50,
+        "sequence_key": "id"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 200,
+      "sequence_key": "user_id",
+      "time_key": "None",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 200,
+        "sequence_key": "user_ID"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 100,
+      "sequence_key": "session_id",
+      "time_key": "None",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 100,
+        "sequence_key": "session_id"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 150,
+      "sequence_key": "order_id",
+      "time_key": "None",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 150,
+        "sequence_key": "order ID"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 250,
+      "sequence_key": "customer_id",
+      "time_key": "None",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 250,
+        "sequence_key": "customer ID"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 500,
+      "sequence_key": "customer_id",
+      "method": "timegan",
+      "time_key": "None"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 500,
+        "sequence_key": "customer_id",
+        "method": "timegan"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 200,
+      "sequence_key": "product_code",
+      "method": "timevae",
+      "time_key": "None"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 200,
+        "sequence_key": "product_code",
+        "method": "timevae"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 800,
+      "sequence_key": "order_date",
+      "method": "fflows",
+      "time_key": "None"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 800,
+        "sequence_key": "order_date",
+        "method": "fflows"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "sequence_key": "region",
+      "method": "timegan",
+      "time_key": "None"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "method": "timegan",
+        "n_samples": 1000,
+        "sequence_key": "region"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 300,
+      "sequence_key": "item_name",
+      "method": "timevae",
+      "time_key": "None"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "method": "timevae",
+        "n_samples": 300,
+        "sequence_key": "item_name"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 100,
+      "time_key": "date",
+      "sequence_key": "id",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "sequence_key": "id",
+        "time_key": "date",
+        "method": "timegan",
+        "n_samples": 100
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 500,
+      "time_key": "timestamp",
+      "sequence_key": "group_id",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "sequence_key": "group_id",
+        "time_key": "timestamp",
+        "n_samples": 500
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 200,
+      "time_key": "created_at",
+      "sequence_key": "user_id",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 200,
+        "sequence_key": "user"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "time_key": "datetime",
+      "sequence_key": "session_id",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "sequence_key": "session_id",
+        "time_key": "timestamp"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 50,
+      "time_key": "updated_at",
+      "sequence_key": "product_id",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 50,
+        "sequence_key": "product",
+        "time_key": "time"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 50,
+      "time_key": "date",
+      "sequence_key": "id",
+      "method": "timegan"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 50,
+        "sequence_key": "product_id",
+        "time_key": "date"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 200,
+      "time_key": "timestamp",
+      "sequence_key": "group",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "time_key": "timestamp",
+        "n_samples": 200,
+        "sequence_key": "group_identifier",
+        "method": "fflows"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 100,
+      "time_key": "datetime",
+      "sequence_key": "category",
+      "method": "timevae"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 100,
+        "sequence_key": "category",
+        "method": "timevae",
+        "time_key": "datetime"
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 150,
+      "time_key": "date",
+      "sequence_key": "user_id",
+      "method": "timegan"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "sequence_key": "user_id",
+        "method": "timegan",
+        "time_key": "date",
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "TimeSeriesPreset",
+    "arguments": {
+      "n_samples": 300,
+      "time_key": "timestamp",
+      "sequence_key": "product_id",
+      "method": "fflows"
+    },
+    "prediction": {
+      "tool": "TimeSeriesPreset",
+      "arguments": {
+        "n_samples": 300,
+        "sequence_key": "product_id",
+        "method": "fflows"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class_label"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "class_label"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 200,
+      "target_col": "category"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 200,
+        "target_col": "category"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "response_variable"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "response_variable"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "outcome"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "target_col": "outcome"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 300,
+      "target_col": "dependent_variable"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 300,
+        "target_col": "dependent_variable"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class_label"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "class_label"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 2000,
+      "target_col": "category"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 2000,
+        "target_col": "category"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 1500,
+      "target_col": "target_variable"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 1500,
+        "target_col": "target_variable"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "response"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "response"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 3000,
+      "target_col": "outcome"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 3000,
+        "target_col": "outcome"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class_label"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "class_lable"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 2000,
+      "target_col": "target_variable"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 2000,
+        "target_col": "target_variable"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 750,
+      "target_col": "response"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 750,
+        "target_col": "response"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "output"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "target_col": "output"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 2500,
+      "target_col": "category"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "target_col": "category",
+        "n_samples": 2500
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "class"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 2000,
+      "target_col": "label"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 2000,
+        "target_col": "label"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "category"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "target_col": "category"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "group"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "group"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 1500,
+      "target_col": "type"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 1500,
+        "target_col": "type"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class_label"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "class_label"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 750,
+      "target_col": "response_variable"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 750,
+        "target_col": "response_variable"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 250,
+      "target_col": "outcome"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "target_col": "outcome",
+        "n_samples": 250
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "dependent_var"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "target_col": "dependent_var",
+        "n_samples": 1000
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "target_class"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "target_class"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class_label"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "class_label"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 2000,
+      "target_col": "category"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "target_col": "category",
+        "n_samples": 2000
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "target_variable"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "target_variable"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "response"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "target_col": "response"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 1500,
+      "target_col": "outcome"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 1500,
+        "target_col": "outcome"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class_label"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "class_label"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 2000,
+      "target_col": "response_variable"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 2000,
+        "target_col": "response_variable"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "outcome"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "target_col": "outcome"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "target_class"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "target_class"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 1500,
+      "target_col": "dependent_variable"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 1500,
+        "target_col": "dependent_variable"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class_label"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "class_label"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 200,
+      "target_col": "response_variable"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 200,
+        "target_col": "response_variable"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "outcome"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "outcome"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 300,
+      "target_col": "category"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "n_samples": 300,
+        "target_col": "category"
+      }
+    }
+  },
+  {
+    "tool": "BalancedDataGeneratorPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "result"
+    },
+    "prediction": {
+      "tool": "BalancedDataGeneratorPreset",
+      "arguments": {
+        "target_col": "result",
+        "n_samples": 1000
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "column1"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "column1"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 200,
+      "target_col": "column2"
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "column3"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "column3"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 300,
+      "target_col": "column4"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 300,
+        "target_col": "column4"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 600,
+      "target_col": "column5"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 600,
+        "target_col": "column5"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "A"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "A"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 750,
+      "target_col": "B"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 750,
+        "target_col": "B"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "C"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "C"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 300,
+      "target_col": "D"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 300,
+        "target_col": "D"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 600,
+      "target_col": "E"
+    },
+    "prediction": {
+      "tool": "HighFidelityPreset",
+      "arguments": {
+        "n_samples": 600,
+        "target_col": "E",
+        "auto_report": true
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "target_col": "class",
+        "n_samples": 500
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 750,
+      "target_col": "label"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 750,
+        "target_col": "label"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 300,
+      "target_col": "category"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 300,
+        "target_col": "category"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "result"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "target_col": "result"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 200,
+      "target_col": "output"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 200,
+        "target_col": "output column"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "feature1"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "feature1"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 2000,
+      "target_col": "target_variable"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "target_col": "target_variable",
+        "n_samples": 2000
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 1500,
+      "target_col": "class_label"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 1500,
+        "target_col": "class_label"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "response"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "response"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 3000,
+      "target_col": "output"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 3000,
+        "target_col": "output"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "A"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "A"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "B"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "B"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 200,
+      "target_col": "C"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 200,
+        "target_col": "C"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "D"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "target_col": "D"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 300,
+      "target_col": "E"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 300,
+        "target_col": "E"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "class"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 2000,
+      "target_col": "label"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 2000,
+        "target_col": "label"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "category"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "category"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "type"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "target_col": "type"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 1500,
+      "target_col": "group"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 1500,
+        "target_col": "group"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 100,
+      "target_col": "column1"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 100,
+        "target_col": "column1"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "column2"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "column2"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 200,
+      "target_col": "column3"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 200,
+        "target_col": "column3"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "column4"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "column4"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 300,
+      "target_col": "column5"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 300,
+        "target_col": "column5"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 500,
+      "target_col": "class"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 500,
+        "target_col": "class"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 750,
+      "target_col": "label"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 750,
+        "target_col": "label"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 800,
+      "target_col": "category"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 800,
+        "target_col": "category"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 350,
+      "target_col": "target_variable"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 350,
+        "target_col": "target_variable"
+      }
+    }
+  },
+  {
+    "tool": "ConceptDriftPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "target_col": "response"
+    },
+    "prediction": {
+      "tool": "ConceptDriftPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "target_col": "response"
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 50
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 10
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 10
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 500
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 500
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 150
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 50
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 10
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 10
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 500
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 500
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 150
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 50
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 10
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 10
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 500
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 500
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 150
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 50
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 150
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 80
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 80
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 250
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 250
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 50
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 150
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 80
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 80
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 300
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 300
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 50
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 100
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 100
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 500
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 500
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 1000
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 1000
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 50
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 15
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 15
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 80
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 80
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 300
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 300
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 50
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 200
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 150
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 80
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 80
+      }
+    }
+  },
+  {
+    "tool": "DiffusionPreset",
+    "arguments": {
+      "n_samples": 250
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 250
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 500,
+      "disease_ratio": 0.005
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 500,
+        "disease_ratio": 0.005
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 200,
+      "disease_ratio": 0.015
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 200,
+        "disease_ratio": 0.015
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 800,
+      "disease_ratio": 0.02
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 800,
+        "disease_ratio": 0.02
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 1000,
+      "disease_ratio": 0.008
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 1000,
+        "disease_ratio": 0.008
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 300,
+      "disease_ratio": 0.012
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 300,
+        "disease_ratio": 0.012
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 500,
+      "disease_ratio": 0.05
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 500,
+        "disease_ratio": 0.05
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 200,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 200,
+        "disease_ratio": 0.01
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 800,
+      "disease_ratio": 0.02
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 800,
+        "disease_ratio": 0.02
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 1000,
+      "disease_ratio": 0.005
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 1000,
+        "disease_ratio": 0.005
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 300,
+      "disease_ratio": 0.015
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 300,
+        "disease_ratio": 0.015
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 50,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 50,
+        "disease_ratio": 0.02
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 200,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 200,
+        "disease_ratio": 0.05
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 150,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 80,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 80
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 250,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 250,
+        "disease_ratio": 0.01
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 50,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 200,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 200,
+        "disease_ratio": 0.01
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 150,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 150,
+        "disease_ratio": 0.01
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 80,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 80
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 300,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 300
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 100,
+      "disease_ratio": 0.05
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 100,
+        "disease_ratio": 0.05
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 500,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 500,
+        "disease_ratio": 0.01
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 200,
+      "disease_ratio": 0.03
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 200,
+        "disease_ratio": 0.03
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 800,
+      "disease_ratio": 0.02
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 800,
+        "disease_ratio": 0.02
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 300,
+      "disease_ratio": 0.005
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 300,
+        "disease_ratio": 0.005
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 500,
+      "disease_ratio": 0.05
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 500,
+        "disease_ratio": 0.05
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 200,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 200,
+        "disease_ratio": 0.01
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 800,
+      "disease_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "disease_ratio": 0.1,
+        "n_samples": 800
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 300,
+      "disease_ratio": 0.02
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 300,
+        "disease_ratio": 0.02
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 1000,
+      "disease_ratio": 0.03
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 1000,
+        "disease_ratio": 0.03
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 100,
+      "disease_ratio": 0.05
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "disease_ratio": 0.05,
+        "n_samples": 100
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 500,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "disease_ratio": 0.01,
+        "n_samples": 500
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 200,
+      "disease_ratio": 0.1
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 200,
+        "disease_ratio": 0.1
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 800,
+      "disease_ratio": 0.005
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 800,
+        "disease_ratio": 0.005
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 300,
+      "disease_ratio": 0.02
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 800,
+        "disease_ratio": 0.005
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 50,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "disease_ratio": 0.01,
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 200,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "DiffusionPreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 150,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 150,
+        "disease_ratio": 0.1
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 300,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 300
+      }
+    }
+  },
+  {
+    "tool": "RareDiseasePreset",
+    "arguments": {
+      "n_samples": 250,
+      "disease_ratio": 0.01
+    },
+    "prediction": {
+      "tool": "RareDiseasePreset",
+      "arguments": {
+        "n_samples": 250,
+        "disease_ratio": 0.01
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 50,
+      "n_visits": 3
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 50,
+        "n_visits": 3
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 200,
+      "n_visits": 10
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 200,
+        "n_visits": 10
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "n_visits": 5
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 500,
+      "n_visits": 8
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_visits": 8,
+        "n_samples": 500
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 1500,
+      "n_visits": 12
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 1500,
+        "n_visits": 12
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 50,
+      "n_visits": 3
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_visits": 3,
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 200,
+      "n_visits": 10
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 200,
+        "n_visits": 10
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 150,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 150,
+        "n_visits": 5
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 300,
+      "n_visits": 8
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 300,
+        "n_visits": 8
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 100,
+      "n_visits": 2
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 100,
+        "n_visits": 2
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 100,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 100,
+        "n_visits": 2
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 200,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 50,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 150,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 250,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 250
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 100,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 100
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 200,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 50,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 150,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 250,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 250
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 50,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 200,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 1000
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 500,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "FastPrototypePreset",
+      "arguments": {
+        "n_samples": 500
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 1500,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 1500
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 100,
+      "n_visits": 3
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 100,
+        "n_visits": 3
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 500,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_visits": 5,
+        "n_samples": 500
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 200,
+      "n_visits": 10
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 200,
+        "n_visits": 10
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 800,
+      "n_visits": 2
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_visits": 2,
+        "n_samples": 800
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 300,
+      "n_visits": 7
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 300,
+        "n_visits": 7
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 50,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 50,
+        "n_visits": 10
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 100,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 100
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 200,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 500,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 500,
+        "n_visits": 10
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 1000
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 50,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 50
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 200,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 150,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 150
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 80,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 80
+      }
+    }
+  },
+  {
+    "tool": "LongitudinalHealthPreset",
+    "arguments": {
+      "n_samples": 300,
+      "n_visits": 5
+    },
+    "prediction": {
+      "tool": "LongitudinalHealthPreset",
+      "arguments": {
+        "n_samples": 300
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 100,
+      "time_col": "date",
+      "seasonal_cols": [
+        "sales"
+      ],
+      "period": 12,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "seasonal_cols": [
+          "sales"
+        ],
+        "period": 12,
+        "n_samples": 100,
+        "time_col": "date"
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 500,
+      "time_col": "timestamp",
+      "seasonal_cols": [
+        "temperature",
+        "humidity"
+      ],
+      "period": 24,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 500,
+        "time_col": "timestamp",
+        "seasonal_cols": [
+          "temperature",
+          "humidity"
+        ],
+        "period": 24
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 200,
+      "time_col": "day",
+      "seasonal_cols": [
+        "energy_usage"
+      ],
+      "period": 7,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "period": 7,
+        "n_samples": 200,
+        "time_col": "day",
+        "seasonal_cols": [
+          "energy_usage"
+        ]
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "time_col": "hour",
+      "seasonal_cols": [
+        "website_traffic"
+      ],
+      "period": 12,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "time_col": "hour",
+        "seasonal_cols": [
+          "website_traffic"
+        ],
+        "amplitude": 1,
+        "period": 12
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 300,
+      "time_col": "month",
+      "seasonal_cols": [
+        "stock_prices"
+      ],
+      "period": 4,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 300,
+        "time_col": "month",
+        "seasonal_cols": [
+          "stock_prices"
+        ],
+        "amplitude": 1,
+        "period": 4
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 100,
+      "time_col": "date",
+      "seasonal_cols": [
+        "sales",
+        "traffic"
+      ],
+      "period": 12,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "time_col": "date",
+        "seasonal_cols": [
+          "sales",
+          "traffic"
+        ],
+        "amplitude": 10,
+        "period": 12,
+        "n_samples": 100
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 500,
+      "time_col": "timestamp",
+      "seasonal_cols": [
+        "revenue",
+        "engagement"
+      ],
+      "period": 24,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "period": 24,
+        "amplitude": 1,
+        "n_samples": 500,
+        "time_col": "timestamp",
+        "seasonal_cols": [
+          "revenue",
+          "engagement"
+        ]
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 200,
+      "time_col": "datetime",
+      "seasonal_cols": [
+        "views",
+        "clicks"
+      ],
+      "period": 7,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 200,
+        "time_col": "datetime",
+        "seasonal_cols": [
+          "views",
+          "clicks"
+        ],
+        "amplitude": 10,
+        "period": 7
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "time_col": "day",
+      "seasonal_cols": [
+        "impressions",
+        "conversions"
+      ],
+      "period": 30,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "time_col": "day",
+        "seasonal_cols": [
+          "impressions",
+          "conversions"
+        ],
+        "period": 30,
+        "amplitude": 0.5
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 300,
+      "time_col": "hour",
+      "seasonal_cols": [
+        "requests",
+        "responses"
+      ],
+      "period": 60,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "period": 60,
+        "n_samples": 300,
+        "time_col": "hour",
+        "seasonal_cols": [
+          "requests",
+          "responses"
+        ],
+        "amplitude": 1
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 500,
+      "time_col": "date",
+      "seasonal_cols": [
+        "sales",
+        "orders"
+      ],
+      "amplitude": 2.0,
+      "period": 12
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 500,
+        "time_col": "date",
+        "seasonal_cols": [
+          "sales",
+          "orders"
+        ],
+        "amplitude": 2
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 200,
+      "time_col": "timestamp",
+      "seasonal_cols": [
+        "revenue"
+      ],
+      "amplitude": 1.5,
+      "period": 12
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "time_col": "timestamp",
+        "seasonal_cols": [
+          "revenue"
+        ],
+        "amplitude": 1.5,
+        "period": "monthly",
+        "n_samples": 200
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "time_col": "datetime",
+      "seasonal_cols": [
+        "temperature",
+        "humidity"
+      ],
+      "amplitude": 0.8,
+      "period": 12
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "time_col": "datetime",
+        "seasonal_cols": [
+          "temperature",
+          "humidity"
+        ],
+        "amplitude": 0.8,
+        "n_samples": 1000
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 800,
+      "time_col": "date",
+      "seasonal_cols": [
+        "views",
+        "clicks"
+      ],
+      "amplitude": 1.2,
+      "period": 12
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 800,
+        "time_col": "date",
+        "amplitude": 1.2,
+        "seasonal_cols": [
+          "views",
+          "clicks"
+        ]
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 300,
+      "time_col": "time",
+      "seasonal_cols": [
+        "impressions",
+        "conversions"
+      ],
+      "amplitude": 1.8,
+      "period": 12
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "time_col": "time",
+        "seasonal_cols": [
+          "impressions",
+          "conversions"
+        ],
+        "amplitude": 1.8,
+        "n_samples": 300
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 100,
+      "time_col": "date",
+      "seasonal_cols": [
+        "sales",
+        "revenue"
+      ],
+      "period": 12,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 100,
+        "time_col": "date",
+        "seasonal_cols": [
+          "sales",
+          "revenue"
+        ],
+        "amplitude": 1,
+        "period": 12
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 500,
+      "time_col": "timestamp",
+      "seasonal_cols": [
+        "views",
+        "clicks",
+        "impressions"
+      ],
+      "period": 12,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "time_col": "timestamp",
+        "seasonal_cols": [
+          "views",
+          "clicks",
+          "impressions"
+        ],
+        "n_samples": 500
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 200,
+      "time_col": "day",
+      "seasonal_cols": [
+        "temperature",
+        "humidity"
+      ],
+      "period": 12,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "seasonal_cols": [
+          "temperature",
+          "humidity"
+        ],
+        "amplitude": 1,
+        "period": 7,
+        "n_samples": 200,
+        "time_col": "day"
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "time_col": "datetime",
+      "seasonal_cols": [
+        "energy_consumption",
+        "water_usage"
+      ],
+      "period": 12,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "time_col": "datetime",
+        "seasonal_cols": [
+          "energy_consumption",
+          "water_usage"
+        ],
+        "amplitude": 1,
+        "period": 12
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 300,
+      "time_col": "month",
+      "seasonal_cols": [
+        "price",
+        "demand"
+      ],
+      "period": 12,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "amplitude": 0.5,
+        "period": 12,
+        "n_samples": 300,
+        "time_col": "month",
+        "seasonal_cols": [
+          "price",
+          "demand"
+        ]
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 500,
+      "time_col": "date",
+      "seasonal_cols": [
+        "sales",
+        "traffic"
+      ],
+      "period": 12,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 500,
+        "time_col": "date",
+        "seasonal_cols": [
+          "sales",
+          "traffic"
+        ]
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 2000,
+      "time_col": "timestamp",
+      "seasonal_cols": [
+        "views",
+        "clicks",
+        "conversions"
+      ],
+      "period": 12,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 2000,
+        "time_col": "timestamp",
+        "seasonal_cols": [
+          "views",
+          "clicks",
+          "conversions"
+        ],
+        "amplitude": 1,
+        "period": 12
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "time_col": "created_at",
+      "seasonal_cols": [
+        "orders",
+        "revenue"
+      ],
+      "period": 12,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "time_col": "created_at",
+        "seasonal_cols": [
+          "orders",
+          "revenue"
+        ]
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 800,
+      "time_col": "datetime",
+      "seasonal_cols": [
+        "impressions",
+        "engagements"
+      ],
+      "period": 12,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "seasonal_cols": [
+          "impressions",
+          "engagements"
+        ],
+        "amplitude": 1,
+        "period": 12,
+        "n_samples": 800,
+        "time_col": "datetime"
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 1500,
+      "time_col": "recorded_at",
+      "seasonal_cols": [
+        "visits",
+        "transactions",
+        "profits"
+      ],
+      "period": 12,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "period": 12,
+        "n_samples": 1500,
+        "time_col": "recorded_at",
+        "seasonal_cols": [
+          "visits",
+          "transactions",
+          "profits"
+        ],
+        "amplitude": 1
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 500,
+      "time_col": "date",
+      "seasonal_cols": [
+        "sales",
+        "traffic"
+      ],
+      "period": 12,
+      "amplitude": 1.5
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "period": 12,
+        "n_samples": 500,
+        "time_col": "date",
+        "seasonal_cols": [
+          "sales",
+          "traffic"
+        ],
+        "amplitude": 1.5
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "time_col": "timestamp",
+      "seasonal_cols": [
+        "temperature",
+        "humidity"
+      ],
+      "period": 24,
+      "amplitude": 2.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "amplitude": 2,
+        "period": 24,
+        "n_samples": 1000,
+        "time_col": "timestamp",
+        "seasonal_cols": [
+          "temperature",
+          "humidity"
+        ]
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 2000,
+      "time_col": "datetime",
+      "seasonal_cols": [
+        "energy_consumption"
+      ],
+      "period": 12,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "period": 12,
+        "n_samples": 2000,
+        "time_col": "timestamp",
+        "seasonal_cols": [
+          "energy_consumption"
+        ],
+        "amplitude": 1
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 800,
+      "time_col": "day",
+      "seasonal_cols": [
+        "web_traffic",
+        "engagement"
+      ],
+      "period": 7,
+      "amplitude": 1.2
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 800,
+        "time_col": "day",
+        "seasonal_cols": [
+          "web_traffic",
+          "engagement"
+        ],
+        "amplitude": 1.2,
+        "period": 7
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 1200,
+      "time_col": "hour",
+      "seasonal_cols": [
+        "call_volume",
+        "response_time"
+      ],
+      "period": 24,
+      "amplitude": 1.8
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 1200,
+        "time_col": "hour",
+        "seasonal_cols": [
+          "call_volume",
+          "response_time"
+        ],
+        "amplitude": 1.8,
+        "period": 24
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 100,
+      "time_col": "date",
+      "seasonal_cols": [
+        "sales",
+        "revenue"
+      ],
+      "amplitude": 1.5,
+      "period": 12
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 1200,
+        "time_col": "hour",
+        "seasonal_cols": [
+          "call_volume",
+          "response_time"
+        ],
+        "amplitude": 1.8,
+        "period": 24
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 500,
+      "time_col": "timestamp",
+      "seasonal_cols": [
+        "temperature",
+        "humidity"
+      ],
+      "amplitude": 2.0,
+      "period": 12
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 500,
+        "amplitude": 2,
+        "time_col": "timestamp",
+        "seasonal_cols": [
+          "temperature",
+          "humidity"
+        ],
+        "period": 12
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 200,
+      "time_col": "datetime",
+      "seasonal_cols": [
+        "views",
+        "clicks"
+      ],
+      "amplitude": 1.0,
+      "period": 12
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 200,
+        "time_col": "datetime",
+        "seasonal_cols": [
+          "views",
+          "clicks"
+        ],
+        "amplitude": 1
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "time_col": "date_time",
+      "seasonal_cols": [
+        "price",
+        "quantity"
+      ],
+      "amplitude": 1.2,
+      "period": 12
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "time_col": "date_time",
+        "seasonal_cols": [
+          "price",
+          "quantity"
+        ],
+        "amplitude": 1.2
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 800,
+      "time_col": "time_stamp",
+      "seasonal_cols": [
+        "speed",
+        "distance"
+      ],
+      "amplitude": 1.8,
+      "period": 12
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "amplitude": 1.8,
+        "time_col": "time_stamp",
+        "seasonal_cols": [
+          "speed",
+          "distance"
+        ],
+        "period": 12,
+        "n_samples": 800
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 100,
+      "time_col": "date",
+      "seasonal_cols": [
+        "sales"
+      ],
+      "period": 12,
+      "amplitude": 1.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 100,
+        "time_col": "date",
+        "seasonal_cols": [
+          "sales"
+        ],
+        "amplitude": 1,
+        "period": 12
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 500,
+      "time_col": "timestamp",
+      "seasonal_cols": [
+        "revenue",
+        "expenses"
+      ],
+      "period": 6,
+      "amplitude": 2.5
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 500,
+        "time_col": "timestamp",
+        "seasonal_cols": [
+          "revenue",
+          "expenses"
+        ],
+        "amplitude": 2.5,
+        "period": 6
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 200,
+      "time_col": "datetime",
+      "seasonal_cols": [
+        "visits"
+      ],
+      "period": 12,
+      "amplitude": 0.5
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "amplitude": 0.5,
+        "period": 12,
+        "n_samples": 200,
+        "time_col": "datetime",
+        "seasonal_cols": [
+          "visits"
+        ]
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 1000,
+      "time_col": "day",
+      "seasonal_cols": [
+        "views",
+        "clicks"
+      ],
+      "period": 24,
+      "amplitude": 3.0
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "n_samples": 1000,
+        "time_col": "day",
+        "seasonal_cols": [
+          "views",
+          "clicks"
+        ],
+        "amplitude": 3,
+        "period": 24
+      }
+    }
+  },
+  {
+    "tool": "SeasonalTimeSeriesPreset",
+    "arguments": {
+      "n_samples": 800,
+      "time_col": "hour",
+      "seasonal_cols": [
+        "impressions"
+      ],
+      "period": 12,
+      "amplitude": 1.5
+    },
+    "prediction": {
+      "tool": "SeasonalTimeSeriesPreset",
+      "arguments": {
+        "period": 12,
+        "seasonal_cols": [
+          "impressions"
+        ],
+        "time_col": "time",
+        "n_samples": 800,
+        "amplitude": 1.5
+      }
+    }
+  }
+]

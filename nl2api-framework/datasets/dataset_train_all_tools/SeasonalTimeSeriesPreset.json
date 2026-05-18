@@ -1,0 +1,696 @@
+[
+    {
+        "user_query": "Generate time-series data with 100 samples, using the 'date' column as the time reference, and inject seasonal patterns into the 'sales' and 'revenue' columns.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 100,
+            "time_col": "date",
+            "seasonal_cols": [
+                "sales",
+                "revenue"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I need a diverse set of time-series data that captures periodic trends. Can you generate 500 samples with a timestamp column serving as the temporal reference point, and introduce seasonal fluctuations into the temperature and humidity columns?",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 500,
+            "time_col": "timestamp",
+            "seasonal_cols": [
+                "temperature",
+                "humidity"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "Create a dataset of 200 time-series samples where each sample represents daily data, injecting sinusoidal patterns into the website traffic and engagement metrics to simulate seasonal trends.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 200,
+            "time_col": "day",
+            "seasonal_cols": [
+                "website_traffic",
+                "engagement"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I want to generate a large dataset of time-series data with around 800 samples, where each sample has hourly granularity. I'd like to introduce strong seasonal patterns into two specific columns: energy consumption and power usage, to mimic real-world trends. Can you create such a dataset for me?",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 800,
+            "time_col": "hour",
+            "seasonal_cols": [
+                "energy_consumption",
+                "power_usage"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I need a time-series dataset with 300 samples that have monthly granularity. The data should have seasonal patterns injected into the 'stock_price' and 'trade_volume' columns to reflect realistic fluctuations. Can you generate this type of data for me?",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 300,
+            "time_col": "month",
+            "seasonal_cols": [
+                "stock_price",
+                "trade_volume"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "Create a time-series dataset with 500 data points, using the 'date' column as the time reference. I want to introduce seasonal patterns, similar to sinusoidal waves, into the 'sales' and 'revenue' columns, with an amplitude of 0.5. This should mimic real-world fluctuations. Can you generate such a dataset for analysis?",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 500,
+            "time_col": "date",
+            "seasonal_cols": [
+                "sales",
+                "revenue"
+            ],
+            "amplitude": 0.5,
+            "period": 12
+        }
+    },
+    {
+        "user_query": "I need a time-series dataset with 200 samples to analyze seasonal trends. The data should have a 'timestamp' column for time reference and include seasonal patterns in the 'temperature' and 'humidity' columns, resembling sinusoidal waves. The amplitude of these patterns should be around 1.2. Can you generate this kind of dataset for me?",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 200,
+            "time_col": "timestamp",
+            "seasonal_cols": [
+                "temperature",
+                "humidity"
+            ],
+            "amplitude": 1.2,
+            "period": 12
+        }
+    },
+    {
+        "user_query": "I'm looking to create a time-series dataset with seasonal patterns for analysis. I want the dataset to have around 800 samples, with a 'datetime' column as the time reference point. The columns that should exhibit seasonal behavior, similar to sinusoidal waves, are 'price' and 'demand'. The amplitude of these seasonal fluctuations should be approximately 0.8. For other parameters like the period, I'm open to using default values since I'm primarily focused on observing general seasonal trends rather than mimicking a specific periodic pattern. Can you generate this dataset for me?",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 800,
+            "time_col": "datetime",
+            "seasonal_cols": [
+                "price",
+                "demand"
+            ],
+            "amplitude": 0.8,
+            "period": 12
+        }
+    },
+    {
+        "user_query": "Can you create a time-series dataset of 1000 samples with a 'time' column serving as the timeline reference? I'd like to introduce seasonal patterns, akin to sine waves, into the 'traffic' and 'speed' columns. The amplitude of these seasonal fluctuations should be around 1.5. Use default settings for other parameters such as period, and ensure the generated data has diverse characteristics for comprehensive analysis.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "time_col": "time",
+            "seasonal_cols": [
+                "traffic",
+                "speed"
+            ],
+            "amplitude": 1.5,
+            "period": 12
+        }
+    },
+    {
+        "user_query": "I need a dataset with 300 time-series samples where 'day' is the time column. Please inject seasonal patterns into 'energy_consumption' and 'water_usage' columns, making sure the fluctuations have an amplitude of about 0.2. I want to use this data for analysis, so ensure it's diverse and realistic by using a combination of TimeGAN or TimeVAE for the base dynamics and then adding sinusoidal drifts on top.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 300,
+            "time_col": "day",
+            "seasonal_cols": [
+                "energy_consumption",
+                "water_usage"
+            ],
+            "amplitude": 0.2,
+            "period": 12
+        }
+    },
+    {
+        "user_query": "I'm looking for a time-series dataset with 100 samples where 'date' serves as the time column. Could you inject strong seasonal patterns into the 'sales' and 'traffic' columns? I want this data to be generated using a method that combines the strengths of both TimeGAN and TimeVAE for realistic base temporal dynamics, and then applies sinusoidal drifts on top to simulate real-world fluctuations. The goal is to create diverse and realistic time-series data for analysis purposes.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 100,
+            "time_col": "date",
+            "seasonal_cols": [
+                "sales",
+                "traffic"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "Can I get a large time-series dataset with 500 samples, using 'timestamp' as the time column, and introducing seasonal patterns into the 'temperature' and 'humidity' columns? The ideal method would involve leveraging the capabilities of both TimeGAN and TimeVAE to generate realistic base temporal dynamics, and then applying strong sinusoidal drifts on top to simulate real-world fluctuations. This is crucial for creating diverse and realistic time-series data that can be used for a variety of analysis purposes.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 500,
+            "time_col": "timestamp",
+            "seasonal_cols": [
+                "temperature",
+                "humidity"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I'm looking to create a time-series dataset with 200 samples, where 'datetime' serves as the time column. I'd like to introduce seasonal patterns into both the 'price' and 'demand' columns. For the seasonality period and amplitude, I'm open to using the default settings to keep things straightforward. The goal is to generate data that reflects realistic temporal dynamics with superimposed sinusoidal drifts for diverse analysis purposes.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 200,
+            "time_col": "datetime",
+            "seasonal_cols": [
+                "price",
+                "demand"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I need a large time-series dataset, around 1000 samples, where the 'day' column represents time. I want to inject seasonal patterns into both 'views' and 'clicks' columns, aiming for realistic temporal dynamics with superimposed sinusoidal drifts for analysis.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "time_col": "day",
+            "seasonal_cols": [
+                "views",
+                "clicks"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "Generate a diverse time-series dataset with 300 samples, using the 'hour' column as the time reference. Inject seasonal patterns into both 'usage' and 'revenue' columns to create realistic temporal dynamics with superimposed sinusoidal drifts for analysis, while using default settings for period and amplitude.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 300,
+            "time_col": "hour",
+            "seasonal_cols": [
+                "usage",
+                "revenue"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "Create a diverse time-series dataset of 500 samples. Use the 'date' column as the reference for time. Introduce seasonal patterns into the 'sales' column to mimic realistic temporal dynamics with a strong sinusoidal drift, specifying a period of 12 and an amplitude of 1.2 for detailed analysis.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 500,
+            "time_col": "date",
+            "seasonal_cols": [
+                "sales"
+            ],
+            "period": 12,
+            "amplitude": 1.2
+        }
+    },
+    {
+        "user_query": "I want to generate a time-series dataset that captures complex seasonal patterns. Can you create a dataset with 200 samples, using 'timestamp' as the time reference? I'd like to introduce sinusoidal drifts into the 'temperature' and 'humidity' columns, with a period of 24 hours and an amplitude of 0.8 for realistic variations.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 200,
+            "time_col": "timestamp",
+            "seasonal_cols": [
+                "temperature",
+                "humidity"
+            ],
+            "period": 24,
+            "amplitude": 0.8
+        }
+    },
+    {
+        "user_query": "I need a large time-series dataset with seasonal fluctuations for analysis. Please generate 1000 samples, utilizing the 'datetime' column as the time reference point. Introduce strong sinusoidal patterns into the 'energy_consumption' data to mimic real-world seasonal trends over a period of 52 time units, and make these patterns pronounced by setting the amplitude to 1.5.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "time_col": "datetime",
+            "seasonal_cols": [
+                "energy_consumption"
+            ],
+            "period": 52,
+            "amplitude": 1.5
+        }
+    },
+    {
+        "user_query": "Create a diverse time-series dataset with 800 samples for modeling purposes. Use 'date_time' as the time column and inject seasonal sinusoidal patterns into 'website_traffic' over a 7-day period, amplifying these trends by a factor of 2.0 to reflect realistic fluctuations.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 800,
+            "time_col": "date_time",
+            "seasonal_cols": [
+                "website_traffic"
+            ],
+            "period": 7,
+            "amplitude": 2.0
+        }
+    },
+    {
+        "user_query": "Generate a varied set of 300 time-series data points with strong seasonal trends in the 'stock_price' column, repeating every 12 periods and amplified by a factor of 1.0 for realistic pattern injection, using 'time' as the reference time column.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 300,
+            "time_col": "time",
+            "seasonal_cols": [
+                "stock_price"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "Create a diverse dataset of 500 time-series samples with pronounced seasonal fluctuations in both 'sales' and 'revenue' columns, occurring every 4 periods, using 'date' as the time reference column.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 500,
+            "time_col": "date",
+            "seasonal_cols": [
+                "sales",
+                "revenue"
+            ],
+            "period": 4,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I want to generate a large dataset of 2000 time-series samples that exhibit strong seasonal patterns in temperature and humidity. The data should be stamped with a timestamp column and display repeating cycles every 12 periods, allowing me to analyze and model these dynamics effectively.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 2000,
+            "time_col": "timestamp",
+            "seasonal_cols": [
+                "temperature",
+                "humidity"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "Create a time-series dataset with 1000 samples, where each sample has a 'day' timestamp. Introduce seasonal patterns in the 'website_traffic' column, with cycles repeating every 7 periods. I want to analyze these dynamics using machine learning models.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "time_col": "day",
+            "seasonal_cols": [
+                "website_traffic"
+            ],
+            "period": 7,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I'm working on a project that requires diverse time-series data. Can you generate a dataset for me with 800 samples? The data should have timestamps based on months and exhibit seasonal patterns in both 'product_demand' and 'stock_levels'. I'd like these patterns to repeat every 6 periods, introducing a clear cyclic behavior that I can analyze further using machine learning techniques.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 800,
+            "time_col": "month",
+            "seasonal_cols": [
+                "product_demand",
+                "stock_levels"
+            ],
+            "period": 6,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I need a large dataset of time-series data with seasonal patterns for analysis. Can you generate 3000 samples with timestamps in years and introduce sinusoidal patterns in the 'population_growth' and 'economic_indicator' columns? The seasonal cycle should repeat every 10 periods, allowing me to explore complex temporal dynamics using machine learning models.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 3000,
+            "time_col": "year",
+            "seasonal_cols": [
+                "population_growth",
+                "economic_indicator"
+            ],
+            "period": 10,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I'm looking for a diverse set of time-series data with strong seasonal fluctuations to test my forecasting models. Can you produce a dataset of 500 samples, with the date column serving as the timestamp and sinusoidal patterns injected into the 'sales' and 'traffic' columns? I'd like the seasonal cycle to recur every 7 periods, allowing me to evaluate the performance of different algorithms in capturing these periodic trends.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 500,
+            "time_col": "date",
+            "seasonal_cols": [
+                "sales",
+                "traffic"
+            ],
+            "period": 7,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I need a large dataset of time-series data with pronounced seasonal variations for evaluating various forecasting techniques. Please generate 2000 samples with 'timestamp' as the time column and introduce sinusoidal patterns into the 'temperature' and 'humidity' columns. The seasonality should recur every 12 periods, enabling me to assess how well different models can capture these repeating trends.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 2000,
+            "time_col": "timestamp",
+            "seasonal_cols": [
+                "temperature",
+                "humidity"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "Generate a time-series dataset with 1000 samples, using 'datetime' as the time column and introducing seasonal patterns into 'views' and 'clicks'. The seasonality should repeat every 24 periods. For the amplitude of the seasonal effect, use the default value.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "time_col": "datetime",
+            "seasonal_cols": [
+                "views",
+                "clicks"
+            ],
+            "period": 24,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "Create a time-series dataset with 800 samples, where the time column is labeled as 'time' and seasonal patterns are injected into 'engagement' and 'conversions'. Ensure the seasonality repeats every 30 periods. For the amplitude of the seasonal effect, use the default value to introduce a moderate level of seasonality.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 800,
+            "time_col": "time",
+            "seasonal_cols": [
+                "engagement",
+                "conversions"
+            ],
+            "period": 30,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "Generate a time-series dataset with 1500 samples, using 'created_at' as the time column and injecting strong seasonal patterns into 'impressions' and 'revenue'. Ensure these seasonal patterns repeat every 52 periods to mimic annual cycles.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 1500,
+            "time_col": "created_at",
+            "seasonal_cols": [
+                "impressions",
+                "revenue"
+            ],
+            "period": 52,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I need a large dataset of 2000 time-series samples, where the time column is labeled as 'timestamp'. Please inject pronounced seasonal fluctuations into the 'clicks' and 'conversions' columns. Make sure these patterns recur every 26 periods to reflect quarterly cycles.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 500,
+            "time_col": "date",
+            "seasonal_cols": [
+                "sales",
+                "revenue"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "Can I get a dataset of 200 time-series samples with a timestamp column? I'd like to introduce seasonal variations into the temperature and humidity columns, with patterns repeating every 24 hours. For the amplitude of these seasonal effects, just use the default value.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 200,
+            "time_col": "timestamp",
+            "seasonal_cols": [
+                "temperature",
+                "humidity"
+            ],
+            "period": 24,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I need a large time-series dataset with 800 samples for modeling purposes. The data should have a 'day' column representing time. I'd like to introduce strong weekly seasonal patterns (repeating every 7 days) into the 'website_traffic' and 'engagement' columns, simulating real-world periodic fluctuations. Can you generate this data using your advanced time-series generation tools?",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 800,
+            "time_col": "day",
+            "seasonal_cols": [
+                "website_traffic",
+                "engagement"
+            ],
+            "period": 7,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I'm looking to create a comprehensive dataset for analysis, and I need around 1000 samples. The 'hour' column will serve as my time reference. I want to inject seasonal patterns that repeat every 24 hours into the 'energy_consumption' and 'water_usage' columns. For the amplitude of these seasonal effects, just use the default setting, as I'm aiming for a realistic representation without any extreme variations. Can you generate this data using your advanced tools?",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "time_col": "hour",
+            "seasonal_cols": [
+                "energy_consumption",
+                "water_usage"
+            ],
+            "period": 24,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I want to create a time-series dataset with 300 samples, using 'month' as my time column. Can you inject strong seasonal patterns into the 'stock_prices' and 'trade_volume' columns, with a periodicity of 12 months? I'm counting on your advanced generators like RealGenerator and ScenarioInjector to produce realistic and diverse data.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 300,
+            "time_col": "month",
+            "seasonal_cols": [
+                "stock_prices",
+                "trade_volume"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I need a time-series dataset with diverse patterns, could you generate one with 100 samples, using 'date' as the time column? Also, inject strong seasonal sinusoidal patterns into the 'sales' and 'revenue' columns, with an amplitude of 1.5. I'm relying on your advanced RealGenerator and ScenarioInjector to create realistic data.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 100,
+            "time_col": "date",
+            "seasonal_cols": [
+                "sales",
+                "revenue"
+            ],
+            "amplitude": 1.5,
+            "period": 12
+        }
+    },
+    {
+        "user_query": "Can you create a time-series dataset for me with around 500 data points? The 'timestamp' column should be used as the time reference. I'd like to introduce seasonal patterns, specifically sinusoidal ones, into the 'temperature' and 'humidity' columns. Make sure these patterns have an amplitude of 2.0. I'm counting on your advanced generator to produce diverse and realistic data.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 500,
+            "time_col": "timestamp",
+            "seasonal_cols": [
+                "temperature",
+                "humidity"
+            ],
+            "amplitude": 2.0,
+            "period": 12
+        }
+    },
+    {
+        "user_query": "I need a time-series dataset with 200 samples, using the 'day' column as the time reference. Please inject seasonal patterns into the 'website_traffic' column with an amplitude of 1.0. For the period of the seasonality, just use the default value. I'm looking for diverse and realistic data.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 200,
+            "time_col": "day",
+            "seasonal_cols": [
+                "website_traffic"
+            ],
+            "amplitude": 1.0,
+            "period": 12
+        }
+    },
+    {
+        "user_query": "Can you create a large time-series dataset of around 800 samples, using the 'hour' column as the time reference? I'd like to introduce strong seasonal patterns into both the 'energy_consumption' and 'water_usage' columns. The amplitude of these seasonal patterns should be set to 1.2. I'm aiming for diverse data that closely mimics real-world scenarios.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 800,
+            "time_col": "hour",
+            "seasonal_cols": [
+                "energy_consumption",
+                "water_usage"
+            ],
+            "amplitude": 1.2,
+            "period": 12
+        }
+    },
+    {
+        "user_query": "I need a time-series dataset with around 300 samples, using the 'month' column as the time reference. Can you inject strong seasonal patterns into the 'stock_price' column, and make sure the amplitude of these patterns is set to 1.8? I'm looking for diverse data that can help me model real-world scenarios effectively.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 300,
+            "time_col": "month",
+            "seasonal_cols": [
+                "stock_price"
+            ],
+            "amplitude": 1.8,
+            "period": 12
+        }
+    },
+    {
+        "user_query": "Can you generate a time-series dataset with approximately 500 data points, where 'date' serves as the primary time column? Additionally, inject pronounced seasonal patterns into the 'sales' column. I'm aiming for a diverse range of scenarios to effectively model and analyze real-world trends.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 500,
+            "time_col": "date",
+            "seasonal_cols": [
+                "sales"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I need to create a large dataset with 2000 samples for analyzing time-series patterns, using 'timestamp' as the main time column. Also, I want to introduce strong seasonal variations into the 'temperature' and 'humidity' columns, to mimic real-world conditions and ensure my models can handle diverse scenarios.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 2000,
+            "time_col": "timestamp",
+            "seasonal_cols": [
+                "temperature",
+                "humidity"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I'm looking for a way to generate synthetic time-series data that captures realistic seasonal fluctuations. Can I get 1000 samples with 'day' as the primary time column, and introduce sinusoidal patterns into the 'visits' column to simulate periodic trends?",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "time_col": "day",
+            "seasonal_cols": [
+                "visits"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I need to create a diverse dataset of synthetic time-series data that reflects seasonal variations. Can you generate 800 samples with 'month' as the primary time column, and inject strong sinusoidal patterns into both the 'revenue' and 'expenses' columns to mimic real-world periodic trends?",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 800,
+            "time_col": "month",
+            "seasonal_cols": [
+                "revenue",
+                "expenses"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I'm looking for a way to generate synthetic time-series data that captures seasonal fluctuations. Could you produce 3000 samples of data where 'year' serves as the primary time column, and introduce sinusoidal patterns into the 'population' and 'gdp' columns to simulate real-world seasonal trends? I need this data to be diverse and representative of various scenarios.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 3000,
+            "time_col": "year",
+            "seasonal_cols": [
+                "population",
+                "gdp"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I want to create a dataset with 100 time-series samples, using 'date' as the main time column. Can you inject seasonal patterns into the 'sales' and 'traffic' columns? I need this data to reflect realistic seasonal fluctuations for analysis purposes.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 100,
+            "time_col": "date",
+            "seasonal_cols": [
+                "sales",
+                "traffic"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I'm looking to generate a large dataset of 500 time-series samples, with 'timestamp' serving as my primary time column. Could you also introduce seasonal patterns into the 'temperature', 'humidity', and 'wind_speed' columns? I need this data to have diverse and realistic seasonal variations for modeling purposes.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 500,
+            "time_col": "timestamp",
+            "seasonal_cols": [
+                "temperature",
+                "humidity",
+                "wind_speed"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I want to create a dataset with 200 time-series samples, using 'datetime' as the main time column. Please inject seasonal patterns into the 'price' and 'demand' columns. For the seasonality parameters, use the default values for period and amplitude.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 200,
+            "time_col": "datetime",
+            "seasonal_cols": [
+                "price",
+                "demand"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "Can I generate a large dataset of 800 time-series samples with seasonal patterns? Specifically, I want to use 'time_of_day' as the primary time column and inject sinusoidal patterns into the 'volume', 'velocity', and 'acceleration' columns. I'm looking for diverse and realistic data.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 800,
+            "time_col": "time_of_day",
+            "seasonal_cols": [
+                "volume",
+                "velocity",
+                "acceleration"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    },
+    {
+        "user_query": "I need a dataset of 300 time-series samples with seasonal patterns injected into specific columns. Can you generate this data using the year and month as the primary time column, and add sinusoidal patterns to the revenue, expenses, and profit columns? I'm looking for a realistic representation of temporal dynamics.",
+        "tool_call": "SeasonalTimeSeriesPreset",
+        "arguments": {
+            "n_samples": 300,
+            "time_col": "year_month",
+            "seasonal_cols": [
+                "revenue",
+                "expenses",
+                "profit"
+            ],
+            "period": 12,
+            "amplitude": 1.0
+        }
+    }
+]

@@ -1,0 +1,552 @@
+[
+    {
+        "user_query": "I need to generate a small dataset quickly, can I get 50 samples using the fastest preset with minimal reporting?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to generate a dataset quickly, can I get some samples using the fastest preset with minimal reporting?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a rapid data generation solution that prioritizes speed over detailed analysis. Can you provide me with a dataset of around 200 samples, utilizing the LightGBM algorithm and keeping the reporting to a minimum, ensuring diversity in the generated data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a rapid data generation solution that prioritizes speed over detailed analysis. Can you provide me with a dataset of several samples, utilizing an efficient algorithm and keeping the reporting to a minimum, ensuring diversity in the generated data?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a large but fast dataset for a project, can I get about 150 diverse samples using the quickest method available, ideally with LightGBM, and basic reporting to keep things efficient?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a large but fast dataset for a project, can I get some diverse samples using the quickest method available, ideally with a certain algorithm, and basic reporting to keep things efficient?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm working on a time-sensitive project that requires a substantial amount of data. Could you generate around 300 diverse samples as quickly as possible? I'd prefer if you used LightGBM for its speed and kept the reporting to a minimum, focusing on efficiency over detailed analysis.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working on a time-sensitive project that requires a substantial amount of data. Could you generate some diverse samples as quickly as possible? I'd prefer if you used a certain method for its speed and kept the reporting to a minimum, focusing on efficiency over detailed analysis.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm in a rush to collect data for my project. Can you produce about 250 varied samples using the fastest method available? Prioritize speed and keep the reports brief, ideally using LightGBM to get this done as efficiently as possible.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm in a rush to collect data for my project. Can you produce some varied samples using the fastest method available? Prioritize speed and keep the reports brief, ideally using a certain efficient method to get this done as efficiently as possible.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a rapid data generation preset that emphasizes diversity over quality. Can you create around 50 diverse samples quickly using a fast algorithm like LightGBM and minimize the reporting?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a rapid data generation preset that emphasizes diversity over quality. Can you create some diverse samples quickly using a fast algorithm and minimize the reporting?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a large set of varied data points, let's say around 200, focusing on speed over precision, utilizing an efficient model such as LightGBM and keeping the reporting to a minimum?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a large set of varied data points, focusing on speed over precision, utilizing an efficient model and keeping the reporting to a minimum?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a big dataset with lots of different examples, can you produce something with about 150 samples, prioritizing speed and using a fast algorithm like LightGBM, even if it means less detailed reports?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a big dataset with lots of different examples, can you produce something with several samples, prioritizing speed and using a fast algorithm like LightGBM, even if it means less detailed reports?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a large and diverse dataset quickly, around 80 samples should do, prioritize generation speed over report details, thanks",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a large and diverse dataset quickly, I'd like to get it done fast, prioritize speed over details, thanks",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a big batch of varied data for me? I'm in a hurry, so focus on speed - something like 300 examples would be great, and don't worry too much about the reporting.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate some varied data for me? I'm in a hurry, so focus on speed - that would be great, and don't worry too much about the reporting.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a large dataset ASAP, with a wide range of samples. Can you create around 100 diverse data points using LightGBM for fast generation and minimal reporting? Speed is my top priority here.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset ASAP, with a wide range of samples. Can you create some data points using a certain method for fast generation and minimal reporting? Speed is my top priority here.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm in a rush and need a ton of varied data, can I get like 500 samples or something? Use that super fast LightGBM method and keep the reports simple, I just want it done quickly.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm in a rush and need some varied data, can I get some? Use that super fast method and keep the reports simple, I just want it done quickly.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a huge dataset with lots of variation, around 2000 samples would be great. Can you use the fastest algorithm available, like LightGBM, and skip the detailed reports to speed up the process? I'm looking for quantity over quality this time.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a huge dataset with lots of variation, can you use the fastest algorithm available and skip the detailed reports to speed up the process? I'm looking for quantity over quality this time.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a massive dataset with a high degree of diversity, prioritizing speed over precision. Can you produce around 8000 samples using the LightGBM algorithm and minimize reporting to maximize efficiency? This is for a scenario where I need a large volume of data quickly, even if it means compromising on some quality.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a massive dataset with a high degree of diversity, prioritizing speed over precision. Can you produce some samples using a certain algorithm and minimize reporting to maximize efficiency? This is for a scenario where I need a large volume of data quickly, even if it means compromising on some quality.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a huge dataset with varied examples as fast as possible. Can you generate approximately 10,000 samples using LightGBM, keeping the reporting basic to save time? I prioritize having a large and diverse set of data over getting perfect results.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a huge dataset with varied examples as fast as possible. Can you generate several samples using some method, keeping the reporting basic to save time? I prioritize having a large and diverse set of data over getting perfect results.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to quickly create a sizable dataset with a lot of variety. Can you produce around 50 samples using LightGBM, focusing on speed over detailed reporting? My main goal is to have a diverse set of data as soon as possible.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to quickly create a sizable dataset with a lot of variety. Can you produce some samples using a certain method, focusing on speed over detailed reporting? My main goal is to have a diverse set of data as soon as possible.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a large and varied dataset, can I get about 200 examples generated using the fastest method available, even if it means less detailed analysis?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a large and varied dataset, can I get several examples generated using the fastest method available, even if it means less detailed analysis?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a diverse set of data quickly, can you generate around 10 samples using the quickest preset?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a diverse set of data quickly, can you generate some samples using the quickest preset?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a large and varied dataset as fast as possible, even if it's not perfect. Can you create around 150 examples using your fastest settings?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a large and varied dataset as fast as possible, even if it's not perfect. Can you create some examples using your fastest settings?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a lot of data quickly, prioritizing speed over quality. Can I get approximately 300 samples using the fastest preset with minimal reporting and LightGBM for optimal efficiency?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate some data quickly, prioritizing speed over quality. Can I get several samples using the fastest preset with minimal reporting and a certain method for optimal efficiency?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a fast way to generate a diverse set of data without worrying too much about perfection. Can you produce around 50 examples using your quickest settings, like the preset that uses LightGBM and keeps reporting to a minimum? I prioritize getting a variety of results over having everything be extremely accurate.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a fast way to generate a diverse set of data without worrying too much about perfection. Can you produce some examples using your quickest settings, like the preset that uses a certain algorithm and keeps reporting to a minimum? I prioritize getting a variety of results over having everything be extremely accurate.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to generate a large set of diverse data quickly, focusing on speed over absolute accuracy. Can you create around 200 samples using the fastest preset available, which I believe utilizes LightGBM and limits reporting for efficiency? The key here is achieving a broad range of outcomes.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to generate a large set of diverse data quickly, focusing on speed over absolute accuracy. Can you create some samples using the fastest preset available, which I believe utilizes a certain algorithm and limits reporting for efficiency? The key here is achieving a broad range of outcomes.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to produce a substantial amount of varied data in the shortest time possible. Is it feasible to generate approximately 150 samples or more using your fastest configuration, possibly one that leverages LightGBM for its speed and reduces detailed reporting? The main priority is ensuring we cover a wide spectrum of results.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to produce a substantial amount of varied data in the shortest time possible. Is it feasible to generate several samples using your fastest configuration, possibly one that leverages a certain algorithm for its speed and reduces detailed reporting? The main priority is ensuring we cover a wide spectrum of results.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you produce around 80 different data points quickly, even if it means the quality isn't perfect? I'm aiming for diversity over precision here.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you produce some data points quickly, even if it means the quality isn't perfect? I'm aiming for diversity over precision here.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a large number of samples fast, prioritizing speed and variety. Can you create approximately 250 data points using the quickest method available?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a large number of samples fast, prioritizing speed and variety. Can you create some data points using the quickest method available?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to quickly produce a diverse set of data, focusing on rapid generation rather than detailed analysis. Could you generate about 50 samples for me, emphasizing speed and diversity over comprehensive reporting?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to quickly produce a diverse set of data, focusing on rapid generation rather than detailed analysis. Could you generate some samples for me, emphasizing speed and diversity over comprehensive reporting?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a large, diverse dataset with around 200 samples using the fastest method possible, even if it means less detailed reporting? I'm prioritizing speed and variety in this case.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a large, diverse dataset using the fastest method possible, even if it means less detailed reporting? I'm prioritizing speed and variety in this case.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a dataset quickly without worrying too much about the reporting details. Can you produce around 150 diverse samples using the LightGBM method for maximum speed?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a dataset quickly without worrying too much about the reporting details. Can you produce several diverse samples for maximum speed?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a fast and efficient way to generate a diverse dataset, even if it means less detailed reporting. Can I get approximately 80 varied samples using the speedy LightGBM approach?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a fast and efficient way to generate a diverse dataset, even if it means less detailed reporting. Can I get several varied samples using the speedy approach?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to prioritize speed over quality and generate around 250 distinct data points using the quick LightGBM method, keeping reporting minimal.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to prioritize speed over quality and generate some distinct data points using a fast method, keeping reporting minimal.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a dataset with approximately 50 unique samples using the fast LightGBM approach, focusing on efficiency rather than detailed analysis?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a dataset with some unique samples using the fast approach, focusing on efficiency rather than detailed analysis?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a large dataset quickly, can you generate around 200 diverse data points using the speedy LightGBM method, even if it means less detailed reporting?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset quickly, can you generate some diverse data points using a fast method, even if it means less detailed reporting?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you produce a sizable batch of roughly 150 varied samples in a hurry, prioritizing speed over detailed analysis with LightGBM?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you produce a batch of varied samples in a hurry, prioritizing speed over detailed analysis with LightGBM?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a large dataset quickly, around 80 diverse examples should do, and I don't need super detailed reports, just use something fast like LightGBM to get it done",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a large dataset quickly, I need some diverse examples and I don't need super detailed reports, just use something fast to get it done",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a substantial amount of data in the shortest time possible, focusing on variety over perfection. Can you produce around 250 distinct samples using a speedy algorithm like LightGBM and keep the reporting to a minimum?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a substantial amount of data in the shortest time possible, focusing on variety over perfection. Can you produce several distinct samples using a speedy algorithm and keep the reporting to a minimum?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a large collection of diverse data points, prioritizing speed over precision. Could you generate approximately 50 unique samples utilizing a fast algorithm such as LightGBM, with minimal reporting?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a large collection of diverse data points, prioritizing speed over precision. Could you generate several unique samples utilizing a fast algorithm, with minimal reporting?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you quickly generate around 200 varied data samples using an efficient method like LightGBM, keeping the reporting to a minimum for faster results?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you quickly generate some varied data samples using an efficient method, keeping the reporting to a minimum for faster results?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm in a hurry, can I get about 10 diverse data points generated as fast as possible, even if it means less detailed reports? Use something like LightGBM to make it quick.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm in a hurry, can I get some diverse data points generated as fast as possible, even if it means less detailed reports? Use something like that fast algorithm to make it quick.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a large and varied dataset quickly, can you generate around 500 diverse samples using the fastest method available, like LightGBM, even if the reporting is minimal?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a large and varied dataset quickly, can you generate some diverse samples using the fastest method available, even if the reporting is minimal?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you produce a sizable batch of data with about 150 examples, prioritizing speed over detailed analysis, and ensure they're quite diverse for our testing needs?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you produce a batch of data, prioritizing speed over detailed analysis, and ensure they're quite diverse for our testing needs?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a bunch of varied data points quickly, around 50 should do, without getting too bogged down in complex reporting or trying to make it perfect - just fast and diverse is fine.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate some varied data points quickly, without getting too bogged down in complex reporting or trying to make it perfect - just fast and diverse is fine.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a large set of diverse data points, about 200 would be great, and I want them as quickly as possible, so prioritize speed over detailed reporting or absolute perfection.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a large set of diverse data points and I want them as quickly as possible, so prioritize speed over detailed reporting or absolute perfection.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a lot of varied data for me - around 150 samples should do the trick - using the fastest method available, even if it means less detailed reports?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate some varied data for me using the fastest method available, even if it means less detailed reports?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a large dataset with many different examples, so can you produce about 80 unique data points as quickly as possible, even if the reporting is minimal?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a large dataset with many different examples, so can you produce some data points as quickly as possible, even if the reporting is minimal?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a substantial amount of data in the shortest time possible, focusing on variety. Can I get around 250 samples using the fastest method available, like LightGBM, and keep the reporting simple?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a substantial amount of data in the shortest time possible, focusing on variety. Can I get some samples using the fastest method available and keep the reporting simple?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to produce a diverse dataset quickly, prioritizing speed over quality. Can you generate approximately 50 data points using the most efficient algorithm, such as LightGBM, while minimizing detailed reports?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to produce a diverse dataset quickly, prioritizing speed over quality. Can you generate some data points using an efficient algorithm, while minimizing detailed reports?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a fast and efficient way to generate a large dataset with around 200 samples, focusing on diversity and using a lightweight approach like LightGBM, can you make it happen?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a fast and efficient way to generate a large dataset, focusing on diversity and using a lightweight approach like LightGBM, can you make it happen?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a diverse dataset as quickly as possible without worrying too much about the quality, can I get around 150 samples using something fast like LightGBM?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a diverse dataset as quickly as possible without worrying too much about the quality, can I get some samples using something fast like LightGBM?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a speedy data generation preset that prioritizes diversity over perfection. Can you generate approximately 80 samples with minimal reporting, perhaps utilizing LightGBM for its efficiency?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a speedy data generation preset that prioritizes diversity over perfection. Can you generate some samples with minimal reporting, perhaps utilizing a certain efficient method?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to quickly generate a large dataset with an emphasis on variety, can I get around 300 examples using the fastest algorithm available, like LightGBM, and keep the reporting to a minimum?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to quickly generate a large dataset with an emphasis on variety, can I get some examples using the fastest algorithm available, like LightGBM, and keep the reporting to a minimum?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    }
+]

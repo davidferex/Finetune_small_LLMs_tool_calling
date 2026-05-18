@@ -9,13 +9,13 @@ from datasets import load_dataset
 from peft import PeftModel
 from sklearn.metrics import accuracy_score, f1_score, classification_report, confusion_matrix
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 # ===============================
 # Configuración
 # ===============================
 MODEL_BASE_ID     = "google/gemma-2-2b-it"
-ADAPTER_ID        = "davidferex/TFM_prueba7"
+ADAPTER_ID        = "davidferex/TFM_tool_caller"
 MLP_PATH          = "mlp_guardian.pt"
 TEST_DATASET_PATH = "test_mlp.jsonl"
 BATCH_SIZE        = 64     # ahora cabe con queries cortas
@@ -116,11 +116,11 @@ def preprocess(examples):
     return tokenized
 
 
-print("⏳ Preparando Dataset de Test...")
+print(" Preparando Dataset de Test...")
 raw_dataset = load_dataset("json", data_files=TEST_DATASET_PATH, split="train")
 
 # Verificación rápida del extractor
-print(f"\n🔍 Ejemplo de extracción:")
+print(f"\n Ejemplo de extracción:")
 print(f"  Query extraída : {extract_user_query(raw_dataset[0]['text'])}")
 print(f"  Label          : {raw_dataset[0]['label']}\n")
 
@@ -154,7 +154,7 @@ all_preds  = []
 all_labels = []
 error_log  = []
 
-print(f"🚀 Iniciando evaluación en {device}...")
+print(f" Iniciando evaluación en {device}...")
 
 with torch.no_grad():
     for batch_idx, batch in enumerate(test_loader):
@@ -198,13 +198,13 @@ with open(OUTPUT_ERROR_FILE, "w", encoding="utf-8") as f:
     json.dump(error_log, f, ensure_ascii=False, indent=4)
 
 print("\n" + "="*40)
-print("📊 RESULTADOS FINALES")
+print(" RESULTADOS FINALES")
 print("="*40)
-print(f"✅ Accuracy : {accuracy:.4%}")
-print(f"✅ F1 Score : {f1:.4f}")
-print(f"❌ Errores  : {len(error_log)}")
-print(f"📂 Errores guardados en: {OUTPUT_ERROR_FILE}")
-print("\n📋 Classification Report:")
+print(f" Accuracy : {accuracy:.4%}")
+print(f" F1 Score : {f1:.4f}")
+print(f" Errores  : {len(error_log)}")
+print(f" Errores guardados en: {OUTPUT_ERROR_FILE}")
+print("\n Classification Report:")
 print(classification_report(all_labels, all_preds, target_names=["Incompleta", "Completa"]))
 print("Confusion Matrix:")
 print(confusion_matrix(all_labels, all_preds))

@@ -4,32 +4,15 @@ import pandas as pd
 import torch
 import json
 import os
-from transformers import AutoModelForCausalLM, AutoTokenizer, set_seed
+from transformers import AutoModelForCausalLM, AutoTokenizer, TrainingArguments, BitsAndBytesConfig, set_seed
 from datasets import load_dataset
 from trl import SFTConfig, SFTTrainer
 from peft import LoraConfig, TaskType
 from dotenv import load_dotenv
-from huggingface_hub import login
+
 from transformers import TrainerCallback
+
 import wandb
-
-# 1. CONFIGURACIÓN INICIAL Y LOGINS
-load_dotenv("train_HF.env")
-
-# Autenticación en Hugging Face
-hf_token = os.environ.get("HF_TOKEN")
-if hf_token:
-    login(token=hf_token)
-
-# Autenticación en WandB
-wandb_key = os.environ.get("WANDB_API_KEY")
-if wandb_key:
-    wandb.login(key=wandb_key)
-
-seed = 42
-set_seed(seed)
-
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 class WandbCustomCallback(TrainerCallback):
     def on_log(self, args, state, control, logs=None, **kwargs):
@@ -39,8 +22,22 @@ class WandbCustomCallback(TrainerCallback):
                 "gpu_mem_reserved": torch.cuda.memory_reserved() / 1e9,
             })
 
-# 2. TOKENIZER Y TOKENS ESPECIALES
+
+load_dotenv("train_HF.env") 
+
+seed = 42
+set_seed(seed)
+
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+
+print(f"Número de GPUs visibles: {torch.cuda.device_count()}")
+print(f"GPU en uso: {torch.cuda.get_device_name(0)}")
+
+hf_token = os.environ.get("HF_TOKEN")
+
 model_name = "google/gemma-2-2b-it"
+dataset = load_dataset("json", data_files="train_lora.jsonl", split="train")
 
 class ChatmlSpecialTokens(str, Enum):
     tools = "<tools>"
@@ -54,69 +51,82 @@ class ChatmlSpecialTokens(str, Enum):
         return [c.value for c in cls]
 
 tokenizer = AutoTokenizer.from_pretrained(
-    model_name,
-    pad_token=ChatmlSpecialTokens.pad_token.value,
-    additional_special_tokens=ChatmlSpecialTokens.list()
-)
-
-# Template corregido para Gemma 2
+        model_name,
+        pad_token=ChatmlSpecialTokens.pad_token.value,
+        additional_special_tokens=ChatmlSpecialTokens.list()
+    )
 tokenizer.chat_template = "{{ bos_token }}{% if messages[0]['role'] == 'system' %}{{ raise_exception('System role not supported') }}{% endif %}{% for message in messages %}{{ '<start_of_turn>' + message['role'] + '\n' + message['content'] | trim + '<end_of_turn><eos>\n' }}{% endfor %}{% if add_generation_prompt %}{{'<start_of_turn>model\n'}}{% endif %}"
 
-# 3. CARGA DEL MODELO Y REDIMENSIONAMIENTO 
-model = AutoModelForCausalLM.from_pretrained(
-    model_name,
-    attn_implementation='eager',
-    torch_dtype=torch.bfloat16,
-    device_map="auto"
-)
-
-# Redimensionamos el vocabulario antes de aplicar LoRA
+model = AutoModelForCausalLM.from_pretrained(model_name,
+                                             attn_implementation='eager',
+                                             device_map="auto")
 model.resize_token_embeddings(len(tokenizer))
+model.to(torch.bfloat16)
 
-# 4. CONFIGURACIÓN LORA
-peft_config = LoraConfig(
-    r=16,
-    lora_alpha=64,
-    lora_dropout=0.05,
-    target_modules=["gate_proj","q_proj","o_proj","k_proj","down_proj","up_proj","v_proj"],
-    task_type=TaskType.CAUSAL_LM
-)
 
-# 5. DATASET Y WANDB INIT
-dataset = load_dataset("json", data_files="train_lora.jsonl", split="train")
 
-username = "davidferex"
-output_dir = "TFM_prueba7"
+# r: rank dimension for LoRA update matrices (smaller = more compression)
+rank_dimension = 16
+# lora_alpha: scaling factor for LoRA layers (higher = stronger adaptation)
+lora_alpha = 64
+# lora_dropout: dropout probability for LoRA layers (helps prevent overfitting)
+lora_dropout = 0.05
+
+peft_config = LoraConfig(r=rank_dimension,
+                         lora_alpha=lora_alpha,
+                         lora_dropout=lora_dropout,
+                         target_modules=["gate_proj","q_proj","lm_head","o_proj","k_proj","embed_tokens","down_proj","up_proj","v_proj"], 
+                         task_type=TaskType.CAUSAL_LM)
+
+username="davidferex"
+output_dir = "TFM_tool_caller" # The directory where the trained model checkpoints, logs, and other artifacts will be saved. It will also be the default name of the model when pushed to the hub if not redefined later.
+per_device_train_batch_size = 1
+per_device_eval_batch_size = 1
+gradient_accumulation_steps = 4
+logging_steps = 5
+learning_rate = 1e-4 # The initial learning rate for the optimizer.
+
+max_grad_norm = 1.0
+num_train_epochs=1
+warmup_ratio = 0.1
+lr_scheduler_type = "cosine"
+max_seq_length = 1500
 
 wandb.init(
-    project="gemma-2b-tool-calling",
-    name="lora-run-1",
+    project="gemma-2b-tool-calling",   # nombre del proyecto
+    name="lora-run-1",                 # nombre de la ejecución
     config={
         "model": model_name,
-        "lr": 1e-4,
-        "epochs": 1,
-        "lora_r": 16,
+        "dataset": "train_lora.jsonl",
+        "lr": learning_rate,
+        "epochs": num_train_epochs,
+        "batch_size": per_device_train_batch_size,
+        "lora_r": rank_dimension,
+        "lora_alpha": lora_alpha,
     }
 )
 
-# 6. ENTRENAMIENTO
 training_arguments = SFTConfig(
     output_dir=output_dir,
-    per_device_train_batch_size=1,
-    gradient_accumulation_steps=4,
+    per_device_train_batch_size=per_device_train_batch_size,
+    per_device_eval_batch_size=per_device_eval_batch_size,
+    gradient_accumulation_steps=gradient_accumulation_steps,
     save_strategy="no",
-    logging_steps=5,
-    learning_rate=1e-4,
-    max_grad_norm=1.0,
+    eval_strategy="no",
+    logging_steps=logging_steps,
+    learning_rate=learning_rate,
+    max_grad_norm=max_grad_norm,
     weight_decay=0.1,
-    warmup_ratio=0.1,
-    lr_scheduler_type="cosine",
+    warmup_ratio=warmup_ratio,
+    lr_scheduler_type=lr_scheduler_type,
     report_to="wandb",
     bf16=True,
-    num_train_epochs=1,
+    hub_private_repo=False,
+    push_to_hub=False,
+    num_train_epochs=num_train_epochs,
     gradient_checkpointing=True,
     gradient_checkpointing_kwargs={"use_reentrant": False},
-    packing=False, 
+    packing=True,
     max_length=2048
 )
 
@@ -129,13 +139,14 @@ trainer = SFTTrainer(
     callbacks=[WandbCustomCallback()]
 )
 
-trainer.train()
+#To see how LoRA helps with fine tuning
+trainer.model.print_trainable_parameters()
 
-# 7. GUARDAR Y SUBIR
+trainer.train()
 trainer.save_model()
+
 trainer.push_to_hub(f"{username}/{output_dir}")
 
-tokenizer.eos_token = ChatmlSpecialTokens.eos_token.value
-tokenizer.push_to_hub(f"{username}/{output_dir}")
-
-print("Entrenamiento completado y modelo subido a Hugging Face.")
+tokenizer.eos_token = "<eos>"
+# push the tokenizer to hub ( replace with your username and your previously specified
+tokenizer.push_to_hub(f"{username}/{output_dir}", token=True)

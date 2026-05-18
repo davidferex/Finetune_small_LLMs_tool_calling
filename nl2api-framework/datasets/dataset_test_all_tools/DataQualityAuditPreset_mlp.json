@@ -1,0 +1,442 @@
+[
+    {
+        "user_query": "can you genrate like 100 sampels or somethin? i wanna see alot of data points",
+        "complete": 1
+    },
+    {
+        "user_query": "can you generate some samples or somethin? i wanna see alot of data points",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a more extensive dataset to work with, could I get around 500 samples generated? This will help me get a better sense of the overall distribution and ensure that my reporting is comprehensive.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a more extensive dataset to work with, could I get some samples generated? This will help me get a better sense of the overall distribution and ensure that my reporting is comprehensive.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to have a fairly large number of samples to really get a robust understanding, so can I get something in the ballpark of 1000 examples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to have a fairly large number of examples to really get a robust understanding, so can I get several?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want make sure my results are very reliable, so please give me around two thousand samples, yes?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to make sure my results are very reliable, so please give me several samples, yes?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To ensure the highest level of accuracy and reliability in our findings, could you generate approximately five thousand samples for our analysis?",
+        "complete": 1
+    },
+    {
+        "user_query": "To ensure the highest level of accuracy and reliability in our findings, could you generate some samples for our analysis?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can we get a moderate amount of examples, around 50 or so, to work with for this high-integrity generation task?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can we get some examples to work with for this high-integrity generation task?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a fairly large dataset for testing, could I get around 100 samples to ensure we have enough diversity in our reporting?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a fairly large dataset for testing, could I get some samples to ensure we have enough diversity in our reporting?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate 200 samples to maximize diversity in our automated reports?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate several samples to maximize diversity in our automated reports?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Please make for me five hundred different examples so our report have many variation, yes?",
+        "complete": 1
+    },
+    {
+        "user_query": "Please make for me several different examples so our report have many variation, yes?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "can u generat like alot of exemples, say 1000, so we can get alot of diferent variashuns in are report?",
+        "complete": 1
+    },
+    {
+        "user_query": "can u generate like alot of exemples so we can get alot of diferent variashuns in are report?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "i need many samples for my report, can you make fifty examples for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "i need some samples for my report, can you make examples for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To ensure a comprehensive analysis with adequate representation of diverse scenarios, I would appreciate it if the system could generate 200 samples for our high-integrity reporting purposes.",
+        "complete": 1
+    },
+    {
+        "user_query": "To ensure a comprehensive analysis with adequate representation of diverse scenarios, I would appreciate it if the system could generate some samples for our high-integrity reporting purposes.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you please make ten examples for me? I want to see many different kinds so we can have good reports.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you please make some examples for me? I want to see many different kinds so we can have good reports.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "In order to ensure that our automated reporting system is functioning at an optimal level, it would be greatly beneficial if we could generate a sizable and diverse dataset. Specifically, I am requesting that you produce 150 unique samples for us to work with, as this will enable us to thoroughly test the capabilities of our TVAE model and guarantee that our reports are not only comprehensive but also accurate and reliable.",
+        "complete": 1
+    },
+    {
+        "user_query": "In order to ensure that our automated reporting system is functioning at an optimal level, it would be greatly beneficial if we could generate a sizable and diverse dataset. Specifically, I am requesting that you produce some unique samples for us to work with, as this will enable us to thoroughly test the capabilities of our model and guarantee that our reports are not only comprehensive but also accurate and reliable.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a large dataset of around 300 samples for me, so we can put our automated reporting system through its paces and make sure it's producing high-quality, diverse results?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a large dataset for me, so we can put our automated reporting system through its paces and make sure it's producing high-quality, diverse results?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to test the capabilities of our TVAE-based generation system with a moderately sized dataset, let's say around 50 samples or so, to ensure we're capturing a good amount of variability for our reporting purposes.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to test the capabilities of our TVAE-based generation system with a moderately sized dataset to ensure we're capturing a good amount of variability for our reporting purposes.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you please make data set bigger? I want try with two hundred samples now. We need make sure have enough different kinds for report, yes?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you please make data set bigger? I want to try with some more now. We need to make sure we have enough different kinds for the report, yes?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to increase the number of samples in my dataset to 150, can you generate that for me? This will help ensure I have a diverse range of data points for my report.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to increase the number of samples in my dataset, can you generate that for me? This will help ensure I have a diverse range of data points for my report.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To enhance the diversity and comprehensiveness of our automated reporting, could you please generate a dataset comprising 300 samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "To enhance the diversity and comprehensiveness of our automated reporting, could you please generate a dataset comprising several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can we get 250 varied data points for more robust reporting?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can we get some varied data points for more robust reporting?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to generate a smaller batch of around 50 samples to ensure high-integrity data with diverse variations for our automated reporting.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to generate a smaller batch to ensure high-integrity data with diverse variations for our automated reporting.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can we produce 200 distinct samples to guarantee diversity in our dataset for comprehensive reporting?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can we produce some distinct samples to guarantee diversity in our dataset for comprehensive reporting?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To ensure a high level of diversity in our generated dataset, which is crucial for comprehensive automated reporting, could you generate 150 unique samples using the TVAE method?",
+        "complete": 1
+    },
+    {
+        "user_query": "To ensure a high level of diversity in our generated dataset, which is crucial for comprehensive automated reporting, could you generate some unique samples using a certain method?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to make sure I have many different kinds of data for my reports. Can you please make eighty examples with your special way of generating?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to make sure I have many different kinds of data for my reports. Can you please make several examples with your special way of generating?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To ensure our automated reports are really comprehensive, could we generate around three hundred samples using the TVAE method, which should give us a good range of diverse data to work with?",
+        "complete": 1
+    },
+    {
+        "user_query": "To ensure our automated reports are really comprehensive, could we generate some samples using a certain method, which should give us a good range of diverse data to work with?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "For our high-integrity generation needs and to get a wide range of diverse data, can we produce approximately one hundred samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "For our high-integrity generation needs and to get a wide range of diverse data, can we produce several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To ensure comprehensive reporting, I'd like to generate around 500 samples for better diversity and coverage.",
+        "complete": 1
+    },
+    {
+        "user_query": "To ensure comprehensive reporting, I'd like to generate some samples for better diversity and coverage.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want make sure we have many sample, maybe two thousand, so our report very complete and diverse, yes?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to make sure we have some samples so our report is very complete and diverse, yes?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "hey can we get alot of samples like arond 8 thousnd or somethin so our genrated stuff is super diverse and the reports are reeeeally comprehensive??",
+        "complete": 1
+    },
+    {
+        "user_query": "hey can we get some samples so our generated stuff is super diverse and the reports are really comprehensive??",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can we generate around 15,000 samples to ensure maximum diversity in our output and get really detailed reports?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can we generate some samples to ensure maximum diversity in our output and get really detailed reports?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to produce a smaller batch of 50 samples this time, can you run the generation with that specific number to see how it affects the overall diversity and reporting?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to produce a smaller batch this time, can you run the generation to see how it affects the overall diversity and reporting?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can we crank out a bunch more samples this time, like 200, to really get a feel for how diverse and robust our generated data can be?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can we crank out some more this time to really get a feel for how diverse and robust our generated data can be?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want many example, please give me one thousand sample so I can see all the different kind of thing that your system can make, yes?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want some examples, please give me a few so I can see the different kind of things that your system can make, yes?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To ensure a thorough evaluation of the system's capabilities and facilitate comprehensive reporting, I would appreciate it if you could generate a substantial number of samples. Specifically, could you provide 500 examples?",
+        "complete": 1
+    },
+    {
+        "user_query": "To ensure a thorough evaluation of the system's capabilities and facilitate comprehensive reporting, I would appreciate it if you could generate several samples.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "can u generat like alot of sampels? probaly arounf 1500 or somethin so we can get a good idear of how the sistem works and make shure everythin is reportd corectly",
+        "complete": 1
+    },
+    {
+        "user_query": "can u generat like alot of stuff so we can get a good idear of how things works and make shure everythin is reportd corectly",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "In order to thoroughly assess the performance and reliability of our system, I would like to request a substantial number of samples to be generated, specifically around 100, so that we can meticulously evaluate the diversity and integrity of the output, thereby ensuring comprehensive automated reporting and validating the accuracy of our results.",
+        "complete": 1
+    },
+    {
+        "user_query": "In order to thoroughly assess the performance and reliability of our system, I would like to request some samples to be generated so that we can meticulously evaluate the diversity and integrity of the output, thereby ensuring comprehensive automated reporting and validating the accuracy of our results.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "can u genrate alot of sampels like arond 200 or somethin so we can get a good idear of how diverse and acurat the output is gonna be, thats importint for our reportin and stuf",
+        "complete": 1
+    },
+    {
+        "user_query": "can u generate some samples so we can get a good idea of how diverse and accurate the output is gonna be, thats important for our reportin and stuf",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "hey, can you generate around 50 samples for us? we want to make sure the output is gonna be diverse and accurate, it's pretty important for our reporting",
+        "complete": 1
+    },
+    {
+        "user_query": "hey, can you generate some samples for us? we want to make sure the output is gonna be diverse and accurate, it's pretty important for our reporting",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "We're looking for a substantial dataset for our automated reporting, so could you please generate around 150 samples with a focus on diversity and accuracy? This will help us ensure the output is comprehensive and reliable.",
+        "complete": 1
+    },
+    {
+        "user_query": "We're looking for a substantial dataset for our automated reporting, so could you please generate some samples with a focus on diversity and accuracy? This will help us ensure the output is comprehensive and reliable.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "can you hook me up with like 250 data points that are pretty varied and accurate, we're trying to get a solid dataset for our automated reports and want to make sure it's diverse and reliable",
+        "complete": 1
+    },
+    {
+        "user_query": "can you hook me up with some data points that are pretty varied and accurate, we're trying to get a solid dataset for our automated reports and want to make sure it's diverse and reliable",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    }
+]

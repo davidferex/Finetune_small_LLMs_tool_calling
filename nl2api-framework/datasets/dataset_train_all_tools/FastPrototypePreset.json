@@ -1,0 +1,352 @@
+[
+    {
+        "user_query": "I need to quickly generate a small dataset for testing purposes, can I get 50 samples?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "Can you provide a diverse set of around 200 data points for me to work with? I'm looking to prototype something quickly and need a decent amount of varied data to test it out.",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "I want to generate a wide range of data for testing purposes, can you give me 150 samples that are as diverse as possible?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 150
+        }
+    },
+    {
+        "user_query": "I'm looking to create a robust test suite, can you provide around 80 varied data points to help ensure my application's stability and performance?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 80
+        }
+    },
+    {
+        "user_query": "I want to generate a large number of diverse samples quickly for integration testing purposes, could I get around 250 examples?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 250
+        }
+    },
+    {
+        "user_query": "Can you produce a small batch of varied data points, about 50 should do, for some quick experimentation and testing?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "I'm looking to generate a moderate-sized dataset with a good mix of examples, around 200 records should suffice, to help me test and validate my application's performance under various scenarios.",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "Can you provide a relatively small but diverse set of data points for testing purposes, something like 150 samples, to ensure our system handles different cases effectively?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 150
+        }
+    },
+    {
+        "user_query": "I'm looking for a compact dataset to run some quick tests, around 80 examples should do the trick, focusing on variety to cover all bases.",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 80
+        }
+    },
+    {
+        "user_query": "I need a diverse set of data, but not too large, something that can be generated quickly for testing purposes. Can I get around 250 samples with a good mix of different cases?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 250
+        }
+    },
+    {
+        "user_query": "I'm looking for a small to medium-sized dataset that's perfect for integration testing or quick prototyping, can you generate around 50 samples with a diverse range of data points?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "Can you create a dataset with about 200 records that are varied and representative, ideal for testing and validation purposes?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "Generate a small set of around 10 diverse data points, perfect for rapid testing and validation in our development pipeline.",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 10
+        }
+    },
+    {
+        "user_query": "Create a large dataset with 500 unique samples to ensure thorough testing and validation across various scenarios in our CI/CD pipeline.",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 500
+        }
+    },
+    {
+        "user_query": "Generate a substantial amount of diverse data, around 1000 samples, for comprehensive integration testing and rapid prototyping purposes.",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 1000
+        }
+    },
+    {
+        "user_query": "I want to create a smaller dataset with around 50 examples for some quick tests and trials, can you generate that for me?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "I'm looking to do some rapid prototyping and need a decent amount of diverse data, could you generate around 200 samples for me?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "I want to run some integration tests and I need a sizable dataset with varied examples, can you provide about 150 samples for this purpose?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 150
+        }
+    },
+    {
+        "user_query": "I'm looking to prototype quickly and need a diverse set of data to work with. Can I get around 80 samples that capture a wide range of scenarios?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 80
+        }
+    },
+    {
+        "user_query": "I want to generate a large dataset for integration testing, can you provide me with 300 diverse samples to ensure my pipeline is robust?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 300
+        }
+    },
+    {
+        "user_query": "I'm looking for a quick way to test my system's performance, can I get a batch of 100 varied data points to help me get started?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 100
+        }
+    },
+    {
+        "user_query": "I want to generate a large number of diverse samples quickly, can you give me 200 unique data points for testing purposes?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "I'm looking for a small batch of varied data to get started with my project, can I get around 50 distinct samples?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "I want to generate a moderately sized dataset that's really diverse for some initial testing, can you give me about 150 unique examples?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 150
+        }
+    },
+    {
+        "user_query": "I'm looking to create a sizable dataset with a lot of variation for my testing purposes. Could I get around 300 samples that are quite diverse?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 300
+        }
+    },
+    {
+        "user_query": "I need a smaller but varied set of data, could you generate about 50 unique samples for me?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "Can I get a batch of around 100 diverse examples to help with my integration testing?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 100
+        }
+    },
+    {
+        "user_query": "I'm looking for a sizable dataset to test my application's performance, can you generate around 200 varied samples for me?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "I want to do some integration testing and need a substantial amount of diverse data, can I get about 500 different examples?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 500
+        }
+    },
+    {
+        "user_query": "I'm looking to generate a large dataset for some rapid prototyping, can you provide around 1000 varied samples?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 1000
+        }
+    },
+    {
+        "user_query": "Can you give me about 50 diverse examples to work with, I want to test my system quickly and make sure it's working as expected",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "I'm looking for a large set of varied data points, around 200 should do the trick, so I can thoroughly evaluate my application's performance under different conditions without having to wait too long.",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "Can you give me a small batch of 10 diverse data samples for some quick testing?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 10
+        }
+    },
+    {
+        "user_query": "I'm looking to do some rapid prototyping and I want a sizable but not overly large dataset, can I get around 150 varied data points?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 150
+        }
+    },
+    {
+        "user_query": "I need a decent amount of diverse data for integration testing, can you generate around 300 unique samples for me?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 300
+        }
+    },
+    {
+        "user_query": "I'm looking to quickly test my system with a varied set of data, could you provide about 50 distinct examples?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "I want to generate a large number of diverse samples for integration testing, can I get around 200 different ones?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "I'm looking to create a small but varied dataset for some quick testing, can you give me about 10 unique examples?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 10
+        }
+    },
+    {
+        "user_query": "I want to generate a sizable yet diverse dataset quickly, can I get around 150 distinct samples?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 150
+        }
+    },
+    {
+        "user_query": "I'm looking for a large and varied dataset to test my application's performance, can you provide me with approximately 300 unique data points?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 300
+        }
+    },
+    {
+        "user_query": "Can you generate a small but diverse set of around 50 data samples for me to use in some quick testing?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "I'm looking for a varied dataset to integrate into my project quickly, can I get about 100 different examples?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 100
+        }
+    },
+    {
+        "user_query": "I want to generate a diverse set of data for testing purposes, can you provide me with around 200 unique samples?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "Can you generate a large batch of varied data, about 500 examples, to help me thoroughly test my system?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 500
+        }
+    },
+    {
+        "user_query": "I'm looking for a diverse dataset to run some quick tests, can I get around 1000 different samples to ensure my system is working as expected?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 1000
+        }
+    },
+    {
+        "user_query": "I need a small but varied set of data for integration testing, can you generate around 50 unique samples?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "Can you produce a moderately sized dataset with about 200 distinct examples to help me test my application's performance under various scenarios?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "I'm looking for a diverse set of around 150 samples to integrate into my testing pipeline, can you generate that for me?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 150
+        }
+    },
+    {
+        "user_query": "Can you create a small but varied dataset with about 80 entries for some exploratory testing?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 80
+        }
+    },
+    {
+        "user_query": "I'm looking to generate a sizable yet diverse dataset for integration testing purposes, could I get around 250 samples that capture a wide range of scenarios?",
+        "tool_call": "FastPrototypePreset",
+        "arguments": {
+            "n_samples": 250
+        }
+    }
+]

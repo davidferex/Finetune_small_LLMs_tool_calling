@@ -1,0 +1,479 @@
+[
+    {
+        "user_query": "I want to simulate a dataset with around 500 examples where two specific features, let's call them feature1 and feature2, change gradually at a moderate pace of about 0.05 over the course of the data collection, can you do that for me?",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 500,
+            "drift_cols": [
+                "feature1",
+                "feature2"
+            ],
+            "slope": 0.05
+        }
+    },
+    {
+        "user_query": "hey can u genarate somthin with like arond 200 sampels where onley feature3 is chaning slooowly over time at a rate of 0.01? thats the kinda drift i need",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 200,
+            "drift_cols": [
+                "feature3"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "i'm looking for a simulation with around 800 data points, where features 4, 5, and 6 are changing gradually over time. can you make it so that these changes happen at a pretty slow pace, like a slope of 0.02? that would be awesome",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 800,
+            "drift_cols": [
+                "feature4",
+                "feature5",
+                "feature6"
+            ],
+            "slope": 0.02
+        }
+    },
+    {
+        "user_query": "hey, can i get a dataset with around 300 samples where features 7 and 8 are slowly drifting over time with a pretty gentle slope of 0.03? that'd be super helpful for my project!",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 300,
+            "drift_cols": [
+                "feature7",
+                "feature8"
+            ],
+            "slope": 0.03
+        }
+    },
+    {
+        "user_query": "I would like to request a simulated dataset comprising approximately 1000 samples, where the column 'feature9' exhibits gradual drift over time or index, characterized by a slope of 0.005. This specific configuration will enable me to effectively model and analyze the effects of subtle changes in this particular feature.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "drift_cols": [
+                "feature9"
+            ],
+            "slope": 0.005
+        }
+    },
+    {
+        "user_query": "I am seeking a dataset that simulates gradual drift, specifically requiring around 100 data points with 'feature1' and 'feature2' undergoing this drift. The rate of change should be moderate, reflected by a slope of 0.05, to accurately represent the incremental shifts I aim to study.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 100,
+            "drift_cols": [
+                "feature1",
+                "feature2"
+            ],
+            "slope": 0.05
+        }
+    },
+    {
+        "user_query": "Can you generate a dataset with 500 samples where features 3, 4, and 5 gradually change over time at a slow rate of 0.01?",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 500,
+            "drift_cols": [
+                "feature3",
+                "feature4",
+                "feature5"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "I want make simulation with two hundred examples, okay? And I need feature number six to change little by little, like very slowly, yes? So slope is zero point one, that's all.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 200,
+            "drift_cols": [
+                "feature6"
+            ],
+            "slope": 0.1
+        }
+    },
+    {
+        "user_query": "I am wanting to generate some data for experiment, around eight hundred samples should be good. Can you please make sure that feature seven and also feature eight, they are changing gradually over time, yes? Like, not too fast, just a little bit, with slope of point zero two. That would be great, thank you.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 800,
+            "drift_cols": [
+                "feature7",
+                "feature8"
+            ],
+            "slope": 0.02
+        }
+    },
+    {
+        "user_query": "Hello, I need to make simulation for my project, can you help me generate some data? I want three hundred samples, not too many, and I want some features to change slowly over time. Specifically, feature9, feature10, and feature11 should drift gradually, yes? And the slope of this drift, it should be small, like 0.03. Can you do this for me? Thank you very much.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 300,
+            "drift_cols": [
+                "feature9",
+                "feature10",
+                "feature11"
+            ],
+            "slope": 0.03
+        }
+    },
+    {
+        "user_query": "I'm working on a project that involves simulating data over time and I want to introduce some gradual changes to certain columns. Can you generate a dataset of 100 samples where columns 'column1' and 'column2' drift slowly? I'd like to capture the diversity in these changes, so it's essential that the drift is simulated realistically.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 100,
+            "drift_cols": [
+                "column1",
+                "column2"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "hey can u genereate a dataset with 200 samples where column3, column4 and column5 has gradual drift over time? dont worree about the slope of the drift jus use teh default valus for that, i want to see how this gradual chanegs efects my data",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 200,
+            "drift_cols": [
+                "column3",
+                "column4",
+                "column5"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "Can you create a dataset with 50 samples and introduce gradual drift in column6, using the standard slope setting?",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 50,
+            "drift_cols": [
+                "column6"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "Hey, I'm looking for a dataset that's got some variation in it. Can you generate something with around 300 entries? Also, I want to see how certain columns change over time, specifically column7, column8, column9, and column10. Make those drift gradually, like they're slowly evolving. That'd be really helpful!",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 300,
+            "drift_cols": [
+                "column7",
+                "column8",
+                "column9",
+                "column10"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "I am in need of a dataset that exhibits a certain level of diversity and gradual evolution over time. Specifically, I would like to request a dataset with approximately 150 samples. Furthermore, I want to focus on the drifting patterns within two particular columns, namely 'column11' and 'column12'. It would be greatly beneficial if these columns could demonstrate a slow and continuous change throughout the dataset, allowing me to analyze and understand the gradual drift that occurs over time or index.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 150,
+            "drift_cols": [
+                "column11",
+                "column12"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "Can I get a dataset with 500 entries where 'feature1' and 'feature2' gradually shift at a rate of 0.05, reflecting real-world data that changes subtly over time?",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 500,
+            "drift_cols": [
+                "feature1",
+                "feature2"
+            ],
+            "slope": 0.05
+        }
+    },
+    {
+        "user_query": "I want make simulation with two hundred sample, yes? And I need just one column, feature3, to change little by little, like very slow, with slope 0.01, okay?",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 200,
+            "drift_cols": [
+                "feature3"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "I would like to simulate a gradual drift over time, using a dataset of 800 samples. Specifically, I require the features 'feature4', 'feature5', and 'feature6' to undergo this gradual change. The rate of change should be subtle, with a slope of 0.02. Can you assist me in generating such a simulation?",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 800,
+            "drift_cols": [
+                "feature4",
+                "feature5",
+                "feature6"
+            ],
+            "slope": 0.02
+        }
+    },
+    {
+        "user_query": "hey can u help me creat a simulashun with 300 sampels thats got a gradual drift goin on over time or watever, specificaly i need feature7 to b the one changin, and make it chang at a pretty slow rate like slope of 0.005 or somethin? thx",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 300,
+            "drift_cols": [
+                "feature7"
+            ],
+            "slope": 0.005
+        }
+    },
+    {
+        "user_query": "I'm looking for a simulation that can generate around a thousand samples with some gradual changes happening over time, specifically I want features eight and nine to be the ones drifting, and I'd like this drift to happen at a moderate pace, something like a slope of 0.015 would work great, thanks",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "drift_cols": [
+                "feature8",
+                "feature9"
+            ],
+            "slope": 0.015
+        }
+    },
+    {
+        "user_query": "can you do me a favor and make a simulation with like 500 examples or somethin, and i want the drift to happen in feature1 and feature2, thats it, dont wanna change anythin else, just those two over time, ty",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 500,
+            "drift_cols": [
+                "feature1",
+                "feature2"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "I'd like to simulate a dataset with around 200 samples where features 3 and 4 gradually drift over time, can you make that happen?",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 200,
+            "drift_cols": [
+                "feature3",
+                "feature4"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "Can you generate a dataset for me with roughly 800 data points, where feature5 is the one that undergoes gradual changes over time? And just to confirm, we're using the default rate of change for this drift, right?",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 800,
+            "drift_cols": [
+                "feature5"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "hey can u make me a dataset with like 300 samples or somethin and feature6, feature7, and feature8 are the ones that gradualy change over time? i wanna see some diversity in my data",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 300,
+            "drift_cols": [
+                "feature6",
+                "feature7",
+                "feature8"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "Can you please generate for me a dataset with around six hundred samples? I want only one column, which is feature9, to have this gradual drift effect over time or index, yes? I need many different kinds of data to see what's going on.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 600,
+            "drift_cols": [
+                "feature9"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "Hey, can you create a dataset with like 500 examples and introduce a subtle shift in the values of feature1 and feature2 over time or index? The change should be pretty gradual, something around 0.02 slope. I need this to test how my model handles changes that happen slowly.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 500,
+            "drift_cols": [
+                "feature1",
+                "feature2"
+            ],
+            "slope": 0.02
+        }
+    },
+    {
+        "user_query": "I am in dire need of a dataset that encompasses a substantial number of examples, approximately 200 in total, to thoroughly examine the effects of gradual drift on my model's performance. Specifically, I wish to introduce a subtle yet discernible shift in the values of 'feature3' over time or index, with the intention of assessing how my model adapts to changes that occur at a gradual pace. The rate of this change should be precisely calibrated to a slope of 0.005, thereby allowing me to meticulously evaluate the robustness and resilience of my model in the face of incremental drift.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 200,
+            "drift_cols": [
+                "feature3"
+            ],
+            "slope": 0.005
+        }
+    },
+    {
+        "user_query": "Can I get a dataset with around 800 samples where features 4, 5, and 6 gradually change over time at a rate of 0.01? I need to test my model's ability to handle slow drift.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 800,
+            "drift_cols": [
+                "feature4",
+                "feature5",
+                "feature6"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "Please give me data with one thousand examples, where feature seven and eight are changing little by little, like slope zero point zero one five, yes?",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "drift_cols": [
+                "feature7",
+                "feature8"
+            ],
+            "slope": 0.015
+        }
+    },
+    {
+        "user_query": "I want three hundred samples, please. Make only feature nine change gradually, very slow, like slope is zero point two five.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 300,
+            "drift_cols": [
+                "feature9"
+            ],
+            "slope": 0.025
+        }
+    },
+    {
+        "user_query": "Could you generate a dataset of 500 samples, where features 'feature1' and 'feature2' undergo a gradual drift over time with a moderate slope of 0.05?",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 500,
+            "drift_cols": [
+                "feature1",
+                "feature2"
+            ],
+            "slope": 0.05
+        }
+    },
+    {
+        "user_query": "I would like to request a simulated dataset comprising 200 samples, where the column 'feature3' experiences a gradual drift over time or index, characterized by a subtle slope of 0.01, in order to introduce diversity and analyze its effects.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 200,
+            "drift_cols": [
+                "feature3"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "Can you generate a dataset with around 800 samples where features 4, 5, and 6 are experiencing a slight gradual drift over time, with the rate of change being roughly 0.02, to simulate real-world diversity in data?",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 800,
+            "drift_cols": [
+                "feature4",
+                "feature5",
+                "feature6"
+            ],
+            "slope": 0.02
+        }
+    },
+    {
+        "user_query": "I need a dataset with 300 samples, where features 7 and 8 are gradually changing over time at a slow pace of about 0.005, to mimic real-life gradual drift.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 300,
+            "drift_cols": [
+                "feature7",
+                "feature8"
+            ],
+            "slope": 0.005
+        }
+    },
+    {
+        "user_query": "can i get alot of exemples like 1000 or somethin? and make only feature numbr 9 changin over tim slowly like super slow slope 0.01? thanx",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "drift_cols": [
+                "feature9"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "I'm looking to generate a substantial number of examples, specifically around 500 instances, where I can observe a gradual drift occurring over time or index, but with certain conditions applied to control the nature of this drift. Particularly, I'd like the drift to be confined to two specific features, namely 'feature1' and 'feature2', indicating that these are the aspects I'm interested in seeing change progressively. Furthermore, it's crucial for me to regulate the rate at which this drift happens, aiming for a slope of 0.05, as this allows for a slow and manageable shift that can be easily analyzed and interpreted. Can you assist me with such a simulation?",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 500,
+            "drift_cols": [
+                "feature1",
+                "feature2"
+            ],
+            "slope": 0.05
+        }
+    },
+    {
+        "user_query": "Can you please help me create many, around 200 examples, where some things change little by little over time? I want only 'feature3' to be changing like this, and it should change very slowly, with a slope of 0.01. This will allow me to see how this small change affects everything else.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 200,
+            "drift_cols": [
+                "feature3"
+            ],
+            "slope": 0.01
+        }
+    },
+    {
+        "user_query": "I need make simulation with lots examples, about one thousand. Some columns, like feature4, feature5 and feature6, they must change gradually, very slow, over time or index, yes? Slope should be 0.02, not too fast, not too slow. This help me see how this kind drift affect other things.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "drift_cols": [
+                "feature4",
+                "feature5",
+                "feature6"
+            ],
+            "slope": 0.02
+        }
+    },
+    {
+        "user_query": "I'm looking to generate a simulation that encompasses a substantial number of samples, roughly around 800, in order to thoroughly analyze the effects of gradual drift. Specifically, I want to focus on two particular features, namely 'feature7' and 'feature8', and observe how they evolve over time or index with a very gentle slope of 0.03. This slow progression will allow me to better understand the implications of such drift on other aspects of my analysis.",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 800,
+            "drift_cols": [
+                "feature7",
+                "feature8"
+            ],
+            "slope": 0.03
+        }
+    },
+    {
+        "user_query": "can u generat like 300 sampels or somethin and make a gradual drift happn on feature9 with a slope thats pretty low, like 0.04? that would be awsome",
+        "tool_call": "GradualDriftPreset",
+        "arguments": {
+            "n_samples": 300,
+            "drift_cols": [
+                "feature9"
+            ],
+            "slope": 0.04
+        }
+    }
+]

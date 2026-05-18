@@ -11,7 +11,6 @@ import wandb
 from dotenv import load_dotenv
 from huggingface_hub import login
 
-# ESTO TIENE QUE SER LA PRIMERA LÍNEA DEL SCRIPT
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 print(f"Número de GPUs visibles: {torch.cuda.device_count()}")
@@ -34,14 +33,14 @@ if wandb_key:
 # 1. CONFIGURACIÓN
 # ==========================================
 MODEL_BASE_ID   = "google/gemma-2-2b-it"
-ADAPTER_ID      = "davidferex/TFM_prueba7"
+ADAPTER_ID      = "davidferex/TFM_tool_caller"
 DATASET_PATH    = "train_mlp.jsonl"
 OUTPUT_MLP_PATH = "mlp_guardian.pt"
 
-BATCH_SIZE   = 16    # Ahora cabe sin problema al tokenizar solo la query
+BATCH_SIZE   = 16    
 EPOCHS       = 15
 LEARNING_RATE = 1e-4
-MAX_LENGTH   = 128   # Las queries limpias raramente superan 80 tokens
+MAX_LENGTH   = 128  
 SEED         = 42
 
 torch.manual_seed(SEED)
@@ -76,7 +75,6 @@ base_model = AutoModelForCausalLM.from_pretrained(
 )
 base_model.resize_token_embeddings(len(tokenizer))
 
-# Merge LoRA → modelo denso para representaciones más limpias
 model = PeftModel.from_pretrained(base_model, ADAPTER_ID)
 model = model.merge_and_unload()
 model.eval()
@@ -84,7 +82,7 @@ model.eval()
 for param in model.parameters():
     param.requires_grad = False
 
-print(f"✅ Modelo cargado. Hidden size: {model.config.hidden_size}")
+print(f" Modelo cargado. Hidden size: {model.config.hidden_size}")
 
 # ==========================================
 # 3. ARQUITECTURA DEL MLP
@@ -123,7 +121,7 @@ hidden_size = model.config.hidden_size
 mlp = GuardianMLP(hidden_size).to("cuda").to(torch.float32)
 
 # ==========================================
-# 4. PREPARACIÓN DE DATOS
+# 4. PREPARACION DE DATOS
 # ==========================================
 
 def extract_user_query(full_prompt: str) -> str:
@@ -164,7 +162,7 @@ val_ds.set_format(type="torch", columns=["input_ids", "attention_mask", "label"]
 train_loader = DataLoader(train_ds, batch_size=BATCH_SIZE, shuffle=True)
 val_loader   = DataLoader(val_ds,   batch_size=BATCH_SIZE, shuffle=False)
 
-print(f"✅ Dataset listo — Train: {len(train_ds)} | Val: {len(val_ds)}")
+print(f" Dataset listo — Train: {len(train_ds)} | Val: {len(val_ds)}")
 
 # ==========================================
 # 5. EXTRACCIÓN DE HIDDEN STATES (mean pooling)
@@ -215,7 +213,7 @@ criterion = nn.CrossEntropyLoss()
 
 best_val_acc = 0.0
 
-print("\n🚀 Iniciando entrenamiento...\n")
+print("\n Iniciando entrenamiento...\n")
 
 for epoch in range(EPOCHS):
 
@@ -303,7 +301,7 @@ for epoch in range(EPOCHS):
 # ==========================================
 # 7. REPORTE FINAL
 # ==========================================
-print(f"\n✅ Entrenamiento completado. Mejor val_acc: {best_val_acc:.2%}")
+print(f"\n Entrenamiento completado. Mejor val_acc: {best_val_acc:.2%}")
 print(f"   Modelo guardado en: {OUTPUT_MLP_PATH}\n")
 
 # Cargar el mejor modelo para el reporte final

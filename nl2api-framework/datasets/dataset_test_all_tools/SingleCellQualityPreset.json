@@ -1,0 +1,282 @@
+[
+    {
+        "user_query": "Can I get a preset that generates 50 samples of high-quality single-cell RNA-seq data?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "I'm looking for a diverse set of single-cell RNA-seq data, can you generate around 200 different samples for me?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "Can you create a dataset with 150 unique samples?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 150
+        }
+    },
+    {
+        "user_query": "I want a large dataset, can I get around 300 samples?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 300
+        }
+    },
+    {
+        "user_query": "Can you please make for me dataset with many example, about two hundred fifty sample?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 250
+        }
+    },
+    {
+        "user_query": "can you give me a bunch of different examples, like around 50 or so?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "Hey, can I get a pretty large batch of samples, like around 100, to make sure we've got a good mix of cell types and stuff?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 100
+        }
+    },
+    {
+        "user_query": "I need many sample, yes? Maybe two hundred? To have very diverse data, you know?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "Can we make lots of examples, like five hundred, so our single-cell RNA-seq data is really varied and good?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 500
+        }
+    },
+    {
+        "user_query": "I want a thousand different samples to get a really diverse set of single-cell RNA-seq data, can you generate that for me?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 1000
+        }
+    },
+    {
+        "user_query": "Can I get 50 unique samples?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "hey can u genrate alot of sampels like 100 for me? i want alot of diversiy in teh singel cell rna seq data",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 100
+        }
+    },
+    {
+        "user_query": "I would greatly appreciate it if you could generate a substantial number of samples, ideally around two hundred, to ensure that we have an adequately diverse dataset for our single-cell RNA-seq analysis, as this will enable us to capture the full spectrum of variability within the cells and provide the most comprehensive insights possible.",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "To facilitate a thorough examination of single-cell RNA-seq data, it would be beneficial to have a sizable collection of samples. Therefore, could you generate approximately five hundred samples, ensuring that our dataset encompasses a broad range of cellular characteristics and thereby allowing for an in-depth analysis?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 500
+        }
+    },
+    {
+        "user_query": "Can I get 1000 samples to analyze single-cell RNA-seq data from different angles?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 1000
+        }
+    },
+    {
+        "user_query": "hey, can you give me like 50 examples of single-cell rna-seq data so i can play around and see what kind of diversity we're looking at?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "I'm trying to get a good sense of the variability in single-cell RNA-seq data, could I get a batch of 200 samples to work with?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "Can you generate a pretty large dataset for me, like around 150 samples or so, to really capture the diversity in single-cell RNA sequencing?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 150
+        }
+    },
+    {
+        "user_query": "I want many sample, eighty is good number, yes? For single cell RNA seq data, we need lots of different kind, you know? So please make dataset with eighty sample, okay?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 80
+        }
+    },
+    {
+        "user_query": "To ensure a comprehensive representation of the cellular heterogeneity in our single-cell RNA-seq data, I would like to request a dataset consisting of 300 samples, thereby providing an adequately diverse range of cellular profiles for subsequent analyses.",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 300
+        }
+    },
+    {
+        "user_query": "Can I get a smaller batch of data with just 50 samples?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "I'm looking for a moderate-sized dataset, can you give me around 200 examples to work with?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "I want many sample, not too much, not too little. Give me 150 sample for my single-cell RNA-seq data, yes?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 150
+        }
+    },
+    {
+        "user_query": "can u gener8 like alot of sampels for my singel cell rna seq data? dont need to many tho... arond 80 is fine i think",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 80
+        }
+    },
+    {
+        "user_query": "I am in need of a substantial number of samples for my single-cell RNA-seq data, but not an excessively large amount, rather a moderately sized dataset that can provide a satisfactory level of diversity and representation, around 250 samples would be ideal for my research purposes.",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 250
+        }
+    },
+    {
+        "user_query": "I want many example, about fifty, for my single-cell RNA-seq data, yes, fifty sample, it good for me to have enough different kind, but not too much, just fifty, okay?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "can i get like 200 examples or something, that way i've got a pretty diverse set of single-cell rna-seq data to work with",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "hey can u generat alot of exampels like arounf 150 so ive got enuf diversiy in my singl cell rna seq data?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 150
+        }
+    },
+    {
+        "user_query": "can you generate around 80 samples for me?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 80
+        }
+    },
+    {
+        "user_query": "Could you please create a dataset with approximately 250 individual cell profiles to ensure we have a diverse range of cellular responses?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 250
+        }
+    },
+    {
+        "user_query": "Can I get a dataset with around 100 samples?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 100
+        }
+    },
+    {
+        "user_query": "Could you give me a fairly large batch of cells to work with, somewhere in the ballpark of two hundred?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "I would like to request a dataset consisting of 50 individual cell samples, in order to ensure a robust and diverse representation of cellular characteristics for my analysis.",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "Can you generate a dataset with 500 cells?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 500
+        }
+    },
+    {
+        "user_query": "I would like to obtain a diverse dataset comprising 150 individual samples for comprehensive analysis in single-cell RNA-seq data generation.",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 150
+        }
+    },
+    {
+        "user_query": "In order to facilitate an exhaustive examination of the intricacies inherent within single-cell RNA-seq data, it is imperative that we establish a robust and diverse dataset. Consequently, I would like to request the generation of a substantial collection of samples, specifically numbering 50 distinct examples, thereby enabling our research team to conduct a comprehensive analysis that captures the complexity and variability of cellular expression profiles.",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 50
+        }
+    },
+    {
+        "user_query": "Can you give me around 200 samples so I've got a good mix to work with?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 200
+        }
+    },
+    {
+        "user_query": "I want a thousand examples to ensure my dataset is diverse",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 1000
+        }
+    },
+    {
+        "user_query": "Can you give me around 500 samples so I have a good mix of different cell types in my dataset?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 500
+        }
+    },
+    {
+        "user_query": "I want many examples, please make for me about fifteen hundred samples, yes? So we can see many kinds of cells and get good variety, okay?",
+        "tool_call": "SingleCellQualityPreset",
+        "arguments": {
+            "n_samples": 1500
+        }
+    }
+]

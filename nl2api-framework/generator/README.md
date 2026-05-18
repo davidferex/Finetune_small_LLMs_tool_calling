@@ -84,6 +84,18 @@ Adecuate training or testing dataset file for MLP classifier.
 
 ---
 
+### 2.3 LLM verifier
+
+**Files:** `dataset_verifier_generator.py` + `dataset_full_generator_verifier.py`
+
+Generates a dataset tailored for training the LLM verifier, using the queries generated for the tool caller and the MLP.
+
+### Output:
+
+Adecuate training or testing dataset file LLM verifier.
+
+---
+
 ## Important Considerations
 
 ### File Paths and Naming
@@ -128,16 +140,13 @@ The generated dataset depends heavily on the tool specification used.
      ```bash
      python dataset_full_generator_mlp.py
      ```
+  
+   * For LLM verifier:
 
----
-
-## Summary
-
-* `dataset_preset_generator.py` → Generates raw queries
-* `dataset_full_generator.py` → Builds LoRA training/testing dataset
-* `dataset_full_generator_mlp.py` → Builds MLP training/testing dataset
-
-Each step is modular, but requires careful alignment in terms of file paths, tool specifications, and expected formats.
+     ```bash
+     python dataset_verifier_generator.py
+     python dataset_full_generator_verifier.py
+     ```
 
 ---
 

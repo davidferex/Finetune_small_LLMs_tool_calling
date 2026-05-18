@@ -2,8 +2,8 @@ import json
 import os
 import random
 
-# ── Cargar spec desde fichero ──────────────────────────────────────────────────
-with open("tools_spec_full.json", "r") as f:
+# Cargar spec desde fichero
+with open("tools_spec.json", "r") as f:
     TOOLS_SPEC = json.load(f)
 
 # Mapeo de tipos del spec al formato JSON Schema del prompt
@@ -88,8 +88,8 @@ def build_lora_dataset(input_folder, output_file: str = "train_lora.jsonl"):
         for entry in final_data:
             f.write(json.dumps(entry) + "\n")
 
-    print(f"✅ Transformación completada: {len(final_data)} ejemplos listos en {output_file}")
+    print(f" Transformación completada: {len(final_data)} ejemplos listos en {output_file}")
 
 
 if __name__ == "__main__":
-    build_lora_dataset(input_folder="dataset_raw5", output_file="train_lora2.jsonl")
+    build_lora_dataset(input_folder="dataset_train", output_file="train_lora.jsonl")

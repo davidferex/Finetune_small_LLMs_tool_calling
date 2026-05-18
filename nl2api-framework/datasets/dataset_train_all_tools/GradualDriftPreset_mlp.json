@@ -1,0 +1,599 @@
+[
+    {
+        "user_query": "I want to simulate a dataset with gradual drift over time, can you generate 500 samples where the values in columns 'col1' and 'col2' change at a rate of 0.05?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to simulate a dataset with gradual drift over time, can you generate some samples where a couple of columns change at a rate of 0.05?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "Can I get a simulated dataset with 200 samples that experiences gradual drift, specifically in column 'col3', where the values shift at a slow pace of 0.01 over time?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a simulated dataset with several samples that experiences gradual drift, specifically in one of the columns, where the values shift at a slow pace with a slope of 0.01 over time?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset that has around 800 entries and exhibits a subtle, gradual change in columns 'col4', 'col5', and 'col6' over its course, with the rate of this shift being quite gentle at 0.02. Can you generate something like this?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that has some entries and exhibits a subtle, gradual change in a few columns over its course, with the rate of this shift being quite gentle. Can you generate something like this?",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "Can I get a dataset with roughly 300 samples that shows a slight gradual drift in 'col7' over time, with the drift happening at a moderate rate of 0.03?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a dataset with some samples that shows a slight gradual drift over time, with the drift happening at a moderate rate of 0.03?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a large dataset with around 1000 entries to model a scenario where two specific columns, 'col8' and 'col9', experience a gradual shift over time or index, but this change should happen very slowly at a rate of 0.04. Can I generate such a dataset?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset to model a scenario where two specific columns experience a gradual shift over time or index, but this change should happen very slowly at a rate of 0.04. I need the slope of this shift to be applied to these columns, can I generate such a dataset with some entries and have the drift happen in a few of them?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a simulation with about 500 samples where 'column1' and 'column2' undergo a gradual drift that increases by a small amount of 0.005 over time or index. Is this possible?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a simulation where some columns undergo a gradual drift that increases over time or index. I'd like the slope of this drift to be small and affect 'column1' and 'column2'. Is this possible?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can I generate around 750 data points with columns 3, 4, and 5 experiencing a slight, gradual shift that becomes more pronounced by about 0.01 increments as the dataset progresses?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I generate some data points where certain columns experience a slight, gradual shift that becomes more pronounced by small increments as the dataset progresses, with a slope?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I want to create a simulation with approximately 250 samples where only column6 undergoes a subtle, incremental change over time, with its values increasing by about 0.02 units as we move through the data points.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a simulation with approximately 250 samples where one of the columns undergoes a subtle change over time, increasing by some amount as we move through the data points, and I'd like this change to happen at a certain slope.",
+        "complete": 0,
+        "_omitted": [
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "Can you generate a dataset of around 1000 examples, where columns 7 and 8 experience a gradual shift in their values over time? I'd like this change to happen at a very slow rate, specifically an increase of 0.005 units for each subsequent data point.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset where some columns experience a gradual shift in their values over time? I'd like this change to happen at a very slow rate, specifically an increase of 0.005 units for each subsequent data point.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I want to create a synthetic dataset with approximately 800 samples, where the values in columns 9, 10, and 11 gradually change over time or index at a moderate rate of 0.015 units per step, simulating real-world drift scenarios.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a synthetic dataset with some samples, where certain values gradually change over time at a moderate rate of 0.015 units per step, simulating real-world drift scenarios.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "Can you generate a synthetic dataset with around 500 samples where columns 'col1' and 'col2' experience gradual drift over time or index? For the rate of drift, use the default setting.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a synthetic dataset with around 500 samples where some columns experience gradual drift over time or index? For the rate of drift, use the default setting.",
+        "complete": 0,
+        "_omitted": [
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I'd like to create a large dataset of approximately 2000 examples that showcases gradual changes in the distribution of 'col3' over time. This should help me evaluate my model's performance on data where this specific column undergoes drift.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to create a dataset that showcases gradual changes over time with some examples, this should help me evaluate my model's performance on data where something undergoes drift, maybe with a certain slope",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "Can you generate a dataset with around 1500 samples, where columns 'col4', 'col5', and 'col6' experience gradual drift over time or index? I'm aiming for diverse data to test my model's ability to handle changes in these specific features.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset with some samples, where columns 'col4', 'col5', and 'col6' experience gradual drift over time or index? I'm aiming for diverse data to test my model's ability to handle changes in these specific features.",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a dataset that has approximately 800 entries, with the column 'col7' experiencing gradual drift as the data progresses. The goal is to create diverse and dynamic data that can help me evaluate my model's performance in handling changes over time or index.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset that has approximately 800 entries, with one of the columns experiencing some kind of change as the data progresses. The goal is to create diverse and dynamic data that can help me evaluate my model's performance in handling changes over time or index.",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "Can you generate a dataset with around 3000 samples, where columns 'col8' and 'col9' undergo gradual drift as the data progresses? This will help me assess my model's ability to adapt to changing patterns over time or index, ensuring it remains robust and accurate in diverse scenarios.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset with several samples, where some columns undergo gradual drift as the data progresses, with a certain slope? This will help me assess my model's ability to adapt to changing patterns over time or index, ensuring it remains robust and accurate in diverse scenarios.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset that can test my model's performance under varying conditions. Can I get a dataset with approximately 500 data points, where 'feature1' and 'feature2' exhibit gradual changes over time or index? This will allow me to evaluate its capacity to handle shifts in patterns and maintain accuracy across different situations.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that can test my model's performance under varying conditions. Can I get a dataset with some data points, where a couple of features exhibit gradual changes over time or index? This will allow me to evaluate its capacity to handle shifts in patterns and maintain accuracy across different situations.",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I want to assess how my model adapts to evolving trends. Can you generate a dataset of around 200 samples where the 'target_variable' undergoes a gradual drift? This would help me understand its ability to adjust to changing conditions over time.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to assess how my model adapts to evolving trends. Can you generate a dataset where the target variable undergoes a gradual drift with some slope? This would help me understand its ability to adjust to changing conditions over time, using several samples.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I'm looking to test my model's performance on a large dataset with a substantial number of samples, around 800. The twist is that I want three specific columns - columnA, columnB, and columnC - to gradually change over time or index, simulating real-world drift. Can you generate such a dataset for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to test my model's performance on a large dataset with some samples. The twist is that I want a few columns to gradually change over time or index, simulating real-world drift. Can you generate such a dataset for me with a certain slope and around 800 samples?",
+        "complete": 0,
+        "_omitted": [
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "Can I get a dataset with 300 entries that captures a gradual shift in variables var1 and var2 over time, to see how my model adapts to changing conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a dataset with some entries that captures a gradual shift over time, to see how my model adapts to changing conditions with a certain slope?",
+        "complete": 0,
+        "_omitted": [
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I want to test my model's ability to handle data that changes gradually over time. Can you generate a dataset with 1000 samples where the values in the 'predictor1' column shift subtly as the index increases, allowing me to assess its performance under these conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to test my model's ability to handle data that changes gradually over time. Can you generate a dataset with several samples where the values in one of the columns shift subtly as the index increases, allowing me to assess its performance under these conditions?",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I need a simulated dataset that mimics real-world data drift. Can you create a sample of 100 records where columns 'col1' and 'col2' exhibit a slight, gradual change - about 0.05 units per step - as the index progresses? This will help me evaluate my model's robustness to temporal shifts.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a simulated dataset that mimics real-world data drift. Can you create a sample where columns 'col1' and 'col2' exhibit a slight, gradual change as the index progresses? This will help me evaluate my model's robustness to temporal shifts.",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to test my model's performance under conditions of gradual data drift. Can you generate a dataset with 200 samples, where 'col3' and 'col4' undergo a subtle shift of approximately 0.01 units per step as the index increases? This would really help me assess how well my model adapts to slow changes over time.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to test my model's performance under conditions of gradual data drift. Can you generate a dataset with 200 samples, where some columns undergo a subtle shift as the index increases? This would really help me assess how well my model adapts to slow changes over time.",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I want to create a dataset that simulates a gradual drift in the data distribution, can you generate 50 samples where only 'col5' is affected by this drift and its values change at a rate of 0.1 units per sample?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a dataset that simulates a gradual drift in the data distribution, can you generate some samples where only one column is affected by this drift and its values change at a rate of 0.1 units per sample?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "Can I get a synthetic dataset with 150 examples that introduces a gradual shift in the data, specifically affecting columns 'col6' and 'col7', where the drift occurs at a steady rate of 0.02 units per sample?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a synthetic dataset that introduces a gradual shift in the data, specifically affecting some columns, where the drift occurs at a steady rate?",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a synthetic dataset with around 300 samples that exhibits gradual drift over time, specifically in columns 'col8', 'col9', and 'col10'. The drift should occur at a moderate pace of about 0.005 units per sample. Can you generate such a dataset for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a synthetic dataset that exhibits gradual drift over time, specifically in columns 'col8', 'col9', and 'col10'. The drift should occur at a moderate pace. Can you generate such a dataset for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can I get a simulated dataset with 500 data points that shows a gradual shift in the values of 'column1' and 'column2' over time, to test my model's ability to handle concept drift?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a simulated dataset with several data points that shows a gradual shift over time, to test my model's ability to handle concept drift with some slope?",
+        "complete": 0,
+        "_omitted": [
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to generate a dataset that captures a subtle change in patterns across 200 samples, specifically focusing on columns 3, 4, and 5. The goal is to mimic real-world scenarios where data evolves gradually over time or index, allowing me to assess the robustness of my model against such drifts. Can I get assistance with this?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to generate a dataset that captures a subtle change in patterns across some samples, specifically focusing on a few columns. The goal is to mimic real-world scenarios where data evolves gradually over time or index, allowing me to assess the robustness of my model against such drifts with a certain slope. Can I get assistance with this?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I want to create a dataset that reflects a gradual shift in data patterns over 800 samples, but I only want to introduce changes in column6. How can I simulate this kind of drift to test my model's performance under real-world conditions where data evolves slowly?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a dataset that reflects a gradual shift in data patterns over some samples, but I only want to introduce changes in one column. How can I simulate this kind of drift with a certain slope to test my model's performance under real-world conditions where data evolves slowly?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "Can you generate a dataset with 300 entries that demonstrates a gradual drift over time, specifically altering the values in columns 'column7' and 'column8', to help me assess how my model handles subtle changes in data patterns?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset with some entries that demonstrates a gradual drift over time, specifically altering the values in a couple of columns, to help me assess how my model handles subtle changes in data patterns with a certain slope?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a simulated dataset with 1000 samples that exhibits gradual drift over time, particularly in features 'column9', 'column10', and 'column11'. Please use the default slope value to introduce this drift. I want to test my model's robustness against subtle shifts in data distributions.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a simulated dataset with some samples that exhibits gradual drift over time, particularly in a few features. Please use the default setting to introduce this drift. I want to test my model's robustness against subtle shifts in data distributions.",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "Can you generate a dataset with 500 rows that slowly changes over time, specifically in columns 'col1' and 'col2'? I'm trying to evaluate how well my model adapts to gradual drift in these two features.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset with some rows that slowly changes over time? I'm trying to evaluate how well my model adapts to gradual drift in a few features.",
+        "complete": 0,
+        "_omitted": [
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I want to test the robustness of my algorithm against data that shifts gradually over time. Can you create a synthetic dataset with 200 samples where only the 'col3' feature exhibits this kind of gradual drift?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to test the robustness of my algorithm against data that shifts gradually over time. Can you create a synthetic dataset where one of the features exhibits this kind of gradual drift?",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to evaluate how my model handles data that evolves over time. Can I get a simulated dataset with 800 examples, where columns 'col4', 'col5', and 'col6' are the ones experiencing this gradual shift?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to evaluate how my model handles data that evolves over time. Can I get a simulated dataset with several examples, where some columns are the ones experiencing this gradual shift?",
+        "complete": 0,
+        "_omitted": [
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I want to test my model's performance on data that changes gradually. Can you generate a dataset with 1000 samples where columns 'col7' and 'col8' undergo a slow drift over time, allowing me to assess its ability to adapt?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to test my model's performance on data that changes gradually. Can you generate a dataset with several samples where some columns undergo a slow drift over time, allowing me to assess its ability to adapt with a certain slope?",
+        "complete": 0,
+        "_omitted": [
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to evaluate my model's robustness to evolving data. Could you create a dataset of 300 entries that incorporates gradual changes in the 'col9' feature over time, enabling me to gauge its performance under shifting conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to evaluate my model's robustness to evolving data. Could you create a dataset that incorporates gradual changes in one of the features over time, enabling me to gauge its performance under shifting conditions?",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I want to test how my model handles data drift. Can I get a simulated dataset with 500 samples where 'feature1' and 'feature2' gradually change over time at a rate of 0.05, so I can assess its ability to adapt to changing patterns?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to test how my model handles data drift. Can I get a simulated dataset with several samples where some features gradually change over time at a certain rate, so I can assess its ability to adapt to changing patterns?",
+        "complete": 0,
+        "_omitted": [
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to evaluate my model's performance under shifting conditions. Could you provide me with a dataset of 200 examples where 'feature3' undergoes a gradual shift at a rate of 0.01, allowing me to analyze its capacity to adjust to evolving data distributions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to evaluate my model's performance under shifting conditions. Could you provide me with a dataset of 200 examples where one of the features undergoes a gradual shift, allowing me to analyze its capacity to adjust to evolving data distributions?",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "Can I get a synthetic dataset with around 800 samples that simulates a gradual drift in features 'feature4', 'feature5', and 'feature6' over time, where the rate of change is about 0.02? This will help me assess my model's ability to adapt to slowly changing data patterns.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a synthetic dataset with some samples that simulates a gradual drift in a few features over time, where the rate of change is slow? This will help me assess my model's ability to adapt to slowly changing data patterns.",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset that mimics real-world data drift. Can you generate one with approximately 300 samples, where features 'feature7' and 'feature8' gradually change over time at a rate of 0.005? This will help me evaluate my model's performance under conditions of slow, continuous change.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that mimics real-world data drift. Can you generate one with several samples, where a couple of features gradually change over time? This will help me evaluate my model's performance under conditions of slow, continuous change.",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I want to test the robustness of my model against gradual concept drift. Can you create a dataset with 1000 instances where only 'feature9' experiences a subtle shift over time, with a slope of 0.015? This will allow me to assess its ability to adapt to slowly evolving patterns.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to test the robustness of my model against gradual concept drift. Can you create a dataset where one of the features experiences a subtle shift over time, with a slope of 0.015? This will allow me to assess its ability to adapt to slowly evolving patterns.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to evaluate my model's performance under changing conditions. Can you generate a dataset of 500 samples that introduces gradual drift in 'feature1' and 'feature2', with a slight incline of 0.05, to simulate real-world data evolution over time?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to evaluate my model's performance under changing conditions. Can you generate a dataset that introduces gradual drift in some features, to simulate real-world data evolution over time?",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I want to test my model's ability to adapt to subtle changes in the data distribution. Can you create a dataset for me with 200 samples, where 'feature3' gradually shifts over time or index with a very small slope of 0.01, allowing me to assess its performance under these conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to test my model's ability to adapt to subtle changes in the data distribution. Can you create a dataset for me with several samples, where one of the features gradually shifts over time or index with a very small slope of 0.01, allowing me to assess its performance under these conditions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to evaluate my model's robustness to gradual changes in the data. Could you generate a dataset with around 800 samples, where 'feature1' and 'feature4' undergo a slight drift over time or index? A slope of 0.02 should be sufficient to simulate this subtle shift. This will help me understand how well my model can adapt to these conditions.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to evaluate my model's robustness to gradual changes in the data. Could you generate a dataset where some features undergo a slight drift over time or index? A slope of 0.02 should be sufficient to simulate this subtle shift. This will help me understand how well my model can adapt to these conditions.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I want to test my model's performance under realistic conditions, where data distributions change gradually. Can I get a dataset with 1000 samples that introduces a subtle drift in 'feature2' and 'feature5'? The drift should be gradual, with a slope of 0.03, to mimic real-world scenarios where data shifts over time or index.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to test my model's performance under realistic conditions, where data distributions change gradually. Can I get a dataset with 1000 samples that introduces a subtle drift in some features? The drift should be gradual, to mimic real-world scenarios where data shifts over time or index.",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a simulated dataset that can help me evaluate my model's robustness to incremental changes in the data. Specifically, I need 300 samples with a gradual drift in 'feature3' and 'feature6', where the rate of change is relatively slow at 0.04. This will allow me to assess how well my model adapts to subtle shifts in the data distribution over time or index.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a simulated dataset to evaluate my model's robustness to incremental changes in the data. I need some samples with a gradual drift, where the rate of change is relatively slow at 0.04, so I can assess how well my model adapts to subtle shifts over time.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "Can I get a dataset with 500 examples that introduces a gradual drift over time in columns 'col1' and 'col2', with a slope of 0.05, to test my model's ability to handle slowly changing data patterns?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a dataset that introduces a gradual drift over time in columns 'col1' and 'col2', with a slope of 0.05, to test my model's ability to handle slowly changing data patterns with several examples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a simulated dataset that has around 200 samples and introduces a subtle gradual drift in features 'col3' and 'col4'. The rate of change should be relatively slow, with a slope of approximately 0.02, to mimic real-world scenarios where data patterns evolve over time or index.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a simulated dataset that has around 200 samples and introduces a subtle gradual drift in some features. The rate of change should be relatively slow, to mimic real-world scenarios where data patterns evolve over time or index.",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "Can you generate a large dataset of around 800 samples that exhibits a gradual drift in the 'col5' feature? I'd like the drift to be quite subtle, with a slope of approximately 0.01, to simulate real-world data where patterns change slowly over time or index.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset of several samples that exhibits a gradual drift in the 'col5' feature? I'd like the drift to be quite subtle, to simulate real-world data where patterns change slowly over time or index.",
+        "complete": 0,
+        "_omitted": [
+            "slope",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset that captures a slight shift in trends over time. Specifically, I need around 300 samples with a gradual drift in columns 'col6', 'col7', and 'col8'. The change should be gentle, with a slope of about 0.03. Can you generate such a dataset to help me simulate real-world data where patterns evolve gradually?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that captures a slight shift in trends over time. Specifically, I need some samples with a gradual drift in a few columns. The change should be gentle, with a slope of about 0.03. Can you generate such a dataset to help me simulate real-world data where patterns evolve gradually?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    },
+    {
+        "user_query": "I want to create a synthetic dataset that reflects a subtle, incremental change in certain features over time. Could I get a dataset with 1000 examples, where 'col9' and 'col10' exhibit a gradual drift? The rate of this change should be quite slow, around 0.005. This would help me model real-world scenarios where trends shift gradually.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a synthetic dataset that reflects a subtle, incremental change in certain features over time. Could I get a dataset where some columns exhibit a gradual drift with a slope of 0.005? This would help me model real-world scenarios where trends shift gradually.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "drift_cols"
+        ]
+    }
+]

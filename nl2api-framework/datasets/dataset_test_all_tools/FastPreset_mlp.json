@@ -1,0 +1,442 @@
+[
+    {
+        "user_query": "I want make dataset fast, not care about too much quality, just give me fifty samples, okay?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to make a dataset quickly, I don't care too much about quality, just give me some samples",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I require a dataset to be generated with an emphasis on expediency, where the compromise on quality is acceptable. Could you provide 200 data samples using the most efficient method available?",
+        "complete": 1
+    },
+    {
+        "user_query": "I require a dataset to be generated with an emphasis on expediency, where the compromise on quality is acceptable. Could you provide some data samples using the most efficient method available?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Please give me fast data, not too much good, just ten examples enough",
+        "complete": 1
+    },
+    {
+        "user_query": "Please give me fast data, not too much, just a few examples",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "hey can u genarate alot of data like 500 exemples or somethin dont need to be perfect jus need alot",
+        "complete": 1
+    },
+    {
+        "user_query": "hey can u genarate some data or somethin dont need to be perfect jus need alot",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "can you give me a bunch of examples, like around 150 or so? i'm looking for quantity over quality here",
+        "complete": 1
+    },
+    {
+        "user_query": "can you give me a bunch of examples? i'm looking for quantity over quality here",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I require a substantial number of samples to be generated in an expedient manner, with the understanding that this may come at the cost of some refinement. Could you provide approximately 50 examples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I require a substantial number of samples to be generated in an expedient manner, with the understanding that this may come at the cost of some refinement. Could you provide several examples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "can u genrate alot of sampels like arond 200 or somethin so we can get a good idear of whats goin on, dont worry to much about makin them perfict, jus need alot of em",
+        "complete": 1
+    },
+    {
+        "user_query": "can u generate some samples so we can get a good idea of whats goin on, dont worry to much about makin them perfict, jus need a few of em",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a substantial number of samples, approximately 10, in order to obtain a comprehensive understanding of the underlying dynamics at play, and I'd like to prioritize quantity over absolute precision in this instance.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a substantial number of samples in order to obtain a comprehensive understanding of the underlying dynamics at play, and I'd like to prioritize quantity over absolute precision in this instance.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To achieve an exhaustive exploration of the data landscape, it would be beneficial to produce a considerably large dataset, comprising roughly five hundred distinct samples, thereby ensuring a robust representation of the variability and nuances inherent within the system, even if this means accepting a slight compromise on the absolute fidelity of each individual data point.",
+        "complete": 1
+    },
+    {
+        "user_query": "To achieve an exhaustive exploration of the data landscape, it would be beneficial to produce a considerably large dataset, comprising several distinct samples, thereby ensuring a robust representation of the variability and nuances inherent within the system, even if this means accepting a slight compromise on the absolute fidelity of each individual data point.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want many example, around one hundred fifty, yes? This way we have good variety, no?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want some examples, this way we have good variety, no?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "can u generat alot of sampels like arond 100 or somethin so we get a pretty divers dataset?",
+        "complete": 1
+    },
+    {
+        "user_query": "can u generate some samples so we get a pretty diverse dataset?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "In order to achieve a sufficiently diverse dataset, I would like to request the generation of approximately 500 samples.",
+        "complete": 1
+    },
+    {
+        "user_query": "In order to achieve a sufficiently diverse dataset, I would like to request the generation of several samples.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you crank out around two thousand data points for me? I'm prioritizing speed over perfection here.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you crank out some data points for me? I'm prioritizing speed over perfection here.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "hey, can i get a big batch of like 10k samples or something? i need a ton of data and i don't care if it's not perfect, just gotta be fast",
+        "complete": 1
+    },
+    {
+        "user_query": "hey, can i get a big batch of samples or something? i need a ton of data and i don't care if it's not perfect, just gotta be fast",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "i'm looking for a pretty massive dataset to work with, we're talking tens of thousands, so around 50k samples should do the trick, and like before, speed is key here, no need for perfection",
+        "complete": 1
+    },
+    {
+        "user_query": "i'm looking for a pretty massive dataset to work with, so around some samples should do the trick, and like before, speed is key here, no need for perfection",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a large dataset quickly, something in the ballpark of 50 thousand data points would be great, prioritizing speed over absolute accuracy",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a large dataset quickly, something would be great, prioritizing speed over absolute accuracy",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "hey can u genrate alot of sampels like 200 or somethin so we got enuf diversity goin on dont need it to be super acurate just need alot of em",
+        "complete": 1
+    },
+    {
+        "user_query": "hey can u generate some samples so we got enuf diversity goin on dont need it to be super acurate just need a bunch of em",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I would appreciate it if you could generate a substantial number of samples, approximately 150, in order to ensure a diverse dataset, even if it means compromising slightly on the accuracy of each individual sample.",
+        "complete": 1
+    },
+    {
+        "user_query": "I would appreciate it if you could generate several samples in order to ensure a diverse dataset, even if it means compromising slightly on the accuracy of each individual sample.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can we crank out a bunch more examples, like around three hundred or so? I'm looking for a broad range of possibilities here, even if that means they're not all perfectly polished.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can we crank out some more examples? I'm looking for a broad range of possibilities here, even if that means they're not all perfectly polished.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To ensure a diverse dataset, I would like to generate approximately 250 samples using the rapid generation preset, which prioritizes speed over detailed reporting, utilizing LightGBM for efficient processing.",
+        "complete": 1
+    },
+    {
+        "user_query": "To ensure a diverse dataset, I would like to generate some samples using a preset that prioritizes speed over detailed reporting, utilizing a certain method for efficient processing.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Give me around 50 examples, and make them varied.",
+        "complete": 1
+    },
+    {
+        "user_query": "Give me some examples and make them varied",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "can u gener8 alot of samplez lik 200? dont worree bout teh qualitee too mutch, jus need em 2 b diffrent enuf",
+        "complete": 1
+    },
+    {
+        "user_query": "can u gener8 some samplez? dont worree bout teh qualitee too mutch, jus need em 2 b diffrent enuf",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "hey, can you crank out a bunch of samples for me, like around 150 or so? don't worry too much about making them perfect, just need a good mix",
+        "complete": 1
+    },
+    {
+        "user_query": "hey, can you crank out some samples for me? don't worry too much about making them perfect, just need a good mix",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "hey, i need alot of sampels, posible arounf 300 or somethin, dont worree bout quality to mutch, jus need alot of divirsity and stuf",
+        "complete": 1
+    },
+    {
+        "user_query": "hey, i need some samples, dont worree bout quality to mutch, jus need alot of divirsity and stuf",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm in a bit of a hurry and I require a substantial amount of data samples for my project, preferably around 250 or so, with the understanding that while quality is important, it's not the top priority at this juncture. The key focus here should be on generating a diverse dataset as quickly as possible, even if it means sacrificing some level of precision or detail in the process.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm in a bit of a hurry and I require some data samples for my project, with the understanding that while quality is important, it's not the top priority at this juncture. The key focus here should be on generating a diverse dataset as quickly as possible, even if it means sacrificing some level of precision or detail in the process.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm working under a rather tight deadline and I desperately need a sizable collection of data samples to propel my project forward, with an emphasis on swift generation over meticulous quality control. Could I possibly obtain approximately 50 data samples, give or take a few, that encapsulate a wide range of diversity, bearing in mind that while high-quality data is always preferable, the urgency of this task dictates that speed takes precedence over precision at this particular moment?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working under a rather tight deadline and I desperately need some data samples to propel my project forward, with an emphasis on swift generation over meticulous quality control. Could I possibly obtain a few that encapsulate a wide range of diversity, bearing in mind that while high-quality data is always preferable, the urgency of this task dictates that speed takes precedence over precision at this particular moment?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I require a substantial dataset for my project, comprising around 200 samples, with an emphasis on expeditious generation to meet a pressing deadline. While optimal quality is desirable, the current priority is swift data acquisition, accepting a moderate trade-off in quality for the sake of rapid progress.",
+        "complete": 1
+    },
+    {
+        "user_query": "I require a substantial dataset for my project, with an emphasis on expeditious generation to meet a pressing deadline. While optimal quality is desirable, the current priority is swift data acquisition, accepting a moderate trade-off in quality for the sake of rapid progress.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "In order to facilitate a comprehensive analysis, I am in need of a sizable dataset that encompasses a multitude of diverse elements. Given the time-sensitive nature of my project, it is imperative that this dataset be generated with utmost haste, even if it means that certain nuances in quality may have to be compromised to some extent. Specifically, I envision a collection that includes approximately 150 samples, each contributing uniquely to the overall richness and variability of the data. This diversity is crucial as it will enable me to explore a wide range of patterns and relationships, thereby ensuring the validity and reliability of my findings. Therefore, could you please generate such a dataset with an emphasis on speed, utilizing tools like LightGBM that are renowned for their efficiency in handling large datasets swiftly, while also keeping the reporting to a minimal level to avoid unnecessary complexity?",
+        "complete": 1
+    },
+    {
+        "user_query": "In order to facilitate a comprehensive analysis, I am in need of a sizable dataset that encompasses a multitude of diverse elements. Given the time-sensitive nature of my project, it is imperative that this dataset be generated with utmost haste, even if it means that certain nuances in quality may have to be compromised to some extent. Specifically, I envision a collection that includes several samples, each contributing uniquely to the overall richness and variability of the data. This diversity is crucial as it will enable me to explore a wide range of patterns and relationships, thereby ensuring the validity and reliability of my findings. Therefore, could you please generate such a dataset with an emphasis on speed, utilizing tools that are renowned for their efficiency in handling large datasets swiftly, while also keeping the reporting to a minimal level to avoid unnecessary complexity?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Give me 300 diverse samples, fast",
+        "complete": 1
+    },
+    {
+        "user_query": "Give me some diverse samples, fast",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you whip up a bunch of varied data points - like 250 or so - without spending too much time on making them perfect? We're in a hurry here!",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you whip up some varied data points without spending too much time on making them perfect? We're in a hurry here!",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Give me around 50 different samples, I need a variety and fast",
+        "complete": 1
+    },
+    {
+        "user_query": "I need some samples, I want a variety and fast",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want many examples, about two hundred is good, yes? Need to see lots of different ones, quickly please.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want many examples, need to see lots of different ones, quickly please.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "can u gener8 alot of exampels like arond 150 or somethin, dont worry bout perfec quality jus need alot of diferent wuns and fast",
+        "complete": 1
+    },
+    {
+        "user_query": "can u gener8 some exampels, dont worry bout perfec quality jus need alot of diferent wuns and fast",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "hey can u genrate lik 80 exemples or so, dont worry 2 much bout the quailty rite now jus need alot of difrent wuns and do it fas",
+        "complete": 1
+    },
+    {
+        "user_query": "hey can u generate some examples, dont worry 2 much bout the quality rite now jus need alot of difrent wuns and do it fas",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "generate a bunch of examples, around 250 should be good, don't sweat the quality too much, just need them fast and varied",
+        "complete": 1
+    },
+    {
+        "user_query": "generate a bunch of examples, just need them fast and varied",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "give me like 50 different examples, doesn't have to be perfect, just gotta be quick and diverse",
+        "complete": 1
+    },
+    {
+        "user_query": "give me some examples, doesn't have to be perfect, just gotta be quick and diverse",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Could you please generate a substantial amount of data for me? I'm looking for a rather large dataset, specifically around two hundred samples, as this will allow me to have a broad range of examples to work with, ensuring that my analysis or training model has sufficient diversity and variability. This would be incredibly helpful for my current project, where the speed of obtaining this data is paramount.",
+        "complete": 1
+    },
+    {
+        "user_query": "Could you please generate a substantial amount of data for me? I'm looking for a fairly large dataset, as this will allow me to have a broad range of examples to work with, ensuring that my analysis or training model has sufficient diversity and variability. This would be incredibly helpful for my current project, where the speed of obtaining this data is paramount.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I am in need of a considerable dataset, comprising approximately 150 samples, to ensure an adequate level of diversity in my analysis. The expedient generation of such a dataset would be greatly appreciated, as the swift acquisition of this data is crucial for the progression of my project.",
+        "complete": 1
+    },
+    {
+        "user_query": "I am in need of a considerable dataset to ensure an adequate level of diversity in my analysis. The expedient generation of such a dataset would be greatly appreciated, as the swift acquisition of this data is crucial for the progression of my project.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a fairly large dataset with around 80 samples for me? I'm trying to get a good mix of different examples and I need it quickly.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset for me? I'm trying to get a good mix of different examples and I need it quickly.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Give me a decent-sized dataset, roughly 250 examples, prioritizing speed over perfection.",
+        "complete": 1
+    },
+    {
+        "user_query": "Give me a decent-sized dataset, prioritizing speed over perfection.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    }
+]

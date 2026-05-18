@@ -1,0 +1,572 @@
+[
+    {
+        "user_query": "I want to test my model's performance with a dataset that has 100 samples, can you generate that for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to test my model's performance with a dataset that has several samples and includes various drift scenarios, can you generate that for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a diverse dataset with 500 samples to help me evaluate my machine learning model's ability to handle various scenarios and detect potential drifts?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a diverse dataset to help me evaluate my machine learning model's ability to handle various drift scenarios and detect potential drifts?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a large, varied dataset to test my ML model's limits - can you generate around 2000 data points with built-in drift characteristics to help me assess its performance under different conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a large, varied dataset to test my ML model's limits - can you generate some data points with built-in drift characteristics to help me assess its performance under different conditions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a robust testing environment for my machine learning algorithm, so I need a dataset of 10,000 samples. For the drift scenarios, just use the default settings.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a robust testing environment for my machine learning algorithm, so I need a dataset of several samples. For the drift scenarios, just use the default settings.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to put my machine learning model through its paces with a comprehensive stress test, focusing on its ability to handle data drift. To do this effectively, I need a substantial dataset - specifically, one that contains 50,000 samples. This will allow me to thoroughly evaluate the model's performance and resilience under various conditions.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to put my machine learning model through its paces with a comprehensive stress test, focusing on its ability to handle drift scenarios. To do this effectively, I need a substantial dataset - specifically, one that contains several samples. This will allow me to thoroughly evaluate the model's performance and resilience under various conditions.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a robust test for my machine learning algorithm by generating data with diverse drift characteristics. Can I get 100 examples of this data, incorporating different scenarios such as scenario1 with value1 and scenario2 with value2? This will help me assess the model's ability to adapt to changing conditions.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a robust test for my machine learning algorithm by generating data with diverse drift characteristics. Can I get some examples of this data, incorporating different scenarios such as scenario1 and scenario2? This will help me assess the model's ability to adapt to changing conditions, particularly with various drift scenarios.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To thoroughly evaluate my ML model's performance under various drift conditions, I'd like to produce a dataset that includes 200 samples, each with unique drift characteristics. This will enable me to comprehensively assess its adaptability and robustness.",
+        "complete": 1
+    },
+    {
+        "user_query": "To thoroughly evaluate my ML model's performance under various drift conditions, I'd like to produce a dataset that includes several samples, each with unique characteristics of different drift scenarios. This will enable me to comprehensively assess its adaptability and robustness.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a custom dataset for me with 50 data points and introduce some specific drift patterns, such as the ones defined in scenario3 with value3, so I can test how well my machine learning model handles changes and unusual conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a custom dataset for me with some data points and introduce specific drift patterns, like the ones I have in mind, so I can test how well my machine learning model handles changes and unusual conditions?",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a large dataset of 150 samples that includes various types of drift for robust testing. Specifically, I need two different drift scenarios incorporated: one with scenario4 set to value4 and another with scenario5 set to value5. This will help me evaluate the performance of my machine learning model under diverse conditions and ensure it can detect anomalies effectively.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a dataset that includes various types of drift for robust testing. Specifically, I need two different drift scenarios incorporated: one with a certain setting and another with a different setting. This will help me evaluate the performance of my machine learning model under diverse conditions and ensure it can detect anomalies effectively.",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Create a preset that generates 250 samples, incorporating a range of drift types to thoroughly stress-test my ML model's ability to handle diverse data conditions.",
+        "complete": 1
+    },
+    {
+        "user_query": "Create a preset that generates several samples, incorporating a range of drift types to thoroughly stress-test my ML model's ability to handle diverse data conditions using various drift_scenarios.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a dataset with 100 examples and introduce some variations to see how my machine learning algorithm performs. Can I get a preset that includes different types of drift, like changes in the data distribution over time? For instance, let's say 'scenario1' has a specific type of drift called 'value1'. This will help me evaluate my model's robustness and detection capabilities under various conditions.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a dataset and introduce some variations to see how my machine learning algorithm performs. Can I get a preset that includes different types of drift, like changes in the data distribution over time? For instance, let's say one scenario has a specific type of drift. This will help me evaluate my model's robustness and detection capabilities under various conditions, using several drift scenarios.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to stress-test my machine learning model with a diverse set of data, can I get a preset that generates 500 samples with varying drift characteristics, allowing me to assess its performance and detection capabilities under different scenarios?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to stress-test my machine learning model with a diverse set of data, can I get a preset that generates several samples with varying drift characteristics, allowing me to assess its performance and detection capabilities under different drift scenarios?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you provide a data generation preset that produces 200 samples with multiple drift scenarios, specifically including scenario2 with value2 and scenario3 with value3, to help evaluate the robustness of my machine learning model against diverse drift conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you provide a data generation preset that produces some samples with multiple drift scenarios, specifically including one scenario with a certain value and another with a different value, to help evaluate the robustness of my machine learning model against diverse drift conditions?",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a data generation preset that can produce a large dataset, around 800 samples, to thoroughly test my ML model's ability to handle various types of drift. Can you provide such a preset with diverse drift characteristics?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a data generation preset to thoroughly test my ML model's ability to handle various types of drift. Can you provide such a preset with diverse drift characteristics to generate a large dataset?",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to stress-test my machine learning model with a dataset that has different types of drift injected into it, can I get a preset that generates around 300 samples with unique drift scenarios like the one described in scenario4 with value4?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to stress-test my machine learning model with a dataset that has different types of drift injected into it, can I get a preset that generates several samples with unique drift scenarios like the one described in scenario4 with value4?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a data generation preset to test my ML model's robustness against various types of data drift. Can you provide me with an option that produces around 100 samples and includes a diverse set of drift scenarios, such as the one outlined in scenario1 with value1? I want to ensure my model can handle different drift characteristics.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a data generation preset to test my ML model's robustness against various types of data drift. Can you provide me with an option that includes a diverse set of drift scenarios, such as the one outlined in scenario1 with value1? I want to ensure my model can handle different drift characteristics and generate some samples.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a dataset with 200 examples to thoroughly evaluate my machine learning model's ability to adapt to changing data distributions, including concept drift and covariate shift. Can you provide a preset that generates data with diverse drift patterns?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset to evaluate my machine learning model's ability to adapt to changing data distributions. Can you provide something that generates data with diverse patterns?",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset with 50 samples that can help me stress-test my machine learning model's robustness to different types of data drift, including multiple scenarios such as scenario2 with value2 and scenario3 with value3. Can you provide a preset that injects diverse drift characteristics into the data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that can help me stress-test my machine learning model's robustness to different types of data drift, including multiple scenarios. Can you provide a preset that injects diverse drift characteristics into the data?",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a robust machine learning model, can I get a dataset with 150 samples that has a wide range of injected drift types to thoroughly test its performance and detection capabilities?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a robust machine learning model, can I get a dataset with some samples that has a variety of injected drift types to thoroughly test its performance and detection capabilities?",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a diverse dataset to stress-test my ML model's ability to handle concept drift. Can I get a preset with 300 samples that includes various drift scenarios, such as the one described in scenario4 with value4, to evaluate its performance and detection capabilities?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a diverse dataset to stress-test my ML model's ability to handle concept drift. Can I get a preset that includes various drift scenarios, such as the one described in scenario4 with value4, to evaluate its performance and detection capabilities with several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a dataset for stress-testing my ML model, can I get a preset with 50 samples, using default drift scenarios to ensure diversity in the data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a dataset for stress-testing my ML model, can I get a preset with some samples, using default settings to ensure diversity in the data?",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you provide a preset to generate a dataset of 100 samples for testing my machine learning model's robustness, using the default settings for drift scenarios to introduce some variety?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you provide a preset to generate a dataset for testing my machine learning model's robustness, using the default settings for drift scenarios to introduce some variety?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to stress-test my ML model with a diverse range of data, can I get a preset that generates 200 samples with varied drift characteristics?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to stress-test my ML model with a diverse range of data, can I get a preset that generates several samples with varied characteristics?",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a dataset with 500 samples that exhibits a variety of drift patterns for me to test the robustness of my machine learning model?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a dataset that exhibits a variety of drift patterns for me to test the robustness of my machine learning model?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to stress-test my ML model's ability to handle concept drift, can I get a preset dataset with 1000 samples that has diverse and complex drift patterns injected into it?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to stress-test my ML model's ability to handle concept drift, can I get a preset dataset with several samples that has diverse and complex patterns injected into it?",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to evaluate the performance of my machine learning model under various drift conditions. Can you provide me with a dataset of 100 samples, without any specific drift scenarios, so I can assess its robustness and ability to adapt to changing data distributions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to evaluate the performance of my machine learning model under various conditions. Can you provide me with a dataset of several samples, so I can assess its robustness and ability to adapt to changing data distributions?",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a diverse set of synthetic data to stress-test my machine learning model's ability to handle concept drift. Can you generate 200 samples with a specific type of drift, such as covariate shift, occurring in about half of the cases, so I can evaluate its performance and identify potential weaknesses?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a diverse set of synthetic data to stress-test my machine learning model's ability to handle concept drift. Can you generate some samples with a specific type of drift occurring in about half of the cases, so I can evaluate its performance and identify potential weaknesses?",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a varied dataset to test my ML model's robustness against different types of drift. Can you create 500 samples with a mix of concept drift and covariate shift, where concept drift occurs about 20% of the time and covariate shift happens around 80% of the time, so I can assess its performance under various conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a varied dataset to test my ML model's robustness against different types of drift. Can you create some samples with a mix of concept drift and covariate shift, where concept drift occurs sometimes and covariate shift happens most of the time, so I can assess its performance under various conditions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to stress-test my machine learning model with a diverse range of drift scenarios. Can you generate a dataset of 1000 samples that includes a variety of concept drift and covariate shift combinations, without any specific predefined drift scenarios, so I can evaluate its ability to handle different types of data shifts?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to stress-test my machine learning model with a diverse range of drift scenarios. Can you generate a dataset that includes a variety of concept drift and covariate shift combinations, without any specific predefined drift scenarios, so I can evaluate its ability to handle different types of data shifts?",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset with 1500 samples that can help me test my ML model's robustness against various types of data drift. Specifically, I want the dataset to include a mix of concept drift and covariate shift scenarios, where concept drift occurs 30% of the time and covariate shift occurs 70% of the time. Can you generate such a dataset for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that can help me test my ML model's robustness against various types of data drift. Specifically, I want the dataset to include a mix of concept drift and covariate shift scenarios, where these occur some of the time. Can you generate such a dataset for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a dataset with 50 samples to stress-test my ML model's performance under different conditions, using the default drift scenarios.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset to stress-test my ML model's performance under different conditions, using the default settings.",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a diverse dataset of 100 examples for me to evaluate how well my machine learning model handles varying data distributions and detects concept drift?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a diverse dataset for me to evaluate how well my machine learning model handles varying data distributions and detects concept drift?",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to test my ML model's robustness with a wide range of data, can I get a dataset of 200 samples that covers various scenarios and edge cases to evaluate its performance under different conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to test my ML model's robustness with a wide range of data, can I get a dataset that covers various drift scenarios and edge cases to evaluate its performance under different conditions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset to stress-test my machine learning model. Can you generate one with 500 samples, using the default drift scenarios?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset to stress-test my machine learning model. Can you generate one with several samples, using the default drift scenarios?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a comprehensive test suite for my ML model's robustness to concept drift. Can I get a dataset with 1000 samples that covers a wide range of drift types and scenarios?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a comprehensive test suite for my ML model's robustness to concept drift. Can I get a dataset that covers a wide range of drift types and scenarios?",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to evaluate the performance of my machine learning model under various drift conditions, can you provide me with a dataset containing 50 samples that exhibit diverse drift characteristics?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to evaluate the performance of my machine learning model under various drift conditions, can you provide me with a dataset containing several samples that exhibit diverse drift characteristics?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a large and varied dataset for me? I'd like it to have around 200 examples so I can thoroughly test my model's ability to handle different types of data drift.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset for me to test my model's ability to handle different types of data drift, specifically several drift scenarios?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Create a diverse dataset with 150 samples, focusing on various drift patterns to help evaluate the robustness of machine learning models under changing conditions.",
+        "complete": 1
+    },
+    {
+        "user_query": "Create a diverse dataset to help evaluate the robustness of machine learning models under changing conditions with several samples and various patterns.",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a dataset that can stress-test my ML model's ability to handle different types of data drift. Can I get 80 samples with diverse drift characteristics?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a dataset that can stress-test my ML model's ability to handle different types of data drift. Can I get several samples with diverse characteristics across various drift scenarios?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset that can put my machine learning model through its paces, specifically when it comes to handling various forms of data drift. Can you provide me with 300 samples that exhibit a wide range of drift characteristics?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that can put my machine learning model through its paces, specifically when it comes to handling various forms of data drift. Can you provide me with some samples that exhibit a wide range of drift characteristics?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to evaluate the robustness of my ML model against different types of data drift, can I get a dataset with 100 examples that include diverse drift scenarios, such as concept drift and covariate shift, to thoroughly test its performance?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to evaluate the robustness of my ML model against different types of data drift, can I get a dataset with some examples that include diverse drift scenarios to thoroughly test its performance?",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a comprehensive dataset to stress-test my machine learning model's ability to handle various data drift scenarios. Can you provide me with 200 samples that incorporate a range of drift types, including but not limited to scenario2 with value2 and scenario3 with value3, to ensure my model is robust against diverse drift conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a comprehensive dataset to stress-test my machine learning model's ability to handle various data drift scenarios. Can you provide me with some samples that incorporate a range of drift types, including but not limited to scenario2 with value2 and scenario3 with value3, to ensure my model is robust against diverse drift conditions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To effectively evaluate the performance of my machine learning model under different drift conditions, I require a dataset that encompasses a broad spectrum of drift scenarios. Could you generate 300 data samples for me, ensuring they include a variety of drift types to help in stress-testing and validating the robustness of my model against diverse data drift conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "To effectively evaluate the performance of my machine learning model under different drift conditions, I require a dataset that encompasses a broad spectrum of drift scenarios. Could you generate some data samples for me, ensuring they include a variety of drift types to help in stress-testing and validating the robustness of my model against diverse data drift conditions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to simulate various real-world drift scenarios to thoroughly assess my ML model's performance. Can you provide a dataset with 400 samples, incorporating multiple drift types such as scenario4 with value4, to help me evaluate its resilience and accuracy in the face of changing data distributions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to simulate various real-world drift scenarios to thoroughly assess my ML model's performance. Can you provide a dataset with several samples, incorporating multiple drift types such as scenario4, to help me evaluate its resilience and accuracy in the face of changing data distributions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a robust testing environment for my machine learning model. Can you generate a dataset with 500 samples that includes diverse drift scenarios, specifically scenario5 with value5 and scenario6 with value6, to help me evaluate its ability to adapt to different types of data drift?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a robust testing environment for my machine learning model. Can you generate a dataset with some samples that includes diverse drift scenarios, specifically one with a certain value and another with a certain value, to help me evaluate its ability to adapt to different types of data drift?",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to stress-test my ML model's performance under various drift conditions. Can you create a dataset with 50 samples that captures a wide range of drift scenarios, allowing me to assess its robustness and ability to handle diverse data distributions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to stress-test my ML model's performance under various drift scenarios. Can you create a dataset with several samples that captures a wide range of drift scenarios, allowing me to assess its robustness and ability to handle diverse data distributions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To ensure my machine learning model can adapt to changing data patterns, I need a large dataset with varied characteristics. Please generate a preset that includes 200 samples, each representing different drift conditions, so I can thoroughly test its resilience and detection capabilities.",
+        "complete": 1
+    },
+    {
+        "user_query": "To ensure my machine learning model can adapt to changing data patterns, I need a dataset with varied characteristics. Please generate a preset so I can thoroughly test its resilience and detection capabilities.",
+        "complete": 0,
+        "_omitted": [
+            "drift_scenarios",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a diverse dataset to stress-test my ML model's ability to handle different data patterns. Can you create a preset with 150 samples that capture a wide range of drift characteristics, allowing me to evaluate its performance and detection capabilities under various conditions?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a diverse dataset to stress-test my ML model's ability to handle different data patterns. Can you create a preset that captures a wide range of drift characteristics, allowing me to evaluate its performance and detection capabilities under various conditions with several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a dataset with 80 samples for testing my ML model's robustness. Please use the default settings for the drift scenarios.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a dataset for testing my ML model's robustness. Please use the default settings for the drift scenarios and create several samples.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a diverse dataset to stress-test my machine learning model, can I get 250 samples with varying characteristics while keeping the drift scenarios at their default settings?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a diverse dataset to stress-test my machine learning model, can I get several samples with varying characteristics while keeping the drift scenarios at their default settings?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    }
+]

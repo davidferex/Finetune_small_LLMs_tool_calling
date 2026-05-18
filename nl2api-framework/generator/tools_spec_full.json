@@ -1,5 +1,5 @@
 [
-    {
+        {
         "name": "FastPrototypePreset",
         "description": "Preset optimized for rapid data generation. Ideal for integration testing, CI/CD pipelines, or quick prototyping.",
         "parameters": [
@@ -208,6 +208,136 @@
                 "required": false,
                 "default": 1.0,
                 "description": "The strength of the seasonal effect"
+            }
+        ]
+    },
+    {
+        "name": "CopulaPreset",
+        "description": "Uses Gaussian Copula to model dependencies. Very fast and statistically robust baseline, though supports privacy less than GANs.",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
+            }
+        ]
+    },
+    {
+        "name": "DataQualityAuditPreset",
+        "description": "Focused on high-integrity generation with comprehensive automated reporting. Uses TVAE (often better than CTGAN for structure) and enables full reporting.",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
+            }
+        ]
+    },
+    {
+        "name": "DriftScenarioPreset",
+        "description": "Preset designed to generate data with specific injected drift characteristics. Used for stress-testing ML models and drift detection systems.",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
+            },
+            {
+                "name": "drift_scenarios",
+                "type": "List[Dict]",
+                "required": false,
+                "default": "None",
+                "description": "List with dictionaries defining drift scenarios."
+            }
+        ]
+    },
+    {
+        "name": "FastPreset",
+        "description": "Preset designed to generate data as quickly as possible, sacrificing some quality. Uses LightGBM for speed, minimal reporting.",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
+            }
+        ]
+    },
+    {
+        "name": "GradualDriftPreset",
+        "description": "Simulates gradual drift over time or index.",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
+            },
+            {
+                "name": "drift_cols",
+                "type": "List[string]",
+                "required": true,
+                "description": "List of columns to apply gradual drift to"
+            },
+            {
+                "name": "slope",
+                "type": "float",
+                "required": false,
+                "default": 0.01,
+                "description": "The rate of drift (e.g., 0.01 means a 1% change per time unit)"
+            }
+        ]
+    },
+    {
+        "name": "OmicsIntegrationPreset",
+        "description": "Generates multi-omics data (Clinical + Gene Expression + Proteomics) with high correlation integrity between layers.",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
+            },
+            {
+                "name": "n_genes",
+                "type": "int",
+                "required": false,
+                "default": 100,
+                "description": "Number of gene expression features to generate"
+            },
+            {
+                "name": "n_proteins",
+                "type": "int",
+                "required": false,
+                "default": 50,
+                "description": "Number of proteomics features to generate"
+            }
+        ]
+    },
+    {
+        "name": "ScenearioInjectorPreset",
+        "description": "Directly leverages the ScenarioInjector to apply defined complex scenarios to an existing dataset, without necessarily generating new samples from scratch (unless desired).",
+        "parameters": [
+            {
+                "name": "scenario_config",
+                "type": "String",
+                "required": true,
+                "description": "SceneraiConfig object"
+            }
+        ]
+    },
+    {
+        "name": "SingleCellQualityPreset",
+        "description": "Preset designed to generate high-quality single-cell RNA-seq data",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
             }
         ]
     }

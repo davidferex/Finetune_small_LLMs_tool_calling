@@ -1,5 +1,17 @@
 [
     {
+        "name": "FastPrototypePreset",
+        "description": "Preset optimized for rapid data generation. Ideal for integration testing, CI/CD pipelines, or quick prototyping.",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
+            }
+        ]
+    },
+    {
         "name": "HighFidelityPreset",
         "description": "Preset optimized for maximum data quality and fidelity. Uses CTGAN with a high number of epochs and optimized batch size, prioritizing quality over speed. Forces adversarial validation.",
         "parameters": [
@@ -15,6 +27,187 @@
                 "required": false,
                 "default": true,
                 "description": "Whether to automatically generate a validation report after generation"
+            }
+        ]
+    },
+    {
+        "name": "ImbalancedGeneratorPreset",
+        "description": "Preset designed to generate synthetic data with a specific imbalanced distribution. Useful for creating test datasets for drift detection or bias analysis. Uses 'resample' or generative methods with forced custom distributions on the target.",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
+            },
+            {
+                "name": "target_col",
+                "type": "string",
+                "required": true,
+                "description": "Name of the target column to apply the imbalanced distribution to"
+            },
+            {
+                "name": "imbalance_ratio",
+                "type": "float",
+                "required": false,
+                "default": 0.1,
+                "description": "Ratio of the minority class (e.g. 0.1 means 10% minority, 90% majority)"
+            }
+        ]
+    },
+    {
+        "name": "TimeSeriesPreset",
+        "description": "Preset optimized for generating sequential or time-series data.",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
+            },
+            {
+                "name": "time_key",
+                "type": "string",
+                "required": false,
+                "default": "None",
+                "description": "Name of the column containing the timestamp or date"
+            },
+            {
+                "name": "sequence_key",
+                "type": "string",
+                "required": true,
+                "description": "Column used to group rows into individual sequences"
+            },
+            {
+                "name": "method",
+                "type": "string",
+                "required": false,
+                "default": "fflows",
+                "description": "Generation method: 'timegan' for complex patterns, 'timevae' for speed, 'fflows' for periodic/seasonal series"
+            }
+        ]
+    },
+    {
+        "name": "BalancedDataGeneratorPreset",
+        "description": "Preset designed to balance an originally imbalanced dataset. Uses SMOTE (or ADASYN) to oversample minority classes to achieve a balanced distribution.",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
+            },
+            {
+                "name": "target_col",
+                "type": "string",
+                "required": true,
+                "description": "Name of the target column whose class distribution will be balanced"
+            }
+        ]
+    },
+    {
+        "name": "ConceptDriftPreset",
+        "description": "Simulates sudden concept drift by altering the relationship between features and target. Useful for testing model robustness to P(y|x) changes.",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
+            },
+            {
+                "name": "target_col",
+                "type": "string",
+                "required": true,
+                "description": "Name of the target column where the drift is applied"
+            }
+        ]
+    },
+    {
+        "name": "DiffusionPreset",
+        "description": "Uses Tabular Denoising Diffusion Probabilistic Models (TabDDPM) for synthesis. Diffusion models often capture complex multi-modal distributions better than GANs.",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
+            }
+        ]
+    },
+    {
+        "name": "RareDiseasePreset",
+        "description": "Simulates a clinical cohort with a rare disease condition. Forces a very low disease prevalence ratio (e.g., 1% or 5%).",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
+            },
+            {
+                "name": "disease_ratio",
+                "type": "float",
+                "required": false,
+                "default": 0.01,
+                "description": "Ratio of the rare disease in the data"
+            }
+        ]
+    },
+    {
+        "name": "LongitudinalHealthPreset",
+        "description": "Generates longitudinal clinical data (multi-visit patients).",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
+            },
+            {
+                "name": "n_visits",
+                "type": "int",
+                "required": false,
+                "default": 5,
+                "description": "Average number of visits per patient"
+            }
+        ]
+    },
+    {
+        "name": "SeasonalTimeSeriesPreset",
+        "description": "Generates time-series data with injected seasonal (sinusoidal) patterns. Strategy: 1. Uses RealGenerator (TimeGAN/TimeVAE) to learn base temporal dynamics. 2. Uses ScenarioInjector to superimpose a strong sinusoidal drift on target columns.",
+        "parameters": [
+            {
+                "name": "n_samples",
+                "type": "int",
+                "required": true,
+                "description": "Number of samples to generate"
+            },
+            {
+                "name": "time_col",
+                "type": "string",
+                "required": true,
+                "description": "Column with the timestamp"
+            },
+            {
+                "name": "seasonal_cols",
+                "type": "List[string]",
+                "required": true,
+                "description": "List of columns to inject seasonality into"
+            },
+            {
+                "name": "period",
+                "type": "int",
+                "required": false,
+                "default": 12,
+                "description": "The period of the seasonality (e.g., 12 for monthly)"
+            },
+            {
+                "name": "amplitude",
+                "type": "float",
+                "required": false,
+                "default": 1.0,
+                "description": "The strength of the seasonal effect"
             }
         ]
     }

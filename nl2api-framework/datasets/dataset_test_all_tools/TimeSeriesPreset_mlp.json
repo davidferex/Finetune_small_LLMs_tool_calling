@@ -1,0 +1,509 @@
+[
+    {
+        "user_query": "I need to generate some sequential data with 500 samples, where the date column is used as the time key and there's an id column that serves as a unique identifier for each sequence.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to generate some sequential data with 500 samples, where I want to use one of the columns as the time key and have another column that serves as a unique identifier for each sequence.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I am looking to create a substantial dataset consisting of sequential or time-series data, with a specific requirement for a diverse range of samples. Could you please assist me in generating such a dataset? It should have approximately 200 samples. Furthermore, I need to specify that the column named 'timestamp' should be utilized as the primary key for tracking time-related variations within the sequences. Additionally, it's crucial that the column labeled 'group_id' is recognized and treated as the sequence identifier, ensuring each group of data points is uniquely identified and differentiated from others based on this 'group_id'. This setup will allow for a comprehensive analysis of trends and patterns across different groups over time.",
+        "complete": 1
+    },
+    {
+        "user_query": "I am looking to create a substantial dataset consisting of sequential or time-series data, with a specific requirement for a diverse range of samples. Could you please assist me in generating such a dataset? It should have several samples. Furthermore, I need to specify that the column used for tracking time-related variations within the sequences should be utilized as the primary key. Additionally, it's crucial that another column is recognized and treated as the identifier for each group of data points, ensuring each group is uniquely identified and differentiated from others based on this identifier. This setup will allow for a comprehensive analysis of trends and patterns across different groups over time using a certain method.",
+        "complete": 0,
+        "_omitted": [
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a large dataset with around 800 samples, where each sample has a unique sequence identifier. The time-related data should be tracked using the 'datetime' column, and I want to analyze trends based on the 'sequence_name'. Could you help me create this dataset? Also, use the default method for generating the sequential data, as I'm looking for a diverse range of samples.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a dataset with some samples where each sample has a unique identifier. The time-related data should be tracked and I want to analyze trends based on the name of the sequence. Could you help me create this dataset? Also, use the default method for generating the sequential data, as I'm looking for a diverse range of samples and I'd like to use the 'time_key' and the given 'method'.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I am in need of creating an extensive and varied dataset that consists of 300 samples. Each sample should have a distinct identifier based on the 'row_group' column to facilitate analysis across different sequences. Additionally, I want to track time-related data using the 'time_column'. Since diversity is crucial for my analysis, I would appreciate it if you could use the default generation method for creating this sequential or time-series data, as specified in your preset optimized for generating such datasets.",
+        "complete": 1
+    },
+    {
+        "user_query": "I am in need of creating an extensive and varied dataset that consists of several samples. Each sample should have a distinct identifier based on the 'row_group' column, which I'll refer to using the 'sequence_key', to facilitate analysis across different sequences. Additionally, I want to track time-related data using the 'time_column', which is tied to the 'time_key'. Since diversity is crucial for my analysis, I would appreciate it if you could use a certain generation method, similar to your preset optimized for generating such datasets, with a specific approach, denoted by the 'method'.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "hey can u genrate a dataset with alot of diffrent sampels like 1000 of them. each sampe should hav its own sequnce id witch is call 'data_sequence' and i also want to no the date and time for each sampl so ther should be a colum cald 'date_time'. make shure ther is alot of diversaty in the data becuz thats importint for my analisys. use the defult settins for generatng sequncial or time seris data as specifid in your preset",
+        "complete": 1
+    },
+    {
+        "user_query": "hey can u genrate a dataset with alot of diffrent sampels. each sampe should hav its own id and i also want to no the date and time for each sampl so ther should be a colum for that. make shure ther is alot of diversaty in the data becuz thats importint for my analisys. use the defult settins for generatng sequncial or time seris data as specifid in your preset",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a dataset that's pretty diverse, can you create one with around 50 samples? Each sample should have a unique sequence identifier, let's call it 'id', and I'd also like to include a column for the date, labeled as 'date'. Could you use the timegan method for this, as I've heard it's well-suited for generating sequential or time-series data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a dataset that's pretty diverse, can you create one with several samples? Each sample should have a unique sequence identifier, let's call it 'id', and I'd also like to include a column for the date. Could you use a method that's well-suited for generating sequential or time-series data?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Hello, can you help me make big dataset? I want many different examples, around 200. Each example must have special number, we call this 'user_id', and also have timestamp, this is important for time. We use... uh, how you say... timevae method, yes? This good for making sequence data, right? So, please make dataset with these things: 200 examples, 'timestamp' for time, 'user_id' for each example special number, and use timevae. Thank you!",
+        "complete": 1
+    },
+    {
+        "user_query": "Hello, can you help me make a big dataset? I want many different examples, around some number. Each example must have a special number, and also have a timestamp, this is important for time. We use... uh, how you say... a certain method, yes? This good for making sequence data, right? So, please make dataset with these things: several examples, something for time, a special number for each example, and use that method. Thank you!",
+        "complete": 0,
+        "_omitted": [
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm in need of a substantial dataset that showcases a wide range of variations, ideally consisting of approximately 150 unique samples. Each sample should be associated with a specific timestamp, denoted by the 'day' key, which will serve as our reference point for time-related aspects. Furthermore, to maintain organization and uniqueness, each sample must be linked to a distinct product identifier, referred to as the 'product' sequence key. The generation of this dataset is crucial for our analysis, and we've determined that the 'fflows' method is the most suitable approach for creating sequential or time-series data that meets our diversity requirements. Could you assist me in generating such a dataset, ensuring it adheres to these specifications and provides the diverse range of examples we're seeking?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm in need of a substantial dataset that showcases a wide range of variations, ideally consisting of several unique samples. Each sample should be associated with a specific point in time, which will serve as our reference point for time-related aspects. Furthermore, to maintain organization and uniqueness, each sample must be linked to a distinct identifier. The generation of this dataset is crucial for our analysis, and we've determined that a particular approach is the most suitable for creating sequential or time-series data that meets our diversity requirements. Could you assist me in generating such a dataset, ensuring it adheres to these specifications and provides the diverse range of examples we're seeking?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "We require a comprehensive dataset comprising 300 samples, each bearing a temporal significance denoted by the 'hour' key. These samples need to be uniquely identifiable through a 'machine' sequence key. Given our aim of achieving substantial diversity in sequential or time-series data, we are interested in utilizing the TimeGAN method for its proven efficacy in generating such datasets with varied and realistic patterns. Could you assist us in creating this dataset, ensuring it meets our specific needs for diverse, temporally relevant, and uniquely sequenced data?",
+        "complete": 1
+    },
+    {
+        "user_query": "We require a comprehensive dataset comprising several samples, each bearing temporal significance. These samples need to be uniquely identifiable. Given our aim of achieving substantial diversity in sequential or time-series data, we are interested in utilizing a certain method for its proven efficacy in generating such datasets with varied and realistic patterns. Could you assist us in creating this dataset, ensuring it meets our specific needs for diverse and uniquely sequenced data?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a dataset that captures the essence of time-series data with 100 samples. Each sample should have a unique identifier based on location and be timestamped by month. To achieve this, I'd like to use the TimeVAE method, known for its ability to create diverse and realistic sequential patterns. Can you help me create such a dataset, focusing on diversity and ensuring each sample is both temporally relevant and uniquely sequenced?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a dataset that captures the essence of time-series data. Each sample should have a unique identifier based on location and be timestamped by month. To achieve this, I'd like to use a certain method, known for its ability to create diverse and realistic sequential patterns. Can you help me create such a dataset with several samples, focusing on diversity and ensuring each sample is both temporally relevant and uniquely sequenced, using a specific time_key and sequence_key?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate around 50 time-series data samples with unique identifiers, can I use the TimeGAN approach to ensure they're diverse and realistic?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate some time-series data samples with unique identifiers using a certain approach, can I use it to ensure they're diverse and realistic for my time_key?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to create about 200 sequential data points that are distinct from one another, using a method like timevae. Can you help me set it up so each sample has its own user id and the overall output is varied?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to create some sequential data points that are distinct from one another, using a method like timevae. Can you help me set it up so each sample has its own id and the overall output is varied?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I want to generate around 150 diverse sequential data points with unique identifiers, can I use a method like fflows to create them?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate around 150 diverse sequential data points with unique identifiers, can I use something to create them?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm trying to create some fake time-series data for a project and I need about 100 samples. Can you generate these using the TimeGAN method and make sure each sample has a unique identifier, like an order ID or something? That would be super helpful!",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm trying to create some fake time-series data for a project and I need some samples. Can you generate these using a certain method and make sure each sample has a unique identifier, like an order ID or something? That would be super helpful!",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I want to create a diverse dataset with 300 time-series samples, can you generate them using the TimeVAE method and assign a unique customer ID to each sequence?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a diverse dataset with some time-series samples, can you generate them using the TimeVAE method and assign a unique ID to each sequence based on the time_key?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "can u genrate me alot of sequntial data lik 500 sampels or somethin with theyr own uniqe ids, and i need the date as the time key, and can u do it with that timagan thingy? we rly need alot of diversity in our dataset",
+        "complete": 1
+    },
+    {
+        "user_query": "can u genrate me some sequential data with theyr own uniqe ids, and i need the date, and can u do it with that thingy? we rly need alot of diversity in our dataset",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a large dataset with around 2000 samples or so, where each sample has its own unique identifier, let's call it a group id. The data should be sequential in nature and have a timestamp associated with each sample. Can you use that timevae method to create this dataset? We're really counting on having a lot of variety in the generated data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a dataset with some samples, where each sample has its own unique identifier. The data should be sequential in nature and have a timestamp associated with each sample. Can you use a certain method to create this dataset? We're really counting on having a lot of variety in the generated data.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "Hello, I need big dataset, yes? With many, many samples, like one thousand. Each sample must have special number, we call... sequence identifier, okay? And also, every sample have timestamp, you know, datetime. We want use this fflows method to make data. Very important, data must be different, diverse, not same-same. Can you help me?",
+        "complete": 1
+    },
+    {
+        "user_query": "Hello, I need big dataset, yes? With many samples, like one thousand. Each sample must have special number and also some kind of time thing. We want use a method to make data. Very important, data must be different, diverse, not same-same. Can you help me?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to generate a large and diverse dataset with around 750 samples. Each sample should have a unique identifier and a timestamp. I'd like to use the TimeGAN method to create this data. Can you help me with that?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to generate a large and diverse dataset with several samples. Each sample should have a unique identifier and some kind of timestamp. I'd like to use a certain method to create this data. Can you help me with that?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "Hello, please help me make very big dataset, many different examples, about 3000. Each example have special number for order and time when happen. I want use TimeVAE way to make this data. Thank you.",
+        "complete": 1
+    },
+    {
+        "user_query": "Hello, please help me make a big dataset, many different examples. Each example have special number for order and time when happen. I want use a certain way to make this data. Thank you.",
+        "complete": 0,
+        "_omitted": [
+            "method",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you please help me with making smaller dataset, but with many kinds of examples? Around 50 is okay. And each example must have special identifier, like 'id' number, so I can keep track of order and sequence. I want use this for time-series data generation, you know, to make it look like real-life events happening one after another. Thank you very much.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you please help me with making a smaller dataset, but with many kinds of examples? I need several examples, and each example must have a special identifier, so I can keep track of order and sequence. I want to use this for generating data that looks like real-life events happening one after another. Thank you very much.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to create a dataset that's got a good mix of different examples, maybe around 200 or so would be great. And it's really important that each example has its own unique identifier, like a user ID or something similar, so I can easily keep track of the sequence and order of things. This is for generating some time-series data that feels pretty realistic, with events unfolding one after another.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to create a dataset that's got a good mix of different examples, maybe around some would be great. And it's really important that each example has its own unique identifier, like something similar, so I can easily keep track of the sequence and order of things. This is for generating data that feels pretty realistic, with events unfolding one after another.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "Generate a diverse dataset with 100 samples, using session_id as the unique identifier for each sequence, and use default settings for timestamp column and generation method.",
+        "complete": 1
+    },
+    {
+        "user_query": "Generate a diverse dataset with some samples, using default settings for generation and I want to use a certain way of creating the data.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "Could you create a varied dataset of around 150 examples or so, where each sequence is uniquely identified by an order ID?",
+        "complete": 1
+    },
+    {
+        "user_query": "Could you create a dataset of some examples where each sequence is uniquely identified by a sequence key?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can I get a dataset with about 250 samples, using customer ID as the key to differentiate between sequences?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a dataset with some samples, using something to differentiate between sequences?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I require a generated dataset that comprises approximately 500 data points, with the 'customer_id' serving as the unique identifier to distinguish between different sequences. Furthermore, I would like this generation process to be undertaken using the TimeGAN method, which is particularly suited for creating diverse and realistic time-series or sequential data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a generated dataset with some data points, using a certain technique to create diverse and realistic time-series or sequential data, where the 'time_key' is utilized and the generation process is undertaken via a specific method.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "can you genrate a dataset with arond 200 sampels where each sequnce is identfied by its product code and use the timevae method to creat it, dont worry about the time key jus use teh default one, we need alot of diversity in the data",
+        "complete": 1
+    },
+    {
+        "user_query": "can you generate a dataset with several samples where each sequence is identified by its product code and use a method to create it, dont worry about the time key just use the default one, we need alot of diversity in the data",
+        "complete": 0,
+        "_omitted": [
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "hey can u generate a big dataset like arond 800 samples or somethin and each sequence shud be identified by its order date and use the fflows method to create it, dont worry bout gettin everythin perfect jus make shure theres alot of diversity in teh data",
+        "complete": 1
+    },
+    {
+        "user_query": "hey can u generate a big dataset and each sequence shud be identified by its date and use that one method to create it, dont worry bout gettin everythin perfect jus make shure theres alot of diversity in teh data",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I am looking to generate a substantial dataset comprising approximately 1000 samples, with each sequence uniquely identified by its corresponding region. It is crucial that the method employed for generating this dataset prioritizes producing diverse and varied sequences, ensuring that no two sequences are overly similar. To achieve this, I would like to utilize the TimeGAN approach, as it has been optimized for generating sequential or time-series data with a high degree of diversity. Could you please assist me in creating such a dataset, focusing on maximizing the variability among the generated sequences?",
+        "complete": 1
+    },
+    {
+        "user_query": "I am looking to generate a dataset with several samples, where each sequence can be uniquely identified. It's crucial that the generation method prioritizes producing diverse sequences, ensuring no two are overly similar. To achieve this, I'd like to use a specific approach optimized for generating sequential data with high diversity, utilizing something like a 'time_key' and focusing on maximizing variability among sequences with a certain method.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I want to generate about 300 samples using the TimeVAE method, where each sequence is identified by its item name. I'd like to keep the default setting for the time key, so just use whatever is standard for that. My goal is to create a dataset with diverse sequences, taking advantage of the preset optimized for generating sequential or time-series data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate some samples using the TimeVAE method, where each sequence is identified by its name. I'd like to keep the default setting for the time key, so just use whatever is standard for that. My goal is to create a dataset with diverse sequences, taking advantage of the preset optimized for generating sequential or time-series data.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "can u genrate arond 100 sampels with sequnces idntified by ther 'id' and tiem stampes marked as 'date', i want alot of diversety in the dataset, thx",
+        "complete": 1
+    },
+    {
+        "user_query": "can u generate some samples and make sure they have diverse data, thx",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "hey, can you create a pretty diverse dataset for me with around 500 samples? each sample should have a unique group id that shows the sequence it belongs to, and also include a timestamp column to mark when each event happened. thanks!",
+        "complete": 1
+    },
+    {
+        "user_query": "hey, can you create a pretty diverse dataset for me with some samples? each sample should have a unique id that shows the sequence it belongs to, and also include a column to mark when each event happened using a certain method. thanks!",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "i need some data please, maybe like two hundred examples, yes two hundred. they should have special number for time, you know, when it happen, and also another number that show which group it belong to, like user or something. i want see many different groups, not just few, okay?",
+        "complete": 1
+    },
+    {
+        "user_query": "i need some data please, maybe like two hundred examples, yes two hundred. they should have special info and also another thing that show which group it belong to, i want see many different groups, not just a few, okay?",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "hey can u genrate alot of data points lik 1000? and make shure each one has a uniqe timestamp thingy, and alsow somethin to identfy witch sesion its from, so i can hav lots of diffrent sesions and not just a few",
+        "complete": 1
+    },
+    {
+        "user_query": "hey can u generate some data points and make sure each one has a unique timestamp thingy, and also something to identify which session it's from, so i can have several different sessions",
+        "complete": 0,
+        "_omitted": [
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "hello, i want generate fifty data point, yes fifty, and make sure have column for time, you know, when thing happen, and also another column to say which product it belong to, so i can see many different product. and for method, just use default one, no need change",
+        "complete": 1
+    },
+    {
+        "user_query": "hello, i want to generate some data points and make sure it has a column for when things happen and another column to identify which product it belongs to, so i can see many different products. and for method, just use the default one",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "hey, can u generat 50 sampels of sequential data or somethin like dat? i need alot of diversitee in it, got it? so make shure ther's a colomn for the date thingy, u no, when everythin happen, and anuvver colomn to identfy wich item or produck its relatd to, cuz i wanna see alot of diffrent stuf. and dont bother changin the method, jus use watever is defualt, timegan or wateva",
+        "complete": 1
+    },
+    {
+        "user_query": "hey, can u generat some sampels of sequential data or somethin like dat? i need alot of diversitee in it, got it? so make shure ther's a colomn for when everythin happen, and anuvver colomn to identfy wich item or produck its relatd to, cuz i wanna see alot of diffrent stuf. and dont bother changin the way u do it, jus use watever is usual",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "method",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "generate 200 diverse samples of sequential data with a timestamp column and a group identifier column, using the fflows method",
+        "complete": 1
+    },
+    {
+        "user_query": "generate some diverse samples of sequential data with a timestamp column and a group identifier column, using a certain method to create sequences with varying patterns over time, making sure to include a 'time_key'",
+        "complete": 0,
+        "_omitted": [
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I would like to generate a dataset consisting of 100 distinct samples that exhibit diversity in their sequential patterns. The dataset should include a 'datetime' column to represent time-series data and a 'category' column to identify different sequences. For the purpose of generating this dataset, I request the utilization of the TimeVAE method.",
+        "complete": 1
+    },
+    {
+        "user_query": "I would like to generate a dataset consisting of some distinct samples that exhibit diversity in their sequential patterns using the TimeVAE method. The dataset should include a column to represent time-series data and another column to identify different sequences.",
+        "complete": 0,
+        "_omitted": [
+            "time_key",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "can u genretate alot of sequntial datas thats got alot of diversity? like need 150 sampels or somethin. also need a colomn for date and anuvver colomn to identfy diffrent user_id. can u do dis wit TimeGAN metod pls?",
+        "complete": 1
+    },
+    {
+        "user_query": "can u generate some sequential datas thats got alot of diversity? like need several samples or somethin. also need a column for date and anuvver column to identfy diffrent users. can u do dis?",
+        "complete": 0,
+        "_omitted": [
+            "method",
+            "n_samples",
+            "sequence_key"
+        ]
+    },
+    {
+        "user_query": "I would like to generate a substantial dataset comprising sequential data with a high degree of diversity. Specifically, I require approximately 300 samples. The dataset should include a column denoting timestamp information and another column to uniquely identify different products or sequences, which we refer to as product_id. For the generation method, I am interested in utilizing the 'fflows' approach. Could you facilitate this request?",
+        "complete": 1
+    },
+    {
+        "user_query": "I would like to generate a substantial dataset comprising sequential data with a high degree of diversity. The dataset should include a column denoting timestamp information, which we refer to as time_key, and another column to uniquely identify different products or sequences, referred to as sequence_key. For the generation method, I am interested in utilizing a particular approach, specifically the one called 'method'. Could you facilitate this request for several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    }
+]

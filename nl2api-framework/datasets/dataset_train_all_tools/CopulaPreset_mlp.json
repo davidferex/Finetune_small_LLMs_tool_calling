@@ -1,0 +1,552 @@
+[
+    {
+        "user_query": "I want to generate a dataset with 100 samples using the Gaussian Copula method to model the dependencies between variables.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a dataset using the Gaussian Copula method to model the dependencies between variables.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a dataset of 200 samples that capture diverse relationships between variables, utilizing the Gaussian Copula approach for dependency modeling?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a dataset that captures diverse relationships between variables, utilizing a certain approach for dependency modeling?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset with 50 entries that can effectively represent the complex dependencies between variables using the Gaussian Copula method, prioritizing diversity in the generated samples.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that can effectively represent the complex dependencies between variables using a certain method, prioritizing diversity in the generated samples.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to generate 500 diverse data points using the Gaussian Copula technique to model complex dependencies between variables, as it provides a fast and robust statistical baseline.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to generate some diverse data points using a certain technique to model complex dependencies between variables, as it provides a fast and robust statistical baseline.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a dataset with 150 samples that capture a wide range of scenarios using the Gaussian Copula method, which is known for its speed and statistical reliability in modeling dependencies?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a dataset with some samples that capture a wide range of scenarios using a certain method, which is known for its speed and statistical reliability in modeling dependencies?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a smaller dataset, around 50 samples, that still effectively represents various possibilities through the Gaussian Copula approach, which balances speed with statistical robustness in dependency modeling.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a smaller dataset that still effectively represents various possibilities through a certain approach, which balances speed with statistical robustness in dependency modeling, using some samples.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a dataset of 200 samples using the Gaussian Copula method to model dependencies, ensuring a good balance between speed and statistical robustness while providing adequate diversity?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a dataset using a certain method to model dependencies, ensuring a good balance between speed and statistical robustness while providing adequate diversity for several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a baseline that can efficiently model dependencies while maintaining statistical robustness. Can you generate a dataset of 150 samples using the Gaussian Copula method, prioritizing speed and diversity in the output?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a baseline that can efficiently model dependencies while maintaining statistical robustness. Can you generate a dataset using a certain method, prioritizing speed and diversity in the output to get several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to create a diverse dataset quickly, can I get 80 samples from a Gaussian Copula model that efficiently captures dependencies?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a diverse dataset quickly, can I get several samples from a model that efficiently captures dependencies?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a baseline model that can generate a large number of samples while maintaining statistical robustness. Can you provide me with 300 samples using the Gaussian Copula method, which I understand is fast and effective in capturing dependencies?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a baseline model that can generate a large number of samples while maintaining statistical robustness. Can you provide me with some samples using a certain method, which I understand is fast and effective in capturing dependencies?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a statistically robust baseline that can handle a lot of data, something like 100 samples, to model dependencies quickly and efficiently. Can you generate this using the Gaussian Copula method?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a statistically robust baseline to model dependencies quickly and efficiently. Can you generate this using a certain method?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a fast and reliable way to model complex dependencies in my dataset, can I use the Gaussian Copula method to generate around 500 samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a fast and reliable way to model complex dependencies in my dataset, can I use a certain method to generate several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a large synthetic dataset with a thousand samples that accurately captures the underlying relationships between variables using the Gaussian Copula approach, how would I go about this?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a large synthetic dataset that accurately captures the underlying relationships between variables using the Gaussian Copula approach, how would I go about this?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a substantial dataset of 2000 samples using the Gaussian Copula method to effectively model the dependencies between variables, ensuring a robust and diverse representation?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a substantial dataset using a certain method to effectively model the dependencies between variables, ensuring a robust and diverse representation of several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a large and varied dataset to capture complex relationships, can you produce around 5000 samples with the Gaussian Copula approach?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a large and varied dataset to capture complex relationships, can you produce some samples with a certain approach?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a smaller set of data, about 100 samples, using the Gaussian Copula method to model dependencies? I'm looking for a baseline that's fast and robust statistically, even if it doesn't handle privacy as well as other methods like GANs.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a smaller set of data using a certain method to model dependencies? I'm looking for a baseline that's fast and robust statistically, even if it doesn't handle privacy as well as other methods like GANs.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to create a larger dataset using the Gaussian Copula approach for dependency modeling. Could you generate around 500 samples? This method seems to offer a great balance of speed and statistical robustness, even if it's not as strong on privacy as some other techniques.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to create a larger dataset using this approach for dependency modeling. Could you generate some samples? This method seems to offer a great balance of speed and statistical robustness, even if it's not as strong on privacy as some other techniques.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to leverage the Gaussian Copula method for its efficiency and statistical reliability in modeling dependencies. To ensure a more diverse dataset, could you produce approximately 2000 samples using this approach? While I acknowledge it may not offer the same level of privacy as GANs, the trade-off with speed and robustness is appealing for my current needs.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to leverage a certain method for its efficiency and statistical reliability in modeling dependencies. To ensure a more diverse dataset, could you produce several samples using this approach? While I acknowledge it may not offer the same level of privacy as some other methods, the trade-off with speed and robustness is appealing for my current needs.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to utilize the Gaussian Copula technique for its speed and statistical robustness in dependency modeling. Given its limitations in terms of privacy compared to GANs, I'm willing to accept this trade-off for now due to its efficiency. Could you generate a dataset of around 8000 samples using this method, focusing on achieving a diverse set of data points?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to utilize a certain technique for its speed and statistical robustness in dependency modeling. Given its limitations in terms of privacy compared to other methods, I'm willing to accept this trade-off for now due to its efficiency. Could you generate a dataset with several samples using this method, focusing on achieving a diverse set of data points?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a large and diverse dataset with approximately 10,000 samples using the Gaussian Copula method to model dependencies? I'm prioritizing speed and statistical robustness over privacy concerns for this particular task.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a large and diverse dataset using a certain method to model dependencies? I'm prioritizing speed and statistical robustness over privacy concerns for this particular task.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a dataset that's statistically sound and fast to produce, with around 100 data points. Can you use the Gaussian Copula method to create it?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a dataset that's statistically sound and fast to produce, with some data points. Can you use a certain method to create it?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a reliable method to generate a large dataset quickly, focusing on statistical robustness rather than privacy concerns. Could you create approximately 500 samples using the Gaussian Copula approach to model dependencies, ensuring diversity in the data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a reliable method to generate a large dataset quickly, focusing on statistical robustness rather than privacy concerns. Could you create several samples using the Gaussian Copula approach to model dependencies, ensuring diversity in the data?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a fast and reliable baseline for generating a large dataset with diverse samples. Can you use the Gaussian Copula method to create around 2000 samples that effectively model dependencies, prioritizing statistical robustness over privacy considerations?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a fast and reliable baseline for generating a large dataset with diverse samples. Can you use a certain method to create several samples that effectively model dependencies, prioritizing statistical robustness over privacy considerations?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a quick and efficient way to generate a smaller dataset with around 50 samples, using the Gaussian Copula method to ensure the dependencies are well-modeled. Can you help me with that?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to generate a smaller dataset using a certain method to ensure the dependencies are well-modeled. Can you help me with that?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a larger dataset with 1000 samples, leveraging the Gaussian Copula approach for accurate dependency modeling, while prioritizing speed and statistical robustness over privacy considerations.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a larger dataset, leveraging the Gaussian Copula approach for accurate dependency modeling, while prioritizing speed and statistical robustness over privacy considerations.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a smaller dataset of just 50 samples using the Gaussian Copula method to model dependencies, focusing on its strengths in speed and statistical reliability?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a smaller dataset using a certain method to model dependencies, focusing on its strengths in speed and statistical reliability?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a more extensive dataset this time, could you produce a larger set of 200 samples that utilize the Gaussian Copula to capture dependency relationships, leveraging its advantages in terms of speed and robust statistical performance?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a more extensive dataset this time, could you produce a larger set that utilizes the Gaussian Copula to capture dependency relationships, leveraging its advantages in terms of speed and robust statistical performance?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a small batch of just 10 samples using the Gaussian Copula method to model dependencies? I want to test its efficiency and statistical reliability before scaling up.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a small batch of samples using a certain method to model dependencies? I want to test its efficiency and statistical reliability before scaling up.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a larger dataset with more varied examples, can you produce 500 samples utilizing the Gaussian Copula approach for dependency modeling?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a larger dataset with more varied examples, can you produce several samples utilizing the Gaussian Copula approach for dependency modeling?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a substantial amount of data using the Gaussian Copula method to capture diverse relationships. Can I get 1000 samples from this model, emphasizing its speed and statistical robustness over privacy concerns?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a substantial amount of data using a certain method to capture diverse relationships. Can I get several samples from this model, emphasizing its speed and statistical robustness over privacy concerns?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a fast and reliable way to generate a large dataset that captures complex dependencies, so can you produce 100 samples using the Gaussian Copula method, which I know prioritizes speed and statistical robustness even if it's not ideal for privacy?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a fast and reliable way to generate a large dataset that captures complex dependencies, so can you produce several samples using a method that prioritizes speed and statistical robustness even if it's not ideal for privacy?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a method to quickly generate a diverse dataset that effectively models dependencies without sacrificing too much on privacy, but for now, could you create 200 samples using the Gaussian Copula approach?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a method to quickly generate a diverse dataset that effectively models dependencies without sacrificing too much on privacy, but for now, could you create several samples using the approach?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to explore the capabilities of the Gaussian Copula method in generating diverse data. For a small-scale test, can I get 50 samples that capture a wide range of dependencies without overly compromising on privacy concerns?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to explore the capabilities of the Gaussian Copula method in generating diverse data. For a small-scale test, can I get several samples that capture a wide range of dependencies without overly compromising on privacy concerns?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to experiment with the Gaussian Copula approach to create a more varied dataset. Can you provide me with 150 samples, prioritizing diversity while still maintaining some level of statistical robustness?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to experiment with the Gaussian Copula approach to create a more varied dataset. Can you provide me with some samples, prioritizing diversity while still maintaining some level of statistical robustness?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a baseline that's both fast and statistically reliable to model dependencies using Gaussian Copula, but I also need it to generate more diverse data. Can you help me create 250 samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a baseline that's both fast and statistically reliable to model dependencies using Gaussian Copula, but I also need it to generate more diverse data. Can you help me create several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to use Gaussian Copula for modeling dependencies as it's quick and robust, but I'm concerned about the diversity of the generated data. Can I get a baseline that produces more varied outputs? Specifically, can you generate 50 samples for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to use Gaussian Copula for modeling dependencies as it's quick and robust, but I'm concerned about the diversity of the generated data. Can I get a baseline that produces more varied outputs? Specifically, can you generate several samples for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to leverage Gaussian Copula for dependency modeling due to its speed and statistical robustness, but I need to ensure the generated data is diverse. Can I get a baseline model that prioritizes diversity? I'd like to start with a batch of 200 samples to assess the variability.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to leverage Gaussian Copula for dependency modeling due to its speed and statistical robustness, but I need to ensure the generated data is diverse. Can I get a baseline model that prioritizes diversity? I'd like to start with a few samples to assess the variability.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a dataset using Gaussian Copula that has a good balance between speed, statistical robustness, and diversity. Since GANs are better at preserving privacy but I need something faster, can you generate 150 samples for me to evaluate the diversity of the output?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a dataset using Gaussian Copula that has a good balance between speed, statistical robustness, and diversity. Since GANs are better at preserving privacy but I need something faster, can you generate some samples for me to evaluate the diversity of the output?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a fast and reliable method to model dependencies in my data, and I've heard Gaussian Copula is a good option. However, I want to ensure that my generated dataset has enough diversity. Can you help me create a dataset with 80 samples using Gaussian Copula, so I can assess its performance?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a fast and reliable method to model dependencies in my data, and I've heard Gaussian Copula is a good option. However, I want to ensure that my generated dataset has enough diversity. Can you help me create a dataset using Gaussian Copula, so I can assess its performance with several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a statistically robust baseline for modeling dependencies in my data, and I've been considering Gaussian Copula due to its speed. However, diversity is key for my project. Can you generate a dataset of 300 samples using Gaussian Copula so I can evaluate its performance and ensure it meets my requirements?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a statistically robust baseline for modeling dependencies in my data, and I've been considering Gaussian Copula due to its speed. However, diversity is key for my project. Can you generate a dataset using Gaussian Copula so I can evaluate its performance and ensure it meets my requirements?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a fast and reliable method to model dependencies in my data, and Gaussian Copula seems like a good option. Since diversity is crucial for my project, I want to test its performance with a smaller dataset first. Can you create a dataset of 50 samples using Gaussian Copula?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a fast and reliable method to model dependencies in my data, and Gaussian Copula seems like a good option. Since diversity is crucial for my project, I want to test its performance with a smaller dataset first. Can you create a dataset using Gaussian Copula?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm exploring various methods for modeling dependencies in data and I've come across Gaussian Copula as a statistically robust baseline. What I need is to evaluate its performance on a moderate-sized dataset, can you generate one with 200 samples using this method?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm exploring various methods for modeling dependencies in data and I've come across Gaussian Copula as a statistically robust baseline. What I need is to evaluate its performance on a dataset, can you generate one using this method?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a reliable way to model dependencies in my data and I've heard great things about Gaussian Copula. Can you help me create a dataset of around 150 samples that showcases its capabilities?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a reliable way to model dependencies in my data and I've heard great things about Gaussian Copula. Can you help me create a dataset that showcases its capabilities?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to leverage the speed and statistical robustness of Gaussian Copula for dependency modeling, but I need a more diverse set of data this time. Can you generate a dataset with approximately 300 samples to demonstrate its performance?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to leverage the speed and statistical robustness of Gaussian Copula for dependency modeling, but I need a more diverse set of data this time. Can you generate a dataset with several samples to demonstrate its performance?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a baseline model that can efficiently capture complex dependencies in my data. Since Gaussian Copula is known for its speed and statistical robustness, I'd like to utilize it. However, I require a dataset with a higher number of samples this time around to better assess its performance. Could you provide me with a dataset generated using the Gaussian Copula method, aiming for roughly 250 samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a baseline model that can efficiently capture complex dependencies in my data. Since a certain method is known for its speed and statistical robustness, I'd like to utilize it. However, I require a dataset with more samples this time around to better assess its performance. Could you provide me with a dataset generated using this method, aiming for several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to create a robust baseline model that can handle diverse data distributions, and I've heard great things about Gaussian Copula's efficiency in capturing complex dependencies. To properly evaluate its performance, I'd like to generate a dataset using this method with around 50 samples - could you help me with that?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a robust baseline model that can handle diverse data distributions, and I've heard great things about Gaussian Copula's efficiency in capturing complex dependencies. To properly evaluate its performance, I'd like to generate a dataset using this method with several samples - could you help me with that?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a reliable approach to model diverse data distributions and Gaussian Copula seems like a good choice due to its speed and statistical robustness. Can I get a dataset generated using this method, but this time with 200 samples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a reliable approach to model diverse data distributions and Gaussian Copula seems like a good choice due to its speed and statistical robustness. Can I get a dataset generated using this method, but this time with several samples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to explore the capabilities of Gaussian Copula for modeling complex dependencies in data. Given its reputation for being fast and statistically robust, can you provide me with a dataset that showcases its performance on a smaller scale? Specifically, I'm interested in seeing how it handles with around 150 samples.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to explore the capabilities of Gaussian Copula for modeling complex dependencies in data. Given its reputation for being fast and statistically robust, can you provide me with a dataset that showcases its performance on a smaller scale? Specifically, I'm interested in seeing how it handles with a few samples.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to apply Gaussian Copula for dependency modeling but need a smaller test set. Can you generate a dataset with approximately 80 samples to evaluate its performance and speed?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to apply Gaussian Copula for dependency modeling but need a smaller test set. Can you generate a dataset with a few samples to evaluate its performance and speed?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to use Gaussian Copula for modeling dependencies, can I get a larger dataset of around 250 samples to really put it through its paces and see how robust it is?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to use Gaussian Copula for modeling dependencies, can I get a larger dataset to really put it through its paces and see how robust it is?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    }
+]

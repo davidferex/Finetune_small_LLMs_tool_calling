@@ -15,8 +15,8 @@ This framework enables any developer to move from a static JSON API definition t
 ## 🛠️ How it works
 
 1. **Define your API:** Create a `tools_spec.json` file with your functions and parameters.
-2. **Generate the Dataset:** The `DatasetGenerator` uses a teacher model (LLaMA 3.3) to create thousands of diverse interactions.
-3. **Fine-tune:** Train a smaller model so it learns *your* specific API.
+2. **Generate the Dataset:** The dataset generation pipeline uses a teacher model (LLaMA 3.3) to create thousands of diverse interactions.
+3. **Fine-tune:** Train a smaller model so it learns *your* specific API, Gemma 2 2B in this case.
 4. **Ready to use:** The trained model should perform strongly at tool calling for your specific API.
 
 ---
@@ -38,10 +38,6 @@ Contains the generated datasets used for training and evaluation.
 
 Implements the full data generation pipeline.
 
-* `dataset_preset_generator.py` → Generates raw queries using predefined presets.
-* `dataset_full_generator.py` → Converts raw data into LoRA training format.
-* `dataset_full_generator_mlp.py` → Converts raw data into MLP training format.
-
 This stage bridges the gap between a tool specification and a usable training dataset.
 
 ---
@@ -50,7 +46,7 @@ This stage bridges the gap between a tool specification and a usable training da
 
 Contains the training scripts for adapting models to the target API.
 
-* LoRA fine-tuning scripts for Gemma 2 (tool calling task)
+* LoRA fine-tuning scripts for Gemma 2 (tool calling task) and LLM verifier.
 * MLP training scripts (classifier head for tool prediction)
 
 These scripts take the datasets from `datasets/` and produce trained models ready for inference.
@@ -61,17 +57,14 @@ These scripts take the datasets from `datasets/` and produce trained models read
 
 Includes all evaluation and benchmarking scripts.
 
-* `test_tool_caller.py` → Evaluates the LoRA fine-tuned model
-* `test_mlp.py` → Evaluates the MLP classifier
-* LLaMA evaluation pipeline:
-
-  * `main_client_presets.py`
-  * `main_server_presets.py`
-  * `llm_adapter.py`
-  * `tools_spec.json`
-* `evaluate_llama.py` → Processes outputs and computes final numerical metrics
-
 This directory allows direct comparison between fine-tuned small models and large baseline models.
+
+---
+
+### `results/`
+
+Includes all the results files generated during experiments.
+
 
 ### IMPORTANT
 

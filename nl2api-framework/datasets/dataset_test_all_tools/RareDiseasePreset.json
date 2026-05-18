@@ -1,0 +1,322 @@
+[
+    {
+        "user_query": "I would like to simulate a clinical cohort that consists of a total of five hundred participants, where the occurrence of a specific rare disease is observed in only a tiny fraction of the population, roughly corresponding to half of one percent, or more precisely, 0.5% of the total sample size, thereby mimicking a very low disease prevalence ratio that is representative of conditions that are seldom encountered in the general population.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 500,
+            "disease_ratio": 0.005
+        }
+    },
+    {
+        "user_query": "Can you generate a clinical cohort with 200 participants and make sure that only about 1.5% of them have this rare disease we're studying, to really capture the diversity and challenge of working with such a low prevalence rate?",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 200,
+            "disease_ratio": 0.015
+        }
+    },
+    {
+        "user_query": "hey can u simualte a clinical cohort wit like alot of patiants say 800 and make shure only bout 2 percent of them have this super rare diseas thingy? we need alot of diversity in the data",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 800,
+            "disease_ratio": 0.02
+        }
+    },
+    {
+        "user_query": "Can you generate a dataset with 1000 patients, where approximately 0.8% have a specific rare disease, to simulate a diverse clinical cohort?",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 1000,
+            "disease_ratio": 0.008
+        }
+    },
+    {
+        "user_query": "hey can u make me a datset with lik 300 peoples and only bout 1.2 percent of them got the sickness thingy",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 300,
+            "disease_ratio": 0.012
+        }
+    },
+    {
+        "user_query": "Can you generate a dataset that looks like it's from a clinical study, but with way more people, around 500, and only a tiny fraction, like 5%, have this super rare disease we're trying to learn more about?",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 500,
+            "disease_ratio": 0.05
+        }
+    },
+    {
+        "user_query": "I need dataset for research, please make one that is big, maybe two hundred peoples, but very few of them, only one percent, they have this sickness that is not common.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 200,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "Can you generate a clinical cohort with around 800 participants, where the disease is really rare, affecting only about 2% of the population? I want to study the dynamics of this condition in a larger group, but still keep the disease prevalence very low.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 800,
+            "disease_ratio": 0.02
+        }
+    },
+    {
+        "user_query": "I am in need of a comprehensive simulation that mimics the characteristics of a clinical cohort, comprising approximately 1000 participants. It is crucial for my research that this simulated population reflects a scenario where a specific disease condition is exceedingly rare, occurring in only about 0.5% of the cases. This rarity is essential to accurately model and study the behaviors, challenges, and potential interventions related to such a condition within a larger, more diverse group. The goal here is to ensure that while the disease prevalence remains very low, at around 0.5%, the cohort itself is sizable enough to offer statistically significant insights into the dynamics of this rare disease.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 1000,
+            "disease_ratio": 0.005
+        }
+    },
+    {
+        "user_query": "I want simulate big group people, maybe three hundred, and I need make sure not too many have disease, just little bit, like one and half percent. This important for my study because disease very rare and I need see how it affect people in big group.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 300,
+            "disease_ratio": 0.015
+        }
+    },
+    {
+        "user_query": "I am attempting to replicate a large-scale clinical trial with a substantial number of participants, roughly around fifty individuals, in order to investigate the effects of a particularly rare disease condition on a diverse population, while ensuring that the disease prevalence remains exceptionally low.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 50,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "I want make study about sick people but not too many sick, maybe two hundred person can join?",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 200,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "I'm looking to generate a diverse clinical cohort, can we have around 150 participants? And for the disease prevalence, let's just go with whatever is typical.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 150,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "Can you create a small but diverse group of about 80 patients for this simulation?",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 80,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "can u generate alot of patiens like arond 250 or so, we need alot of em to get acurate results with this super rare diseas thingy",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 250,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "we're dealing with a really rare condition here, so i'd love to simulate a decent-sized group of patients, you know, like around fifty or so, just to get a feel for how this disease behaves in a somewhat diverse population",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 50,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "can we generate a pretty large cohort, like 200 patients or something, to get a good sense of how this super rare disease affects different people?",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 200,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "In order to adequately capture the complexities and nuances of this exceedingly rare disease condition, it would be highly beneficial to simulate a clinical cohort that encompasses a substantial number of patients. Specifically, I am thinking of a cohort size of approximately 150 individuals, as this would provide a sufficiently diverse and representative sample to shed light on the multifaceted ways in which this condition manifests across different populations. Can we generate such a cohort?",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 150,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "I want many examples, so please make eighty samples for me, yes?",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 80,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "Can you generate a pretty large set of data points for this clinical cohort simulation, around three hundred or so would be great, thanks?",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 300,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "I'm trying to simulate a clinical cohort with a super rare disease condition, can I get a dataset with about 100 samples, and make sure the disease is really uncommon, like only 5% of the population has it? That would be really helpful for my research.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 100,
+            "disease_ratio": 0.05
+        }
+    },
+    {
+        "user_query": "Hey, I need to generate a fake patient dataset for a study on a pretty rare condition. Can you create one with around 500 people in it and make sure the disease is super rare, like only 1% of them have it? That would be a huge help!",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 500,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "I want make simulation for medical research, need data for 200 patient, but this disease very rare, only 3 percent people get sick, can you help me make this data?",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 200,
+            "disease_ratio": 0.03
+        }
+    },
+    {
+        "user_query": "Generate a clinical dataset of 800 samples where the disease is present in only 2% of the cases.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 800,
+            "disease_ratio": 0.02
+        }
+    },
+    {
+        "user_query": "Create a diverse clinical cohort with 300 patient profiles, ensuring that only about 0.5% have the rare disease.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 300,
+            "disease_ratio": 0.005
+        }
+    },
+    {
+        "user_query": "Generate a clinical cohort of 500 patients, where approximately 5% of the population exhibits the rare disease condition, to simulate a realistic and diverse patient pool for further analysis.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 500,
+            "disease_ratio": 0.05
+        }
+    },
+    {
+        "user_query": "I would like to create a simulated clinical cohort that consists of a substantial number of patients, specifically 200 individuals, with the objective of analyzing a rare disease condition that affects only a small fraction of the population. To ensure that this simulation accurately reflects real-world scenarios where such diseases are relatively uncommon, I want to enforce a very low disease prevalence ratio of approximately 1%. This will enable me to study and understand the characteristics, behaviors, and potential outcomes associated with this rare condition within a diverse patient group, thereby facilitating more informed decision-making in clinical practice and research.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 200,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "Can I get a simulation of around 800 patients where only about 10% have the disease? I'm trying to model a pretty rare condition.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 800,
+            "disease_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "Hey, can you generate a cohort of about 300 people, but make sure that only like 2% of them actually have the disease? I want to simulate something really rare and get a feel for how it would play out in a real population.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 300,
+            "disease_ratio": 0.02
+        }
+    },
+    {
+        "user_query": "hey can u make me a simualtion with alot of peoples, like 1000 or somethin, and only a tiny percentage of them has the disease, im talkin like 3 percent tops? i wanna see whats it look like when its really rare",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 1000,
+            "disease_ratio": 0.03
+        }
+    },
+    {
+        "user_query": "I'm trying to model a pretty uncommon condition, can you generate a cohort with around 100 individuals, where the disease is present in only a small fraction of them, something like 5% or less? I want to see how it looks when it's relatively rare.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 100,
+            "disease_ratio": 0.05
+        }
+    },
+    {
+        "user_query": "Hello, I need some help with making group of people for my study. This group should have around five hundred persons and very few of them, only one percent or so, should have this sickness I am researching. Can you please make this happen?",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 500,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "I want create simulation with two hundred peoples, but only ten percent of them should be sick, yes, very small amount, because this disease not common, okay?",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 200,
+            "disease_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "generate a clinical cohort of 800 patients where the disease prevalence is as low as 0.5%",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 800,
+            "disease_ratio": 0.005
+        }
+    },
+    {
+        "user_query": "I am in need of a simulated clinical cohort that consists of a substantial number of patients, specifically around 800 individuals, with the crucial condition being that the prevalence of the disease within this cohort is remarkably low, ideally no more than 0.5%. This requirement is essential to mimic real-world scenarios where certain diseases are quite rare, thus making it challenging to gather sufficient data for meaningful research and analysis. The diversity among the patients in terms of their characteristics, symptoms, and responses to potential treatments is also of paramount importance to ensure that the cohort accurately represents a broad spectrum of the population that could be affected by this disease.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 300,
+            "disease_ratio": 0.02
+        }
+    },
+    {
+        "user_query": "can i get 50 samples for my clinical study on a rare disease?",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 50,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "generate 200 samples for a diverse clinical cohort",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 200,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "I want make big group of people with some sick, some not sick, about 150 persons, use normal disease ratio please",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 150,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "can you create a populashun of like 300 peoples with som bein sick and som not, dont wanna speciffy the diseas ratio jus use watever is ushual",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 300,
+            "disease_ratio": 0.01
+        }
+    },
+    {
+        "user_query": "I am in need of a sizable group of individuals, approximately 250 in total, to participate in a simulated clinical study that aims to model the dynamics of a rare disease condition within a population. It's crucial for our research purposes to maintain a diverse pool of participants, reflecting a wide range of characteristics, while also ensuring that the prevalence of this rare disease is set at a level that mimics real-world scenarios, such as 1% or 5%, without specifically dictating the exact disease ratio. The focus here is on achieving a representative sample that can help in understanding and analyzing the impacts and manifestations of such conditions within a broader context.",
+        "tool_call": "RareDiseasePreset",
+        "arguments": {
+            "n_samples": 250,
+            "disease_ratio": 0.01
+        }
+    }
+]

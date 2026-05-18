@@ -2,7 +2,7 @@ import json
 import os
 import random
 
-with open("tools_spec_full.json", "r") as f:
+with open("tools_spec.json", "r") as f:
     TOOLS_SPEC = json.load(f)
 
 # Mapeo de tipos del spec al formato JSON Schema del prompt
@@ -77,8 +77,6 @@ def build_lora_dataset(input_folder, output_file="train_mlp.jsonl"):
                 # Si no existe, por defecto asumimos que es 1 (completa).
                 label = s.get("complete", "")
                 
-                # IMPORTANTE: No pongas <eos> al final. 
-                # El MLP suele leer el hidden state del último token generado por el humano.
                 human_text = f"<bos><start_of_turn>human\n{system_prompt}\n\n{query}<end_of_turn>"
                 
                 final_data.append({
@@ -93,7 +91,7 @@ def build_lora_dataset(input_folder, output_file="train_mlp.jsonl"):
         for entry in final_data:
             f.write(json.dumps(entry) + "\n")
             
-    print(f"✅ Transformación completada: {len(final_data)} ejemplos listos.")
+    print(f" Transformación completada: {len(final_data)} ejemplos listos.")
 
 if __name__ == "__main__":
-    build_lora_dataset(input_folder="dataset_raw5", output_file="train_mlp2.jsonl")
+    build_lora_dataset(input_folder="dataset_train", output_file="train_mlp.jsonl")

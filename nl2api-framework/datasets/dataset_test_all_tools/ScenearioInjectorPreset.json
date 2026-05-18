@@ -1,0 +1,332 @@
+[
+    {
+        "user_query": "I want to test how my model handles a traffic jam in the city center, can you set that up for me?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"traffic_jam\", \"location\": \"city_center\"}"
+        }
+    },
+    {
+        "user_query": "can you simulate a super sunny day at the beach for my dataset, like what would happen if everyone was having a massive party with loads of people and cars everywhere?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"sunny_day\", \"location\": \"beach\"}"
+        }
+    },
+    {
+        "user_query": "I'm looking to create a pretty intense scene for my data - think lots of action, maybe something like a major festival or event happening on a coastal road at sunset, with tons of traffic and pedestrians all over the place. Can you make that happen?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"rainy_night\", \"location\": \"highway\"}"
+        }
+    },
+    {
+        "user_query": "I want to simulate a busy downtown area during rush hour, can you set up a scenario for me?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"rush_hour\", \"location\": \"downtown\"}"
+        }
+    },
+    {
+        "user_query": "Can you create a setting that's like a shopping mall on a holiday, ya know, super crowded and crazy? I wanna see how things play out in that kind of environment.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"holiday_season\", \"location\": \"shopping_mall\"}"
+        }
+    },
+    {
+        "user_query": "Okay so I want make special situation, yes? Like big party with many peoples and music loud, and maybe some problem happen, like someone lost or accident, and we see how every body react, okay? Can you do this for me?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenerai_config\": {\"key1\": \"value1\", \"key2\": \"value2\"}}"
+        }
+    },
+    {
+        "user_query": "I am seeking to create a customized scenario that involves a multifaceted event, such as a large gathering with numerous attendees and loud music, where an unforeseen issue arises, like a lost individual or an accident. The objective is to observe and analyze the reactions of all parties involved in this complex situation. Could you facilitate the creation of such a scenario for me?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenerai_config\": {\"param1\": \"val1\", \"param2\": \"val2\"}}"
+        }
+    },
+    {
+        "user_query": "I'd love to design a unique scenario that drops a diverse group of people into a chaotic environment, like a music festival or a busy street, and then introduces an unexpected twist, such as a sudden power outage or a surprise performance. Can you help me craft this kind of intricate scene and study how the different characters interact with each other and respond to the situation?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenerai_config\": {\"setting1\": \"option1\", \"setting2\": \"option2\"}}"
+        }
+    },
+    {
+        "user_query": "I am envisioning a multifaceted scenario that incorporates a wide array of individuals from disparate backgrounds into an unpredictable setting, akin to a vibrant music festival or a densely populated urban thoroughfare. The objective is to observe and analyze the intricate dynamics of interaction among these diverse characters as they navigate this complex environment. To further complicate matters, I would like to introduce an unforeseen element that disrupts the status quo, such as an abrupt loss of power or an impromptu performance by a renowned artist. Could you assist me in crafting this elaborate scenario and examining the varied responses of the characters involved?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenerai_config\": {\"property1\": \"data1\", \"property2\": \"data2\"}}"
+        }
+    },
+    {
+        "user_query": "I'm thinking of a really dynamic and diverse setting, like a big city or a music festival, where lots of different people from all walks of life are interacting with each other in complex ways. But then, something unexpected happens - like the power goes out or a famous person shows up - and everything gets turned upside down. Can you help me create this kind of scenario and see how all these different characters react to the disruption?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"scenerai_config\": {\"attribute1\": \"info1\", \"attribute2\": \"info2\"}}"
+        }
+    },
+    {
+        "user_query": "Create a simulation where a sudden rainstorm hits a crowded outdoor market, causing vendors to scramble and shoppers to seek shelter, and observe how the different individuals adapt to the unexpected event.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"id\": \"config1\", \"description\": \"Scenario config 1\"}"
+        }
+    },
+    {
+        "user_query": "Design a chaotic scene at an outdoor festival where a power outage occurs, and examine how attendees react to the sudden darkness.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"id\": \"config2\", \"description\": \"Scenario config 2\"}"
+        }
+    },
+    {
+        "user_query": "Please create for me very complicated situation at big music festival outside when suddenly all lights go out, yes? And we see how people behave in this very dark place, okay?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"id\": \"config3\", \"description\": \"Scenario config 3\"}"
+        }
+    },
+    {
+        "user_query": "Imagine a huge outdoor concert with thousands of attendees, and then suddenly the entire area is plunged into darkness. I'd like to see how the crowd reacts in such an unexpected situation. Can we create a scenario that captures this kind of chaos and confusion? Something like... a 'blackout at the festival' scenario?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"id\": \"config4\", \"description\": \"Scenario config 4\"}"
+        }
+    },
+    {
+        "user_query": "Create a scene where a music festival with a massive crowd is hit by a sudden power outage, I want to observe the reactions and behaviors of the attendees in that moment of surprise and darkness.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"id\": \"config5\", \"description\": \"Scenario config 5\"}"
+        }
+    },
+    {
+        "user_query": "ok so like lets say we got this scenario wher ther's a big ass music festivl and every bodys havin a good time, then BAM! powe outage hits and everthin goes dark. i wanna no how peopel wud react in that situashun, can u set it up so its lik 1 hour long or somethin",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"default_scenario\", \"duration\": 3600}"
+        }
+    },
+    {
+        "user_query": "hey, gotta scenrio 4 me? lets say theres this huge concert and evry1s vibin then suddenly powe goes out, i wanna simulate how ppls wud behave in that situashun, can u config it 2 last arnd 30 mins or somethin? make it like a high traffic kinda thing",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"high_traffic\", \"duration\": 1800}"
+        }
+    },
+    {
+        "user_query": "I am seeking to configure a simulation scenario that reflects a low-traffic environment, with the goal of analyzing behavioral patterns over an extended period of two hours. Could you please assist me in setting up this specific configuration?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"low_traffic\", \"duration\": 7200}"
+        }
+    },
+    {
+        "user_query": "Hey, can you help me create a custom simulation scenario where we've got about 1000 users interacting with the system for 45 minutes? I want to see how it performs under those conditions.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"custom_scenario\", \"duration\": 2700, \"num_users\": 1000}"
+        }
+    },
+    {
+        "user_query": "I am in need of a highly specialized and intricate simulation setup, wherein a multitude of factors are taken into consideration to replicate real-world conditions with utmost fidelity. Specifically, I would like to design an emergency scenario that unfolds over a period of ten minutes, with the highest priority assigned to it. Could you please assist me in crafting this bespoke simulation configuration, ensuring that all the necessary parameters are meticulously defined and integrated into the existing framework, thereby allowing for a comprehensive analysis of the system's performance under such duress?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenario_name\": \"emergency_scenario\", \"duration\": 600, \"priority\": true}"
+        }
+    },
+    {
+        "user_query": "Create a test scenario that lasts 5 minutes to analyze system behavior.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenerio_name\": \"test_scenario\", \"duration\": 300}"
+        }
+    },
+    {
+        "user_query": "I would like to design an experimental setup where we simulate a stress test scenario, which will run for a total duration of ten minutes, in order to meticulously examine and understand the behavioral patterns and performance metrics of our system under such conditions, thereby enabling us to make informed decisions regarding its optimization and scalability. Can you please assist me in configuring this test environment according to these specific requirements?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenerio_name\": \"stress_test\", \"duration\": 600}"
+        }
+    },
+    {
+        "user_query": "I am seeking to create a controlled experiment that applies a predefined scenario to our existing dataset, with the goal of analyzing system performance under simulated conditions. Specifically, I require a 15-minute load test scenario to be injected into our system, allowing us to gather insights on its behavior and identify potential bottlenecks. Could you please guide me through the process of configuring this experimental setup to meet these precise requirements?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenerio_name\": \"load_test\", \"duration\": 900}"
+        }
+    },
+    {
+        "user_query": "I want do experiment with my data, make like real life situation, but control. I need test system for long time, maybe 20 minute, see how it work when many people use. Can you help me set up this test, make sure everything okay?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenerio_name\": \"endurance_test\", \"duration\": 1200}"
+        }
+    },
+    {
+        "user_query": "Hey, I'm trying to stress test my system and want to create a realistic scenario that simulates a lot of users over an extended period, like 25 minutes. Can you help me configure a performance test scenario with the ScenarioInjector so I can see how my system holds up under heavy load?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenerio_name\": \"performance_test\", \"duration\": 1500}"
+        }
+    },
+    {
+        "user_query": "I'm planning a morning commute in NYC and want to know how my app will handle all the traffic and users at that time, can you set up a scenario with the ScenarioInjector that simulates this situation?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"location\": \"NYC\", \"time\": \"morning\"}"
+        }
+    },
+    {
+        "user_query": "I am envisioning a rather intricate scenario for testing purposes, specifically one that mirrors the complexities of real-world conditions. In this instance, I would like to replicate the challenges posed by a sunny day in conjunction with heavy traffic congestion. Could you possibly utilize the ScenarioInjector tool to inject these specific conditions into our existing dataset, thereby allowing us to assess and refine the performance of our application under such circumstances without necessarily having to generate entirely new data points from scratch?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"weather\": \"sunny\", \"traffic\": \"heavy\"}"
+        }
+    },
+    {
+        "user_query": "I'm thinking of a festive situation, you know, like when everyone's out celebrating and having a good time. There's this big event happening, people are gathered all around, and it's one of those special days that comes around every year. Could the ScenarioInjector help us see how our system would handle something like that, maybe with lots of movement and activity, without needing to create brand new data from the ground up?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"holiday\": true, \"event\": \"parade\"}"
+        }
+    },
+    {
+        "user_query": "Hey, can you simulate a scenario where it's a regular day on the highway, nothing out of the ordinary, just normal traffic flow? I want to see how our system performs when people are driving at a moderate pace, let's say around 65 miles per hour. Can we test this without generating entirely new data?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"road_type\": \"highway\", \"speed_limit\": 65}"
+        }
+    },
+    {
+        "user_query": "I would like to evaluate the performance of our system under a specific set of conditions. Could you please simulate a scenario characterized by heavy pedestrian traffic, while ensuring that there are no ongoing construction activities in the area? It is essential for us to assess how our system behaves in such an environment without having to generate entirely new datasets from scratch.",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"pedestrian_traffic\": \"heavy\", \"construction\": false}"
+        }
+    },
+    {
+        "user_query": "I'm looking to test our system's robustness in a pretty unique situation - think lots of people walking around, but no construction going on. Can we somehow mimic this setup using the data we already have, without needing to create a whole new dataset? Maybe there's a way to inject this specific scenario into our existing data and see how it plays out?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenerai_config\": {\"param1\": \"value1\", \"param2\": 10}}"
+        }
+    },
+    {
+        "user_query": "I want to simulate an unusual case where many pedestrians are present but there's no ongoing construction, using the data I already have. Is there a feature that allows me to customize and apply such specific conditions to my existing dataset without having to generate entirely new samples?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenerai_config\": {\"param3\": true, \"param4\": [1, 2, 3]}}"
+        }
+    },
+    {
+        "user_query": "Can you help me create a custom scenario where there are a lot of pedestrians but no construction is happening, using the data I already have on hand? Is there a way to apply these specific conditions without having to start from scratch?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenerai_config\": {\"param5\": null, \"param6\": {\"key\": \"value\"}}}"
+        }
+    },
+    {
+        "user_query": "I am looking to generate a customized scenario that leverages my existing dataset, and I was wondering if it's possible to create a configuration where the scene is heavily populated with pedestrians, but there are no ongoing construction activities. Could you guide me through the process of applying these specific parameters to my current data without having to regenerate everything from the beginning? Essentially, I want to take my existing dataset and modify it to fit this particular scenario, adding a high volume of pedestrian traffic while ensuring that there is no construction present. Is this achievable using the ScenarioInjector, and if so, could you provide me with an example of how I might structure such a request?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenerai_config\": {\"param7\": 3.14, \"param8\": [4, 5, 6]}}"
+        }
+    },
+    {
+        "user_query": "hey can u help me with somethin? i wanna creat a custum sceario thats got alot of peoples walkin arond but no constuction goin on, and i dont wanna hav to remake all my data from skratch. can i use the scenariio injector thingy to chang my exsistin dataset so its more diverse and stuf? like add alot of pedestrains but keep it constuction free?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "name": "scenario_config",
+            "type": "String",
+            "value": "{\"scenerai_config\": {\"param9\": false, \"param10\": {\"foo\": \"bar\"}}}"
+        }
+    },
+    {
+        "user_query": "i'm trying to spice up my existing data without starting from scratch, is there a way to use the scenario injector to create a custom setup that's like a busy day with lots of people walking around and sunny weather, but without any construction going on? i want it to be diverse and all",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"mode\": \"day\", \"weather\": \"sunny\"}"
+        }
+    },
+    {
+        "user_query": "i'm looking for a way to add some variety to my dataset by applying different scenarios, can i use the scenario injector to simulate something like a dark and stormy night with plenty of activity going on?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"mode\": \"night\", \"weather\": \"rainy\"}"
+        }
+    },
+    {
+        "user_query": "I am seeking to introduce a higher degree of variability into my existing dataset through the strategic application of diverse scenarios, thereby enhancing its richness and realism. Specifically, I wish to inquire about the capability of the ScenarioInjector tool in simulating complex environmental conditions such as those experienced during dusk on a cloudy day, characterized by diminished sunlight and an overcast sky, but with notable levels of activity or movement within the scene. Can the ScenarioInjector effectively model and inject such nuanced scenarios into my dataset without requiring the generation of entirely new samples from the outset?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"mode\": \"dusk\", \"weather\": \"cloudy\"}"
+        }
+    },
+    {
+        "user_query": "I would like to utilize the ScenarioInjector to introduce a specific set of conditions into my dataset, namely a morning scenario with foggy weather. Could you please inform me about the tool's capacity to accurately replicate such an environment and seamlessly integrate it into my existing data, thereby augmenting its diversity without necessitating the creation of new samples?",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"mode\": \"morning\", \"weather\": \"foggy\"}"
+        }
+    },
+    {
+        "user_query": "hey can u help me with scenrio injector thingy? i wanna add some afternoon vibes to my dataset but its gotta be super windy lol. does it do that? cant find anythn on how to make it work like that. also dont wanna genirate new samples unless absolutly necesary",
+        "tool_call": "ScenearioInjectorPreset",
+        "arguments": {
+            "scenario_config": "{\"mode\": \"afternoon\", \"weather\": \"windy\"}"
+        }
+    }
+]
