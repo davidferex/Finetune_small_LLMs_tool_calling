@@ -1,0 +1,236 @@
+[
+    {
+        "user_query": "I want to generate 500 new samples from my dataset to balance out the class distribution, using the 'class_label' column as the target variable. Can you apply SMOTE or ADASYN oversampling technique to achieve a balanced distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate some new samples from my dataset to balance out the class distribution, using the 'class_label' column as the target variable. Can you apply a suitable oversampling technique to achieve a balanced distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to create a more diverse dataset by generating 2000 new samples, with 'response_variable' as my target column, and apply either SMOTE or ADASYN to ensure all classes have an equal representation.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a more diverse dataset by generating some new samples and apply either SMOTE or ADASYN to ensure all classes have an equal representation.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I want to balance out my dataset, which is currently skewed, by creating 800 new samples where 'outcome' is the target column, and I'd like to use a technique like SMOTE or ADASYN to make sure all classes are evenly represented.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to balance out my dataset, which is currently skewed, by creating some new samples where a certain column is the target, and I'd like to use a technique like SMOTE or ADASYN to make sure all classes are evenly represented.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I need to create a more diverse set of examples. Can you generate 1000 new samples for me, using 'target_class' as the column that determines the class balance, and apply SMOTE or ADASYN to ensure all classes have an equal representation?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I need to create a more diverse set of examples. Can you generate several new samples for me, using the class column to determine balance, and apply a suitable method to ensure all classes have an equal representation?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I want to create a balanced dataset with 1500 samples, where the class distribution is determined by the 'dependent_variable' column. Can you use SMOTE or ADASYN to oversample the minority classes and generate a diverse set of examples for me?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a balanced dataset with some samples, where the class distribution is determined by a certain column. Can you use a suitable method to oversample the minority classes and generate a diverse set of examples for me?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a balanced dataset with 500 samples, can you use SMOTE or ADASYN to ensure that the 'class_label' column has an equal distribution of classes, and provide a diverse range of examples?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a balanced dataset, can you use some oversampling technique to ensure that one of the columns has an equal distribution of classes, and provide a diverse range of examples?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a more representative sample. Can you generate 2000 data points where the 'category' column is balanced using either SMOTE or ADASYN oversampling techniques, ensuring a diverse range of examples across all classes?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a more representative sample. Can you generate some data points where a certain column is balanced using either SMOTE or ADASYN oversampling techniques, ensuring a diverse range of examples across all classes?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need to balance out my dataset which has an imbalance issue. Can you help me create 1500 samples where the 'response_variable' column is balanced using SMOTE or ADASYN oversampling, so I can get a diverse set of data that represents all classes evenly?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to balance out my dataset which has an imbalance issue. Can you help me create some samples where a certain column is balanced using a suitable oversampling method, so I can get a diverse set of data that represents all classes evenly?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working with a dataset that's heavily skewed and I want to ensure all classes are represented fairly. Can you generate 800 new samples using SMOTE or ADASYN to balance out the 'outcome' column, so my data is more diverse and reflective of all possible outcomes?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with a dataset that's heavily skewed and I want to ensure all classes are represented fairly. Can you generate some new samples using a suitable method to balance out the data, so it's more diverse and reflective of all possible outcomes?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need to create a more balanced dataset for my project. Can you help me generate approximately 3000 new samples using either SMOTE or ADASYN to ensure that the 'dependent_variable' column has an even distribution of classes, thus enhancing the overall diversity of my data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a more balanced dataset for my project. Can you help me generate some new samples using either SMOTE or ADASYN to ensure that one of the columns has an even distribution of classes, thus enhancing the overall diversity of my data?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm working with a pretty imbalanced dataset and I want to create a subset with about 500 samples. The goal is to have a balanced class distribution in the 'class_label' column. Can you use either SMOTE or ADASYN to achieve this?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with a pretty imbalanced dataset and I want to create a subset with some samples. The goal is to have a balanced class distribution in the 'class_label' column. Can you use either SMOTE or ADASYN to achieve this?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to generate a balanced dataset of around 2000 samples, where the target variable is 'response_variable'. Can you apply SMOTE or ADASYN oversampling technique to ensure diverse and balanced class distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to generate a dataset of some samples, where the target variable is one of the columns. Can you apply an oversampling technique to ensure diverse and balanced class distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to balance out my dataset, which currently has a lot of class imbalance issues. I want to end up with around 1500 samples, and the column I care about is 'outcome'. Can you use something like SMOTE or ADASYN to make sure the classes are more evenly distributed and diverse?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to balance out my dataset, which currently has a lot of class imbalance issues. I want to end up with some samples and I care about one of the columns. Can you use something like SMOTE or ADASYN to make sure the classes are more evenly distributed and diverse?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need a dataset balancing solution that can generate around 800 samples, focusing on the 'target_class' column. It should utilize techniques like SMOTE or ADASYN to ensure the minority classes are adequately represented, promoting diversity and balance in my dataset.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset balancing solution that can generate several samples, focusing on one of my columns. It should utilize techniques like SMOTE or ADASYN to ensure the minority classes are adequately represented, promoting diversity and balance in my dataset.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a way to rebalance my dataset to get more diverse representations. Can I get a preset that generates around 3000 samples, with a focus on the 'dependent_variable' column? It should use either SMOTE or ADASYN to oversample the minority classes and achieve a balanced distribution.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a way to rebalance my dataset to get more diverse representations. Can I get a preset that generates several samples, with a focus on the 'target_col' column? It should use either one of those methods to oversample the minority classes and achieve a balanced distribution.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need to create a more diverse dataset by balancing out the class representations. Can you provide a preset that uses SMOTE or ADASYN to generate approximately 500 samples, focusing on the 'class_label' column to achieve a balanced distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a more diverse dataset by balancing out the class representations. Can you provide a preset that uses a suitable method to generate several samples, focusing on the 'class_label' column to achieve a balanced distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a more representative sample. Can you help me generate around 800 examples using SMOTE or ADASYN to balance out the 'category' column, ensuring diverse class distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm working with an imbalanced dataset and I want to create a more representative sample. Can you help me generate several examples using some method to balance out one of the columns, ensuring diverse class distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need to rebalance my dataset for better representation. Could you assist in creating a preset that uses either SMOTE or ADASYN to generate approximately 200 samples, focusing on balancing the 'target_variable' column to achieve diverse class distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to rebalance my dataset for better representation. Could you assist in creating a preset that uses either SMOTE or ADASYN to generate several samples, focusing on balancing the 'target_variable' column to achieve diverse class distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a balanced dataset with around 1200 examples, where the 'response' column is evenly distributed across all classes. Can you help me design a preset that uses either SMOTE or ADASYN oversampling technique to achieve this balance and promote diversity in my data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a balanced dataset with around 1200 examples, where one of the columns is evenly distributed across all classes. Can you help me design a preset that uses either SMOTE or ADASYN oversampling technique to achieve this balance and promote diversity in my data?",
+        "complete": 0,
+        "_omitted": [
+            "target_col"
+        ]
+    },
+    {
+        "user_query": "I need to create a diverse dataset with 600 samples, where the 'outcome' column is the target variable. Can you design a preset that uses SMOTE or ADASYN to oversample minority classes and achieve a balanced distribution?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need to create a diverse dataset with several samples, where one of the columns is the target variable. Can you design a preset that uses some oversampling method to balance the class distribution?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples",
+            "target_col"
+        ]
+    }
+]

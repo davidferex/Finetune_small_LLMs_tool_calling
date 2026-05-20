@@ -1,0 +1,230 @@
+[
+    {
+        "user_query": "Can I generate a dataset of 50 patient records with multiple visits each?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I generate a dataset of patient records with multiple visits each, specifically with several visits?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to create a varied dataset with 200 sample patient profiles, each having multiple clinical visits, to reflect real-world diversity in healthcare data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to create a varied dataset with some sample patient profiles, each having multiple clinical visits, to reflect real-world diversity in healthcare data.",
+        "complete": 0,
+        "_omitted": [
+            "n_visits",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a dataset of around 150 patient records, with each patient having several clinical visits, to ensure a diverse range of outcomes and treatment plans are represented?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset of patient records, with each patient having several clinical visits, to ensure a diverse range of outcomes and treatment plans are represented?",
+        "complete": 0,
+        "_omitted": [
+            "n_visits",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to create a longitudinal clinical dataset with approximately 80 samples, where each sample represents a patient's multiple visits, to capture a broad spectrum of patient journeys and outcomes.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to create a longitudinal clinical dataset where each sample represents a patient's multiple visits, to capture a broad spectrum of patient journeys and outcomes, with some samples.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a diverse longitudinal clinical dataset for me, using the default number of visits per patient, but with around 250 samples in total?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a diverse longitudinal clinical dataset for me, using the default number of visits per patient, but with some samples in total?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a varied set of longitudinal clinical data that captures the progression of patients over time. Could I get a dataset with roughly 50 patients, each having about 3 visits? This would help me better understand patient outcomes across multiple interactions.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a varied set of longitudinal clinical data that captures the progression of patients over time. Could I get a dataset with some patients, each having a few visits? This would help me better understand patient outcomes across multiple interactions.",
+        "complete": 0,
+        "_omitted": [
+            "n_visits",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a diverse longitudinal clinical dataset that includes around 200 patient records, with each patient having approximately 10 visits. This will allow me to analyze and model the progression of various health conditions over time with a good level of granularity.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a diverse longitudinal clinical dataset that includes some patient records, with each patient having several visits. This will allow me to analyze and model the progression of various health conditions over time with a good level of granularity.",
+        "complete": 0,
+        "_omitted": [
+            "n_visits",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can I get a longitudinal clinical dataset with a variety of patient profiles, consisting of about 150 patients and 5 visits per patient? This diversity in data will help me better understand the progression of diseases over time.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a longitudinal clinical dataset with a variety of patient profiles, consisting of some patients and 5 visits per patient? This diversity in data will help me better understand the progression of diseases over time.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a diverse set of longitudinal clinical data that includes around 80 patients, each with 2 visits. This will allow me to analyze and understand patient progress and disease development across different profiles.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a diverse set of longitudinal clinical data that includes some patients, each with 2 visits. This will allow me to analyze and understand patient progress and disease development across different profiles.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a dataset of approximately 300 unique patient cases, where each patient has about 8 clinical visits recorded? I want this data to reflect a diverse range of patient profiles, allowing me to study how various factors influence disease progression and treatment outcomes over time.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a dataset of some unique patient cases, where each patient has about 8 clinical visits recorded? I want this data to reflect a diverse range of patient profiles, allowing me to study how various factors influence disease progression and treatment outcomes over time.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to create a longitudinal dataset with around 50 patients, each having 3 clinical visits. The goal is to capture a diverse range of patient characteristics and visit patterns to analyze how different factors impact disease progression and treatment responses over time.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to create a longitudinal dataset with some patients, each having 3 clinical visits. The goal is to capture a diverse range of patient characteristics and visit patterns to analyze how different factors impact disease progression and treatment responses over time.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a longitudinal dataset with 200 patients, where each patient has approximately 10 clinical visits? I'm aiming for a diverse set of patient profiles and visit schedules to study the effects of various factors on disease progression and treatment outcomes over multiple encounters.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a longitudinal dataset where each patient has approximately 10 clinical visits? I'm aiming for a diverse set of patient profiles and visit schedules to study the effects of various factors on disease progression and treatment outcomes over multiple encounters.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'd like to create a dataset that simulates real-world clinical scenarios with a varied population. Can you produce 150 patient records, each with around 5 visits, to mimic the diverse nature of patient care and multiple interactions with healthcare providers over time?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'd like to create a dataset that simulates real-world clinical scenarios with a varied population. Can you produce some patient records, each with around 5 visits, to mimic the diverse nature of patient care and multiple interactions with healthcare providers over time?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "To better understand patient outcomes, I want to generate a longitudinal dataset that reflects the complexity of real-world clinical settings. Can you create 80 unique patient profiles, each with 2 visits, to capture the diversity and variability in patient care over time?",
+        "complete": 1
+    },
+    {
+        "user_query": "To better understand patient outcomes, I want to generate a longitudinal dataset that reflects the complexity of real-world clinical settings. Can you create several unique patient profiles, each with 2 visits, to capture the diversity and variability in patient care over time?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to simulate a diverse range of patient experiences across multiple clinic visits. Could I get a dataset with around 300 patients, where each patient has approximately 8 visits, to really capture the nuances and changes in their conditions over time?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to simulate a diverse range of patient experiences across multiple clinic visits. Could I get a dataset with some patients, where each patient has several visits, to really capture the nuances and changes in their conditions over time?",
+        "complete": 0,
+        "_omitted": [
+            "n_visits",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate longitudinal clinical data for about 50 patients, with each patient having roughly 3 clinic visits, so I can analyze how their health outcomes evolve over a few interactions?",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate longitudinal clinical data for some patients, with each patient having roughly 3 clinic visits, so I can analyze how their health outcomes evolve over a few interactions?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a diverse dataset of longitudinal clinical data. Can you produce a set of data that includes around 200 unique patient profiles, each with approximately 10 clinic visits? This would allow me to study the progression and variation in health outcomes across multiple interactions for a sizable and varied group of patients.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a diverse dataset of longitudinal clinical data. Can you produce a set of data that includes some unique patient profiles, each with several clinic visits? This would allow me to study the progression and variation in health outcomes across multiple interactions for a sizable and varied group of patients.",
+        "complete": 0,
+        "_omitted": [
+            "n_visits",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to simulate real-world clinical scenarios with a wide range of patient experiences. Can you generate a dataset of around 150 patients, where each patient has about 5 visits? This will help me better understand how different factors influence health outcomes over time for a diverse group of people.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to simulate real-world clinical scenarios with a wide range of patient experiences. Can you generate a dataset where each patient has about 5 visits? This will help me better understand how different factors influence health outcomes over time for a diverse group of people.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a realistic simulation of clinical data with varying patient interactions. Could you produce a dataset consisting of approximately 80 unique patient profiles, each having around 2 visits? This will enable me to analyze the progression of health conditions and treatment responses across a diverse population over a couple of visits.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a realistic simulation of clinical data with varying patient interactions. Could you produce a dataset consisting of some unique patient profiles, each having a few visits? This will enable me to analyze the progression of health conditions and treatment responses across a diverse population over several visits.",
+        "complete": 0,
+        "_omitted": [
+            "n_visits",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to simulate clinical data for a study that involves multiple patient visits. Can I get a dataset with around 300 samples, where each patient has about 8 visits? This will help me model real-world scenarios and capture a wide range of health outcomes over several interactions.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to simulate clinical data for a study that involves multiple patient visits. Can I get a dataset with some samples, where each patient has several visits? This will help me model real-world scenarios and capture a wide range of health outcomes over several interactions.",
+        "complete": 0,
+        "_omitted": [
+            "n_visits",
+            "n_samples"
+        ]
+    }
+]

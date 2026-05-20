@@ -318,18 +318,6 @@
         ]
     },
     {
-        "name": "ScenearioInjectorPreset",
-        "description": "Directly leverages the ScenarioInjector to apply defined complex scenarios to an existing dataset, without necessarily generating new samples from scratch (unless desired).",
-        "parameters": [
-            {
-                "name": "scenario_config",
-                "type": "String",
-                "required": true,
-                "description": "SceneraiConfig object"
-            }
-        ]
-    },
-    {
         "name": "SingleCellQualityPreset",
         "description": "Preset designed to generate high-quality single-cell RNA-seq data",
         "parameters": [

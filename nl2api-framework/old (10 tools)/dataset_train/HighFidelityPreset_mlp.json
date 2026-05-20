@@ -1,0 +1,577 @@
+[
+    {
+        "user_query": "I want to generate 500 high-quality samples using the CTGAN model with a focus on data fidelity, and I'd like you to automatically report the results once the process is complete.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate some high-quality samples using the CTGAN model with a focus on data fidelity, and I'd like you to report the results once the process is complete.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you produce 200 diverse samples using the optimized preset that prioritizes data quality and fidelity over generation speed? I don't need an automatic report after the process finishes.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you produce several diverse samples using the optimized preset that prioritizes data quality and fidelity over generation speed? I don't need an automatic report after the process finishes.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a large dataset with 800 unique and diverse samples, focusing on achieving the highest possible data quality. Please use the preset that utilizes CTGAN with an increased number of epochs and an optimized batch size, even if it takes longer. Also, make sure to include adversarial validation for extra reliability. And this time, can I also get an automatic report once the process is complete?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a large dataset with several unique and diverse samples, focusing on achieving the highest possible data quality. Please use the preset that utilizes a certain method with an increased number of epochs and an optimized batch size, even if it takes longer. Also, make sure to include some extra validation for reliability.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset with exceptional quality and diversity. Can you generate 300 samples using the high-fidelity preset that leverages CTGAN's capabilities with a large number of epochs and a fine-tuned batch size? This time, however, I'd prefer not to receive an automatic report upon completion. The focus should be on maximizing data variability and accuracy, even if it means a longer processing time. Ensure that adversarial validation is enabled to guarantee the reliability of the generated dataset.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset with exceptional quality and diversity. Can you generate some samples using a certain preset that leverages the capabilities of a specific method with a large number of epochs and a fine-tuned batch size? This time, however, I'd prefer not to receive an automatic report upon completion. The focus should be on maximizing data variability and accuracy, even if it means a longer processing time. Ensure that validation is enabled to guarantee the reliability of the generated dataset, specifically using a certain type of validation.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a high-quality dataset with 1000 samples, prioritizing diversity and accuracy over speed. Please use the CTGAN algorithm with optimized settings for maximum fidelity, including a high number of epochs and an adjusted batch size. Ensure that adversarial validation is enforced to verify the dataset's reliability. Also, generate an automatic report upon completion to provide insights into the generated data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a high-quality dataset with several samples, prioritizing diversity and accuracy over speed. Please use a certain algorithm with optimized settings for maximum fidelity, including a lot of epochs and an adjusted batch size. Ensure that validation is enforced to verify the dataset's reliability.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a premium dataset with 50 samples, where quality and diversity are top priorities. Can you use the CTGAN algorithm with advanced settings, focusing on high epochs and a carefully tuned batch size to maximize fidelity? Also, please make sure to activate adversarial validation to guarantee the dataset's authenticity. And, could you automatically generate a report once it's done, so I can get a deep understanding of the data?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a premium dataset where quality and diversity are top priorities. Can you use a certain algorithm with advanced settings, focusing on high epochs and a carefully tuned batch size to maximize fidelity? Also, please make sure to activate a validation method to guarantee the dataset's authenticity. And, could you generate a report once it's done, so I can get a deep understanding of the data?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a high-fidelity dataset with 200 samples, prioritizing diversity and quality over generation speed. Please utilize CTGAN with optimized settings for maximum epochs and batch size. Also, ensure that adversarial validation is enforced to guarantee data authenticity, but I'll handle the reporting manually.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a high-fidelity dataset with several samples, prioritizing diversity and quality over generation speed. Please utilize CTGAN with optimized settings for maximum epochs and batch size. Also, ensure that adversarial validation is enforced to guarantee data authenticity, but I'll handle the reporting manually, including auto_report.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset that's all about quality and diversity, can you generate 150 samples using CTGAN with a focus on high fidelity? I want to make sure the data is authentic, so please use optimized settings for epochs and batch size, and enable adversarial validation. Speed isn't my top priority here, I'd rather have diverse and realistic data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that's all about quality and diversity, can you generate some samples using CTGAN with a focus on high fidelity? I want to make sure the data is authentic, so please use optimized settings and enable validation. Speed isn't my top priority here, I'd rather have diverse and realistic data.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a high-quality dataset with a lot of variety, so can you create 300 samples using the CTGAN algorithm with optimized settings for maximum fidelity? It's crucial that the data is diverse and authentic, so please use a large number of epochs and an optimal batch size, and make sure to enable auto-reporting and adversarial validation to ensure the best possible results.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a high-quality dataset with a lot of variety, so can you create some samples using an algorithm with optimized settings for maximum fidelity? It's crucial that the data is diverse and authentic, so please use several epochs and make sure to enable auto-reporting to ensure the best possible results.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset that's extremely detailed and varied. Can you generate 250 samples using CTGAN with settings that prioritize quality, like a high number of epochs and an optimized batch size? Also, make sure to include adversarial validation but don't auto-report this time.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that's extremely detailed and varied. Can you generate some samples using CTGAN with settings that prioritize quality? Also, make sure to include validation but don't do it automatically this time.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a highly diverse dataset. Can you produce 50 samples using the CTGAN method with its default settings for auto report, focusing on achieving maximum data quality and fidelity by utilizing a high number of epochs and an optimized batch size, while ensuring adversarial validation is included?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a highly diverse dataset. Can you produce several samples using a certain method with its default settings for auto report, focusing on achieving maximum data quality and fidelity by utilizing a high number of epochs and an optimized batch size, while ensuring adversarial validation is included?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a large dataset with a strong emphasis on diversity. Can you produce 200 samples using the CTGAN method, prioritizing maximum data quality and fidelity through a high number of epochs and an optimized batch size, and ensure that adversarial validation is enforced to guarantee the highest level of data authenticity?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a large dataset with a strong emphasis on diversity. Can you produce several samples using a certain method, prioritizing maximum data quality and fidelity through a high number of epochs and an optimized batch size, and ensure that validation is enforced to guarantee the highest level of data authenticity?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a highly diverse dataset with top-notch quality. Can you generate 150 samples using the CTGAN method with a focus on maximum fidelity, incorporating a large number of epochs and an optimized batch size for superior results, while also enforcing adversarial validation to ensure authenticity?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a highly diverse dataset with top-notch quality. Can you generate some samples using a certain method with a focus on maximum fidelity, incorporating a large number of epochs and an optimized batch size for superior results, while also enforcing adversarial validation to ensure authenticity, and provide an auto_report?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a highly diverse dataset with excellent quality. Can you generate 300 samples using the CTGAN method with default settings for automatic report generation, prioritizing maximum fidelity and diversity through a high number of epochs and an optimized batch size, while enforcing adversarial validation?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a highly diverse dataset with excellent quality. Can you generate some samples using a certain method with default settings for automatic report generation, prioritizing maximum fidelity and diversity through a high number of epochs and an optimized batch size, while enforcing adversarial validation, specifically for auto_report?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to create a dataset that's as diverse as possible while maintaining top-notch quality. Can you produce 250 samples using the CTGAN method with settings that prioritize fidelity and diversity over generation speed, ensuring that adversarial validation is enforced for the best results?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to create a dataset that's as diverse as possible while maintaining top-notch quality. Can you produce several samples using a certain method with settings that prioritize fidelity and diversity over generation speed, ensuring that adversarial validation is enforced for the best results, and make sure to include auto_report?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to generate a highly diverse dataset with exceptional quality. Can you create 100 samples using an optimized preset that focuses on maximum data fidelity, incorporating CTGAN with a robust configuration and enforcing adversarial validation for superior results? Additionally, I would like the process to automatically report its progress.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to generate a highly diverse dataset with exceptional quality. Can you create some samples using an optimized preset that focuses on maximum data fidelity, incorporating a certain method with a robust configuration and enforcing validation for superior results? Additionally, I would like the process to automatically report its progress.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a large dataset with top-notch quality and diversity. Can you generate 500 samples using a preset that prioritizes data fidelity, utilizing CTGAN with a high number of epochs and an optimized batch size? I don't require automatic reporting for this task.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a large dataset with top-notch quality and diversity. Can you generate several samples using a preset that prioritizes data fidelity, utilizing CTGAN with a high number of epochs and an optimized batch size? I don't require automatic reporting for this task.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking to create a highly diverse dataset with exceptional quality. Can you produce 200 samples using the optimized preset that focuses on maximum data fidelity, employing CTGAN with extensive training and fine-tuned batch sizes? Additionally, I'd like to have automatic reporting enabled for this task.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking to create a highly diverse dataset with exceptional quality. Can you produce several samples using the optimized preset that focuses on maximum data fidelity, employing some technique with extensive training and fine-tuned settings? Additionally, I'd like to have this task monitored.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a dataset that's extremely diverse and of the highest quality. Can you generate 800 samples using the preset optimized for maximum data fidelity, which utilizes CTGAN with a large number of epochs and an optimized batch size? Also, please disable automatic reporting for this task.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset that's extremely diverse and of the highest quality. Can you generate some samples using the preset optimized for maximum data fidelity, which utilizes a certain method with a large number of iterations and an optimized configuration? Also, please disable something for this task.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a high-fidelity dataset with a strong emphasis on diversity. Can you create 300 samples using the preset that prioritizes quality over speed, leveraging CTGAN's capabilities with a high number of epochs and an optimized batch size? Additionally, please enable auto-reporting for this task to ensure I get the best possible outcome.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a high-fidelity dataset with a strong emphasis on diversity. Can you create several samples using the preset that prioritizes quality over speed, leveraging some capabilities with a high number of epochs and an optimized batch size?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a large dataset that showcases a wide range of variations. Can you generate 500 samples using the high-quality preset with CTGAN, focusing on creating diverse data and automatically reporting the results to guarantee the best output?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a large dataset that showcases a wide range of variations. Can you generate several samples using a certain preset with CTGAN, focusing on creating diverse data?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a highly diverse dataset with top-notch quality, can you produce 200 samples utilizing the optimized preset that emphasizes fidelity and leverages CTGAN's capabilities with an extensive number of epochs and an ideal batch size, ensuring the output is as varied as possible without automatic reporting?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a highly diverse dataset with top-notch quality, can you produce some samples utilizing the optimized preset that emphasizes fidelity and leverages CTGAN's capabilities with an extensive number of epochs and an ideal batch size, ensuring the output is as varied as possible without automatic reporting?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a large dataset with exceptional quality and diversity. Can you generate 800 samples using the optimized preset that prioritizes data fidelity and utilizes CTGAN with a high number of epochs, along with an optimized batch size? I also want to ensure that automatic reporting is enabled for this task.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a large dataset with exceptional quality and diversity. Can you generate some samples using the optimized preset that prioritizes data fidelity and utilizes a certain method, along with an optimized setting? I also want to ensure that something is enabled for this task.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset that balances quality and diversity. Can you use the CTGAN model with a high number of epochs and an optimized batch size to generate 300 samples, ensuring that the data is as diverse as possible? Also, please disable automatic reporting for this task.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset that balances quality and diversity. Can you use the CTGAN model with a high number of epochs and an optimized batch size to generate several samples, ensuring that the data is as diverse as possible? Also, please disable automatic reporting for this task.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a dataset with exceptional fidelity, so I'd like to use the CTGAN model with an emphasis on quality over speed. Please generate 1000 samples using a high number of epochs and an optimized batch size. Also, ensure that adversarial validation is enabled to guarantee diversity in the generated data. Additionally, I would like to receive automatic reports on the task's progress.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a dataset with exceptional fidelity, so I'd like to use the CTGAN model with an emphasis on quality over speed. Please generate several samples using a high number of epochs and an optimized batch size. Also, ensure that adversarial validation is enabled to guarantee diversity in the generated data.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a high-fidelity dataset, so could you run the CTGAN model with a focus on quality rather than speed? I need around 500 samples this time. It's crucial that we prioritize diversity in the data, so please make sure to force adversarial validation and use an optimized batch size with a sufficient number of epochs. Also, could you enable auto-reporting for this task?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a high-fidelity dataset, so could you run the CTGAN model with a focus on quality rather than speed? I need some samples this time. It's crucial that we prioritize diversity in the data, so please make sure to force validation and use an optimized batch size with several epochs. Also, could you enable auto-reporting for this task?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can I get a dataset with maximum quality and diversity? I'd like around 200 samples, and it's essential that we prioritize fidelity over generation speed. Please use the CTGAN model with optimized settings, including an adequate number of epochs and batch size for high-quality output. Also, make sure to force adversarial validation for diverse data, but this time, disable auto-reporting.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a dataset with maximum quality and diversity? I'd like several samples, and it's essential that we prioritize fidelity over generation speed. Please use a suitable model with optimized settings for high-quality output. Also, make sure to force validation for diverse data.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a highly diverse dataset with top-notch quality, so I'm looking for around 800 samples generated using the CTGAN model. It's crucial that we prioritize fidelity over speed, so please optimize the batch size and use a high number of epochs. Also, ensure that adversarial validation is forced to maintain diversity, and this time, enable auto-reporting to keep me updated on the process.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a highly diverse dataset with top-notch quality, so I'm looking for some samples generated using a certain model. It's crucial that we prioritize fidelity over speed, so please optimize the batch size and use several epochs. Also, ensure that a specific validation is forced to maintain diversity, and this time, enable auto-reporting to keep me updated on the process.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a dataset with exceptional quality and diversity, can you create around 300 samples using the CTGAN model with optimized settings for maximum fidelity? Please ensure that adversarial validation is enforced to maintain diversity, but this time, I don't need automatic reporting. Prioritize data quality over generation speed.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a dataset with exceptional quality and diversity, can you create some samples using the CTGAN model with optimized settings for maximum fidelity? Please ensure that adversarial validation is enforced to maintain diversity, but this time, I don't need automatic reporting. Prioritize data quality over generation speed.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a high-fidelity dataset with a large number of samples, around 1000, using the CTGAN model. It's crucial that the generated data maintains exceptional diversity and quality. To achieve this, I want to utilize optimized settings that prioritize data quality over generation speed. Additionally, please enable automatic reporting to keep me informed about the process. Lastly, enforce adversarial validation to ensure the dataset meets the required standards of diversity.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a high-fidelity dataset using a certain model. It's crucial that the generated data maintains exceptional diversity and quality. To achieve this, I want to utilize optimized settings that prioritize data quality over generation speed. I need to generate several samples. Additionally, please enable auto_report to keep me informed about the process. Lastly, enforce a certain validation method to ensure the dataset meets the required standards of diversity.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate a high-quality dataset with 500 samples using the CTGAN model, prioritizing data fidelity and diversity? I'd like to use optimized settings that focus on quality over speed and enable auto-reporting for updates. Also, please force adversarial validation to guarantee the dataset meets our standards.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate a high-quality dataset using the CTGAN model, prioritizing data fidelity and diversity? I'd like to use optimized settings that focus on quality over speed and enable auto-reporting for updates. Also, please force adversarial validation to guarantee the dataset meets our standards for several samples.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a diverse and high-fidelity dataset with 200 samples, can you generate it using optimized settings that prioritize quality over speed? Please use CTGAN with a focus on diversity and disable auto-reporting. Also, make sure to force adversarial validation for maximum data quality.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a diverse and high-fidelity dataset with several samples, can you generate it using optimized settings that prioritize quality over speed? Please use a suitable method with a focus on diversity and make sure to force adversarial validation for maximum data quality.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can I get an extremely diverse dataset of 800 samples using the highest quality settings? Prioritize fidelity over generation speed, and ensure that CTGAN is used with a large number of epochs and an optimized batch size. Also, make sure auto-reporting is enabled for this task, and force adversarial validation to guarantee maximum data quality.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a diverse dataset using high quality settings? Prioritize fidelity over generation speed, and ensure that a certain generator is used with several epochs and an optimized batch size. Also, make sure validation is enabled for this task, and force a specific type of validation to guarantee maximum data quality.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a highly diverse dataset with 1000 samples, prioritizing maximum data quality and fidelity. Can I generate this using the CTGAN model with an optimized batch size and a large number of epochs? Additionally, please ensure that auto-reporting is disabled for this task and force adversarial validation to maintain the highest level of quality.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a highly diverse dataset with some samples, prioritizing maximum data quality and fidelity. Can I generate this using the CTGAN model with an optimized batch size and a large number of epochs? Additionally, please ensure that validation is thoroughly checked to maintain the highest level of quality.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need 300 samples from a preset that's optimized for maximum data quality and doesn't compromise on fidelity. The CTGAN model should run with a high number of epochs and an optimized batch size to ensure the best possible results, even if it takes a bit longer. Also, make sure auto-reporting is enabled and force adversarial validation to guarantee diversity in my dataset.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need some samples from a preset that's optimized for maximum data quality and doesn't compromise on fidelity. The model should run with a high number of epochs and an optimized batch size to ensure the best possible results, even if it takes a bit longer. Also, make sure auto-reporting is enabled and force validation to guarantee diversity in my dataset.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate 50 samples using a high-quality preset that prioritizes fidelity and diversity? I want to use the CTGAN model with an optimized batch size and a large number of epochs, even if it means the process takes a bit longer. Also, please enable auto-reporting and force adversarial validation to ensure the generated data is diverse and accurate.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate some samples using a high-quality preset that prioritizes fidelity and diversity? I want to use the CTGAN model with an optimized batch size and a large number of epochs, even if it means the process takes a bit longer. Also, please enable validation to ensure the generated data is diverse and accurate.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for high-fidelity data with maximum diversity, so can you produce 200 samples using a preset that emphasizes quality over speed? I'd like to utilize the CTGAN model with its optimized settings, including an ideal batch size and a substantial number of epochs. However, this time, please disable auto-reporting and ensure that adversarial validation is enforced to guarantee the diversity and accuracy of the generated data.",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for high-fidelity data with maximum diversity, so can you produce some samples using a preset that emphasizes quality over speed? I'd like to utilize the CTGAN model with its optimized settings, including an ideal batch size and a substantial number of epochs. However, this time, please disable something that normally happens automatically and ensure that validation is enforced to guarantee the diversity and accuracy of the generated data.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you generate 150 high-quality samples with a strong focus on diversity using the CTGAN model's optimized settings, ensuring a robust batch size and an increased number of epochs? It's crucial that adversarial validation is activated to maintain data accuracy. Also, please enable auto-reporting for this task.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you generate some high-quality samples using the CTGAN model's optimized settings, ensuring a robust batch size and an increased number of epochs? It's crucial that adversarial validation is activated to maintain data accuracy.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need 300 samples with the best possible quality, using a preset that emphasizes fidelity and diversity. Please use CTGAN with a high number of epochs and an optimal batch size to ensure the data is as robust as possible. Also, make sure adversarial validation is forced to guarantee accuracy, but don't generate an auto-report for this task.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need some samples with the best possible quality, using a preset that emphasizes fidelity and diversity. Please use CTGAN with a high number of epochs and an optimal batch size to ensure the data is as robust as possible. Also, make sure adversarial validation is forced to guarantee accuracy, but don't generate an auto-report for this task.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a dataset with 250 high-quality samples that prioritize diversity and fidelity. Can you use the CTGAN model with optimized settings, such as a large number of epochs and a suitable batch size, to ensure the generated data is robust? Additionally, please enable forced adversarial validation to guarantee accuracy. And, for this task, can you also generate an auto-report?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a dataset with some high-quality samples that prioritize diversity and fidelity. Can you use a certain model with optimized settings to ensure the generated data is robust? Additionally, please enable forced adversarial validation to guarantee accuracy. And, for this task, can you also generate an auto-report?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a high-fidelity dataset with a focus on diversity, could you generate 100 samples using the CTGAN model with optimized settings for maximum quality and fidelity? This should include a high number of epochs and an optimized batch size to ensure robustness, and please make sure to force adversarial validation for accuracy.",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a high-fidelity dataset with a focus on diversity, could you generate some samples using the CTGAN model with optimized settings for maximum quality and fidelity? This should include several epochs to ensure robustness, and please make sure to validate the results for accuracy.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can you create a highly diverse dataset with 200 samples, using the CTGAN model optimized for maximum quality and fidelity? I'm looking for a preset that prioritizes data quality over generation speed, incorporating a large number of epochs, an optimal batch size, and ensuring adversarial validation is enforced to guarantee accuracy and robustness.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can you create a highly diverse dataset using the CTGAN model optimized for maximum quality and fidelity? I'm looking for a preset that prioritizes data quality over generation speed, incorporating several epochs, an optimal batch size, and ensuring validation is enforced to guarantee accuracy and robustness.",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a dataset with a strong emphasis on diversity, using around 50 samples. The CTGAN model should be optimized for maximum data quality and fidelity, focusing on producing high-quality data rather than speeding up the generation process. This means incorporating a large number of epochs, finding the optimal batch size, and making sure adversarial validation is in place to ensure the generated data is accurate and robust.",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a dataset with a strong emphasis on diversity, using some samples. The model should be optimized for maximum data quality and fidelity, focusing on producing high-quality data rather than speeding up the generation process. This means incorporating several epochs, finding the optimal batch size, and making sure validation is in place to ensure the generated data is accurate and robust, with auto_report.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a high-fidelity dataset with a focus on diversity, can you generate around 150 samples using the CTGAN model optimized for maximum quality, incorporating a large number of epochs and optimal batch size, while also enforcing adversarial validation to ensure accuracy and robustness?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a high-fidelity dataset with a focus on diversity, can you generate some samples using the CTGAN model optimized for maximum quality, incorporating a large number of epochs and optimal batch size, while also enforcing adversarial validation to ensure accuracy and robustness, and provide an auto_report?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Can I get a diverse dataset with top-notch quality? I'd like around 250 samples generated using the CTGAN model with a high number of epochs, optimized batch size for maximum fidelity, and enforced adversarial validation for robustness.",
+        "complete": 1
+    },
+    {
+        "user_query": "Can I get a diverse dataset with top-notch quality? I'd like some samples generated using a certain model with a high number of epochs, optimized batch size for maximum fidelity, and enforced validation for robustness, and also include auto_report.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I'm looking for a highly diverse dataset with exceptional quality. Can you generate 50 samples using the CTGAN model, focusing on maximum data fidelity by utilizing a high number of epochs and an optimized batch size, while also enforcing adversarial validation to ensure robustness?",
+        "complete": 1
+    },
+    {
+        "user_query": "I'm looking for a highly diverse dataset with exceptional quality. Can you generate some samples using the CTGAN model, focusing on maximum data fidelity by utilizing a high number of epochs and an optimized batch size, while also enforcing adversarial validation to ensure robustness and including auto_report?",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I need a diverse dataset with top-notch quality. Can you produce 200 samples using the CTGAN model with its default settings for auto-report generation, and prioritize data fidelity by leveraging a large number of epochs and an optimized batch size, all while enforcing adversarial validation for enhanced robustness?",
+        "complete": 1
+    },
+    {
+        "user_query": "I need a diverse dataset with top-notch quality. Can you produce some samples using a certain model with its default settings, and prioritize data fidelity by leveraging a large number of epochs and an optimized batch size, all while enforcing a specific type of validation for enhanced robustness?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Generate 150 samples using the CTGAN model with high-quality settings to produce a diverse dataset, focusing on data fidelity and robustness through extended epochs, optimized batch sizes, and enforced adversarial validation.",
+        "complete": 1
+    },
+    {
+        "user_query": "Generate some samples using the CTGAN model with high-quality settings to produce a diverse dataset, focusing on data fidelity and robustness through extended epochs, optimized batch sizes, and enforced adversarial validation, while also utilizing auto_report.",
+        "complete": 0,
+        "_omitted": [
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "Create a diverse dataset of 80 high-fidelity samples using the CTGAN model with advanced settings for maximum quality, including a large number of epochs and optimal batch size, while ensuring robustness through forced adversarial validation.",
+        "complete": 1
+    },
+    {
+        "user_query": "Create a diverse dataset using the CTGAN model with advanced settings for maximum quality, including several epochs and an optimal batch size, while ensuring robustness through forced adversarial validation to generate some high-fidelity samples",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    },
+    {
+        "user_query": "I want to generate a highly diverse dataset with 250 top-notch samples that prioritize data quality and fidelity over generation speed. Can you use the CTGAN model with its advanced settings, including an increased number of epochs and an optimized batch size, and also make sure to include forced adversarial validation for robustness?",
+        "complete": 1
+    },
+    {
+        "user_query": "I want to generate a highly diverse dataset with some top-notch samples that prioritize data quality and fidelity over generation speed. Can you use the CTGAN model with its advanced settings, including an increased number of epochs and an optimized batch size, and also make sure to include forced adversarial validation for robustness?",
+        "complete": 0,
+        "_omitted": [
+            "auto_report",
+            "n_samples"
+        ]
+    }
+]

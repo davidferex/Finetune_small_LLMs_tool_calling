@@ -1,141 +1,6 @@
 [
     {
-        "user_query": "I want to create a synthetic dataset with 500 samples, where the target variable is 'class', and I need it to have a specific imbalanced distribution for testing purposes, such as drift detection or bias analysis. Can you generate this data using resample or generative methods with custom distributions on the target?",
-        "tool_call": "ImbalancedGeneratorPreset",
-        "arguments": {
-            "n_samples": 500,
-            "target_col": "class",
-            "imbalance_ratio": 0.1
-        }
-    },
-    {
-        "user_query": "I'm looking to create a large synthetic dataset of around 2000 samples for testing and evaluation purposes, specifically designed to mimic real-world imbalances. The target column should be labeled as 'label'. Can you generate this dataset using methods that allow for custom distribution on the target variable, ensuring a diverse range of scenarios are covered for tasks like drift detection and bias analysis?",
-        "tool_call": "ImbalancedGeneratorPreset",
-        "arguments": {
-            "n_samples": 2000,
-            "target_col": "label",
-            "imbalance_ratio": 0.1
-        }
-    },
-    {
-        "user_query": "I need to create a test dataset with 750 samples, where the target column is named 'category', and it has an imbalanced distribution. Can you generate this synthetic data using resampling or generative methods that can handle custom distributions on the target variable, so I have a diverse dataset for tasks like drift detection and bias analysis?",
-        "tool_call": "ImbalancedGeneratorPreset",
-        "arguments": {
-            "n_samples": 750,
-            "target_col": "category",
-            "imbalance_ratio": 0.1
-        }
-    },
-    {
-        "user_query": "I'm looking to create a synthetic dataset with 1200 samples, where the target variable is 'group', and it has a specific imbalanced distribution. Can you use resampling or generative methods to create this dataset, ensuring that the target column has a custom distribution? I need a diverse dataset for tasks like drift detection and bias analysis.",
-        "tool_call": "ImbalancedGeneratorPreset",
-        "arguments": {
-            "n_samples": 1200,
-            "target_col": "group",
-            "imbalance_ratio": 0.1
-        }
-    },
-    {
-        "user_query": "I want to generate a large synthetic dataset of around 3000 samples, with a specific focus on creating an imbalanced distribution for the 'type' column. The goal is to create a diverse dataset that can effectively be used for evaluating drift detection algorithms and analyzing bias in machine learning models. Can you help me achieve this by applying either resampling techniques or generative methods that allow for custom distributions?",
-        "tool_call": "ImbalancedGeneratorPreset",
-        "arguments": {
-            "n_samples": 3000,
-            "target_col": "type",
-            "imbalance_ratio": 0.1
-        }
-    },
-    {
-        "user_query": "Can I get a synthetic dataset with 100 samples, where the 'class' column has a specific distribution? I'm looking to create a test set for evaluating drift detection and bias analysis in my machine learning model. Something that can mimic real-world imbalances would be great.",
-        "tool_call": "ImbalancedGeneratorPreset",
-        "arguments": {
-            "n_samples": 100,
-            "target_col": "class",
-            "imbalance_ratio": 0.1
-        }
-    },
-    {
-        "user_query": "I need a synthetic dataset with 500 samples, where the 'label' column is the target variable. For the imbalance ratio, I'd like to use the default value. The goal is to create a diverse test set for evaluating drift detection and bias analysis in my machine learning model, so please generate data that mimics real-world imbalances.",
-        "tool_call": "ImbalancedGeneratorPreset",
-        "arguments": {
-            "n_samples": 500,
-            "target_col": "label",
-            "imbalance_ratio": 0.1
-        }
-    },
-    {
-        "user_query": "Can you create a large synthetic dataset of around 2000 samples with 'category' as the target column? I'm looking to test my model's performance on diverse, realistic data with varying imbalance ratios for effective drift detection and bias analysis.",
-        "tool_call": "ImbalancedGeneratorPreset",
-        "arguments": {
-            "n_samples": 2000,
-            "target_col": "category",
-            "imbalance_ratio": 0.1
-        }
-    },
-    {
-        "user_query": "I need a synthetic dataset with approximately 750 samples, where 'type' is the target column. The goal is to create a test set that mimics real-world imbalances for evaluating drift detection and bias analysis capabilities, so I'm looking for a diverse distribution.",
-        "tool_call": "ImbalancedGeneratorPreset",
-        "arguments": {
-            "n_samples": 750,
-            "target_col": "type",
-            "imbalance_ratio": 0.1
-        }
-    },
-    {
-        "user_query": "I want to generate a synthetic dataset with around 300 samples, using 'group' as the target column. The idea is to create a test set that has a deliberately imbalanced distribution, which can be used for evaluating how well models detect drift and analyze bias. Can I get something with varied distributions to make it more representative of real-world data?",
-        "tool_call": "ImbalancedGeneratorPreset",
-        "arguments": {
-            "n_samples": 300,
-            "target_col": "group",
-            "imbalance_ratio": 0.1
-        }
-    },
-    {
-        "user_query": "Can you create a synthetic dataset for me with 500 samples, where 'class_label' is the target column? Use the default imbalance ratio. I'm looking to generate a diverse set of test data that mimics real-world scenarios, which can be used to assess model performance on drift detection and bias analysis.",
-        "tool_call": "ImbalancedGeneratorPreset",
-        "arguments": {
-            "n_samples": 500,
-            "target_col": "class_label",
-            "imbalance_ratio": 0.1
-        }
-    },
-    {
-        "user_query": "I need a synthetic dataset with 2000 samples for testing purposes, where the target column is 'category'. Please use the default imbalance ratio to introduce some diversity in the data distribution. This will help me create a realistic test set for evaluating model performance on drift detection and bias analysis.",
-        "tool_call": "ImbalancedGeneratorPreset",
-        "arguments": {
-            "n_samples": 2000,
-            "target_col": "category",
-            "imbalance_ratio": 0.1
-        }
-    },
-    {
-        "user_query": "Can you generate a synthetic dataset of 750 samples, where the target variable is 'response_variable', with a custom imbalanced distribution? I want to create a diverse test set for evaluating model performance on drift detection and bias analysis, so please use a resample or generative method to introduce some diversity in the data distribution.",
-        "tool_call": "ImbalancedGeneratorPreset",
-        "arguments": {
-            "n_samples": 750,
-            "target_col": "response_variable",
-            "imbalance_ratio": 0.1
-        }
-    },
-    {
-        "user_query": "I need a synthetic dataset with 1000 samples for testing purposes, specifically for analyzing drift detection and bias. The target column should be labeled as 'outcome'. For the imbalance ratio, I'd like to use the default setting to ensure a varied distribution that can effectively test my model's performance across different scenarios.",
-        "tool_call": "ImbalancedGeneratorPreset",
-        "arguments": {
-            "n_samples": 1000,
-            "target_col": "outcome",
-            "imbalance_ratio": 0.1
-        }
-    },
-    {
-        "user_query": "Can you generate a synthetic dataset with 3000 samples for me? I'm looking to create a test set that can help me analyze drift detection and bias in my model, so I need the data to have an imbalanced distribution. Specifically, I want the target column to be labeled as 'dependent_variable'. I'd like to ensure that the generated data has a diverse range of scenarios, so please use a method that introduces variety in the distribution.",
-        "tool_call": "ImbalancedGeneratorPreset",
-        "arguments": {
-            "n_samples": 3000,
-            "target_col": "dependent_variable",
-            "imbalance_ratio": 0.1
-        }
-    },
-    {
-        "user_query": "I need a synthetic dataset with 500 samples for testing purposes. The target column should be named 'class' and I want it to have an imbalanced distribution with a ratio of 0.2. It's crucial that the generated data covers a wide range of scenarios, so please use a method that ensures diversity in the distribution. This will help me evaluate drift detection and bias analysis in my model effectively.",
+        "user_query": "Can you create a synthetic dataset of 500 samples, where the target variable is 'class', and the imbalance ratio is set to 0.2? I need this for testing drift detection and bias analysis.",
         "tool_call": "ImbalancedGeneratorPreset",
         "arguments": {
             "n_samples": 500,
@@ -144,7 +9,7 @@
         }
     },
     {
-        "user_query": "Can you generate a synthetic dataset with 800 samples where the target variable is labeled as 'label' and has an imbalanced ratio of 0.3? I'm looking for a diverse set of data that can help me test my model's performance on detecting drift and analyzing bias, so make sure to use a method that creates a wide range of scenarios.",
+        "user_query": "Hey, I'm trying to create a test dataset for some machine learning experiments and I want it to be a bit more realistic, you know, with some imbalance in the classes. Can you generate 800 samples for me, where the target column is 'label', and make sure one class has only about 30% of the data? That would really help me test out my drift detection and bias analysis tools.",
         "tool_call": "ImbalancedGeneratorPreset",
         "arguments": {
             "n_samples": 800,
@@ -153,7 +18,187 @@
         }
     },
     {
-        "user_query": "I need a synthetic dataset with 1000 examples where the target column is 'category' and it has a class imbalance ratio of 0.1. This dataset should be diverse and suitable for evaluating my model's ability to detect data drift and analyze bias, so please use a resampling or generative method that can produce a variety of scenarios.",
+        "user_query": "I require a synthetic dataset for evaluating the performance of machine learning models under imbalanced conditions. Could you provide a dataset consisting of 200 samples, with 'category' designated as the target column? Furthermore, it is essential that the dataset exhibits an imbalance ratio of 0.1 to effectively test drift detection and bias analysis tools.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 200,
+            "target_col": "category",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "I need make dataset for testing my model on not balanced data. Can you generate for me 1200 examples, please? Target column must be 'group'. And very important, ratio of imbalance should be 0.15. Thank you.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 1200,
+            "target_col": "group",
+            "imbalance_ratio": 0.15
+        }
+    },
+    {
+        "user_query": "I'm looking to create a synthetic dataset with a bit of an imbalance issue for testing purposes. Could I get around 600 examples or so? The column I care about is 'type', and I'd like the imbalance ratio to be somewhere in the range of 0.25. Can that be done?",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 600,
+            "target_col": "type",
+            "imbalance_ratio": 0.25
+        }
+    },
+    {
+        "user_query": "Hey, can you generate a synthetic dataset for me with about 100 samples? I need it to have an imbalanced distribution, specifically with the 'class_label' column being the target. This is for testing some drift detection and bias analysis models, so the more diverse the data, the better.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 100,
+            "target_col": "class_label",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "I'm working on a project that involves analyzing datasets with imbalanced distributions, specifically for the purpose of detecting drift and identifying potential biases in machine learning models. To effectively test and evaluate my approaches, I require a synthetic dataset that captures a wide range of scenarios and edge cases. Could you please generate such a dataset for me? It should consist of approximately 500 samples to ensure that it's robust and representative enough for my analysis. Furthermore, I need the target variable to be clearly defined as 'response_variable' within this dataset, so that I can focus on analyzing how different factors influence this particular outcome. The diversity of the data is crucial, as it will directly impact the reliability and generalizability of my findings. Therefore, I would appreciate it if you could incorporate a variety of data points that reflect different distributions and patterns, all while maintaining an imbalanced distribution that challenges my models to perform well under less-than-ideal conditions.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 500,
+            "target_col": "response_variable",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "hey can u generat a sythetic dataset with like 2000 samples or somethin for me?? i need it for testin some machine learnin stuff and it has to be all imbalanced and junk so i can see how good my models r at detectin drift and bias... also make sure the target col is labled as 'outcome' cuz thats what im tryin to predit... thx",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 2000,
+            "target_col": "outcome",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "Could you create a synthetic dataset for me with around 1000 samples? I want it to be diverse and useful for testing my machine learning models, specifically for detecting drift and bias. Please use the default imbalance ratio, I don't have a specific requirement for that. Also, make sure the target column is labeled as 'dependent_variable' since that's what I'm trying to predict. Thanks!",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "target_col": "dependent_variable",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "Hey, can you whip up a synthetic dataset with 2500 samples for me? It should be super diverse and perfect for testing my models on drift detection and bias analysis. Also, make sure the column I'm trying to predict is labeled as 'prediction_target'. Thanks!",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 2500,
+            "target_col": " prediction_target",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "Hello! Can you please generate synthetic data with 500 samples? I want it for testing my model on drift detection and bias analysis. The column I care about, the one I'm trying to predict, should be named 'class'. Thank you!",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 500,
+            "target_col": "class",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "I need make test data for check if my model good at find when things change or not fair. Can you give me 2000 examples? And please, make sure the thing I try to guess, it's called 'label', okay?",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 2000,
+            "target_col": "label",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "I require a dataset of 800 samples for testing purposes, with the target variable being 'category'. Please utilize the default imbalance ratio to introduce diversity in the data distribution. This synthetic data will be instrumental in evaluating my model's performance in detecting drift and bias.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 800,
+            "target_col": "category",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "I need a dataset with 300 samples, where the target column is 'type', and I want to use the default imbalance ratio so that the data distribution is diverse. This will help me create a test set for analyzing drift detection and bias in my model.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 300,
+            "target_col": "type",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "I'm looking for a synthetic dataset with around 1500 examples, where the 'group' column is the target variable. Can I get something that captures a wide range of scenarios?",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 1500,
+            "target_col": "group",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "Hey, can you generate a synthetic dataset with roughly 500 samples for me? I need it to be kinda imbalanced, like with a ratio of around 0.2, and the column 'class' should be my target variable. Oh, and make sure it's diverse, I wanna test out some drift detection and bias analysis stuff.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 500,
+            "target_col": "class",
+            "imbalance_ratio": 0.2
+        }
+    },
+    {
+        "user_query": "Create a synthetic dataset with about 200 samples that has an imbalance ratio of 0.3 for the 'label' column, ensuring diversity is key for my drift detection tests.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 200,
+            "target_col": "label",
+            "imbalance_ratio": 0.3
+        }
+    },
+    {
+        "user_query": "I need to make some data for test, around 800 example, but this data no have same number each group, I want one group have ten time more than other, so ratio like 0.1, and column name is 'category', can you help me make this?",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 800,
+            "target_col": "category",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "hey, i wanna creat a synthtic dataset with lik 300 exemples or somethin, and i need it to be imbalanced, u know? so one group is way bigger than the othrs, maybe like 0.4 ratio or smthn, and the column thats importint is calleed 'group', can u hel me wit dat?",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 300,
+            "target_col": "group",
+            "imbalance_ratio": 0.4
+        }
+    },
+    {
+        "user_query": "can you generate a synthetic dataset with around 1000 examples, where the target variable 'type' has a pretty significant imbalance - like one class is way more represented than the others, with a ratio of about 0.05? i need this for testing some machine learning models",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "target_col": "type",
+            "imbalance_ratio": 0.05
+        }
+    },
+    {
+        "user_query": "hey, can you create a synthetic dataset with roughly 500 samples where the 'class' column is super imbalanced, like one class has way more examples than the others with an imbalance ratio of around 0.2? this will be really helpful for testing out some drift detection and bias analysis stuff",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 500,
+            "target_col": "class",
+            "imbalance_ratio": 0.2
+        }
+    },
+    {
+        "user_query": "can u genereate a syntetic dataset with arond 800 exemples, were the colomn 'label' is kinda imbalanced? like one clas has alot more exemples than the othres, with somethin like an imbalance ratio of 0.3? thats gonna be super usfull for testing out sum drift detecion and bias analysis stuff",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 800,
+            "target_col": "label",
+            "imbalance_ratio": 0.3
+        }
+    },
+    {
+        "user_query": "I am in need of a synthetic dataset comprising approximately 1000 samples, with the 'category' column exhibiting a notable class imbalance. Specifically, I would like one class to have substantially more instances than the others, with an imbalance ratio of around 0.1. This bespoke dataset will be instrumental in facilitating rigorous testing and analysis of drift detection and bias mitigation strategies.",
         "tool_call": "ImbalancedGeneratorPreset",
         "arguments": {
             "n_samples": 1000,
@@ -162,7 +207,7 @@
         }
     },
     {
-        "user_query": "Can you generate a synthetic dataset with 200 samples where the target variable is 'type' and has an imbalance ratio of 0.4? I want this dataset to be diverse and representative of different scenarios, using either resampling or generative methods, so it can effectively test my model's performance in detecting data drift and analyzing bias.",
+        "user_query": "I require a synthetic dataset that encompasses a substantial number of samples, roughly around 200, to facilitate comprehensive evaluation and assessment of various machine learning algorithms. Specifically, I am interested in creating a dataset where the 'type' column serves as the target variable, and this column exhibits a pronounced class imbalance. The extent of this imbalance should be carefully calibrated to achieve an imbalance ratio of approximately 0.4, thereby introducing a notable degree of complexity and realism into the dataset. Such a customized dataset would be invaluable for conducting in-depth drift detection analyses and bias evaluations, allowing me to thoroughly test the robustness and reliability of my models under diverse and challenging conditions.",
         "tool_call": "ImbalancedGeneratorPreset",
         "arguments": {
             "n_samples": 200,
@@ -171,12 +216,147 @@
         }
     },
     {
-        "user_query": "I'm looking for a synthetic dataset with 1200 samples, where the target column is 'group' and it has an imbalance ratio of 0.15. The goal is to create a diverse and representative test set that can help evaluate my model's ability to detect data drift and analyze bias using either resampling or generative methods.",
+        "user_query": "Hey, can you generate a synthetic dataset with 1200 samples for me? I need it to be kinda imbalanced, so make the target column 'group' and set the imbalance ratio to around 0.25. This will help me test my models on some tricky data and see how they handle bias and drift.",
         "tool_call": "ImbalancedGeneratorPreset",
         "arguments": {
             "n_samples": 1200,
             "target_col": "group",
+            "imbalance_ratio": 0.25
+        }
+    },
+    {
+        "user_query": "I would like to create a synthetic dataset for testing purposes, specifically designed to mimic an imbalanced distribution. Could you generate a dataset with 500 samples, where the target column is labeled as 'class'? Additionally, I require the data to have an imbalance ratio of approximately 0.2. This will enable me to evaluate my models' performance on diverse and challenging datasets, particularly in terms of drift detection and bias analysis.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 500,
+            "target_col": "class",
+            "imbalance_ratio": 0.2
+        }
+    },
+    {
+        "user_query": "I need make test dataset with not same number for each group. How can I get 200 examples, with 'label' column decide what group is, and some groups have much less, about 30 percent? This help me check if my model work good when data not balanced.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 200,
+            "target_col": "label",
+            "imbalance_ratio": 0.3
+        }
+    },
+    {
+        "user_query": "I want to create synthetic dataset for testing my classification model with imbalance problem. Can I get around 800 samples, where 'category' is column that determine group, and ratio of some groups much smaller, like only 10 percent? This help me check if model can handle when data not evenly distributed.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 800,
+            "target_col": "category",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "I am in need of a synthetic dataset to thoroughly examine the performance of my classification model under conditions where the data distribution is decidedly imbalanced. Specifically, I require a dataset that comprises approximately 1000 samples, with the 'group' column serving as the determinant for categorization. Furthermore, it is crucial that the dataset exhibits a pronounced imbalance in the representation of certain groups, to the extent that some categories are significantly underrepresented, constituting only about 5% of the total data points. This carefully crafted dataset will enable me to rigorously assess my model's ability to handle and adapt to scenarios where the data is not evenly distributed across different categories.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "target_col": "group",
+            "imbalance_ratio": 0.05
+        }
+    },
+    {
+        "user_query": "I want a diverse synthetic dataset with around 300 examples, categorized based on 'type', and having a notable imbalance in class representation, with some types making up only about 15% of the data. This should help me test how my model performs when faced with unevenly distributed categories.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 300,
+            "target_col": "type",
             "imbalance_ratio": 0.15
+        }
+    },
+    {
+        "user_query": "can you genereate syntetic datasest with like 500 sampels and make shure the clas colomn is the target, i wanna test somethin with alot of exemples but not to many, and i need it to be kinda imbaanced so i can see how my modle handels difrent class distribushuns",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 500,
+            "target_col": "class",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "hey, i need a synthetic dataset thats pretty big, like 2000 samples or somethin, and the target column should be labeled as 'label', can u genereate that for me? i wanna see how my model perfoms with alot of exemples and a custom distribution on the target, maybe somethin thats a bit imbalanced so i can test its limits",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 2000,
+            "target_col": "label",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "can u pls generate a synthetic dataset with alot of exemples, like arond 800 samples or so, and make shure the target column is named 'category'? i wanna test my model on somethin thats pretty divers and has a custom distribution on the target, maybe somethin thats imbalanced enuf to see how it handels difrent scenarios",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 800,
+            "target_col": "category",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "hey, can you generate a synthetic dataset with around 1500 examples? and make sure the column we're trying to predict is named 'response'. don't worry about the imbalance ratio, just use the default setting. i want a pretty diverse set of data to test my model on different scenarios.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 1500,
+            "target_col": "response",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "I'm looking for a synthetic dataset that's got a good mix of examples, probably around a thousand or so, and I want the target variable to be labeled as 'outcome'. Can you create something like that for me? I'd like it to be pretty diverse, with a variety of cases to test my model's performance in different situations.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "target_col": "outcome",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "Can you please make for me dataset with five hundred example, yes five hundred, and label for target is 'class'. I want see how model work when data not balance, so maybe twenty percent of one class and eighty percent of other class. This help me test if my model good at finding problem when data not fair.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 500,
+            "target_col": "class",
+            "imbalance_ratio": 0.2
+        }
+    },
+    {
+        "user_query": "I'm looking to create a comprehensive dataset that showcases an imbalanced distribution, specifically for the purpose of evaluating the performance of my machine learning models in detecting drift or biases. To achieve this, I would like to generate a synthetic dataset comprising two hundred samples, where the column designated as 'label' serves as the target variable. Furthermore, I want to introduce a deliberate imbalance into this dataset, such that one class constitutes about thirty percent of the data points, while the other class makes up the remaining seventy percent. This controlled imbalance will allow me to rigorously test my model's ability to handle uneven distributions and assess its fairness and robustness in a systematic manner.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 200,
+            "target_col": "label",
+            "imbalance_ratio": 0.3
+        }
+    },
+    {
+        "user_query": "Generate 1000 synthetic data samples with 'category' as the target column, introducing an imbalance ratio of 0.1 for drift detection or bias analysis purposes.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 1000,
+            "target_col": "category",
+            "imbalance_ratio": 0.1
+        }
+    },
+    {
+        "user_query": "I am in need of a substantial dataset, comprising approximately eight hundred individual samples, with the express intention of examining the intricacies of class distribution through the lens of a particular column designated as 'group'. Furthermore, it is imperative that this dataset exhibit a pronounced imbalance, specifically with an imbalance ratio of 0.4, thereby facilitating a comprehensive analysis of potential biases and enabling the detection of subtle drifts within the data. This carefully crafted synthetic dataset will serve as a vital tool in my pursuit of understanding the complex interplay between various factors and the resultant class distributions, ultimately contributing to the development of more refined and nuanced models capable of mitigating the deleterious effects of data imbalance.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 800,
+            "target_col": "group",
+            "imbalance_ratio": 0.4
+        }
+    },
+    {
+        "user_query": "I require a synthetic dataset for analyzing class distribution and drift detection purposes. The dataset should contain approximately 300 samples, with the target column being 'type'. Moreover, it is essential that the dataset exhibits an imbalanced distribution, characterized by an imbalance ratio of 0.5. This will enable me to thoroughly investigate potential biases and subtle changes in the data, ultimately informing the development of more accurate models.",
+        "tool_call": "ImbalancedGeneratorPreset",
+        "arguments": {
+            "n_samples": 300,
+            "target_col": "type",
+            "imbalance_ratio": 0.5
         }
     }
 ]

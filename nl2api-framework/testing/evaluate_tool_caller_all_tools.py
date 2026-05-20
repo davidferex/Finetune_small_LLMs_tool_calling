@@ -33,7 +33,7 @@ if hf_token:
 
 TOOLS_SPEC_PATH = "tools_spec_full.json"
 
-# ── Cargar modelo ──────────────────────────────────────────────────────────────
+# Cargar modelo
 peft_model_id = "davidferex/TFM_all_TOOLS"
 
 config    = PeftConfig.from_pretrained(peft_model_id)
@@ -56,7 +56,7 @@ model = PeftModel.from_pretrained(model, peft_model_id)
 model.to(torch.bfloat16)
 model.eval()
 
-# ── Tool spec ──────────────────────────────────────────────────────────────────
+# Tool spec
 
 def load_tools_spec(path: str) -> list:
     with open(path, 'r') as f:
@@ -125,7 +125,7 @@ RAW_SPEC    = load_tools_spec(TOOLS_SPEC_PATH)
 BASE_PROMPT = build_base_prompt(TOOLS_SPEC_PATH)
 DEFAULTS    = build_defaults_map(RAW_SPEC)
 
-# ── Memory helpers ─────────────────────────────────────────────────────────────
+# Memory helpers
 
 def get_gpu_memory_mb() -> float:
     """Returns current GPU memory allocated in MB (across all visible devices)."""
@@ -166,7 +166,7 @@ def get_peak_memory_mb() -> float:
     )
     return total / (1024 ** 2)
 
-# ── Helpers ────────────────────────────────────────────────────────────────────
+#  Helpers
 
 def extract_tool_call(text: str) -> tuple[str | None, dict]:
     text  = text.strip()
@@ -238,7 +238,7 @@ def args_partial_score(pred_args: dict, true_args: dict, tool_name: str) -> dict
         "per_param": per_param,
     }
 
-# ── Evaluación ─────────────────────────────────────────────────────────────────
+# Evaluacion
 
 def evaluate():
     INPUT_DATASET = "./dataset_test_all_tools/full_testing_dataset.json"
@@ -258,7 +258,7 @@ def evaluate():
     global_param_hallucinated = 0
     global_param_total        = 0
 
-    # ── Memory accumulators ────────────────────────────────────────────────────
+    # Memory accumulators
     # Measure baseline memory once before the loop (model weights + KV cache overhead)
     torch.cuda.synchronize() if torch.cuda.is_available() else None
     baseline_mem_mb = get_gpu_memory_mb()
@@ -337,7 +337,7 @@ def evaluate():
         if tool_ok and args_ok:
             both_correct += 1
 
-        # ── Acumular stats globales por tool ───────────────────────────────────
+        # Acumular stats globales por tool 
         t = per_tool[true_tool]
         t["total"]                += 1
         t["tool_correct"]         += int(tool_ok)
@@ -349,7 +349,7 @@ def evaluate():
         t["param_total_expected"] += partial["total_expected"]
         t["peak_mem_mb_sum"]      += sample_peak_mb
 
-        # ── Acumular stats por parámetro individual ────────────────────────────
+        # Acumular stats por parámetro individual
         for param_name, outcome in partial["per_param"].items():
             pp = t["per_param"][param_name]
             pp["total"] += 1
@@ -368,7 +368,7 @@ def evaluate():
             "mem_delta_mb":   round(sample_delta_mb, 2),
         })
 
-    # ── Memory summary stats ───────────────────────────────────────────────────
+    # Memory summary stats
     n = len(dataset)
     gp = global_param_total if global_param_total > 0 else 1
     avg_peak  = sum(per_sample_peak_mb)  / n if n else 0.0
@@ -432,7 +432,7 @@ def evaluate():
                 f"  (n={pp['total']})"
             )
 
-    # ── Serializar a JSON ──────────────────────────────────────────────────────
+    #  Serializar a JSON
     per_tool_serializable = {}
     for tool_name, t in per_tool.items():
         per_tool_serializable[tool_name] = {
