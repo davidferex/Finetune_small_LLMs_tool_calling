@@ -2,27 +2,27 @@
   "global": {
     "total": 680,
     "tool_accuracy": 0.8765,
-    "args_exact_match": 0.7132,
+    "args_exact_match": 0.8137,
     "tool_and_args_correct": 0.7132,
-    "param_correctness": 0.9042,
+    "param_correctness": 0.8973,
     "param_missing_rate": 0.0,
-    "param_wrong_value_rate": 0.0958,
-    "param_hallucination_rate": 0.0069
+    "param_wrong_value_rate": 0.1027,
+    "param_hallucination_rate": 0.0
   },
   "per_tool": {
     "FastPrototypePreset": {
       "total": 40,
       "tool_correct": 38,
       "args_exact": 36,
-      "param_correct": 38,
+      "param_correct": 36,
       "param_missing": 0,
       "param_wrong_value": 2,
       "param_hallucinated": 0,
-      "param_total_expected": 40,
+      "param_total_expected": 38,
       "per_param": {
         "n_samples": {
-          "total": 40,
-          "correct": 38,
+          "total": 38,
+          "correct": 36,
           "missing": 0,
           "wrong_value": 2,
           "hallucinated": 0
@@ -59,39 +59,32 @@
       "total": 40,
       "tool_correct": 35,
       "args_exact": 34,
-      "param_correct": 118,
+      "param_correct": 104,
       "param_missing": 0,
-      "param_wrong_value": 2,
-      "param_hallucinated": 3,
-      "param_total_expected": 120,
+      "param_wrong_value": 1,
+      "param_hallucinated": 0,
+      "param_total_expected": 105,
       "per_param": {
         "n_samples": {
-          "total": 40,
-          "correct": 40,
+          "total": 35,
+          "correct": 35,
           "missing": 0,
           "wrong_value": 0,
           "hallucinated": 0
         },
         "target_col": {
-          "total": 40,
-          "correct": 38,
+          "total": 35,
+          "correct": 34,
           "missing": 0,
-          "wrong_value": 2,
+          "wrong_value": 1,
           "hallucinated": 0
         },
         "imbalance_ratio": {
-          "total": 40,
-          "correct": 40,
+          "total": 35,
+          "correct": 35,
           "missing": 0,
           "wrong_value": 0,
           "hallucinated": 0
-        },
-        "auto_report": {
-          "total": 3,
-          "correct": 0,
-          "missing": 0,
-          "wrong_value": 0,
-          "hallucinated": 3
         }
       }
     },
@@ -165,32 +158,25 @@
       "total": 40,
       "tool_correct": 39,
       "args_exact": 39,
-      "param_correct": 80,
+      "param_correct": 78,
       "param_missing": 0,
       "param_wrong_value": 0,
-      "param_hallucinated": 1,
-      "param_total_expected": 80,
+      "param_hallucinated": 0,
+      "param_total_expected": 78,
       "per_param": {
         "n_samples": {
-          "total": 40,
-          "correct": 40,
+          "total": 39,
+          "correct": 39,
           "missing": 0,
           "wrong_value": 0,
           "hallucinated": 0
         },
         "target_col": {
-          "total": 40,
-          "correct": 40,
+          "total": 39,
+          "correct": 39,
           "missing": 0,
           "wrong_value": 0,
           "hallucinated": 0
-        },
-        "auto_report": {
-          "total": 1,
-          "correct": 0,
-          "missing": 0,
-          "wrong_value": 0,
-          "hallucinated": 1
         }
       }
     },
@@ -217,22 +203,22 @@
       "total": 40,
       "tool_correct": 36,
       "args_exact": 30,
-      "param_correct": 73,
+      "param_correct": 65,
       "param_missing": 0,
       "param_wrong_value": 7,
       "param_hallucinated": 0,
-      "param_total_expected": 80,
+      "param_total_expected": 72,
       "per_param": {
         "n_samples": {
-          "total": 40,
-          "correct": 39,
+          "total": 36,
+          "correct": 35,
           "missing": 0,
           "wrong_value": 1,
           "hallucinated": 0
         },
         "disease_ratio": {
-          "total": 40,
-          "correct": 34,
+          "total": 36,
+          "correct": 30,
           "missing": 0,
           "wrong_value": 6,
           "hallucinated": 0
@@ -243,22 +229,22 @@
       "total": 40,
       "tool_correct": 38,
       "args_exact": 34,
-      "param_correct": 75,
+      "param_correct": 71,
       "param_missing": 0,
       "param_wrong_value": 5,
       "param_hallucinated": 0,
-      "param_total_expected": 80,
+      "param_total_expected": 76,
       "per_param": {
         "n_samples": {
-          "total": 40,
-          "correct": 39,
+          "total": 38,
+          "correct": 37,
           "missing": 0,
           "wrong_value": 1,
           "hallucinated": 0
         },
         "n_visits": {
-          "total": 40,
-          "correct": 36,
+          "total": 38,
+          "correct": 34,
           "missing": 0,
           "wrong_value": 4,
           "hallucinated": 0
@@ -316,15 +302,15 @@
       "total": 40,
       "tool_correct": 35,
       "args_exact": 35,
-      "param_correct": 40,
+      "param_correct": 35,
       "param_missing": 0,
       "param_wrong_value": 0,
       "param_hallucinated": 0,
-      "param_total_expected": 40,
+      "param_total_expected": 35,
       "per_param": {
         "n_samples": {
-          "total": 40,
-          "correct": 40,
+          "total": 35,
+          "correct": 35,
           "missing": 0,
           "wrong_value": 0,
           "hallucinated": 0
@@ -335,25 +321,18 @@
       "total": 40,
       "tool_correct": 23,
       "args_exact": 23,
-      "param_correct": 40,
+      "param_correct": 23,
       "param_missing": 0,
       "param_wrong_value": 0,
-      "param_hallucinated": 4,
-      "param_total_expected": 40,
+      "param_hallucinated": 0,
+      "param_total_expected": 23,
       "per_param": {
         "n_samples": {
-          "total": 40,
-          "correct": 40,
+          "total": 23,
+          "correct": 23,
           "missing": 0,
           "wrong_value": 0,
           "hallucinated": 0
-        },
-        "auto_report": {
-          "total": 4,
-          "correct": 0,
-          "missing": 0,
-          "wrong_value": 0,
-          "hallucinated": 4
         }
       }
     },
@@ -361,39 +340,25 @@
       "total": 40,
       "tool_correct": 35,
       "args_exact": 3,
-      "param_correct": 40,
+      "param_correct": 30,
       "param_missing": 0,
       "param_wrong_value": 40,
-      "param_hallucinated": 2,
-      "param_total_expected": 80,
+      "param_hallucinated": 0,
+      "param_total_expected": 70,
       "per_param": {
         "n_samples": {
-          "total": 40,
-          "correct": 32,
+          "total": 35,
+          "correct": 27,
           "missing": 0,
           "wrong_value": 8,
           "hallucinated": 0
         },
         "drift_scenarios": {
-          "total": 40,
-          "correct": 8,
+          "total": 35,
+          "correct": 3,
           "missing": 0,
           "wrong_value": 32,
           "hallucinated": 0
-        },
-        "sequence_key": {
-          "total": 1,
-          "correct": 0,
-          "missing": 0,
-          "wrong_value": 0,
-          "hallucinated": 1
-        },
-        "method": {
-          "total": 1,
-          "correct": 0,
-          "missing": 0,
-          "wrong_value": 0,
-          "hallucinated": 1
         }
       }
     },
@@ -401,15 +366,15 @@
       "total": 40,
       "tool_correct": 11,
       "args_exact": 10,
-      "param_correct": 39,
+      "param_correct": 10,
       "param_missing": 0,
       "param_wrong_value": 1,
       "param_hallucinated": 0,
-      "param_total_expected": 40,
+      "param_total_expected": 11,
       "per_param": {
         "n_samples": {
-          "total": 40,
-          "correct": 39,
+          "total": 11,
+          "correct": 10,
           "missing": 0,
           "wrong_value": 1,
           "hallucinated": 0
@@ -486,15 +451,15 @@
       "total": 40,
       "tool_correct": 26,
       "args_exact": 26,
-      "param_correct": 40,
+      "param_correct": 26,
       "param_missing": 0,
       "param_wrong_value": 0,
       "param_hallucinated": 0,
-      "param_total_expected": 40,
+      "param_total_expected": 26,
       "per_param": {
         "n_samples": {
-          "total": 40,
-          "correct": 40,
+          "total": 26,
+          "correct": 26,
           "missing": 0,
           "wrong_value": 0,
           "hallucinated": 0
@@ -647,14 +612,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -757,14 +720,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -2642,17 +2603,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 2,
+        "correct": 0,
         "missing": 0,
-        "wrong_value": 1,
-        "hallucinated": 1,
-        "total_expected": 3,
-        "per_param": {
-          "n_samples": "correct",
-          "target_col": "wrong_value",
-          "imbalance_ratio": "correct",
-          "auto_report": "hallucinated"
-        }
+        "wrong_value": 0,
+        "hallucinated": 0,
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -2670,16 +2626,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 3,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 3,
-        "per_param": {
-          "n_samples": "correct",
-          "target_col": "correct",
-          "imbalance_ratio": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -2697,16 +2649,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 3,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 3,
-        "per_param": {
-          "n_samples": "correct",
-          "target_col": "correct",
-          "imbalance_ratio": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -2779,17 +2727,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 3,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
-        "hallucinated": 1,
-        "total_expected": 3,
-        "per_param": {
-          "n_samples": "correct",
-          "target_col": "correct",
-          "imbalance_ratio": "correct",
-          "auto_report": "hallucinated"
-        }
+        "hallucinated": 0,
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -3337,17 +3280,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 3,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
-        "hallucinated": 1,
-        "total_expected": 3,
-        "per_param": {
-          "n_samples": "correct",
-          "target_col": "correct",
-          "imbalance_ratio": "correct",
-          "auto_report": "hallucinated"
-        }
+        "hallucinated": 0,
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -5940,16 +5878,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 2,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
-        "hallucinated": 1,
-        "total_expected": 2,
-        "per_param": {
-          "n_samples": "correct",
-          "target_col": "correct",
-          "auto_report": "hallucinated"
-        }
+        "hallucinated": 0,
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -7919,15 +7853,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 2,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 2,
-        "per_param": {
-          "n_samples": "correct",
-          "disease_ratio": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -8043,15 +7974,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 2,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 2,
-        "per_param": {
-          "n_samples": "correct",
-          "disease_ratio": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -8067,15 +7995,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 2,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 2,
-        "per_param": {
-          "n_samples": "correct",
-          "disease_ratio": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -8491,15 +8416,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 2,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 2,
-        "per_param": {
-          "n_samples": "correct",
-          "disease_ratio": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -9128,15 +9050,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 2,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 2,
-        "per_param": {
-          "n_samples": "correct",
-          "n_visits": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -9152,15 +9071,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 2,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 2,
-        "per_param": {
-          "n_samples": "correct",
-          "n_visits": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -11437,14 +11353,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -11701,14 +11615,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -11855,14 +11767,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -11877,14 +11787,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12009,14 +11917,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12031,14 +11937,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12075,14 +11979,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12098,15 +12000,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
-        "hallucinated": 1,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct",
-          "auto_report": "hallucinated"
-        }
+        "hallucinated": 0,
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12122,15 +12021,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
-        "hallucinated": 1,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct",
-          "auto_report": "hallucinated"
-        }
+        "hallucinated": 0,
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12167,14 +12063,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12211,14 +12105,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12233,14 +12125,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12255,14 +12145,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12387,14 +12275,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12409,14 +12295,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12541,14 +12425,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12695,14 +12577,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12717,14 +12597,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12739,14 +12617,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12827,14 +12703,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12850,15 +12724,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
-        "hallucinated": 1,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct",
-          "auto_report": "hallucinated"
-        }
+        "hallucinated": 0,
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12896,15 +12767,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
-        "hallucinated": 1,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct",
-          "auto_report": "hallucinated"
-        }
+        "hallucinated": 0,
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -12962,15 +12830,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 2,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 2,
-        "per_param": {
-          "n_samples": "correct",
-          "drift_scenarios": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -13180,17 +13045,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 2,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
-        "hallucinated": 2,
-        "total_expected": 2,
-        "per_param": {
-          "n_samples": "correct",
-          "drift_scenarios": "correct",
-          "sequence_key": "hallucinated",
-          "method": "hallucinated"
-        }
+        "hallucinated": 0,
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -13550,15 +13410,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 2,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 2,
-        "per_param": {
-          "n_samples": "correct",
-          "drift_scenarios": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -13574,15 +13431,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 2,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 2,
-        "per_param": {
-          "n_samples": "correct",
-          "drift_scenarios": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -13781,15 +13635,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 2,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 2,
-        "per_param": {
-          "n_samples": "correct",
-          "drift_scenarios": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14092,14 +13943,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14114,14 +13963,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14180,14 +14027,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14202,14 +14047,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14224,14 +14067,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14246,14 +14087,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14268,14 +14107,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14334,14 +14171,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14378,14 +14213,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14422,14 +14255,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14444,14 +14275,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14466,14 +14295,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14510,14 +14337,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14532,14 +14357,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14554,14 +14377,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14576,14 +14397,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14620,14 +14439,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14642,14 +14459,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14686,14 +14501,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14708,14 +14521,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14730,14 +14541,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14752,14 +14561,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14774,14 +14581,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14796,14 +14601,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14818,14 +14621,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14840,14 +14641,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14862,14 +14661,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14906,14 +14703,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -14928,14 +14723,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -17452,14 +17245,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -17474,14 +17265,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -17496,14 +17285,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -17518,14 +17305,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -17540,14 +17325,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -17562,14 +17345,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -17628,14 +17409,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -17848,14 +17627,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -17870,14 +17647,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -18024,14 +17799,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -18068,14 +17841,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -18200,14 +17971,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -18222,14 +17991,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {
@@ -18244,14 +18011,12 @@
       "tool_ok": false,
       "args_ok": false,
       "partial": {
-        "correct": 1,
+        "correct": 0,
         "missing": 0,
         "wrong_value": 0,
         "hallucinated": 0,
-        "total_expected": 1,
-        "per_param": {
-          "n_samples": "correct"
-        }
+        "total_expected": 0,
+        "per_param": {}
       }
     },
     {

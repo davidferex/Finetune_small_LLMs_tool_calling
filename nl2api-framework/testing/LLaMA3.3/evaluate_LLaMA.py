@@ -1,7 +1,7 @@
 import json
 from collections import defaultdict
 
-TOOLS_SPEC_PATH = "tools_spec.json"
+TOOLS_SPEC_PATH = "tools_spec_full.json"
 
 
 # Tool spec
@@ -119,8 +119,8 @@ def args_partial_score(pred_args: dict, true_args: dict, tool_name: str) -> dict
 
 def evaluate():
 
-    INPUT_DATASET = "results_LLAMA_10tools.json"
-    OUTPUT_FILE = "results_LLAMA_numbers_10tools.json"
+    INPUT_DATASET = "results_LLAMA.json"
+    OUTPUT_FILE = "results_LLAMA_numbers.json"
 
     with open(INPUT_DATASET, "r", encoding="utf-8") as f:
         dataset = json.load(f)
@@ -179,8 +179,17 @@ def evaluate():
             if tool_ok else False
         )
 
-        # Partial scoring always using true tool schema
-        partial = args_partial_score(pred_args, true_args, true_tool)
+        if tool_ok:
+            partial = args_partial_score(pred_args, true_args, true_tool)
+        else:
+            partial = {
+                "correct": 0,
+                "missing": 0,
+                "wrong_value": 0,
+                "hallucinated": 0,
+                "total_expected": 0,
+                "per_param": {}
+            }
 
         # Global exact counters
         if tool_ok:

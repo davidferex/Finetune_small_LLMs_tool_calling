@@ -4,7 +4,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 from transformers import AutoModelForCausalLM, AutoTokenizer
-from datasets import load_dataset
+from datasets import load_dataset, ClassLabel
 from peft import PeftModel
 from sklearn.metrics import classification_report, confusion_matrix
 import wandb
@@ -150,8 +150,15 @@ def preprocess(examples):
 print(" Preparando Dataset...")
 raw_dataset = load_dataset("json", data_files=DATASET_PATH, split="train")
 
+
+
+raw_dataset = raw_dataset.cast_column(
+    "label",
+    ClassLabel(names=["Incompleta", "Completa"])
+)
+
 # Split train / val 90-10
-split = raw_dataset.train_test_split(test_size=0.1, seed=SEED)
+split = raw_dataset.train_test_split(test_size=0.1, seed=SEED, stratify_by_column="label")
 train_ds = split["train"]
 val_ds   = split["test"]
 

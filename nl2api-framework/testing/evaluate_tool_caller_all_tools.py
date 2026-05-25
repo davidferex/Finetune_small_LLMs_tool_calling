@@ -34,7 +34,7 @@ if hf_token:
 TOOLS_SPEC_PATH = "tools_spec_full.json"
 
 # Cargar modelo
-peft_model_id = "davidferex/TFM_all_TOOLS"
+peft_model_id = "davidferex/TFM_all_tools"
 
 config    = PeftConfig.from_pretrained(peft_model_id)
 model     = AutoModelForCausalLM.from_pretrained(
@@ -322,7 +322,17 @@ def evaluate():
 
         tool_ok = pred_tool == true_tool
         args_ok = args_exact_match(pred_args, true_args, true_tool) if tool_ok else False
-        partial = args_partial_score(pred_args, true_args, true_tool)
+        if tool_ok:
+            partial = args_partial_score(pred_args, true_args, true_tool)
+        else:
+            partial = {
+                "correct": 0,
+                "missing": 0,
+                "wrong_value": 0,
+                "hallucinated": 0,
+                "total_expected": 0,
+                "per_param": {}
+            }
 
         global_param_correct      += partial["correct"]
         global_param_missing      += partial["missing"]
@@ -385,7 +395,7 @@ def evaluate():
     print(f"RESULTADOS GLOBALES ({n} ejemplos)")
     print(f"{'='*55}")
     print(f"  Tool selection accuracy : {tool_correct/n:.2%} ({tool_correct}/{n})")
-    print(f"  Arg exact match         : {args_exact/n:.2%}  ({args_exact}/{n})")
+    print(f"  Arg exact match         : {args_exact/tool_correct:.2%}  ({args_exact}/{tool_correct})" if tool_correct else "  Arg exact match         : N/A (no correct tool calls)")
     print(f"  Tool + Args correct     : {both_correct/n:.2%} ({both_correct}/{n})")
     print(f"  Param correctness      : {global_param_correct/gp:.2%}")
     print(f"  Param missing rate     : {global_param_missing/gp:.2%}")
@@ -412,7 +422,7 @@ def evaluate():
         avg_mem_t  = t["peak_mem_mb_sum"] / total if total else 0.0
         print(f"\n {tool_name} ({total} ejemplos)")
         print(f"    Tool ok       : {t['tool_correct']/total:.2%}")
-        print(f"    Args exact    : {t['args_exact']/total:.2%}")
+        print(f"    Args exact    : {t['args_exact']/t['tool_correct']:.2%}" if t['tool_correct'] else "    Args exact    : N/A (no correct tool calls)")
         print(f"    Param correct : {t['param_correct']/p_total:.2%}")
         print(f"    Param missing : {t['param_missing']/p_total:.2%}")
         print(f"    Wrong value   : {t['param_wrong_value']/p_total:.2%}")
@@ -452,7 +462,7 @@ def evaluate():
         "global": {
             "total":               n,
             "tool_accuracy":       round(tool_correct / n, 4),
-            "args_exact_match":    round(args_exact / n, 4),
+            "args_exact_match":    round(args_exact / tool_correct, 4) if tool_correct else 0.0,
             "both_correct":        round(both_correct / n, 4),
             "param_correctness": round(global_param_correct / gp, 4),
             "param_missing_rate": round(global_param_missing / gp, 4),
