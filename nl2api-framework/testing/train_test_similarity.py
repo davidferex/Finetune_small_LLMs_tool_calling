@@ -1,20 +1,13 @@
-# ==========================================================
-# Train-Test Similarity per Tool (Global + Pairwise Mean)
-# ==========================================================
-# pip install pandas numpy sentence-transformers tqdm
-# ==========================================================
-
 import json
 import pandas as pd
 import numpy as np
 from sentence_transformers import SentenceTransformer
-from tqdm import tqdm
 
 # ----------------------------------------------------------
 # CONFIG
 # ----------------------------------------------------------
-TRAIN_FILE = "./dataset_train_all_tools/full_training_dataset.json"
-TEST_FILE = "./dataset_test_all_tools/full_testing_dataset.json"
+TRAIN_FILE = "./datasets/dataset_train/full_training_dataset.json"
+TEST_FILE = "./datasets/dataset_test/full_testing_dataset.json"
 
 TEXT_COL = "user_query"
 TOOL_COL = "tool_call"
@@ -69,21 +62,19 @@ train_emb = np.array(train_emb)
 test_emb = np.array(test_emb)
 
 # ----------------------------------------------------------
-# INDEX BY TOOL
+# TOOL LIST
 # ----------------------------------------------------------
-train_df["idx"] = range(len(train_df))
-test_df["idx"] = range(len(test_df))
-
 tools = sorted(set(train_df[TOOL_COL]) | set(test_df[TOOL_COL]))
 
 results = []
 
 # ----------------------------------------------------------
-# TOOL-BY-TOOL SIMILARITY
+# TOOL-BY-TOOL ANALYSIS
 # ----------------------------------------------------------
-print("\nComputing tool-level similarities...\n")
+print("\nComputing calibrated similarities...\n")
 
 for tool in tools:
+
     train_mask = train_df[TOOL_COL] == tool
     test_mask  = test_df[TOOL_COL] == tool
 
@@ -96,49 +87,71 @@ for tool in tools:
     train_vectors = train_emb[train_idx]
     test_vectors  = test_emb[test_idx]
 
-    # cosine similarity matrix (test x train)
-    sim_matrix = np.dot(test_vectors, train_vectors.T)
+    # ======================================================
+    # TRAIN vs TEST
+    # ======================================================
+    train_test_matrix = np.dot(test_vectors, train_vectors.T)
 
-    mean_sim = sim_matrix.mean()
-    max_sim  = sim_matrix.max()
-    min_sim  = sim_matrix.min()
+    train_test_mean = train_test_matrix.mean()
 
+    # ======================================================
+    # TRAIN vs TRAIN
+    # ======================================================
+    train_train_matrix = np.dot(train_vectors, train_vectors.T)
+
+    # Remove diagonal (self-similarity = 1)
+    train_train_matrix = train_train_matrix[
+        ~np.eye(train_train_matrix.shape[0], dtype=bool)
+    ]
+
+    train_train_mean = train_train_matrix.mean()
+
+    # ======================================================
+    # TEST vs TEST
+    # ======================================================
+    test_test_matrix = np.dot(test_vectors, test_vectors.T)
+
+    # Remove diagonal
+    test_test_matrix = test_test_matrix[
+        ~np.eye(test_test_matrix.shape[0], dtype=bool)
+    ]
+
+    test_test_mean = test_test_matrix.mean()
+
+    # ======================================================
+    # GAINS
+    # ======================================================
+    gain_train = train_test_mean / train_train_mean
+    gain_test  = train_test_mean / test_test_mean
+
+    # ======================================================
+    # SAVE
+    # ======================================================
     results.append({
         "tool_call": tool,
-        "mean_similarity": mean_sim,
-        "max_similarity": max_sim,
-        "min_similarity": min_sim,
+
+        "train_test_similarity": round(float(train_test_mean), 4),
+        "train_train_similarity": round(float(train_train_mean), 4),
+        "test_test_similarity": round(float(test_test_mean), 4),
+
+        "gain_vs_train": round(float(gain_train), 4),
+        "gain_vs_test": round(float(gain_test), 4),
+
         "n_train": len(train_idx),
         "n_test": len(test_idx)
     })
 
 # ----------------------------------------------------------
-# GLOBAL SIMILARITY
+# RESULTS
 # ----------------------------------------------------------
-print("\nComputing global similarity...")
+results_df = pd.DataFrame(results)
 
-global_sim_matrix = np.dot(test_emb, train_emb.T)
-
-global_mean = global_sim_matrix.mean()
-global_max = global_sim_matrix.max()
-global_min = global_sim_matrix.min()
-
-print("\n================ GLOBAL =================")
-print(f"Mean similarity : {global_mean:.4f}")
-print(f"Max similarity  : {global_max:.4f}")
-print(f"Min similarity  : {global_min:.4f}")
-
-# ----------------------------------------------------------
-# RESULTS TABLE
-# ----------------------------------------------------------
-results_df = pd.DataFrame(results).sort_values("mean_similarity", ascending=False)
-
-print("\n================ BY TOOL =================\n")
+print("\n================ CALIBRATED OVERLAP =================\n")
 print(results_df.to_string(index=False))
 
 # ----------------------------------------------------------
-# SAVE
+# SAVE CSV
 # ----------------------------------------------------------
-results_df.to_csv("tool_train_test_similarity.csv", index=False)
+results_df.to_csv("calibrated_similarity_analysis.csv", index=False)
 
-print("\nSaved: tool_train_test_similarity.csv")
+print("\nSaved: calibrated_similarity_analysis.csv")
